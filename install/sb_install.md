@@ -1,7 +1,8 @@
+
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2021-09-01"
+lastupdated: "2022-09-06"
 
 keywords: install, ROKS, IKS, manifests, HELM
 
@@ -268,5 +269,4 @@ Broker Manager would be **https://10.10.10.10**.
 
 ## Installing Security Broker through User Interface:
 {: #install-sb-ui}
-
 
