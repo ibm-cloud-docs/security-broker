@@ -2,9 +2,9 @@
 
 copyright: 
   years: 2022, 2022
-lastupdated: "2022-08-05"
+lastupdated: "2022-09-06"
 
-keywords: security broke, read-me,
+keywords: security broker, read-me,
 
 subcollection: security-broker
 
@@ -21,7 +21,7 @@ Documentation repository for security-broker
 
 ## Source files for customer-facing documentation
 
-
+Internal-only documentation: https://test.cloud.ibm.com/docs/security-broker
 
 Customer-facing documentation: https://cloud.ibm.com/docs/security-broker
 
