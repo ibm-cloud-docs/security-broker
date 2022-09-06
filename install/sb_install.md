@@ -1,4 +1,3 @@
-
 ---
 copyright:
   years: 2022, 2022
@@ -77,30 +76,43 @@ below to install Data Security Broker Shield on ROKS:
 1.  Deploy the Data Security Broker Shield by executing the following
     command:
 
-oc create security-broker-shield-svc.yaml -n \<namespace\>
-oc create -f security-broker-shield.yaml -n \<namespace\>
+
+    ```sh
+    oc create security-broker-shield-svc.yaml -n \<namespace\>
+    oc create -f security-broker-shield.yaml -n \<namespace\>
+    ```
+    {: codeblock}
 
 2.  Verify that the pods are launched and are in **Running** state. To
     view the status of the pods in the namespace, execute the following
     command:
 
-oc get pods -n \<namespace\>
+    ```sh
+    oc get pods -n \<namespace\>
+    ```
+    {: codeblock}
 
 For example, if you specify **oc get pods -n default**, the following
 output is displayed which shows the status of the pods in the default
 namespace:
 
+```sh
 NAME                                    READY STATUS RESTARTS AGE
 
 security-broker-mongodb-67768846f8-pgt24 1/1 Running 0 28d
 security-broker-nginx-746dc4688c-2xrms 1/1 Running 0 28d
 security-broker-shield-app1-8dbc7b859-xhlnf 1/1 Running 0 9d
 security-broker-web-775dc97fdb-j5mmr 1/1 Running 0 28d
+```
+{: codeblock}
 
 3.  To view and confirm the details of each pod in the namespace,
     execute the following command:
 
-oc describe pod \<pod name\>
+    ```sh
+    oc describe pod \<pod name\>
+    ```
+    {: codeblock}
 
 ### Installing Data Security Broker Manager in ROKS:
 {: #install-sb-manager-ROKS}
@@ -113,39 +125,60 @@ below to install Data Security Broker Manager on ROKS:
     **security-broker-pvc.yaml** file. Create the PVC by executing the
     following command:
 
-oc create -f security-broker-pvc.yaml -n \<namespace\>
+    ```sh
+    oc create -f security-broker-pvc.yaml -n \<namespace\>
+    ```
+    {: codeblock}
 
 To verify if the PVC is created successfully, execute the following
 command:
 
-oc get pvc -n \<namespace\>
+    ```sh
+    oc get pvc -n \<namespace\>
+    ```
+    {: codeblock}
 
 2.  Deploy the Data Security Broker Manager services by executing the
     following command:
 
-oc create -f security-broker-mongodb.yaml -n \<namespace\>
-oc create -f security-broker-manager.yaml -n \<namespace\>
-oc create -f security-broker-web.yaml -n \<namespace\>
-oc create -f security-broker-nginx.yaml -n \<namespace\>
+    ```sh
+    oc create -f security-broker-mongodb.yaml -n \<namespace\>
+    oc create -f security-broker-manager.yaml -n \<namespace\>
+    oc create -f security-broker-web.yaml -n \<namespace\>
+    oc create -f security-broker-nginx.yaml -n \<namespace\>
+    ```
+    {: codeblock}
 
 3.  To view the status of the pods in the namespace, execute the
     following command:
 
-oc get pods -n \<namespace\>
+    ```sh
+    oc get pods -n \<namespace\>
+    ```
+    {: codeblock}
+
 For example, if you specify **oc get pods -n default**, the following
 output is displayed which shows the status of the pods in the default
 namespace:
+
+```sh
 NAME                                     READY STATUS RESTARTS AGE
 
 security-broker-mongodb-67768846f8-pgt24 1/1 Running 0 28d
 security-broker-nginx-746dc4688c-2xrms 1/1 Running 0 28d
 security-broker-shield-app1-8dbc7b859-xhlnf 1/1 Running 0 9d
 security-broker-web-775dc97fdb-j5mmr 1/1 Running 0 28d
+```
+{: codeblock}
 
 4.  To view and confirm the details of each pod in the namespace,
     execute the following command:
 
-oc describe pod \<pod name\>
+    ```sh
+    oc describe pod \<pod name\>
+    ```
+    {: codeblock}
+
 
 ## Install Data Security Broker on an IBM Cloud Kubernetes cluster:
 {: #install-sb-iks}
@@ -165,27 +198,41 @@ Security Broker on ROKS:
 
 1.  Deploy the Data Security Broker Shield by executing the following
     command:
+    
+    ```sh
+    kubectl apply security-broker-shield-svc.yaml -n \<namespace\>
+    kubectl create -f security-broker-shield.yaml -n \<namespace\>
+    ```
+    {: codeblock}
 
-kubectl apply security-broker-shield-svc.yaml -n \<namespace\>
-kubectl create -f security-broker-shield.yaml -n \<namespace\>
 
 2.  Verify that the pods are launched and are in **Running** state. To
     view the status of the pods in the namespace, execute the following
     command:
 
-kubectl get pods -n \<namespace\>**
+    ```sh
+    kubectl get pods -n \<namespace\>
+    ```
+    {: codeblock}
+
 For example, if you specify **kubectl get pods -n default**, the
 following output is displayed which shows the status of the pods in
 the default namespace:
 
+```sh
 NAME READY STATUS RESTARTS AGE
 
 Security-broker-shield-app1-8dbc7b859-xhlnf 1/1 Running 0 9d
+```
+{: codeblock}
 
 3.  To view and confirm the details of each pod in the namespace,
     execute the following command:
 
-kubectl describe pod \<pod name\>
+    ```sh
+    kubectl describe pod \<pod name\>
+    ```
+    {: codeblock}
 
 ### Installing Security Broker Manager in IKS:
 {: #install-sb-manager-iks}
@@ -198,16 +245,23 @@ Data Security Broker Manager on IKS:
     **security-broker-pvc.yaml** file. Create the PVC by executing the
     following command:
 
-kubectl create -f security-broker-pvc.yaml -n \<namespace\>
+    ```sh
+    kubectl create -f security-broker-pvc.yaml -n \<namespace\>
+    ```
+    {: codeblock}
 
 To verify if the PVC is created successfully, execute the following
 command:
 
-kubectl get pvc -n \<namespace\>
+    ```sh
+    kubectl get pvc -n \<namespace\>
+    ```
+    {: codeblock}
 
 2.  Deploy the Data Security Broker Manager services by executing the following
     command:
 
+    ```sh
     kubectl apply -f security-broker -mongodb.yaml** **-n
     \<namespace\>
 
@@ -216,27 +270,39 @@ kubectl get pvc -n \<namespace\>
     kubectl apply -f security-broker -web.yaml -n \<namespace\>
 
     kubectl apply -f security-broker -nginx.yaml -n \<namespace\>
+    ```
+    {: codeblock}
 
 3.  To view the status of the pods in the namespace, execute the
     following command:
 
+    ```sh
     kubectl get pods -n \<namespace\>
+    ```
+    {: codeblock}
 
 For example, if you specify **kubectl get pods -n default**, the
 following output is displayed which shows the status of the pods in
 the default namespace:
 
+```sh
 NAME                                    READY STATUS RESTARTS AGE
 
 security-broker-mongodb-67768846f8-pgt24 1/1 Running 0 28d
 security-broker-nginx-746dc4688c-2xrms 1/1 Running 0 28d
 security-broker-manager-app1-8dbc7b859-xhlnf 1/1 Running 0 9d
 security-broker-web-775dc97fdb-j5mmr 1/1 Running 0 28d
+```
+{: codeblock}
 
 4.  To view and confirm the details of each pod in the namespace,
     execute the following command:
 
-kubectl describe pod \<pod name\>
+    ```sh
+    kubectl describe pod \<pod name\>
+    ```
+    {: codeblock}
+
 
 ### Accessing Security Broker Manager:
 {: #access-sb-manager}
@@ -246,15 +312,20 @@ To access the Data Security Broker Manager, perform the following operation:
 1.  Identify the external IP address of the Load Balancer with the
     following command.
 
+        ```sh
         kubectl get svc security-broker-nginx
+        ```
+        {: codeblock}
 
 The output of this command is displayed as shown in the example
 below:
 
+```sh
 NAME TYPE CLUSTER-IP EXTERNAL-IP PORT(S) AGE
 
-Security-broker-nginx LoadBalancer 1.1.1.1 **10.10.10.10** 43:31689/TCP
-18h
+Security-broker-nginx LoadBalancer 1.1.1.1 **10.10.10.10** 43:31689/TCP 18h
+```
+{: codeblock}
 
 2.  Open a Web browser window and enter the **Load Balancer External
     IP** preceded by **https://**.
