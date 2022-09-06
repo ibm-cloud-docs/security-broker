@@ -1,0 +1,55 @@
+toc:
+ properties:
+    subcollection: security-broker
+    service-name: security-broker
+    category: security
+    audience: service
+    href: /docs/security-broker
+    console-page: /catalog/services/security-broker
+    product-page: https://cloud.ibm.com/security-broker
+    path: security-broker
+    label: IBM Cloud Data Security Broker
+    version: 1
+    
+ entries: 
+  - navgroup: 
+      id: learn
+      topics:
+      - topicgroup:
+          label: Getting started
+          topics:
+          - sb_getting_started.md
+       
+      - topicgroup:
+          label: About the service
+          topics:
+          - sb_about.md
+          - sb_release-notes.md
+
+  - navgroup: 
+      id: howto
+      topics:
+      - install/sb_install.md
+      - tutorials/sb_data_encrypt.md
+      - tutorials/sb_encrypt_postgress.md
+      - tutorials/sb_db_privileges.md
+      - tutorials/sb_update.md
+      - tutorials/sb_uninstall.md        
+  
+  - navgroup:
+      id: reference
+      links:
+      - link: 
+          label: Blogs
+          href: https://www.ibm.com/cloud/blog
+     
+  - navgroup:
+      id: help
+      topics:
+      - sb_faqs.md
+      - topicgroup: 
+          label: Troubleshooting
+          topics:
+          - troubleshooting/sb_support.md
+          
+                    
