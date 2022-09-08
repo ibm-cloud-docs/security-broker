@@ -47,6 +47,7 @@ subcollection: security-broker
 If you no longer need to use IBM Cloud® Security Broker, you can delete
 the namespace to delete all the services, and the objects associated
 with the namespace.
+{: shortdesc}
 
 ## Uninstalling Data Security Broker in IKS:
 {: #unistall-sb-IKS}
@@ -105,5 +106,29 @@ Broker is installed\>
 kubectl get namespace
 ```
 {: codeblock}
+
+## Uninstalling Data Security Broker using HELM:
+
+1. List the HELM charts that is available in your system by executing the following command:
+
+```sh
+helm list
+```
+{: codeblock}
+
+2. Uninstall the Data Security Broker service using HELM by providing the name of the HELM chart, which is configured during the installation process:
+
+```sh
+helm uninstall <chart name>
+```
+{: codeblock}
+
+3. Verify if the service is uninstalled by checking if the corresponding HELM chart, which is used to install the Data Security Broker is deleted by listing all the HELM charts available in the system by executing the following command:
+
+```sh
+helm list
+```
+{: codeblock}
+
 
 

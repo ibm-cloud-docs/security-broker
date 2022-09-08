@@ -49,4 +49,5 @@ content-type: troubleshoot
 
 
 For help, you can search for information in the documentation or by asking questions through a forum. You can also open a support ticket. When you are using the forums to ask a question, tag your question so that it is seen by the Security Broker development team.
+{: shortdesc}
 

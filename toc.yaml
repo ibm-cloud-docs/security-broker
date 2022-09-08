@@ -29,7 +29,13 @@ toc:
   - navgroup: 
       id: howto
       topics:
-      - install/sb_install.md
+      - topicgroup:
+          label: Installing Data Security Broker
+          topics:
+          - install/sb_install_com.md
+                - install/sb_install_manifests.md
+                - install/sb_install_helm.md
+                - install/sb_install_ui.md
       - tutorials/sb_data_encrypt.md
       - tutorials/sb_encrypt_postgress.md
       - tutorials/sb_db_privileges.md

@@ -1,29 +1,19 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-09-06"
+lastupdated: "2021-09-01"
 
 keywords: install, ROKS, IKS, manifests, HELM
 
 subcollection: security-broker
 ---
 
-# Installing Data Security Broker
-{: #sb_install}
+# Installing Data Security Broker using Manifests
+{: #sb_install_manifests}
 
-You can install Data Security Broker in one of the following ways:
-
-1.  Using the manifests to install
-
-2.  Using the HELM chart
-
-3.  Using the Data Security Broker User Interface
-
-## Installing Data Security Broker through the Manifests:
-{: #install-sb-manifests}
-
-You can install Data Security Broker on an IBM Cloud Kubernetes cluster or an
-IBM Red Hat OpenShift Kubernetes cluster through the manifests.
+You can install Data Security Broker on an IBM Cloud Kubernetes cluster (IKS) or an
+IBM Red Hat OpenShift Kubernetes cluster (ROKS) through the manifests.
+{: shortdesc}
 
 ## Pre-requisites:
 {: #install-sb-pre-requisites}

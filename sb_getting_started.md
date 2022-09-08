@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-09-01"
+lastupdated: "2022-09-08"
 
 keywords: support, getting started, data protection, data threats
 
@@ -48,7 +48,7 @@ IBM Cloud Data Security Broker is a complete data protection solution
 that secures sensitive data in enterprise databases by fully integrating
 with key management and databases to provide application-level
 encryption.
-{:shortdesc: .shortdesc}
+{: shortdesc}
 
 Data Security Broker Data Protection Services consists of two main
 components, namely:

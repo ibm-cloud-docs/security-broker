@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2021-07-22"
+lastupdated: "2022-09-08"
 
 keywords: about the service, deploy policy, deployment plans, encryption technology, encryption modes, data protection modes
 
@@ -19,7 +19,7 @@ Broker makes it easy and feasible to provide enhanced data protection
 for sensitive data in public or private cloud environments. The solution
 includes dynamic management of customer-owned keys and the ability to
 protect databases at a column-level granularity.
-{:shortdesc: .shortdesc}
+{: shortdesc}
 
 ## How it works
 {: #sb-how-it-works}

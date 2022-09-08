@@ -13,6 +13,7 @@ subcollection: security-broker
 
 After IBM Cloud® Data Security Broker is installed on your cluster, you
 can update it at any time.
+{: shortdesc}
 
 ## Upgrading Data Security Broker in ROKS
 {: #upgrade-sb-ROKS}
