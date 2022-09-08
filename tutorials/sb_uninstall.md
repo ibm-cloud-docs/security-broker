@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-09-01"
+lastupdated: "2022-09-08"
 
 keywords: uninstall, delete, helm, configuration, tls certificate, docker config secret, environment variable, regions, cluster, container, app security, memory encryption, data in use
 
@@ -108,6 +108,7 @@ kubectl get namespace
 {: codeblock}
 
 ## Uninstalling Data Security Broker using HELM:
+{: #sb_uninstall_helm}
 
 1. List the HELM charts that is available in your system by executing the following command:
 

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2021-09-01"
+lastupdated: "2022-09-08"
 
 keywords: database, admin, priveleges, users, features, operations
 
@@ -28,28 +28,41 @@ on your database for Security Broker Shield:
 
 To create a user, execute the following command:
 
-1.  **create** **user** \'\<security_broker_user\>\'@\'%\';
 
-2.  **set** **password** **for** \'\< security_broker_user\>\'
-    = **password**(\'\<password\>\');
+1.  ```sh
+create user '<security_broker_user>'@'%'
+```
+{: codeblock}  
+
+2.  ```sh
+set password for '<security_broker_user>' = password('<password>')
+```
+{: codeblock}   
+**
 
 To provide the required admin permissions, execute the following
 command:
 
-1.  **GRANT** **USAGE** **ON** \*.\* **TO** \'\<security_broker_user\>\'@\'%\';
+1.  ```sh
+GRANT USAGE ON *.* TO '<security_broker_user>'@'%'
+```
+{: codeblock} 
 
-2.  **GRANT** **ALL** **PRIVILEGES** **ON** shadow_information_schema.\* **TO** \'\<security_broker_user\>\'@\'%\';
+2.  ```sh
+GRANT ALL PRIVILEGES ON shadow_information_schema.* TO '<security_broker_user>'@'%'
+```
+{: codeblock}
 
-3.  **GRANT** **ALL** **PRIVILEGES** **ON** \<target
-    database\>.\* **TO** \'\<security_broker_user\>\'@\'%\' **WITH** **GRANT** **OPTION**;\
-    \
-    Repeat **step 3** for each database that you wish to encrypt.
+3.  ```sh
+GRANT ALL PRIVILEGES ON <target database>.* TO '<security_broker_user>'@'%' WITH GRANT OPTION
+```
+{: codeblock}
 
-After completing the above steps, Security Broker Shield contains the
-necessary permissions to perform the encryption and migration
-operation.
+4.  Repeat Step 3 for each database that you wish to encrypt.
 
-## **Minimum required database privileges**
+After completing the above steps, the Data Security Broker Shield contains the necessary permissions to perform the encryption and migration operation.
+
+## Minimum required database privileges
 {: #sb-db-min-req-priveleges}
 
 You can view the minimum required grants for users on your database who
@@ -58,18 +71,29 @@ following command with the admin user credentials.
 
 From MySQL, execute the following command:
 
-1.  **GRANT** **USAGE** **ON** \*.\* **TO** \'\<username\>\'@\'%\';
+1.  ```sh
+GRANT USAGE ON *.* TO '<username>'@'%'
+```
+{: codeblock}
 
-2.  **GRANT ALL PRIVILEGES
-    ON shadow_information_schema.\* TO \'\<username\>\'@\'%\';**
+2.  ```sh
+GRANT ALL PRIVILEGES ON shadow_information_schema.* TO '<username>'@'%'
+```
+{: codeblock}
 
-3.  **GRANT SELECT ON \<target database\>.\<target table\> TO
-    \'\<username\>\'@\'%\';**
+3.  ```sh
+GRANT SELECT ON <target_database>.<target table> TO '<username>'@'%'
+```
+{: codeblock}
 
 4.  Repeat step 3 for each table that you wish to give access to the
     user. When completed, you may connect to the Security Broker Shield
     proxy with this user.
 
 5.  To confirm the user privileges, execute the following command:
-    **show grants;**
+```sh
+show grants
+```
+{: codeblock}
+
 
