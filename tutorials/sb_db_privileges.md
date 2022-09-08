@@ -29,32 +29,31 @@ on your database for Security Broker Shield:
 To create a user, execute the following command:
 
 
-1.  ```sh
+```sh
 create user '<security_broker_user>'@'%'
 ```
 {: codeblock}  
 
-2.  ```sh
+```sh
 set password for '<security_broker_user>' = password('<password>')
 ```
 {: codeblock}   
-**
 
 To provide the required admin permissions, execute the following
 command:
 
-1.  ```sh
+```sh
 GRANT USAGE ON *.* TO '<security_broker_user>'@'%'
 ```
 {: codeblock} 
 
-2.  ```sh
+```sh
 GRANT ALL PRIVILEGES ON shadow_information_schema.* TO '<security_broker_user>'@'%'
 ```
 {: codeblock}
 
-3.  ```sh
-GRANT ALL PRIVILEGES ON <target database>.* TO '<security_broker_user>'@'%' WITH GRANT OPTION
+```sh
+GRANT ALL PRIVILEGES ON **target database**.* TO '<security_broker_user>'@'%' WITH GRANT OPTION
 ```
 {: codeblock}
 
@@ -71,26 +70,22 @@ following command with the admin user credentials.
 
 From MySQL, execute the following command:
 
-1.  ```sh
+```sh
 GRANT USAGE ON *.* TO '<username>'@'%'
 ```
 {: codeblock}
 
-2.  ```sh
-GRANT ALL PRIVILEGES ON shadow_information_schema.* TO '<username>'@'%'
+```sh
+GRANT ALL PRIVILEGES ON shadow_information_schema.* TO '**username**'@'%'
 ```
 {: codeblock}
 
-3.  ```sh
+```sh
 GRANT SELECT ON <target_database>.<target table> TO '<username>'@'%'
 ```
 {: codeblock}
 
-4.  Repeat step 3 for each table that you wish to give access to the
-    user. When completed, you may connect to the Security Broker Shield
-    proxy with this user.
-
-5.  To confirm the user privileges, execute the following command:
+To confirm the user privileges, execute the following command:
 ```sh
 show grants
 ```
