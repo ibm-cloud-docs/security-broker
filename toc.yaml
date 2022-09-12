@@ -36,7 +36,6 @@ toc:
                 - install/sb_install_manifests.md
                 - install/sb_install_helm.md
                 - install/sb_install_ui.md
-      - tutorials/sb_data_encrypt.md
       - tutorials/sb_encrypt_postgress.md
       - tutorials/sb_db_privileges.md
       - tutorials/sb_update.md

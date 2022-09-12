@@ -8,7 +8,7 @@ keywords: data encryption, data identification, encrypt, migrate, key store, app
 subcollection: security-broker
 ---
 
-# Encrypting the data with Data Security Broker on a IBM Cloud PostgreSQL Database
+# Encrypting the data with Data Security Broker
 {: #sb_encrypt_postgress}
 
 ## Introduction:
