@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2021-09-01"
+lastupdated: "2022-09-12"
 
 keywords: install, ROKS, IKS, manifests, HELM
 
@@ -12,6 +12,5 @@ subcollection: security-broker
 {: #sb_install_ui}
 
 You can install Data Security Broker through UI.
-
 {: shortdesc}
 
