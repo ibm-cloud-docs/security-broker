@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-09-01"
+lastupdated: "2022-09-15"
 
 keywords: domain name, host name, https certificate, logger, smtp, settings
 
@@ -12,6 +12,7 @@ subcollection: security-broker
 {: #sb_settings}
 
 ## Overview:
+{: #sb_settings_overview}
 
 You can use the Settings page to change the basic system settings in the
 Data Security Broker Manager.
