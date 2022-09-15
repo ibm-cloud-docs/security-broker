@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2021-07-22"
+lastupdated: "2022-09-15"
 
 keywords: support, troubleshooting, data protection, data threats
 
@@ -43,7 +43,7 @@ content-type: troubleshoot
 {:release-note: data-hd-content-type='release-note'}
 
 
-# How do I get support for Security Broker?
+# How do I get support for Data Security Broker?
 {: #sb_support}
 {: troubleshoot}
 
