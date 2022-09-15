@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-09-12"
+lastupdated: "2022-09-15"
 
 keywords: about the service, deploy policy, deployment plans, encryption technology, encryption modes, data protection modes
 
@@ -24,7 +24,7 @@ protect databases at a column-level granularity.
 ## How it works
 {: #sb-how-it-works}
 
-Insert Arcitecture diagram
+![High level architectre of Data Security Broker Manager](images/architecture.svg){: caption="Figure 1. High level architectre of Data Security Broker Manager" caption-side="bottom"}
 
 The Data Security Broker as a Service supports data encryption by
 migrating the data from an existing SQL/NoSQL database into a secure
