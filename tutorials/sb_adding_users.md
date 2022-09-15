@@ -1,14 +1,14 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2021-09-01"
+lastupdated: "2022-09-15"
 
 keywords: database, admin, priveleges, users, features, operations
 
 subcollection: security-broker
 ---
 
-# Adding users in Data Security Broker Manager**
+# Adding users in Data Security Broker Manager
 {: #sb_adding_users}
 
 ## Overview
