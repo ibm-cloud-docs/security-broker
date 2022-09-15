@@ -1,9 +1,9 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-09-15"
+lastupdated: "2021-09-01"
 
-keywords: database, admin, priveleges, users, features, operations
+keywords: users, admin, priveleges, profiles, Data Security Broker Manager, SMTP
 
 subcollection: security-broker
 ---
