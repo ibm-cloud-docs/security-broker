@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-09-12"
+lastupdated: "2022-09-20"
 
 keywords: database, admin, priveleges, users, features, operations
 
@@ -27,7 +27,6 @@ Use the SQL client to provide the required access for the newly created
 on your database for Security Broker Shield:
 
 To create a user, execute the following command:
-
 
 ```sh
 create user '<security_broker_user>'@'%'
