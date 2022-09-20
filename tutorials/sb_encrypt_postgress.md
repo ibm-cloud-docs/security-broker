@@ -104,8 +104,8 @@ Protection Policies, Encryption Modes, and Masking Modes.**
 
 Need to insert screenshot
 
-#### **To assign or change a Default Data Protection Policy, do the following:**
-
+## **To assign or change a Default Data Protection Policy, do the following:**
+{: #sb_encrypt_steps}
 
 1.  In Data Security Broker Manager, click the **Application** icon in
     the left menu bar.
