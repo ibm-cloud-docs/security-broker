@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2021-09-01"
+lastupdated: "2022-09-21"
 
 keywords: database, admin, priveleges, users, features, operations
 
@@ -19,7 +19,6 @@ an IBM Cloud PostgreSQL Database:
 
 Insert screen shot when ready
 
-<a name="step2">
 2.  Before you can enroll your applications, add databases, and enable
     encryption, you must enroll your Keystore, so that the Security
     Broker Manager can access and create data encryption keys (DEKs)
@@ -47,9 +46,8 @@ vendor. Each of the following keystores has a specific set of required
 credentials and parameters.
 
 d)  Click **Add Keystore** to create a Keystore.
-</a>
+{: #step2}
 
-<a name="step3">
 3.  To add and connect to a data store, complete the following steps:
 
 a)  Select **Databases** from the left navigation and click **Add
@@ -85,7 +83,7 @@ g)  Click **Add Database** to complete enrolment. The new database
 
 h)  Create the data that is required for encryption or decryption as
     tables in the new database that is created.
-    </a>
+    {: #step3}
 
 4.  An application is the framework that links Security Broker Manager,
     databases, and Security Broker Shield and instructs the Security

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2021-09-01"
+lastupdated: "2022-09-21"
 
 keywords: database, admin, priveleges, users, features, operations
 
@@ -26,7 +26,7 @@ apply record or column level encryption rules.
 
 Ensure that the Data Security Broker Manager and Data Security Broker
 Shield service is installed and ready to use. For more information on
-creating Data Security Broker Shield service, see [Installing Data Security Broker Shield](/docs/<install>?topic=<sb_install_com>)
+creating Data Security Broker Shield service, see [Installing Data Security Broker Shield] (/docs/<install>?topic=<sb_install_com>)
 
 ## Procedure:
 {: #sb_encrypt_procedure}
@@ -38,12 +38,12 @@ Protection policy and performing the steps below:
 -   Before you can enroll your applications, add databases, and enable
     encryption, you must enroll your Keystore, so that the Security
     Broker Manager can access and create data encryption keys (DEKs)
-    that is used to protect your data. For more information, see [Adding a Keystore in Data Security Broker Manager](/docs/<tutorials>?topic=<sb_encrypt_data#step2>) and [Connect to a Datastore in Data Security Broker Manager](/docs/<tutorials>?topic=<sb_encrypt_data#step3>)
+    that is used to protect your data. For more information, see [Adding a Keystore in Data Security Broker Manager] (/docs/<tutorials>?topic=<sb_encrypt_data#step2>) and [Connect to a Datastore in Data Security Broker Manager] (/docs/<tutorials>?topic=<sb_encrypt_data#step3>)
 
 -   Enroll an Application in Data Security Broker Manager. For more
-    information, see [Enrolling an application in Data Security Broker Manager](/docs/<tutorials>?topic=<sb_enroll_app>)
+    information, see [Enrolling an application in Data Security Broker Manager] (/docs/<tutorials>?topic=<sb_enroll_app>)
 
 -   Assign and customize a Default Data Protection Policy. For more
-    information, see [Create, assign, and Customize Data Protection Policy in Data Security Broker Manager](/docs/<tutorials>?topic=<sb_data_policy>)
+    information, see [Create, assign, and Customize Data Protection Policy in Data Security Broker Manager] (/docs/<tutorials>?topic=<sb_data_policy>)
 
--   Encrypt and Decrypt Data. For more information, see [Encrypting the data with Security Broker on an IBM Cloud PostgreSQL Database](/docs/<tutorials>?topic=<sb_encrypt_data>)
+-   Encrypt and Decrypt Data. For more information, see [Encrypting the data with Security Broker on an IBM Cloud PostgreSQL Database] (/docs/<tutorials>?topic=<sb_encrypt_data>)
