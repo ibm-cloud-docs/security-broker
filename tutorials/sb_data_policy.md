@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2021-09-01"
+lastupdated: "2022-09-21"
 
 keywords: database, admin, priveleges, users, features, operations
 
@@ -50,8 +50,7 @@ screenshot required
 
 5.  Perform one of the following operations:
     - Accept the default policy or select a different default policy.
-    - Specify a new default policy and add an encryption or masking
-    mode.
+    - Specify a new default policy and add an encryption or masking mode.
 
 **Note**: Default Policy rules are **overwritten** by individual mode
 selections. However, because the Default FPE policy contains only
@@ -71,10 +70,8 @@ For example: 
 7.  Click **REVIEW** at the bottom of the left panel to review your
     selections.
 
-8.  Review your policy and select a **Migration Plan**
-    - **Save**: Defines a policy for future migration.
-    - **Deploy**: Establishes a data schema for an environment that was
-    not processed through Data Security Broker migration and the data
-    type conversion but does not migrate the data.
-    - **Deploy and Migrate**: Defines a policy *and* migrates the
+8.  Review your policy and select a **Migration Plan**. The migration plans are listed below:
+    **Save**: Defines a policy for future migration.
+    **Deploy**: Establishes a data schema for an environment that was not processed through Data Security Broker migration and the data type conversion but does not migrate the data.
+    **Deploy and Migrate**: Defines a policy *and* migrates the
     existing data in the data store.

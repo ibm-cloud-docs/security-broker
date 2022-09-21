@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2021-09-01"
+lastupdated: "2022-09-21"
 
 keywords: database, admin, priveleges, users, features, operations, application
 
@@ -30,12 +30,10 @@ following steps:
     respective fields.
 
 4.  Perform the following tasks:
-    - Choose the Security Broker **Shield** from the drop-down list.
+    - Choose the Security Broker Shield from the drop-down list.
     - Select a **Data Store** for encryption.
-    - Select the **Keystore** to be used as a source for data
-    encryption keys.  
-    - Leave Workload Capture **Off**, unless profiling an
-    application.  
-    - Specify an **Encryption Method**, Column Level or Row Level. 
+    - Select the **Keystore** to be used as a source for data encryption keys.  
+    - Leave Workload Capture Off, unless profiling an application.  
+    - Specify an **Encryption Method** as Column Level or Row Level. 
 
 5.  Click **Enroll Application**.
