@@ -53,14 +53,14 @@ toc:
       - tutorials/sb_adding_users.md
       - tutorials/sb_settings.md
       - tutorials/sb_db_privileges.md
-        - topicgroup:
-            label: Upgrading Data Security Broker
-            topics:
-            - tutorials/sb_update.md
-        - topicgroup:
-            label: Uninstalling Data Security Broker
-            topics:
-            - tutorials/sb_uninstall.md
+      - topicgroup:
+          label: Upgrading Data Security Broker
+          topics:
+          - tutorials/sb_update.md
+      - topicgroup:
+          label: Uninstalling Data Security Broker
+          topics:
+          - tutorials/sb_uninstall.md
                 
   - navgroup:
       id: reference
