@@ -8,7 +8,7 @@ keywords: install, ROKS, IKS, manifests, HELM
 subcollection: security-broker
 ---
 
-# Installing Data Security Broker through the User Interface
+# Installing Data Security Broker using the HELM chart in the User Interface (UI)
 {: #sb_install_ui}
 
 ## Overview:

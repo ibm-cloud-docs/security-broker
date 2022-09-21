@@ -8,7 +8,7 @@ keywords: install, ROKS, IKS, manifests, HELM
 subcollection: security-broker
 ---
 
-# Installing Data Security Broker using HELM from CLI
+# Installing Data Security Broker using the HELM chart in CLI
 {: #sb_install_helm}
 
 To work with Data Security Broker, you can use HELM to install the
