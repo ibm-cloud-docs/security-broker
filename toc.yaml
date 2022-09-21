@@ -29,9 +29,9 @@ toc:
   - navgroup: 
       id: howto
     - topicgroup:
-    label: Installing Data Security Broker
-    topics:
-    - install/sb_install_com.md    
+        label: Installing Data Security Broker
+        topics:
+        - install/sb_install_com.md    
     - topicgroup:
         label: Ways to install Data Security Broker
         topics:
