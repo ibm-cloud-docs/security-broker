@@ -39,10 +39,7 @@ the IBM Cloud, complete the following steps:
 1.  Log in to your IBM Cloud account. After you log in, the IBM Cloud UI
     opens.
 
-2.  Go to the menu icon
-    ![Menu icon](../images/menu_icon.svg){width="0.2611111111111111in"
-    height="0.38263888888888886in"}{: caption="Menu icon"} > **Observability** to access the
-    **Observability** dashboard.
+2.  Go to the Menu icon in the left navigation and click **Observability** to access the **Observability** dashboard.
 
 3.  Click **Logging**, then click **Options** > **Edit Platform**.
 
@@ -61,10 +58,7 @@ Analysis Web UI. To debug the logs, follow the steps below:
 1.  Log in to your IBM Cloud account. After you log in, the IBM Cloud UI
     opens.
 
-2.  Go to the menu icon
-    ![Menu icon](../images/menu_icon.svg){width="0.2611111111111111in"
-    height="0.38263888888888886in"}{: caption="Menu icon"} > **Observability** to access the
-    **Observability** dashboard.
+2.  Go to the Menu icon in the left navigation and click **Observability** to access the **Observability** dashboard.
 
 3.  Click **Logging** and select the log instance which you have created
     for the {{site.data.keyword.security_broker_short}}.
@@ -73,8 +67,7 @@ Analysis Web UI. To debug the logs, follow the steps below:
     You can view the detailed log summary in the dashboard as shown
     below:
 
-![Logs](../images/logs_dsb.svg){width="6.261111111111111in"
-height="2.182638888888889in"}{: caption="Logs Dashboard in {{site.data.keyword.security_broker_short}}"}
+![Logs](../images/logs_dsb.svg){: caption="Logs Dashboard in {{site.data.keyword.security_broker_short}}" caption-side="bottom"}
 
 5.  You can start debugging the logs, which are displayed with a
     predefined format. You can also filter logs and modify search
