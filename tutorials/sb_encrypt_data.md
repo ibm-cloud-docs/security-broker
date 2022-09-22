@@ -1,15 +1,15 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2021-09-01"
+lastupdated: "2022-09-22"
 
 keywords: database, admin, priveleges, users, features, operations
 
 subcollection: security-broker
 ---
 
-# Encrypting the data with Security Broker on an IBM Cloud PostgreSQL Database
-{: #sb_encrypt_ibm_postgress}
+# Encrypting the data with {{site.data.keyword.security_broker_short}} on an IBM Cloud PostgreSQL Database
+{: #sb_encrypt_data}
 
 Complete the following steps to encrypt the data with Security Broker on
 an IBM Cloud PostgreSQL Database:
@@ -19,7 +19,9 @@ an IBM Cloud PostgreSQL Database:
 
 Insert screen shot when ready
 
-2.  Before you can enroll your applications, add databases, and enable
+##  Adding Keystore in {{site.data.keyword.security_broker_short}} Manager
+
+    Before you can enroll your applications, add databases, and enable
     encryption, you must enroll your Keystore, so that the Security
     Broker Manager can access and create data encryption keys (DEKs)
     that is used to protect your data. Follow the steps below to enroll
@@ -46,9 +48,10 @@ vendor. Each of the following keystores has a specific set of required
 credentials and parameters.
 
 d)  Click **Add Keystore** to create a Keystore.
-{: #step2}
 
-3.  To add and connect to a data store, complete the following steps:
+## Connecting to a Datastore
+
+To add and connect to a data store, complete the following steps:
 
 a)  Select **Databases** from the left navigation and click **Add
     Database +** to add a data store.
@@ -83,9 +86,8 @@ g)  Click **Add Database** to complete enrolment. The new database
 
 h)  Create the data that is required for encryption or decryption as
     tables in the new database that is created.
-    {: #step3}
-
-4.  An application is the framework that links Security Broker Manager,
+    
+2.  An application is the framework that links Security Broker Manager,
     databases, and Security Broker Shield and instructs the Security
     Broker Shield to encrypt and decrypt data. Complete the steps below
     for enrolling an application in Security Broker Manager:
@@ -118,14 +120,14 @@ encryption is applied to all the required records in the table.
 g)  Click **Enroll Application**.
 
 
-5.  Click on an application and select the drop down which is present in
+3.  Click on an application and select the drop down which is present in
     the **Migration Details** field in the right side and click
     **Encrypt**.
 
 Insert screen shot when ready
 
 
-6.  Select the Database and the table where you have the data created
+4.  Select the Database and the table where you have the data created
     and select the **Column** which needs to be encrypted. Choose the
     **Data Protection** policy, **Encryption mode**, and **masking
     mode** for the encryption process and click **Review.** For more
@@ -138,7 +140,7 @@ Insert screen shot when ready
 Insert screen shot when ready
 
 
-7.  Choose **Deploy Policy & Migrate Data** under the **Deployment
+5.  Choose **Deploy Policy & Migrate Data** under the **Deployment
     Plan** option. There are three options that you can choose to
     implement your data encryption policy. For more information on
     Deployment plans, see **Deployment Plans in IBM Cloud Data Security
@@ -147,18 +149,18 @@ Insert screen shot when ready
     service IP address in the **Migration Shield** field and click
     **Save** to start the encryption process.
 
-8.  The status of the application shows **Migrating** when the
+6.  The status of the application shows **Migrating** when the
     encryption process starts.
 
-9.  Once the encryption is complete, the status is changed to
+7.  Once the encryption is complete, the status is changed to
     **Protected**. You can view more information by clicking **Migration
     Details** in the **Applications** sidebar.
 
 Insert screen shot when ready
 
 
-**Note**: If there is new data which gets inserted in the database, by
-default, the data is encrypted by using the default data encryption
+**Note**: If there is new data which gets inserted in the database, by default, the data is encrypted by using the default data encryption
 policy that is being selected by the user.
+
 
 
