@@ -8,7 +8,7 @@ keywords: about the service, deploy policy, deployment plans, encryption technol
 subcollection: security-broker
 ---
 
-# About the service
+# About the service: Data Security Broker
 {: #sb_about}
 
 Data Security Broker is a solution that makes data breaches irrelevant
