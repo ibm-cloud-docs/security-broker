@@ -41,7 +41,7 @@ Protection policy and performing the steps below:
     that is used to protect your data. For more information, see [Adding a Keystore in {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker/tutorials?topic=sb_encrypt_data#step2) and [Connect to a Datastore in {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker/tutorials?topic=sb_encrypt_data#step3).
 
 -   Enroll an Application in {{site.data.keyword.security_broker_short}} Manager. For more
-    information, see [Enrolling an application in {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker/tutorials?topic=sb_enroll_app).
+    information, see [Enrolling an application in {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_enroll_app).
 
 -   Assign and customize a Default Data Protection Policy. For more
     information, see [Create, assign, and Customize Data Protection Policy in {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker/tutorials?topic=sb_data_policy).

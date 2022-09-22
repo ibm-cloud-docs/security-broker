@@ -48,9 +48,8 @@ installation:
 ## Install {{site.data.keyword.security_broker_short}} on an IBM Red Hat OpenShift Kubernetes cluster:
 {: #install-sb-ROKS}
 
-[Red Hat®
-OpenShift®](https://www.redhat.com/en/technologies/cloud-computing/openshift) on [IBM
-Cloud](https://www.ibm.com/cloud) is a fully managed OpenShift service,
+[Red Hat OpenShift®](https://www.redhat.com/en/technologies/cloud-computing/openshift) on [IBM
+Cloud®](https://www.ibm.com/cloud) is a fully managed OpenShift service,
 an enterprise-level [Kubernetes](https://kubernetes.io/) container
 platform that enables a cloud-like experience wherever it is
 deployed. For more information on Red Hat OpenShift Container platform,
@@ -321,6 +320,6 @@ Security-broker-nginx LoadBalancer 1.1.1.1 **10.10.10.10** 43:31689/TCP 18h
     IP** preceded by **https://**.
 
 In the above example, the web browser address to access the Data Security
-Broker Manager would be **https://10.10.10.10**.
+Broker Manager would be https://10.10.10.10.
 
 

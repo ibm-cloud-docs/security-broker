@@ -22,11 +22,9 @@ Insert screen shot when ready
 ##  Adding Keystore in {{site.data.keyword.security_broker_short}} Manager
 {: #sb_encrypt_data_add_keystore}
 
-    Before you can enroll your applications, add databases, and enable
-    encryption, you must enroll your Keystore, so that the Security
-    Broker Manager can access and create data encryption keys (DEKs)
-    that is used to protect your data. Follow the steps below to enroll
-    a Keystore that you can use with Security Broker Shields and
+    Note: Before you can enroll your applications, add databases, and enable encryption, you must enroll your Keystore, so that the {{site.data.keyword.security_broker_short}} Manager can access and create data encryption keys (DEKs) that is used to protect your data. 
+    
+    Follow the steps below to enroll a Keystore that you can use with {{site.data.keyword.security_broker_short}} Shields and
     databases.
 
 a)  Select **Keystores** from the left navigation and click
