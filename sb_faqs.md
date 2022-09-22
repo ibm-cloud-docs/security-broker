@@ -44,7 +44,7 @@ subcollection: security-broker
 # Frequently asked questions (FAQ)
 {: #sb_faqs}
 
-This FAQ provides answers to common questions about the Security Broker service.
+This FAQ provides answers to common questions about the {{site.data.keyword.security_broker_short}} service.
 {: shortdesc}
 
 

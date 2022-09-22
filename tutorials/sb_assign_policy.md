@@ -1,14 +1,14 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2021-09-01"
+lastupdated: "2022-09-22"
 
 keywords: database, admin, priveleges, users, features, operations
 
 subcollection: security-broker
 ---
 
-# Assigning or changing a Default Data Protection Policy
+# Assigning or changing a Default Data Protection Policy:
 {: #sb_assign_policy}
 
 **Overview:**
