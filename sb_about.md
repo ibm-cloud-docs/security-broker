@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-09-21"
+lastupdated: "2022-09-22"
 
 keywords: about the service, deploy policy, deployment plans, encryption technology, encryption modes, data protection modes
 
@@ -140,10 +140,10 @@ is encrypted as well.
 ## Key Benefits of Data Security Broker:
 {: #sb-key-benefits}
 
-- Secure database content throughout the encryption process\
-- Protect the data with column-level granularity\
-- Easy key management\
-- Extensive monitoring and audit capability\
+- Secure database content throughout the encryption process
+- Protect the data with column-level granularity
+- Easy key management
+- Extensive monitoring and audit capability
 - Leverage cloud infrastructure without compromising security
 
 
