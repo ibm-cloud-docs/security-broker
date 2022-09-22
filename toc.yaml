@@ -50,7 +50,7 @@ toc:
           - tutorials/sb_assign_policy.md
           - tutorials/sb_encrypt_data.md
       - topicgroup:
-          label: Adding users, Modifying Settings and Assigning Database Privilegest in Data Security Broker
+          label: Adding users, Modifying Settings, and Assigning Database Privilegest in Data Security Broker
           topics:
           - tutorials/sb_adding_users.md
           - tutorials/sb_settings.md
@@ -58,7 +58,7 @@ toc:
       - topicgroup:
           label: Logging and Debugging
           topics:
-          - tutorials/sb_logging.md        
+          - tutorials/sb_logging.md
       - topicgroup:
           label: Upgrading Data Security Broker
           topics:
