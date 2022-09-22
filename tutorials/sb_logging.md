@@ -41,7 +41,7 @@ the IBM Cloud, complete the following steps:
 
 2.  Go to the menu icon
     ![Menu icon](../images/menu_icon.svg){width="0.2611111111111111in"
-    height="0.38263888888888886in"} > **Observability** to access the
+    height="0.38263888888888886in"}{: caption="Menu icon"} > **Observability** to access the
     **Observability** dashboard.
 
 3.  Click **Logging**, then click **Options** > **Edit Platform**.
@@ -63,7 +63,7 @@ Analysis Web UI. To debug the logs, follow the steps below:
 
 2.  Go to the menu icon
     ![Menu icon](../images/menu_icon.svg){width="0.2611111111111111in"
-    height="0.38263888888888886in"} > **Observability** to access the
+    height="0.38263888888888886in"}{: caption="Menu icon"} > **Observability** to access the
     **Observability** dashboard.
 
 3.  Click **Logging** and select the log instance which you have created
@@ -74,7 +74,7 @@ Analysis Web UI. To debug the logs, follow the steps below:
     below:
 
 ![Logs](../images/logs_dsb.svg){width="6.261111111111111in"
-height="2.182638888888889in"}
+height="2.182638888888889in"}{: caption="Logs Dashboard in {{site.data.keyword.security_broker_short}}"}
 
 5.  You can start debugging the logs, which are displayed with a
     predefined format. You can also filter logs and modify search
