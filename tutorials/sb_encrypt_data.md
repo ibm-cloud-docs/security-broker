@@ -20,6 +20,7 @@ an IBM Cloud PostgreSQL Database:
 Insert screen shot when ready
 
 ##  Adding Keystore in {{site.data.keyword.security_broker_short}} Manager
+{: #sb_encrypt_data_add_keystore}
 
     Before you can enroll your applications, add databases, and enable
     encryption, you must enroll your Keystore, so that the Security
@@ -50,6 +51,7 @@ credentials and parameters.
 d)  Click **Add Keystore** to create a Keystore.
 
 ## Connecting to a Datastore
+{: #sb_encrypt_data_connect_datastore}
 
 To add and connect to a data store, complete the following steps:
 

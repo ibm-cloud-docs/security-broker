@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2021-09-01"
+lastupdated: "2022-09-22"
 
 keywords: logging, debugging, platform, dashboard, observability
 
@@ -40,7 +40,7 @@ the IBM Cloud, complete the following steps:
     opens.
 
 2.  Go to the menu icon
-    ![](../images/menu_icon.svg){width="0.2611111111111111in"
+    ![Menu icon](../images/menu_icon.svg){width="0.2611111111111111in"
     height="0.38263888888888886in"} > **Observability** to access the
     **Observability** dashboard.
 
@@ -62,7 +62,7 @@ Analysis Web UI. To debug the logs, follow the steps below:
     opens.
 
 2.  Go to the menu icon
-    ![](../images/menu_icon.svg){width="0.2611111111111111in"
+    ![Menu icon](../images/menu_icon.svg){width="0.2611111111111111in"
     height="0.38263888888888886in"} > **Observability** to access the
     **Observability** dashboard.
 
@@ -73,7 +73,7 @@ Analysis Web UI. To debug the logs, follow the steps below:
     You can view the detailed log summary in the dashboard as shown
     below:
 
-![](../images/logs_dsb.svg){width="6.261111111111111in"
+![Logs](../images/logs_dsb.svg){width="6.261111111111111in"
 height="2.182638888888889in"}
 
 5.  You can start debugging the logs, which are displayed with a
