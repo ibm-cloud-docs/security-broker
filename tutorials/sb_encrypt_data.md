@@ -8,7 +8,7 @@ keywords: database, admin, priveleges, users, features, operations
 subcollection: security-broker
 ---
 
-# Encrypting the data with {{site.data.keyword.security_broker_short}} on an IBM Cloud PostgreSQL Database
+# Encrypting the data with Security Broker on an IBM Cloud PostgreSQL Database
 {: #sb_encrypt_ibm_postgress}
 
 Complete the following steps to encrypt the data with Security Broker on

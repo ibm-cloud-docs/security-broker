@@ -65,10 +65,10 @@ Data Security Broker Manager:
 ## Logger:
 {: #sb_logger}
 
-Under **Settings** page, you can use the **Logger** section to enable
+Under **Settings** page, you can use the **Logging** section to enable
 logging for the Data Security Broker Manager. Click **Logger +** to
 configure the logging details. Enter a valid logger name and select the
-log level. If you wish to log all the errors, select **ERROR** as the
+log level. For example, if you wish to log all the errors, select **ERROR** as the
 log level as shown below:
 
 ![Logger](../images/logger_settings.svg){: caption="Figure 3. Logger" caption-side="bottom"}
