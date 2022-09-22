@@ -3,16 +3,16 @@ copyright:
   years: 2022, 2022
 lastupdated: "2022-09-22"
 
-keywords: users, admin, priveleges, profiles, {{site.data.keyword.security_broker_short}} Manager, SMTP
+keywords: users, admin, priveleges, profiles, Data Security Broker Manager, SMTP
 
 subcollection: security-broker
 ---
 
-# Troubleshooting scenarios for IBM Cloud {{site.data.keyword.security_broker_short}}
+# Troubleshooting scenarios for IBM Cloud Data Security Broker
 {: #sb_support}
 
 This section describes the common error scenarios and troubleshooting
-steps for {{site.data.keyword.security_broker_short}}.
+steps for Data Security Broker.
 
 You can find troubleshooting tips on the following sections:
 
@@ -30,14 +30,14 @@ You can find troubleshooting tips on the following sections:
 {: #sb_init}
 
 If you get error messages or warnings during the initialization or the
-setup of {{site.data.keyword.security_broker_short}}, check for the following troubleshooting
+setup of Data Security Broker, check for the following troubleshooting
 tips:
 
 1.  Untrusted certificate browser warning: HTTPS certificate has not
-    been updated: This warning occurs when the {{site.data.keyword.security_broker_short}}
+    been updated: This warning occurs when the Data Security Broker
     Manager's pre-scanned certificate does not match the hostname of the
     Manager server. Upload an HTTPS certificate in the **Settings** page
-    of the {{site.data.keyword.security_broker_short}} Manager.
+    of the Data Security Broker Manager.
 
 ## Database enrollment:
 {: #sb_database}
@@ -79,12 +79,12 @@ check for the below scenarios:
     host endpoint precisely in the appropriate field, with no extra
     characters or spaces.
 
-2.  Shield host is already in use by {{site.data.keyword.security_broker_short}}: Multiple
+2.  Shield host is already in use by Data Security Broker: Multiple
     Shields may be hosted on the same endpoint, but only if the port
     number is unique. If the same port number is reused, the connection
     fails.
 
-3.  Public IPv4 address is configured: If all {{site.data.keyword.security_broker_short}}
+3.  Public IPv4 address is configured: If all Data Security Broker
     resources are running in the same environment, then it is
     recommended to use the private IP address. Alternatively, submit the
     DNS endpoint for the instance.
@@ -149,7 +149,7 @@ check for the following troubleshooting tips:
     Encryption operations. Or, if no Shields are enrolled in the
     application, the migration option is disabled.
 
-If you are experiencing any other issues with the {{site.data.keyword.security_broker_short}},
+If you are experiencing any other issues with the Data Security Broker,
 go to the IBM Cloud [Support Center](https://cloud.ibm.com/unifiedsupport/supportcenter) and navigate
-to creating a case. Use the All products option to search for {{site.data.keyword.security_broker_full_notm}} to continue creating the case or to find more information about getting support.
+to creating a case. Use the All products option to search for IBM Cloud Data Security Broker to continue creating the case or to find more information about getting support.
 

@@ -8,26 +8,26 @@ keywords: upgrade, delete, helm, configuration, tls certificate, docker config s
 subcollection: security-broker
 ---
 
-# Upgrading {{site.data.keyword.security_broker_short}} using Manifests
+# Upgrading Data Security Broker using Manifests
 {: #sb_update}
 
-After IBM Cloud® {{site.data.keyword.security_broker_short}} is installed on your cluster, you
+After IBM Cloud® Data Security Broker is installed on your cluster, you
 can update it at any time.
 {: shortdesc}
 
-## Upgrading {{site.data.keyword.security_broker_short}} in ROKS
+## Upgrading Data Security Broker in ROKS
 {: #upgrade-sb-ROKS}
 
 Log into OpenShift Container Platform and complete the steps mentioned
-below to upgrade {{site.data.keyword.security_broker_short}} on ROKS:
+below to upgrade Data Security Broker on ROKS:
 
 1.  Navigate to the path where you have installed the Data Security
     Broker.
 
-2.  Download the latest images of {{site.data.keyword.security_broker_short}} in the relevant path.
+2.  Download the latest images of Data Security Broker in the relevant path.
 
 3.  Perform the upgrade by executing the following deployment commands
-    to deploy the latest images of {{site.data.keyword.security_broker_short}}:
+    to deploy the latest images of Data Security Broker:
 
     ```sh
     1. oc set image deployment/security-broker-manager security-broker
@@ -85,11 +85,11 @@ below to upgrade {{site.data.keyword.security_broker_short}} on ROKS:
     Security-broker-nginx   LoadBalancer   1.1.1.1       10.10.10.10        43:31689/TCP           18h
 
 6.  Open a Web browser window and enter the **Load Balancer External
-    IP** preceded by **https://** to access the {{site.data.keyword.security_broker_short}} Manager.
+    IP** preceded by **https://** to access the Data Security Broker Manager.
     In the above example, the web browser address to access the Security Broker Manager would be https://10.10.10.10.
 
 7.  To confirm the upgrade, login to the Security Broker Manager and
-    click Help to view the version number of the {{site.data.keyword.security_broker_short}},
+    click Help to view the version number of the Data Security Broker,
     which has been upgraded.
 
 **Note**: If you are upgrading the Security Broker Shield, you need to
@@ -104,20 +104,20 @@ b.  Select the Security Broker Shield which is in stopped state and
     click the Delete (**--)** button to delete the Security Broker
     Shield.
 
-## Upgrading {{site.data.keyword.security_broker_short}} in IKS
+## Upgrading Data Security Broker in IKS
 {: #upgrade-sb-IKS}
 
 Log into **kubectl** and complete the steps mentioned below to upgrade
-{{site.data.keyword.security_broker_short}} on IKS:
+Data Security Broker on IKS:
 
 1.  Navigate to the path where you have installed the Data Security
     Broker.
 
-2.  Download the latest images of {{site.data.keyword.security_broker_short}} for the latest
+2.  Download the latest images of Data Security Broker for the latest
     version, which you need to upgrade.
 
 3.  Perform the upgrade by executing the following deployment commands
-    to deploy the latest images of {{site.data.keyword.security_broker_short}}:
+    to deploy the latest images of Data Security Broker:
 
     ```sh
     kubectl set image deployment/security-broker-manager security-broker
@@ -175,7 +175,7 @@ Log into **kubectl** and complete the steps mentioned below to upgrade
     Security-broker-nginx   LoadBalancer   1.1.1.1       10.10.10.10        43:31689/TCP           18h
 
 6.  Open a Web browser window and enter the **Load Balancer External
-    IP** preceded by **https://** to access the {{site.data.keyword.security_broker_short}} Manager.
+    IP** preceded by **https://** to access the Data Security Broker Manager.
     In the above example, the web browser address to access the Security Broker Manager would be https://10.10.10.10.
 
 7.  Open a Web browser window and enter the **Load Balancer External
