@@ -1,14 +1,14 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-09-21"
+lastupdated: "2021-09-01"
 
 keywords: database, admin, priveleges, users, features, operations
 
 subcollection: security-broker
 ---
 
-# How to define a Data Protection Policy and encrypt Data?
+# Data Encryption using Data Security Broker
 {: #sb_encrypt_postgress}
 
 ## Overview:

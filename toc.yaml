@@ -15,13 +15,11 @@ toc:
   - navgroup: 
       id: learn
       topics:
-      - topicgroup:
-          label: Getting started
+      - topicgroup:          
           topics:
           - sb_getting_started.md
        
-      - topicgroup:
-          label: About the service
+      - topicgroup:          
           topics:
           - sb_about.md
           - sb_release-notes.md
@@ -29,8 +27,7 @@ toc:
   - navgroup: 
       id: howto
       topics:
-      - topicgroup:
-          label: Installing Data Security Broker
+      - topicgroup:          
           topics:
           - install/sb_install_com.md    
       - topicgroup:
@@ -39,8 +36,7 @@ toc:
           - install/sb_install_manifests.md
           - install/sb_install_helm.md
           - install/sb_install_ui.md
-      - topicgroup:
-          label: Data Encryption using Data Security Broker
+      - topicgroup:          
           topics:
           - tutorials/sb_encrypt_postgress.md
       - topicgroup:
