@@ -1,14 +1,14 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-09-21"
+lastupdated: "2021-09-01"
 
 keywords: database, admin, priveleges, users, features, operations, application
 
 subcollection: security-broker
 ---
 
-# Enrolling an Application in Data Security Broker Manager:
+# Enrolling an Application in Data Security Broker Manager
 {: #sb_enroll_app}
 
 An application is the framework that links Security Broker Manager,

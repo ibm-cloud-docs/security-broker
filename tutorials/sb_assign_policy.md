@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-09-21"
+lastupdated: "2021-09-01"
 
 keywords: database, admin, priveleges, users, features, operations
 
@@ -9,7 +9,7 @@ subcollection: security-broker
 ---
 
 ## Assigning or changing a Default Data Protection Policy:
-{: #sb_data_policy}
+{: #sb_assign_policy}
 
 **Overview:**
 
@@ -25,7 +25,7 @@ Protection Library at the bottom of the left navigation bar. Click the
 carrot icon **(\<)** to expand and view the list of list **Default Data
 Protection Policies, Encryption Modes, and Masking Modes.**
 
-## **To assign or change a Default Data Protection Policy, do the following:**
+## To assign or change a Default Data Protection Policy, do the following:
 {: #sb_encrypt_steps}
 
 1.  In Data Security Broker Manager, click the **Application** icon in

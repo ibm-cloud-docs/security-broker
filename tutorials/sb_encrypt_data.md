@@ -1,14 +1,14 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-09-21"
+lastupdated: "2021-09-01"
 
 keywords: database, admin, priveleges, users, features, operations
 
 subcollection: security-broker
 ---
 
-# Encrypting the data with Security Broker on an IBM Cloud PostgreSQL Database:
+# Encrypting the data with Security Broker on an IBM Cloud PostgreSQL Database
 {: #sb_encrypt_ibm_postgress}
 
 Complete the following steps to encrypt the data with Security Broker on
