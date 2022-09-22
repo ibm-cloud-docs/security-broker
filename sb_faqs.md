@@ -81,8 +81,7 @@ Security Broker Manager and Data Security Broker Shield:
 
 * Admin privileges for your platform
 
-* The user account used to log in to the Data Security Broker Shield
-host machine must have a home directory on that system
+* The user account used to log in to the Data Security Broker Shield host machine must have a home directory on that system
 
 * SSH client
 
@@ -149,7 +148,7 @@ The environment, network latency, and network architecture that manage the datab
 
 Refer to the [Adding users in {{site.data.keyword.security_broker_short}} Manager section](/docs/security-broker?topic=security-broker-sb_adding_users).
 
-### How do I add users without SMTP accounts?
+**How do I add users without SMTP accounts?**
 
 You can choose "Get invite link" to create a URL that can be shared through any messaging service. 
 
