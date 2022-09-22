@@ -54,7 +54,11 @@ toc:
           topics:
           - tutorials/sb_adding_users.md
           - tutorials/sb_settings.md
-          - tutorials/sb_db_privileges.md      
+          - tutorials/sb_db_privileges.md
+      - topicgroup:
+          label: Logging and Debugging
+          topics:
+          - tutorials/sb_logging.md        
       - topicgroup:
           label: Upgrading Data Security Broker
           topics:
