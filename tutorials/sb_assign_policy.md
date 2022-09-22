@@ -8,17 +8,18 @@ keywords: database, admin, priveleges, users, features, operations
 subcollection: security-broker
 ---
 
-## Assigning or changing a Default Data Protection Policy:
+# Assigning or changing a Default Data Protection Policy
 {: #sb_assign_policy}
 
-**Overview:**
+## Overview:
+{: #sb_assign_overview}
 
 A Data Protection Policy consists of a combination of encryption modes
 and masking rules. Default Data Protection Policies allow you to
 apply default settings for encryption, Format Preserving Encryption
 (FPE), or Data Masking, A policy is applied to the columns of a data
-store associated with an application enrolled in Data Security Broker
-Manager and linked to a Data Security Broker Shield. 
+store associated with an application enrolled in {{site.data.keyword.security_broker_short}}
+Manager and linked to a {{site.data.keyword.security_broker_short}} Shield. 
 
 A list of Default Data Protection Policies is available in the Data
 Protection Library at the bottom of the left navigation bar. Click the
@@ -28,7 +29,7 @@ Protection Policies, Encryption Modes, and Masking Modes.**
 ## To assign or change a Default Data Protection Policy, do the following:
 {: #sb_encrypt_steps}
 
-1.  In Data Security Broker Manager, click the **Application** icon in
+1.  In {{site.data.keyword.security_broker_short}} Manager, click the **Application** icon in
     the left menu bar.
 
 screenshot required
@@ -72,6 +73,6 @@ For example: 
 
 8.  Review your policy and select a **Migration Plan**. The migration plans are listed below:
     **Save**: Defines a policy for future migration.
-    **Deploy**: Establishes a data schema for an environment that was not processed through Data Security Broker migration and the data type conversion but does not migrate the data.
+    **Deploy**: Establishes a data schema for an environment that was not processed through {{site.data.keyword.security_broker_short}} migration and the data type conversion but does not migrate the data.
     **Deploy and Migrate**: Defines a policy *and* migrates the
     existing data in the data store.
