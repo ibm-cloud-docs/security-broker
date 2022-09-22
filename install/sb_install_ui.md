@@ -8,15 +8,15 @@ keywords: install, ROKS, IKS, manifests, HELM
 subcollection: security-broker
 ---
 
-# Installing {{site.data.keyword.security_broker_short}} using the HELM chart in the User Interface (UI)
+# Installing Data Security Broker through the User Interface
 {: #sb_install_ui}
 
 ## Overview:
 {: #sb_install_ui_overview}
 
-You can install the {{site.data.keyword.security_broker_short}} software by using the User
+You can install the Data Security Broker software by using the User
 Interface (UI) available in the IBM Cloud Catalog. Refer to this link to
-access the {{site.data.keyword.security_broker_short}} UI in the IBM Cloud Catalog:
+access the Data Security Broker UI in the IBM Cloud Catalog:
 <https://cloud.ibm.com/catalog/content/ibmcloud-security-broker> (Need
 to correct the link when the software is available in the Catalog).
 
@@ -38,10 +38,12 @@ HELM](https://helm.sh/docs/).
 1.  Log into the IBM Cloud Account (<https://cloud.ibm.com/>) with a
     valid username and password.
 
-2.  Search for **{{site.data.keyword.security_broker_full_notm}}** in the **Catalog**
+2.  Search for **IBM Cloud Data Security Broker** in the **Catalog**
     search box.
 
-3.  You can also perform a detailed search for **{{site.data.keyword.security_broker_full_notm}}**. Click **Catalog**. A list of products       appears in the Catalog.
+3.  You can also perform a search for the IBM Cloud Data Security
+    Broker. Click **Catalog**. A list of products appears in the
+    Catalog.
 
 4.  To sort the products using the type, click **Software** in the
     **Type** option, which is present in the left-hand navigation of the
@@ -56,7 +58,7 @@ HELM](https://helm.sh/docs/).
 7.  Select the version of the HELM
 
 8.  Perform the following operations to complete the deployment of the
-    {{site.data.keyword.security_broker_short}} software using the Catalog UI:
+    Data Security Broker software using the Catalog UI:
 
     a.  In the **Select your deployment target** drop down, select IBM
         Cloud Kubernetes service.
