@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-09-01"
+lastupdated: "2022-09-22"
 
 keywords: FAQ, setup, data protection
 
@@ -44,7 +44,7 @@ subcollection: security-broker
 # Frequently asked questions (FAQ)
 {: #sb_faqs}
 
-This FAQ provides answers to common questions about the Security Broker service.
+This FAQ provides answers to common questions about the {{site.data.keyword.security_broker_short}} service.
 {: shortdesc}
 
 
