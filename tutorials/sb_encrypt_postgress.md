@@ -38,12 +38,12 @@ Protection policy and performing the steps below:
 -   Before you can enroll your applications, add databases, and enable
     encryption, you must enroll your Keystore, so that the Security
     Broker Manager can access and create data encryption keys (DEKs)
-    that is used to protect your data. For more information, see [Adding a Keystore in {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker/tutorials?topic=sb_encrypt_data#step2) and [Connect to a Datastore in {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker/tutorials?topic=sb_encrypt_data#step3).
+    that is used to protect your data. For more information, see [Adding a Keystore in {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_encrypt_data#adding-keystore-in-data-security-broker-manager) and [Connect to a Datastore in {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_encrypt_data#connecting-to-a-datastore).
 
 -   Enroll an Application in {{site.data.keyword.security_broker_short}} Manager. For more
     information, see [Enrolling an application in {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_enroll_app).
 
 -   Assign and customize a Default Data Protection Policy. For more
-    information, see [Create, assign, and Customize Data Protection Policy in {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker/tutorials?topic=sb_data_policy).
+    information, see [Create, assign, and Customize Data Protection Policy in {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_assign_policy).
 
--   Encrypt and Decrypt Data. For more information, see [Encrypting the data with {{site.data.keyword.security_broker_short}} on an IBM Cloud PostgreSQL Database](/docs/security-broker/tutorials?topic=sb_encrypt_data).
+-   Encrypt and Decrypt Data. For more information, see [Encrypting the data with {{site.data.keyword.security_broker_short}} on an IBM Cloud PostgreSQL Database](/docs/security-broker?topic=security-broker-sb_encrypt_data).
