@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-09-22"
+lastupdated: "2021-09-01"
 
 keywords: users, admin, priveleges, profiles, Data Security Broker Manager, SMTP
 

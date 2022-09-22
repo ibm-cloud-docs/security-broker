@@ -1,14 +1,14 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-09-22"
+lastupdated: "2021-09-01"
 
 keywords: database, admin, priveleges, users, features, operations
 
 subcollection: security-broker
 ---
 
-# Database Privileges for Data Security Broker
+# Database Privileges for IBM Cloud Data Security Broker
 {: #sb_db_priveleges}
 
 In this section, you can find the details about required database

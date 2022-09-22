@@ -16,12 +16,12 @@ toc:
       id: learn
       topics:
       - topicgroup:
-          label: Getting Started with Data Security Broker      
+          label: Getting started
           topics:
           - sb_getting_started.md
        
       - topicgroup:
-          label: About the service      
+          label: About the service
           topics:
           - sb_about.md
           - sb_release-notes.md
@@ -30,40 +30,19 @@ toc:
       id: howto
       topics:
       - topicgroup:
-          label: Installing Data Security Broker      
+          label: Installing Data Security Broker
           topics:
-          - install/sb_install_com.md    
-      - topicgroup:
-          label: Ways to install Data Security Broker
-          topics:
-          - install/sb_install_manifests.md
-          - install/sb_install_helm.md
-          - install/sb_install_ui.md
-      - topicgroup:
-          label: Encrypting Data using Data Security Broker       
-          topics:
-          - tutorials/sb_encrypt_postgress.md
-      - topicgroup:
-          label: Defining Data Protection policy and encrypting data in Data Security Broker
-          topics:
-          - tutorials/sb_enroll_app.md
-          - tutorials/sb_assign_policy.md
-          - tutorials/sb_encrypt_data.md
-      - topicgroup:
-          label: Adding users, Modifying Settings and Assigning Database Privilegest in Data Security Broker
-          topics:
-          - tutorials/sb_adding_users.md
-          - tutorials/sb_settings.md
-          - tutorials/sb_db_privileges.md      
-      - topicgroup:
-          label: Upgrading Data Security Broker
-          topics:
-          - tutorials/sb_update.md
-      - topicgroup:
-          label: Uninstalling Data Security Broker
-          topics:
-          - tutorials/sb_uninstall.md
-                
+          - install/sb_install_com.md
+            - install/sb_install_manifests.md
+            - install/sb_install_helm.md
+            - install/sb_install_ui.md
+      - tutorials/sb_encrypt_postgress.md
+      - tutorials/sb_adding_users.md
+      - tutorials/sb_settings.md
+      - tutorials/sb_db_privileges.md
+      - tutorials/sb_update.md
+      - tutorials/sb_uninstall.md        
+  
   - navgroup:
       id: reference
       links:
