@@ -13,7 +13,7 @@ subcollection: security-broker
 
 You can install {{site.data.keyword.security_broker_short}} in one of the following ways:
 
-1.  Using the manifests
+1.  Using the Manifests
 
 2.  Using the HELM chart
 
