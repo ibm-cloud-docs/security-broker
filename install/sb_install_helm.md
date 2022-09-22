@@ -8,10 +8,10 @@ keywords: install, ROKS, IKS, manifests, HELM
 subcollection: security-broker
 ---
 
-# Installing {{site.data.keyword.security_broker_short}} using the HELM chart in CLI
+# Installing Data Security Broker using HELM from CLI
 {: #sb_install_helm}
 
-To work with {{site.data.keyword.security_broker_short}}, you can use HELM to install the
+To work with Data Security Broker, you can use HELM to install the
 software using the CLI.
 
 ## Overview:
@@ -39,14 +39,14 @@ HELM](https://helm.sh/docs/).
 ## Procedure:
 {: #sb_install_helm_procedure}
 
-Complete the following steps to install the {{site.data.keyword.security_broker_short}} using
+Complete the following steps to install the Data Security Broker using
 HELM using the CLI:
 
 1.  Install HELM in your local machine. To perform the HELM
     installation, see [Installing
     HELM](https://www.ibm.com/cloud/architecture/content/course/helm-fundamentals/helm-install).
 
-2.  Configure the HELM chart to install {{site.data.keyword.security_broker_short}} and add the
+2.  Configure the HELM chart to install Data Security Broker and add the
     HELM chart repo to your instance of Helm:
 
 ```sh
