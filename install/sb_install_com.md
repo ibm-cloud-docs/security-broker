@@ -23,7 +23,7 @@ You can install {{site.data.keyword.security_broker_short}} in one of the follow
 {: #install-sb-com-manifests}
 
 You can install {{site.data.keyword.security_broker_short}} on an IBM Cloud Kubernetes cluster (IKS) or an
-IBM Red Hat OpenShift Kubernetes cluster (ROKS) through the manifests. For more information, see [Installing {{site.data.keyword.security_broker_short}} through Manifests](/docs/security-broker?topic=sb_install_manifests).
+IBM Red Hat OpenShift Kubernetes cluster (ROKS) through the manifests. For more information, see [Installing {{site.data.keyword.security_broker_short}} through Manifests](/docs/security-broker?topic=security-broker-sb_install_manifests).
 
 ## Installing {{site.data.keyword.security_broker_short}} through HELM charts:
 {: #install-sb-com-helm}
