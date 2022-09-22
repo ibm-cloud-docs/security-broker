@@ -8,10 +8,10 @@ keywords: install, ROKS, IKS, manifests, HELM
 subcollection: security-broker
 ---
 
-# Installing Data Security Broker using Manifests
+# Installing {{site.data.keyword.security_broker_short}} using Manifests
 {: #sb_install_manifests}
 
-You can install Data Security Broker on an IBM Cloud Kubernetes cluster (IKS) or an
+You can install {{site.data.keyword.security_broker_short}} on an IBM Cloud Kubernetes cluster (IKS) or an
 IBM Red Hat OpenShift Kubernetes cluster (ROKS) through the manifests.
 {: shortdesc}
 
@@ -41,11 +41,11 @@ installation:
 -   A valid JFrog access TOKEN is required to install the Security
     Broker Manager.
 
--   Ensure that you have the Data Security Broker Manager images, and the
+-   Ensure that you have the {{site.data.keyword.security_broker_short}} Manager images, and the
     docker images has been loaded to the container registry before
     starting the installation procedure for the Security Broker Manager.
 
-## Install Data Security Broker on an IBM Red Hat OpenShift Kubernetes cluster:
+## Install {{site.data.keyword.security_broker_short}} on an IBM Red Hat OpenShift Kubernetes cluster:
 {: #install-sb-ROKS}
 
 [Red Hat®
@@ -57,13 +57,13 @@ deployed. For more information on Red Hat OpenShift Container platform,
 see [Introduction on Red Hat OpenShift Container
 platform](https://www.redhat.com/en/technologies/cloud-computing/openshift/container-platform).
 
-## Installing Data Security Broker Shield in ROKS:
+## Installing {{site.data.keyword.security_broker_short}} Shield in ROKS:
 {: #install-sb-ROKS}
 
 Log into OpenShift Container Platform and complete the steps mentioned
-below to install Data Security Broker Shield on ROKS:
+below to install {{site.data.keyword.security_broker_short}} Shield on ROKS:
 
-1.  Deploy the Data Security Broker Shield by executing the following
+1.  Deploy the {{site.data.keyword.security_broker_short}} Shield by executing the following
     command:
 
 
@@ -104,11 +104,11 @@ security-broker-web-775dc97fdb-j5mmr 1/1 Running 0 28d
     ```
     {: codeblock}
 
-### Installing Data Security Broker Manager in ROKS:
+### Installing {{site.data.keyword.security_broker_short}} Manager in ROKS:
 {: #install-sb-manager-ROKS}
 
 Log into OpenShift Container Platform and complete the steps mentioned
-below to install Data Security Broker Manager on ROKS:
+below to install {{site.data.keyword.security_broker_short}} Manager on ROKS:
 
 1.  Create Persistent Volume Claims (PVCs). The requirements for the
     Persistent storage volume claims are provided in the
@@ -128,7 +128,7 @@ command:
     ```
     {: codeblock}
 
-2.  Deploy the Data Security Broker Manager services by executing the
+2.  Deploy the {{site.data.keyword.security_broker_short}} Manager services by executing the
     following command:
 
     ```sh
@@ -170,7 +170,7 @@ security-broker-web-775dc97fdb-j5mmr 1/1 Running 0 28d
     {: codeblock}
 
 
-## Install Data Security Broker on an IBM Cloud Kubernetes cluster:
+## Install {{site.data.keyword.security_broker_short}} on an IBM Cloud Kubernetes cluster:
 {: #install-sb-iks}
 
 The Kubernetes command-line tool, **kubectl**, allows you to run
@@ -180,13 +180,13 @@ more information, see including a complete list of **kubectl**
 operations, see the [Command line kubectl reference
 documentation](https://kubernetes.io/docs/reference/kubectl/).
 
-### Installing Data Security Broker Shield in IKS:
+### Installing {{site.data.keyword.security_broker_short}} Shield in IKS:
 {: #install-sb-shield-iks}
 
 Log into **kubectl** and complete the steps mentioned below to install
 Security Broker on ROKS:
 
-1.  Deploy the Data Security Broker Shield by executing the following
+1.  Deploy the {{site.data.keyword.security_broker_short}} Shield by executing the following
     command:
     
     ```sh
@@ -228,7 +228,7 @@ Security-broker-shield-app1-8dbc7b859-xhlnf 1/1 Running 0 9d
 {: #install-sb-manager-iks}
 
 Log into **kubectl** and complete the steps mentioned below to install
-Data Security Broker Manager on IKS:
+{{site.data.keyword.security_broker_short}} Manager on IKS:
 
 1.  Create Persistent Volume Claims (PVCs). The requirements for the
     Persistent storage volume claims are provided in the
@@ -248,7 +248,7 @@ command:
     ```
     {: codeblock}
 
-2.  Deploy the Data Security Broker Manager services by executing the following
+2.  Deploy the {{site.data.keyword.security_broker_short}} Manager services by executing the following
     command:
 
     ```sh
@@ -297,7 +297,7 @@ security-broker-web-775dc97fdb-j5mmr 1/1 Running 0 28d
 ### Accessing Security Broker Manager:
 {: #access-sb-manager}
 
-To access the Data Security Broker Manager, perform the following operation:
+To access the {{site.data.keyword.security_broker_short}} Manager, perform the following operation:
 
 1.  Identify the external IP address of the Load Balancer with the
     following command.
@@ -323,11 +323,4 @@ Security-broker-nginx LoadBalancer 1.1.1.1 **10.10.10.10** 43:31689/TCP 18h
 In the above example, the web browser address to access the Data Security
 Broker Manager would be **https://10.10.10.10**.
 
-## Installing Security Broker through HELM charts:
-{: #install-sb-helm}
-
-
-
-## Installing Security Broker through User Interface:
-{: #install-sb-ui}
 
