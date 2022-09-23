@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-09-22"
+lastupdated: "2022-09-23"
 
 keywords: install, ROKS, IKS, manifests, HELM
 
@@ -35,8 +35,7 @@ HELM](https://helm.sh/docs/).
 ## Procedure:
 {: #sb_install_ui_procedure}
 
-1.  Log into the IBM Cloud Account (<https://cloud.ibm.com/>) with a
-    valid username and password.
+1.  Log into the IBM Cloud Account (https://cloud.ibm.com) with a valid username and password.
 
 2.  Search for **{{site.data.keyword.security_broker_full_notm}}** in the **Catalog**
     search box.
