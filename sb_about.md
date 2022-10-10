@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-09-22"
+lastupdated: "2022-10-10"
 
 keywords: about the service, deploy policy, deployment plans, encryption technology, encryption modes, data protection modes
 
@@ -97,7 +97,7 @@ exposure in test/dev environments and better control data exfiltration
 to external parties.
 
 
-## Deployment Plans in IBM Cloud Data {{site.data.keyword.security_broker_short}}:**
+## Deployment Plans in IBM Cloud Data {{site.data.keyword.security_broker_short}}:
 {: #sb-deployment-plans}
 
 When you assign and customize Default Data Protection Policies with Data

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-09-22"
+lastupdated: "2022-10-10"
 
 keywords: database, admin, priveleges, users, features, operations
 
@@ -14,10 +14,7 @@ subcollection: security-broker
 Complete the following steps to encrypt the data with Security Broker on
 an IBM Cloud PostgreSQL Database:
 
-1.  Login to Security Broker Manager by specifying the Security Broker
-    admin user and password.
-
-Insert screen shot when ready
+Login to {{site.data.keyword.security_broker_short}} Manager by specifying the {{site.data.keyword.security_broker_short}} admin user id and password.
 
 ##  Adding Keystore in {{site.data.keyword.security_broker_short}} Manager
 {: #sb_encrypt_data_add_keystore}
@@ -27,19 +24,15 @@ Insert screen shot when ready
     Follow the steps below to enroll a Keystore that you can use with {{site.data.keyword.security_broker_short}} Shields and
     databases.
 
-a)  Select **Keystores** from the left navigation and click
-    **+Keystore**.
+a)  Select **Keystores** from the left navigation and click **Add Keystore +**.
+![Keystores(../images/keystore.svg){: caption="Figure 1. Keystores" caption-side="bottom"}
 
 b)  Specify a name for the Keystore in the **Keystore name** field and
     provide a valid description in the **Description** field.
 
-c)  Select the Keystore Type as **IBM Key Protect** from the **Keystore
-    Type** dropdown menu. Enter values for the **Instance ID**, **App
-    Namespace**, **IBM Key Protect Alias**, and **IAM API Key**. Select
-    the region in the **IBM Region** drop down and choose the Data
-    Encryption Key (DEK) Storage type from the **DEK Storage Type** drop
-    down. For information on how to create encryption keys, see
-    [Creating and importing encryption
+c)  Select the Keystore Type as **IBM Key Protect** from the **Keystore Type** dropdown menu. 
+    Enter values for the **Instance ID**, **App Namespace**, **IBM Key Protect Alias**, and **IAM API Key**. Select the region in the **IBM Region** drop down and choose the Data
+    Encryption Key (DEK) Storage type from the **DEK Storage Type** drop down. For information on how to create encryption keys, see [Creating and importing encryption
     keys](https://cloud.ibm.com/docs/key-protect?topic=key-protect-tutorial-import-keys).
 
 **Note**: Keystore parameters are specific to each Keystore type or
@@ -47,6 +40,7 @@ vendor. Each of the following keystores has a specific set of required
 credentials and parameters.
 
 d)  Click **Add Keystore** to create a Keystore.
+
 
 ## Connecting to a Datastore
 {: #sb_encrypt_data_connect_datastore}
@@ -87,14 +81,18 @@ g)  Click **Add Database** to complete enrolment. The new database
 h)  Create the data that is required for encryption or decryption as
     tables in the new database that is created.
     
-2.  An application is the framework that links Security Broker Manager,
+## Enrolling an Application
+{: #sb_encrypt_data_enroll_app}
+
+    An application is the framework that links Security Broker Manager,
     databases, and Security Broker Shield and instructs the Security
     Broker Shield to encrypt and decrypt data. Complete the steps below
     for enrolling an application in Security Broker Manager:
 
 a)  Select the **Applications** icon in the left navigation panel and
-    click **Enroll Application +**. The **Enroll Application** dialog
-    appears.
+    click **Enroll Application +**.
+    ![Applications(../images/add_app.svg){: caption="Figure 1. Applications" caption-side="bottom"}
+    The **Enroll Application** dialog appears.
 
 b)  Enter the name and description for the application in the
     **Application Name** and **Application Description** fields.
@@ -118,16 +116,14 @@ all the required records to ensure that that the record level
 encryption is applied to all the required records in the table.
 
 g)  Click **Enroll Application**.
+![Enroll Application(../images/enroll_app.svg){: caption="Figure 2. Enroll Application" caption-side="bottom"}
 
-
-3.  Click on an application and select the drop down which is present in
+1.  Click on an application and select the drop down which is present in
     the **Migration Details** field in the right side and click
     **Encrypt**.
+![Encrypt Data(../images/encnrypt.svg){: caption="Figure 3. Encrypt Data" caption-side="bottom"}
 
-Insert screen shot when ready
-
-
-4.  Select the Database and the table where you have the data created
+2.  Select the Database and the table where you have the data created
     and select the **Column** which needs to be encrypted. Choose the
     **Data Protection** policy, **Encryption mode**, and **masking
     mode** for the encryption process and click **Review.** For more
@@ -137,10 +133,7 @@ Insert screen shot when ready
     Security Broker table which is present in the About the service
     topic).
 
-Insert screen shot when ready
-
-
-5.  Choose **Deploy Policy & Migrate Data** under the **Deployment
+3.  Choose **Deploy Policy & Migrate Data** under the **Deployment
     Plan** option. There are three options that you can choose to
     implement your data encryption policy. For more information on
     Deployment plans, see **Deployment Plans in IBM Cloud Data Security
@@ -149,18 +142,15 @@ Insert screen shot when ready
     service IP address in the **Migration Shield** field and click
     **Save** to start the encryption process.
 
-6.  The status of the application shows **Migrating** when the
+4.  The status of the application shows **Migrating** when the
     encryption process starts.
 
-7.  Once the encryption is complete, the status is changed to
+5.  Once the encryption is complete, the status is changed to
     **Protected**. You can view more information by clicking **Migration
     Details** in the **Applications** sidebar.
 
-Insert screen shot when ready
 
-
-**Note**: If there is new data which gets inserted in the database, by default, the data is encrypted by using the default data encryption
-policy that is being selected by the user.
+**Note**: If there is new data which gets inserted in the database, by default, the data is encrypted by using the default data encryption policy that is being selected by the user.
 
 
 
