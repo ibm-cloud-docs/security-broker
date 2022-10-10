@@ -34,11 +34,15 @@ toc:
           topics:
           - install/sb_install_com.md    
       - topicgroup:
-          label: Ways to install Data Security Broker
+          label: Methods to install Data Security Broker
           topics:
           - install/sb_install_manifests.md
           - install/sb_install_helm.md
           - install/sb_install_ui.md
+      - topicgroup:
+          label: Configuring Data Security Broker Manager
+          topics:
+          - tutorials/sb_configure.md
       - topicgroup:
           label: Encrypting Data using Data Security Broker       
           topics:
