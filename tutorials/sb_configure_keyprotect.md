@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2021-09-01"
+lastupdated: "2022-10-10"
 
 keywords: database, admin, priveleges, users, configure, operations, keyprotect
 
@@ -28,7 +28,8 @@ Complete the following steps to configure IBM Key Protect. After
 completing this procedure, you can add IBM Key Protect as a keystore in
 Data Security Broker Manager.
 
-#### **To configure IBM Key Protect, do the following:**
+## **To configure IBM Key Protect, do the following:**
+{: #sb_configure_keyprotect_procedure}
 
 1.  Get an IBM Instance ID in one of the following ways:
 
@@ -44,7 +45,7 @@ Data Security Broker Manager.
 2.  Create and retrieve API Key, in the following way: 
 
     -   Open a web browser and navigate
-        to:[ https://cloud.ibm.com/iam/apikeys](https://cloud.ibm.com/iam/apikeys).
+        to:[https://cloud.ibm.com/iam/apikeys](https://cloud.ibm.com/iam/apikeys).
 
     -   Select **Create an IBM Cloud API Key** and name the key.
 
@@ -62,11 +63,12 @@ Data Security Broker Manager.
 7.  Enable HMAC and click **Add**.
 
 ## **Add IBM Key Protect as a keystore in Data Security Broker Manager**
+{: #sb_configure_keyprotect_add}
 
 Complete the following steps to complete the process for using IBM Key
 Protect as a keystore in Data Security Broker Manager.
 
-#### **To add IBM Key Protect as a keystore, perform the following steps:**
+**To add IBM Key Protect as a keystore, perform the following steps:**
 
 1.  In the Data Security Broker Manager console, click the key icon in
     the left navigation bar. The Keystore window appears.** **

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2021-09-01"
+lastupdated: "2022-10-10"
 
 keywords: database, admin, priveleges, users, configure, operations
 
@@ -35,7 +35,8 @@ following requirements:
 4.  Create HMAC keys on the COS -- For more information, see [IBM Cloud
     Object Storage](https://www.ibm.com/cloud/object-storage).
 
-#### To configure Data Security Broker Manager, perform the following steps:
+## To configure Data Security Broker Manager, perform the following steps:
+{: #sb_configure_overview}
 
 1.  Make a note of the **load_balancer_url** in the Terraform output.
 
