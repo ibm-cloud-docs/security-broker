@@ -43,6 +43,7 @@ toc:
           label: Configuring Data Security Broker Manager
           topics:
           - tutorials/sb_configure.md
+          - tutorials/sb_configure_keyprotect.md
       - topicgroup:
           label: Encrypting Data using Data Security Broker       
           topics:
