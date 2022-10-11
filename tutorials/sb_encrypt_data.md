@@ -54,7 +54,7 @@ b)  In the **Add Database** dialog, enter a name and description for the
     database in the **Database Name** and **Database Description**
     fields.
 
-    ![Database](../images/database.svg){: caption="Figure 2. Connecting to a Database" caption-side="bottom"}
+![Database](../images/database.svg){: caption="Figure 2. Connecting to a Database" caption-side="bottom"}
 
 c)  Select the database type as **Postgres** from the **Database Type**
     drop-down list.
@@ -123,7 +123,7 @@ g)  Click **Enroll Application**.
 1.  Click on an application and select the drop down which is present in
     the **Migration Details** field in the right side and click
     **Encrypt**.
-![Encrypt Data](../images/encnrypt.svg){: caption="Figure 5. Encrypt Data" caption-side="bottom"}
+![Encrypt Data](../images/encrypt.svg){: caption="Figure 5. Encrypt Data" caption-side="bottom"}
 
 2.  Select the Database and the table where you have the data created
     and select the **Column** which needs to be encrypted. Choose the

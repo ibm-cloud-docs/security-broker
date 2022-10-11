@@ -36,7 +36,7 @@ Protection Policies, Encryption Modes, and Masking Modes.**
 
 2.  Select an application from the list and click **Encrypt**.
 
-![Encrypt Data](../images/encnrypt.svg){: caption="Figure 2. Encrypt Data" caption-side="bottom"}
+![Encrypt Data](../images/encrypt.svg){: caption="Figure 2. Encrypt Data" caption-side="bottom"}
 
 3.  In the left navigation menu, navigate to a database and schema and
     select the table for which you want to assign or change a policy.
