@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-10-10"
+lastupdated: "2022-10-11"
 
 keywords: database, admin, priveleges, users, features, operations, application
 
@@ -23,7 +23,7 @@ following steps:
 
 1.  Click the **Applications** icon in the left navigation panel.
 
-![Applications(../images/add_app.svg){: caption="Figure 1. Applications" caption-side="bottom"}
+![Applications](../images/add_app.svg){: caption="Figure 1. Applications" caption-side="bottom"}
 
 2.  Click **Enroll Application +** in the upper right corner of the window. The
     Enroll Application dialog appears.
@@ -37,6 +37,6 @@ following steps:
     - Select the **Keystore** to be used as a source for data encryption keys.  
     - Specify an **Encryption Method** as Column Level or Row Level. 
 
-    ![Enroll Application(../images/enroll_app.svg){: caption="Figure 2. Enroll Application" caption-side="bottom"}
+    ![Enroll Application](../images/enroll_app.svg){: caption="Figure 2. Enroll Application" caption-side="bottom"}
 
 5.  Click **Enroll Application**.

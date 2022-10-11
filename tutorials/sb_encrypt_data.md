@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-10-10"
+lastupdated: "2022-10-11"
 
 keywords: database, admin, priveleges, users, features, operations
 
@@ -25,7 +25,7 @@ Login to {{site.data.keyword.security_broker_short}} Manager by specifying the {
     databases.
 
 a)  Select **Keystores** from the left navigation and click **Add Keystore +**.
-![Keystores(../images/keystore.svg){: caption="Figure 1. Keystores" caption-side="bottom"}
+![Keystores](../images/keystore.svg){: caption="Figure 1. Keystores" caption-side="bottom"}
 
 b)  Specify a name for the Keystore in the **Keystore name** field and
     provide a valid description in the **Description** field.
@@ -116,12 +116,12 @@ all the required records to ensure that that the record level
 encryption is applied to all the required records in the table.
 
 g)  Click **Enroll Application**.
-![Enroll Application(../images/enroll_app.svg){: caption="Figure 2. Enroll Application" caption-side="bottom"}
+![Enroll Application](../images/enroll_app.svg){: caption="Figure 2. Enroll Application" caption-side="bottom"}
 
 1.  Click on an application and select the drop down which is present in
     the **Migration Details** field in the right side and click
     **Encrypt**.
-![Encrypt Data(../images/encnrypt.svg){: caption="Figure 3. Encrypt Data" caption-side="bottom"}
+![Encrypt Data](../images/encnrypt.svg){: caption="Figure 3. Encrypt Data" caption-side="bottom"}
 
 2.  Select the Database and the table where you have the data created
     and select the **Column** which needs to be encrypted. Choose the
