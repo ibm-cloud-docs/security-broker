@@ -118,7 +118,7 @@ Manager. This is encrypted with a key that is configured during setup.
 
 **Why is the Deploy Policy and Migrate Data option disabled in the Data Security Broker Manager UI?**
 
-
+The application in which you are trying to perform the encryption does not have a Data Security Broker Shield attached to it. Associate a Data Security Broker Shield to the application before performing the encryption process.
 
 **Where do I get the information to connect the application to Baffle Shield?**
 
