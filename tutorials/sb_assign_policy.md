@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2021-09-01"
+lastupdated: "2022-10-11"
 
 keywords: database, admin, priveleges, users, features, operations
 
@@ -32,22 +32,19 @@ Protection Policies, Encryption Modes, and Masking Modes.**
 1.  In {{site.data.keyword.security_broker_short}} Manager, click the **Application** icon in
     the left menu bar.
 
-screenshot required
+![Applications](../images/add_app.svg){: caption="Figure 1. Applications" caption-side="bottom"}
 
 2.  Select an application from the list and click **Encrypt**.
 
-screenshot required
+![Encrypt Data](../images/encnrypt.svg){: caption="Figure 2. Encrypt Data" caption-side="bottom"}
 
 3.  In the left navigation menu, navigate to a database and schema and
     select the table for which you want to assign or change a policy.
     The table appears on the right.
 
-screenshot required
+4.  Click the checkbox for a column and then expand the **Data Protection** drop-down list. By default,     CTR Policy is selected.
 
-4.  Click the checkbox for a column and then expand the **Data
-    Protection** drop-down list. By default, CTR Policy is selected.
-
-screenshot required
+![Data Protection Policies](../images/data_protection.svg){: caption="Figure 3. Data Protection Policies" caption-side="bottom"}
 
 5.  Perform one of the following operations:
     - Accept the default policy or select a different default policy.
@@ -72,7 +69,7 @@ For example: 
     selections.
 
 8.  Review your policy and select a **Migration Plan**. The migration plans are listed below:
-    **Save**: Defines a policy for future migration.
-    **Deploy**: Establishes a data schema for an environment that was not processed through {{site.data.keyword.security_broker_short}} migration and the data type conversion but does not migrate the data.
-    **Deploy and Migrate**: Defines a policy *and* migrates the
+    **Save Policy**: Defines a policy for future migration.
+    **Deploy Policy**: Establishes a data schema for an environment that was not processed through {{site.data.keyword.security_broker_short}} migration and the data type conversion but does not migrate the data.
+    **Deploy Policy & Migrate Data**: Defines a policy *and* migrates the
     existing data in the data store.

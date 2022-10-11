@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-09-22"
+lastupdated: "2022-10-11"
 
 keywords: FAQ, setup, data protection
 
@@ -115,6 +115,10 @@ Broker Manager.
 
 A secure credential store is created in MongoDB by Data Security Broker
 Manager. This is encrypted with a key that is configured during setup.
+
+**Why is the Deploy Policy and Migrate Data option disabled in the Data Security Broker Manager UI?**
+
+
 
 **Where do I get the information to connect the application to Baffle Shield?**
 

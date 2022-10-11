@@ -54,6 +54,8 @@ b)  In the **Add Database** dialog, enter a name and description for the
     database in the **Database Name** and **Database Description**
     fields.
 
+    ![Database](../images/database.svg){: caption="Figure 2. Connecting to a Database" caption-side="bottom"}
+
 c)  Select the database type as **Postgres** from the **Database Type**
     drop-down list.
 
@@ -91,7 +93,7 @@ h)  Create the data that is required for encryption or decryption as
 
 a)  Select the **Applications** icon in the left navigation panel and
     click **Enroll Application +**.
-    ![Applications(../images/add_app.svg){: caption="Figure 1. Applications" caption-side="bottom"}
+    ![Applications](../images/add_app.svg){: caption="Figure 3. Applications" caption-side="bottom"}
     The **Enroll Application** dialog appears.
 
 b)  Enter the name and description for the application in the
@@ -116,12 +118,12 @@ all the required records to ensure that that the record level
 encryption is applied to all the required records in the table.
 
 g)  Click **Enroll Application**.
-![Enroll Application](../images/enroll_app.svg){: caption="Figure 2. Enroll Application" caption-side="bottom"}
+![Enroll Application](../images/enroll_app.svg){: caption="Figure 4. Enroll Application" caption-side="bottom"}
 
 1.  Click on an application and select the drop down which is present in
     the **Migration Details** field in the right side and click
     **Encrypt**.
-![Encrypt Data](../images/encnrypt.svg){: caption="Figure 3. Encrypt Data" caption-side="bottom"}
+![Encrypt Data](../images/encnrypt.svg){: caption="Figure 5. Encrypt Data" caption-side="bottom"}
 
 2.  Select the Database and the table where you have the data created
     and select the **Column** which needs to be encrypted. Choose the
@@ -132,6 +134,8 @@ g)  Click **Enroll Application**.
     (Provide a link to the Encryption and Data Protection Modes in Data
     Security Broker table which is present in the About the service
     topic).
+
+    ![Encryption](../images/encryption_schema.svg){: caption="Figure 6. Standard Encryption" caption-side="bottom"}
 
 3.  Choose **Deploy Policy & Migrate Data** under the **Deployment
     Plan** option. There are three options that you can choose to

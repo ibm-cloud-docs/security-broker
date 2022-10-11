@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-10-10"
+lastupdated: "2022-10-11"
 
 keywords: about the service, deploy policy, deployment plans, encryption technology, encryption modes, data protection modes
 
@@ -136,6 +136,7 @@ specified {{site.data.keyword.security_broker_short}} Shield to encrypt them. Da
 Broker Shield acts as a proxy for the configured database, and the data
 is encrypted as well.
 
+Note: This option is disabled for applications, which does not have a {{site.data.keyword.security_broker_short}} Shield associated with it.
 
 ## Key Benefits of {{site.data.keyword.security_broker_short}}:
 {: #sb-key-benefits}
