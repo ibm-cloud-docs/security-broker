@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-09-22"
+lastupdated: "2022-10-13"
 
 keywords: support, getting started, data protection, data threats
 
@@ -75,10 +75,10 @@ encryption, tokenization, and de-identification methods to protect data in data 
 ## Before you begin
 {: #sb-before-you-begin}
 
-Before you begin configuring the Data Security Broker{{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield, verify that you have met the following requirements:
+Before you begin configuring the {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield, verify that you have met the following requirements:
 
 - Admin privileges for your platform
-- The user account used to log in to the Data Security Broker Shield host machine must have a home directory on that system
+- The user account used to log in to the {{site.data.keyword.security_broker_short}} Shield host machine must have a home directory on that system
 - SSH client
 - Private key pair
 - Database privileges for encryption and migration
@@ -90,15 +90,15 @@ Ensure that your environment meets the following minimum system level and resour
 
 | {{site.data.keyword.security_broker_short}} Component | Memory | Java Version     | Virtual CPU (vCPU) |
 |--------------------------------|--------|------------------|--------------------|
-| Data Security Broker Manager   | 8 GB   | OpenJDK Java 1.8 | 2                  |
-| Data Security Broker Shield    | 8 GB   | OpenJDK Java 1.8 | 16                 |
+| {{site.data.keyword.security_broker_short}} Manager   | 8 GB   | OpenJDK Java 1.8 | 2                  |
+| {{site.data.keyword.security_broker_short}} Shield    | 8 GB   | OpenJDK Java 1.8 | 16                 |
 | IBM Postgress Database         | 256 GB | OpenJDK Java 1.8 | 4                  |
 {: caption="Table 1. System Requirements for {{site.data.keyword.security_broker_short}}" caption-side="bottom"}  
 
 | Cluster                                         | Operating System | Number of Master nodes required | Number of Worker nodes required | Number of Pods required |
 |-------------------------------------------------|------------------|---------------------------------|---------------------------------|-------------------------|
 | IBM Red Hat OpenShift Kubernetes cluster (ROKS) | Ubuntu 18        | 1                               | 2                               | 5                       |
-| IBM Cloud Kubernetes cluster (IKS)              | RHEL 7           | 1                               | 2   
+| IBM Cloud Kubernetes cluster (IKS)              | RHEL 7           | 1                               | 2                               | 5
 {: caption="Table 2. Resource level requirements for {{site.data.keyword.security_broker_short}}" caption-side="bottom"}  
 
 
