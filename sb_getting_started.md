@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-10-13"
+lastupdated: "2022-10-14"
 
 keywords: support, getting started, data protection, data threats
 
@@ -77,23 +77,13 @@ encryption, tokenization, and de-identification methods to protect data in data 
 
 Before you begin configuring the {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield, verify that you have met the following requirements:
 
-- Admin privileges for your platform
-- The user account used to log in to the {{site.data.keyword.security_broker_short}} Shield host machine must have a home directory on that system
-- SSH client
-- Private key pair
-- Database privileges for encryption and migration
+- Create an IBM Cloud account.
+- Database privileges for encryption and migration.
 
 ### System Requirements
 {: #sb-system-requirements}
 
 Ensure that your environment meets the following minimum system level and resource level requirements:
-
-| {{site.data.keyword.security_broker_short}} Component | Memory | Java Version     | Virtual CPU (vCPU) |
-|--------------------------------|--------|------------------|--------------------|
-| {{site.data.keyword.security_broker_short}} Manager   | 8 GB   | OpenJDK Java 1.8 | 2                  |
-| {{site.data.keyword.security_broker_short}} Shield    | 8 GB   | OpenJDK Java 1.8 | 16                 |
-| IBM Postgress Database         | 256 GB | OpenJDK Java 1.8 | 4                  |
-{: caption="Table 1. System Requirements for {{site.data.keyword.security_broker_short}}" caption-side="bottom"}  
 
 | Cluster                                         | Operating System | Number of Master nodes required | Number of Worker nodes required | Number of Pods required |
 |-------------------------------------------------|------------------|---------------------------------|---------------------------------|-------------------------|
