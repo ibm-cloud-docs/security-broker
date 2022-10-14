@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-09-23"
+lastupdated: "2022-10-14"
 
 keywords: install, ROKS, IKS, manifests, HELM
 
@@ -57,21 +57,17 @@ HELM](https://helm.sh/docs/).
 8.  Perform the following operations to complete the deployment of the
     {{site.data.keyword.security_broker_short}} software using the Catalog UI:
 
-    a.  In the **Select your deployment target** drop down, select IBM
-        Cloud Kubernetes service.
+    a.  In the **Select your deployment target** drop down, select **IBM Cloud Kubernetes service**.
 
-    b.  Select **HELM chart** as the delivery method for installation in
-        the **Select a delivery method** drop down.
+    b.  Select **HELM chart** as the delivery method for installation in the **Select a delivery method** drop down.
 
     c.  Select the product version and click **Next**.
 
-    d.  From the list of available clusters, select the cluster on which
-        you wish to perform the installation and click **Next**.
+    d.  From the list of available clusters, select the cluster on which you wish to perform the installation and click **Next**.
 
     e.  Select a namespace for the installation.
 
-    f.  Specify the **Name**, and select the **Resource group**,
-        **Location**, and **Tags** required for the installation.
+    f.  Specify the **Name**, and select the **Resource group**, **Location**, and **Tags** required for the installation.
 
     g.  Click **Install** to complete the installation process.
 
