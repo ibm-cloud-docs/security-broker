@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-10-10"
+lastupdated: "2022-10-14"
 
 keywords: database, admin, priveleges, users, configure, operations
 
@@ -66,9 +66,7 @@ following requirements:
 
 8.  Configure Credential Keystore to establish an encrypted credential
     store for any system access credential or access key that the Data
-    Security Broker Manager or Data Security Broker Shield utilize.\
-    Select **LOCAL** for Keystore type.  Enter the **Data Security
-    Broker** **Secret Key** in the text field. 
+    Security Broker Manager or Data Security Broker Shield utilize. Select **LOCAL** for Keystore type.  Enter the **Data Security Broker** **Secret Key** in the text field. 
 
 **Note**: The Data Security Broker Secret Key must contain at least 10
 characters, a mixture of upper and lower case, including at least* *1
