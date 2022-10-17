@@ -38,7 +38,7 @@ toc:
           topics:
           - install/sb_install_manifests.md
           - install/sb_install_helm.md
-          - install/sb_install_ui.md
+          - install/sb_install_catalog.md
       - topicgroup:
           label: Configuring Data Security Broker Manager
           topics:

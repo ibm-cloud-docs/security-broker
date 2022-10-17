@@ -29,14 +29,16 @@ Before you begin installing the {{site.data.keyword.security_broker_short}} Mana
 
 The factors that affect the sizing of the Data Security Broker deployments consist of the Data Security Broker Manager management console and one or more Data Security Broker Shield proxies. Each component has its own resource needs depending on the anticipated workloads.
 
-**Data Security Broker Manager**
+## Data Security Broker Manager ##
+{: #sb_sizing_dsbm}
 
 In general, resources allocated to a Data Security Broker Manager
 deployment needs to be scaled with the number of managed Data Security
 Broker Shields and the number of concurrent users using the Data
 Security Broker Manager.
 
-**Recommended sizing for Kubernetes or OpenShift Deployments:**
+## Recommended sizing for Kubernetes or OpenShift Deployments: ##
+{: #sb_sizing_dsbr}
 
 Data Security Broker Manager consists of four containers, each running
 in its own pod.
@@ -75,7 +77,6 @@ The sizing recommendation for each pod is as follows:
 | CPU                                  | 2     | 4      | 8      | 16      |
 | Memory                               | 4 GB  | 8 GB   | 16 GB  | 32 GB   |
 | Minimum Space (in persistent volume) | 5 GB  | 5 GB   | 5 GB   | 5 GB    |
-
 {: caption="Table 1. Resource level requirements for {{site.data.keyword.security_broker_short}}" Manager caption-side="bottom"} 
 
 
@@ -87,10 +88,10 @@ The sizing recommendation for each pod is as follows:
 |--------------------|-------|--------|--------|---------|
 | Concurrent Users   | 1-5   | 6-20   | 21-100 | 101+    |
 | Minimum Disk Space | 10 GB | 25 GB  | 50 GB  | 100 GB  |
-
 {: caption="Table 2. Resource level requirements for {{site.data.keyword.security_broker_short}}" Mangodb caption-side="bottom"} 
 
-**Data Security Broker Shield**
+## Data Security Broker Shield ##
+{: #sb_sizing_dsbs}
 
 The general rule for Data Security Broker Shield sizing, to handle peak
 utilization scenarios, is to match the sum of all Data Security Broker
@@ -101,7 +102,8 @@ policies, and depending on the workload in a particular installation.
 Resource allocation to Data Security Broker Shield deployments typically
 scales with the expected maximum number of concurrent connections.
 
-**Recommended sizing for Kubernetes or OpenShift Deployments**
+## Recommended sizing for Kubernetes or OpenShift Deployments ##
+{: #sb_sizing_dsbrs}
 
 Data Security Broker Shield consists of a single container that runs in
 its own pod. The Data Security Broker Shield pod can be in the same or
@@ -115,7 +117,6 @@ follows:
 |--------------------------|-------|----------|-----------|-------------|
 | CPU                      | 2     | 4        | 8         | 16          |
 | Memory                   | 8 GB  | 16 GB    | 32 GB     | 64 GB       |
-
 {: caption="Table 3. Resource level requirements for {{site.data.keyword.security_broker_short}}" Shield caption-side="bottom"}
 
 ## Installing {{site.data.keyword.security_broker_short}} through the Manifests:

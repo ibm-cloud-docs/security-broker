@@ -91,7 +91,8 @@ Ensure that your environment meets the following minimum system level and resour
 | IBM Cloud Kubernetes cluster (IKS)              | RHEL 7           | 1                               | 2                               | 5
 {: caption="Table 2. Resource level requirements for {{site.data.keyword.security_broker_short}}" caption-side="bottom"}  
 
-### Assign permissions for IBM Cloud credentials to access {{site.data.keyword.security_broker_short}}
+## Assign permissions for IBM Cloud credentials to access {{site.data.keyword.security_broker_short}} ##
+{: #sb_getting_assign_permission}
 
 As an IBM Cloud user, you need minimum permissions to setup and access {{site.data.keyword.security_broker_short}}. 
 By using the following steps and the information in the table, assign the required permissions:
@@ -107,6 +108,5 @@ By using the following steps and the information in the table, assign the requir
 | Cloud Object Storage                    | Manager          |
 | Kubernetes Service                      | Editor           |
 | IBM Red Hat OpenShift Kubernetes Servie | Editor           |
-
 {: caption="Table 1. Permissions required for {{site.data.keyword.security_broker_short}}" caption-side="bottom"}
 
