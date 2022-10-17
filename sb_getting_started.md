@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-10-14"
+lastupdated: "2022-10-17"
 
 keywords: support, getting started, data protection, data threats
 
@@ -91,4 +91,22 @@ Ensure that your environment meets the following minimum system level and resour
 | IBM Cloud Kubernetes cluster (IKS)              | RHEL 7           | 1                               | 2                               | 5
 {: caption="Table 2. Resource level requirements for {{site.data.keyword.security_broker_short}}" caption-side="bottom"}  
 
+### Assign permissions for IBM Cloud credentials to access {{site.data.keyword.security_broker_short}}
+
+As an IBM Cloud user, you need minimum permissions to setup and access {{site.data.keyword.security_broker_short}}. 
+By using the following steps and the information in the table, assign the required permissions:
+1. Log into your IBM Cloud account and click **Manage -> Access (IAM)**.
+2. In the Manage access and users dashboard, click **View all** in the **My user details** section.
+3. In the **Access** tab, click **Assign access +**. From the Table 1, select a service and click **Next**.
+4. In the **Roles and actions** section, select the specified permissions that are required.
+5. Click **Add** and **Assign** to assign the permissions required.
+
+| Service Name                            | Permission level |
+|-----------------------------------------|------------------|
+| Key Protect                             | Writer           |
+| Cloud Object Storage                    | Manager          |
+| Kubernetes Service                      | Editor           |
+| IBM Red Hat OpenShift Kubernetes Servie | Editor           |
+
+{: caption="Table 1. Permissions required for {{site.data.keyword.security_broker_short}}" caption-side="bottom"}
 
