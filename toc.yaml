@@ -36,7 +36,7 @@ toc:
       - topicgroup:
           label: Methods to install Data Security Broker
           topics:
-          - install/sb_install_manifests.md
+          
           - install/sb_install_helm.md
           - install/sb_install_catalog.md
       - topicgroup:
