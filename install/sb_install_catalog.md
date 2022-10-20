@@ -167,12 +167,14 @@ Complete the following steps to insall the **{{site.data.keyword.security_broker
 You must configuring the Data Security Broker Manager console before installing the **{{site.data.keyword.security_broker_short}}** Shield. See [Configuring {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_configure) to complete the configuration of the **{{site.data.keyword.security_broker_short}}** Manager and access the **{{site.data.keyword.security_broker_short}}** Manager console.
 
 ## Login to **{{site.data.keyword.security_broker_short}}** Manager:
+{: #install-catalog-login}
 
-Login to the **{{site.data.keyword.security_broker_short}}** Manager using the steps mentioned in the section. 
+Login to the **{{site.data.keyword.security_broker_short}}** Manager using the steps mentioned in the [Logging into {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_login) section. 
 
 ## Enroll an application in the **{{site.data.keyword.security_broker_short}}** Manager:
+{: #install-catalog-enroll}
 
-Refer to the [Configuring {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_configure) to enroll the application in the **{{site.data.keyword.security_broker_short}}** Manager.
+Refer to the [Enrolling an Application in {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_enroll_app) to enroll the application in the **{{site.data.keyword.security_broker_short}}** Manager.
 
 ## Install **{{site.data.keyword.security_broker_short}}** Shield:
 {: #sb_install_ui_procedure}
