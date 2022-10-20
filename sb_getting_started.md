@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-10-17"
+lastupdated: "2022-10-20"
 
 keywords: support, getting started, data protection, data threats
 
@@ -109,4 +109,7 @@ By using the following steps and the information in the table, assign the requir
 | Kubernetes Service                      | Editor           |
 | IBM Red Hat OpenShift Kubernetes Servie | Editor           |
 {: caption="Table 1. Permissions required for {{site.data.keyword.security_broker_short}}" caption-side="bottom"}
+
+Next Steps
+
 
