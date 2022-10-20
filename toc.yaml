@@ -32,18 +32,22 @@ toc:
       - topicgroup:
           label: Installing Data Security Broker      
           topics:
-          - install/sb_install_com.md    
+          - install/sb_install_catalog.md 
       - topicgroup:
           label: Methods to install Data Security Broker
           topics:
           
-          - install/sb_install_helm.md
-          - install/sb_install_catalog.md
+          
+          
       - topicgroup:
           label: Configuring Data Security Broker Manager
           topics:
           - tutorials/sb_configure.md
           - tutorials/sb_configure_keyprotect.md
+      - topicgroup:
+          label: Logging into Data Security Broker Manager
+          topics:
+          - tutorials/sb_login.md          
       - topicgroup:
           label: Encrypting Data using Data Security Broker       
           topics:
