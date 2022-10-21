@@ -41,95 +41,10 @@ subcollection: security-broker
 {:release-note: data-hd-content-type='release-note'}
 
 
-# Uninstalling Data Security Broker through Manifests
+# Uninstalling {{site.data.keyword.security_broker_short}} through IBM Cloud Catalog
 {: #sb_uninstall}
 
-If you no longer need to use IBM Cloud® Security Broker, you can delete
-the namespace to delete all the services, and the objects associated
-with the namespace.
-{: shortdesc}
 
-## Uninstalling Data Security Broker in IKS:
-{: #unistall-sb-IKS}
-
-Log into OpenShift Container Platform and follow the steps below to uninstall the Data Security Broker:
-
-1.  Get the list of namespaces available in the cluster by executing the following command:
-
-```sh
-oc get namespace
-```
-{: codeblock}
-
-2.  Identify the namespace, where you have the Data Security Broker installed.
-
-3.  Delete the namespace, where the Data Security Broker is present by executing the following command:
-
-```sh
-oc delete -f namespace \<name of the namespace where Data Security
-Broker is installed\>
-```
-{: codeblock}
-
-4.  Verify if the namespace is deleted by listing all the namespaces available in the cluster by executing the following command:
-
-```sh
-oc get namespace
-```
-{: codeblock}
-
-## Uninstalling Data Security Broker in ROKS:
-{: #uninstall-sb-ROKS}
-
-Log into **kubectl** and complete the and follow the steps below to uninstall the Data Security Broker:
-
-1.  Get the list of namespaces available in the cluster by executing the following command:
-
-```sh
-kubectl get namespace
-```
-{: codeblock}
-
-2.  Identify the namespace, where you have the Data Security Broker installed.
-
-3.  Delete the namespace, where the Data Security Broker is present by executing the following command:
-
-```sh
-kubectl delete -f namespace \<name of the namespace where Data Security
-Broker is installed\>
-```
-{: codeblock}
-
-4.  Verify if the namespace is deleted by listing all the namespaces available in the cluster by executing the following command:
-
-```sh
-kubectl get namespace
-```
-{: codeblock}
-
-## Uninstalling Data Security Broker using HELM:
-{: #sb_uninstall_helm}
-
-1. List the HELM charts that is available in your system by executing the following command:
-
-```sh
-helm list
-```
-{: codeblock}
-
-2. Uninstall the Data Security Broker service using HELM by providing the name of the HELM chart, which is configured during the installation process:
-
-```sh
-helm uninstall <chart name>
-```
-{: codeblock}
-
-3. Verify if the service is uninstalled by checking if the corresponding HELM chart, which is used to install the Data Security Broker is deleted by listing all the HELM charts available in the system by executing the following command:
-
-```sh
-helm list
-```
-{: codeblock}
 
 
 

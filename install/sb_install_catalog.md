@@ -1,14 +1,14 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-10-20"
+lastupdated: "2022-10-21"
 
 keywords: install, ROKS, IKS, manifests, HELM
 
 subcollection: security-broker
 ---
 
-# Installing {{site.data.keyword.security_broker_short}}
+# Installing {{site.data.keyword.security_broker_short}} through IBM Cloud Catalog
 {: #sb_install_catalog}
 
 ## Overview:
@@ -153,11 +153,7 @@ Complete the following steps to insall the **{{site.data.keyword.security_broker
 
 4.  Select the product version.
 
-5.  From the list of available clusters, select the cluster on which you wish to perform the installation and click **Next**.
 
-6.  Select a namespace to perform the installation.
-
-7.  Specify the **Name**, and select the **Resource group**, **Location**, and **Tags** required for configuring the workspace for the installation.
 
 8.  Set the deployment values and Click **Install** to complete the installation process.
 
