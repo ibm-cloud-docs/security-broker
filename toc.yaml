@@ -34,12 +34,6 @@ toc:
           topics:
           - install/sb_install_catalog.md 
       - topicgroup:
-          label: Methods to install Data Security Broker
-          topics:
-          
-          
-          
-      - topicgroup:
           label: Configuring Data Security Broker Manager
           topics:
           - tutorials/sb_configure.md
