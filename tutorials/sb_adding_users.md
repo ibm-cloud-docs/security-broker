@@ -1,14 +1,14 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-10-11"
+lastupdated: "2022-10-25"
 
 keywords: users, admin, priveleges, profiles, {{site.data.keyword.security_broker_short}} Manager, SMTP
 
 subcollection: security-broker
 ---
 
-# Adding users in {{site.data.keyword.security_broker_short}} Manager
+# Adding users
 {: #sb_adding_users}
 
 ## Overview

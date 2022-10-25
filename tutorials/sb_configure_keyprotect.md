@@ -1,14 +1,14 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-10-10"
+lastupdated: "2022-10-25"
 
 keywords: database, admin, priveleges, users, configure, operations, keyprotect
 
 subcollection: security-broker
 ---
 
-# Configure IBM Key Protect and add it as a keystore in Data Security Broker Manager
+# Configure IBM Key Protect
 {: #sb_configure_keyprotect}
 
 You can find details on how to configure IBM Key Protect and add it as a

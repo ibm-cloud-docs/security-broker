@@ -8,7 +8,7 @@ keywords: database, admin, priveleges, users, features, operations
 subcollection: security-broker
 ---
 
-# LIMITATIONS OF USING DATA SECURITY BROKER:
+# Limitations
 {: #sb_limitations}
 
 ## Limitations of Application-level Encryption:

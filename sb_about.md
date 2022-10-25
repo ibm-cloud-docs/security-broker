@@ -8,7 +8,7 @@ keywords: about the service, deploy policy, deployment plans, encryption technol
 subcollection: security-broker
 ---
 
-# About the software: {{site.data.keyword.security_broker_short}}
+# About the software:
 {: #sb_about}
 
 {{site.data.keyword.security_broker_short}} is a solution that makes data breaches irrelevant

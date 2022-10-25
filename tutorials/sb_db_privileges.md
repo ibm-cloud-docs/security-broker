@@ -1,14 +1,14 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2021-09-01"
+lastupdated: "2022-10-25"
 
 keywords: database, admin, priveleges, users, features, operations
 
 subcollection: security-broker
 ---
 
-# Database Privileges for Data Security Broker
+# Database Privileges
 {: #sb_db_priveleges}
 
 In this section, you can find the details about required database
@@ -58,7 +58,7 @@ GRANT ALL PRIVILEGES ON **target database**.* TO '<security_broker_user>'@
 
 4.  Repeat Step 3 for each database that you wish to encrypt.
 
-After completing the above steps, the Data Security Broker Shield contains the necessary permissions to perform the encryption and migration operation.
+After completing the above steps, the {{site.data.keyword.security_broker_short}} Shield contains the necessary permissions to perform the encryption and migration operation.
 
 ## Minimum required database privileges
 {: #sb-db-min-req-priveleges}

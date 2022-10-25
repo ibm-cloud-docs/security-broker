@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-09-01"
+lastupdated: "2022-10-25"
 
 keywords: uninstall, delete, helm, configuration, tls certificate, docker config secret, environment variable, regions, cluster, container, app security, memory encryption, data in use
 
@@ -41,7 +41,7 @@ subcollection: security-broker
 {:release-note: data-hd-content-type='release-note'}
 
 
-# Uninstalling {{site.data.keyword.security_broker_short}} through IBM Cloud Catalog
+# Uninstalling through IBM Cloud Catalog
 {: #sb_uninstall}
 
 
