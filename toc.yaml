@@ -21,7 +21,7 @@ toc:
           - sb_getting_started.md
        
       - topicgroup:
-          label: About the service      
+          label: About the Software      
           topics:
           - sb_about.md
           - sb_release-notes.md
@@ -32,30 +32,24 @@ toc:
       - topicgroup:
           label: Installation     
           topics:
-          - install/sb_install_catalog.md 
-      - topicgroup:
-          label: Configuration
-          topics:
+          - install/sb_install_catalog.md
           - tutorials/sb_configure.md
           - tutorials/sb_configure_keyprotect.md
-      - topicgroup:
-          label: Login Information
-          topics:
-          - tutorials/sb_login.md          
-      - topicgroup:
-          label: Data Protection Services    
-          topics:
-          - tutorials/sb_encrypt_postgress.md
-          - tutorials/sb_enroll_app.md
-          - tutorials/sb_assign_policy.md
-          - tutorials/sb_encrypt_data.md
-          - tutorials/sb_masking.md
+          - tutorials/sb_login.md
       - topicgroup:
           label: Configurations
           topics:
           - tutorials/sb_adding_users.md
           - tutorials/sb_settings.md
-          - tutorials/sb_db_privileges.md          
+          - tutorials/sb_db_privileges.md   
+      - topicgroup:
+          label: Data Protection Services    
+          topics:
+          - tutorials/sb_encrypt_postgress.md
+            - tutorials/sb_enroll_app.md
+            - tutorials/sb_assign_policy.md
+            - tutorials/sb_encrypt_data.md
+          - tutorials/sb_masking.md                
       - topicgroup:
           label: Upgrade and Uninstall
           topics:
