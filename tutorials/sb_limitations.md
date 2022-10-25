@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2021-09-01"
+lastupdated: "2022-10-25"
 
 keywords: database, admin, priveleges, users, features, operations
 
@@ -34,9 +34,9 @@ by horizontal scaling. In the event of failure, Shield can be
 horizontally scaled by adding more of them behind a load balancer.
 
 **Key management**: You must have a place to store your secret key or
-key file. This is frequently a smartcard or Trusted Platform Module
-(TPM). Alternatively, you can secure the information with a password,
-but this reduces security, depending on the level of your password\'s
+key file. You can use IBM Key protect. IBM Key Protect provides full encryption visibility and control,
+allowing you to see and manage data encryption and the entire key lifecycle from a single location. Alternatively, you can secure the information with a password,
+but this reduces security, depending on the level of your password's
 strength.
 
 **Accessibility**: If your key file is lost, your data is also lost. So,

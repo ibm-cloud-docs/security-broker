@@ -65,10 +65,10 @@ toc:
      
   - navgroup:
       id: help
-      - topicgroup:
-          label: Logging and Debugging
-          topics:
-          - tutorials/sb_logging.md
+  - topicgroup:
+      label: Logging and Debugging
+      topics:
+      - tutorials/sb_logging.md
       topics:
       - sb_faqs.md
       - troubleshooting/sb_support.md
