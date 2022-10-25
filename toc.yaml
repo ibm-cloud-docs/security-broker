@@ -64,12 +64,9 @@ toc:
           href: https://www.ibm.com/cloud/blog
      
   - navgroup:
-      id: help
-  - topicgroup:
-      label: Logging and Debugging
+      id: help     
       topics:
       - tutorials/sb_logging.md
-      topics:
       - sb_faqs.md
       - troubleshooting/sb_support.md
       - tutorials/sb_limitations.md
