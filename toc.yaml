@@ -30,46 +30,36 @@ toc:
       id: howto
       topics:
       - topicgroup:
-          label: Installing Data Security Broker      
+          label: Installation     
           topics:
           - install/sb_install_catalog.md 
       - topicgroup:
-          label: Configuring Data Security Broker Manager
+          label: Configuration
           topics:
           - tutorials/sb_configure.md
           - tutorials/sb_configure_keyprotect.md
       - topicgroup:
-          label: Logging into Data Security Broker Manager
+          label: Login Information
           topics:
           - tutorials/sb_login.md          
       - topicgroup:
-          label: Encrypting Data using Data Security Broker       
+          label: Data Protection Services    
           topics:
           - tutorials/sb_encrypt_postgress.md
-      - topicgroup:
-          label: Defining Data Protection policy and encrypting data in Data Security Broker
-          topics:
           - tutorials/sb_enroll_app.md
           - tutorials/sb_assign_policy.md
           - tutorials/sb_encrypt_data.md
+          - tutorials/sb_masking.md
       - topicgroup:
-          label: Adding users, Modifying Settings, and Assigning Database Privileges in Data Security Broker
+          label: Configurations
           topics:
           - tutorials/sb_adding_users.md
           - tutorials/sb_settings.md
-          - tutorials/sb_db_privileges.md
-          - tutorials/sb_limitations.md
+          - tutorials/sb_db_privileges.md          
       - topicgroup:
-          label: Logging and Debugging
-          topics:
-          - tutorials/sb_logging.md
-      - topicgroup:
-          label: Upgrading Data Security Broker
+          label: Upgrade and Uninstall
           topics:
           - tutorials/sb_update.md
-      - topicgroup:
-          label: Uninstalling Data Security Broker
-          topics:
           - tutorials/sb_uninstall.md
                 
   - navgroup:
@@ -81,11 +71,14 @@ toc:
      
   - navgroup:
       id: help
+      - topicgroup:
+          label: Logging and Debugging
+          topics:
+          - tutorials/sb_logging.md
       topics:
       - sb_faqs.md
-      - topicgroup: 
-          label: Troubleshooting
-          topics:
-          - troubleshooting/sb_support.md
+      - troubleshooting/sb_support.md
+      - tutorials/sb_limitations.md
+
           
                     

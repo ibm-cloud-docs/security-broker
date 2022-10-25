@@ -1,14 +1,14 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-10-11"
+lastupdated: "2022-10-25"
 
 keywords: about the service, deploy policy, deployment plans, encryption technology, encryption modes, data protection modes
 
 subcollection: security-broker
 ---
 
-# About the service: {{site.data.keyword.security_broker_short}}
+# About the software: {{site.data.keyword.security_broker_short}}
 {: #sb_about}
 
 {{site.data.keyword.security_broker_short}} is a solution that makes data breaches irrelevant
