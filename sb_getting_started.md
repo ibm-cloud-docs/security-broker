@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-10-21"
+lastupdated: "2022-10-25"
 
 keywords: support, getting started, data protection, data threats
 
@@ -41,7 +41,7 @@ subcollection: security-broker
 {:release-note: data-hd-content-type='release-note'}
 
 
-# Getting started with {{site.data.keyword.security_broker_full}}
+# Getting started with {{site.data.keyword.security_broker_notm}}
 {: #sb_getting_started}
 
 {{site.data.keyword.security_broker_full_notm}} is a complete data protection solution
