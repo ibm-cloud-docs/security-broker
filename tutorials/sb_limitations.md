@@ -68,9 +68,7 @@ The following are considered equality check operators and are supported:
 Indexes can be created on encrypted columns, but the ciphertext will be
 used to create the index and not the underlying cleartext values.
 
-## Unsupported Data Types and Warnings
+## Unsupported Data Types
 {: #sb_unsupported_data_types}
 
-The following table lists data types where migration, masking, or encryption and decryption is not supported in {{site.data.keyword.security_broker_short}}.
-
-
+Only **timestamptz** and **timetz** are unsupported for the Postgress Database in {{site.data.keyword.security_broker_short}}. 

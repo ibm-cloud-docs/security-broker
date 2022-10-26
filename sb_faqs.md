@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-10-11"
+lastupdated: "2022-10-26"
 
 keywords: FAQ, setup, data protection
 
@@ -120,7 +120,7 @@ Manager. This is encrypted with a key that is configured during setup.
 
 The application in which you are trying to perform the encryption or decryption does not have a Data Security Broker Shield attached to it. Associate a Data Security Broker Shield to the application before performing the encryption or decryption process.
 
-**Where do I get the information to connect the application to Baffle Shield?**
+**Where do I get the information to connect the application to {{site.data.keyword.security_broker_short}} Shield?**
 
 If you have self-registered Shields, they are added using the Shield Sync ID, after the application is set up. The Shield Sync ID is found in the Application side panel. 
 
@@ -132,17 +132,13 @@ For this service, analytics reports are not applicable.
 
 Refer to the [Logging and Debugging in {{site.data.keyword.security_broker_short}} section](/docs/security-broker?topic=security-broker-sb_logging).
 
-**How do I add multiple Baffle Shields?**
+**How do I add multiple {{site.data.keyword.security_broker_short}} Shields?**
 
 For containerized, self-registered Shields, replicas can be configured in the YAML file and pointed to the Manager application by using the same Shield Sync ID. Horizontal scaling can be enabled to deploy multiple Shields. For standalone Shields, additional Shields can be added to a Manager application through the UI.
 
 **How is the load balanced between Shield instances?**
 
 Load balancing between Shield instances is managed by OpenShift load balancing policies. 
-
-**What are the Postgres data types that are not supported by Baffle?**
-
-Only _timestamptz_ and _timetz_ are unsupported. 
 
 **What kind of delays should I expect with the Shield acting as a proxy?**
 
