@@ -71,4 +71,4 @@ used to create the index and not the underlying cleartext values.
 ## Unsupported Data Types
 {: #sb_unsupported_data_types}
 
-Only **timestamptz** and **timetz** are unsupported for the Postgress Database in {{site.data.keyword.security_broker_short}}. 
+Only **timestamptz** and **timetz** are unsupported for the PostgreSQL Database in {{site.data.keyword.security_broker_short}}. 
