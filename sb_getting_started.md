@@ -113,4 +113,6 @@ By using the following steps and the information in the table, assign the requir
 ## Next Steps
 {: #sb_getting_next_steps}
 
-Include the flow here.....
+Now that the software is installed on your cluster, you can start protecting your data by following the steps mentioned in the flow diagram below:
+
+![Encryption flow in {{site.data.keyword.security_broker_short}}](images/sb_flow.svg){: caption="Figure 1. Encyrption flow in {{site.data.keyword.security_broker_short}} Manager" caption-side="bottom"}

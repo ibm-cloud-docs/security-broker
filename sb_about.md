@@ -24,9 +24,13 @@ protect databases at a column-level granularity.
 ## How it works
 {: #sb-how-it-works}
 
+{{site.data.keyword.security_broker_short}} delivers an enterprise-level transparent data security platform that secures databases through a "no code" model at the field or file level. The solution supports tokenization, format-preserving encryption (FPE), and role-based access control. 
+
+The encyrption is made simpler, faster, and in a seamless way.
+
 ![High level architectre of {{site.data.keyword.security_broker_short}} Manager](images/architecture.svg){: caption="Figure 1. High level architectre of {{site.data.keyword.security_broker_short}} Manager" caption-side="bottom"}
 
-The {{site.data.keyword.security_broker_short}} as a Service supports data encryption by
+The {{site.data.keyword.security_broker_short}} as a Software supports data encryption by
 migrating the data from an existing SQL/NoSQL database into a secure
 database with the ability to encrypt fields at a column granularity
 thereby enabling selective privacy.
