@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-09-22"
+lastupdated: "2022-10-26"
 
 keywords: database, admin, priveleges, users, features, operations
 
@@ -47,3 +47,62 @@ Protection policy and performing the steps below:
     information, see [Create, assign, and Customize Data Protection Policy in {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_assign_policy).
 
 -   Encrypt and Decrypt Data. For more information, see [Encrypting the data with {{site.data.keyword.security_broker_short}} on an IBM Cloud PostgreSQL Database](/docs/security-broker?topic=security-broker-sb_encrypt_data).
+
+## Format Preserving Encryption (FPE) Supported Data Types:
+{: #sb_encrypt_FPE_data_types}
+
+The following tables lists the FPE supported data types by database:
+
+**PostgreSQL**:
+
+| **Original Data Type** | **FPE Data Type**                         |
+|------------------------|-------------------------------------------|
+| smallint               | fpe-int                                   |
+| int                    | fpe-int                                   |
+| integer                | fpe-int                                   |
+| bigint                 | fpe-int                                   |
+| bytea                  | fpe-int                                   |
+| numeric                | fpe-decimal                               |
+| decimal                | fpe-decimal                               |
+| numeric (s,p)          | fpe-decimal                               |
+| decimal (s,p)          | fpe-decimal                               |
+| money                  | fpe-decimal                               |
+| var                    | - fpe-decimal - fpe-alphanum - fpe-latin1 |
+| char                   | - fpe-win1252 - fpe-cc                    |
+| text                   | - fpe-email1 - fpe-email2                 |
+| date                   | fpe-datetime                              |
+| time                   | fpe-datetime                              |
+| timestamp              | fpe-datetime                              |
+| uuid                   | fpe-hexadecimal                           |
+{: caption="Table 1. FPE Supported Data Types caption-side="bottom"}
+
+## Counter-Mode (CTR) Supported Data Types:
+{: #sb_encrypt_CTR_data_types}
+
+**Note**: {{site.data.keyword.security_broker_short}} Shield only supports one word for a data type name.
+**BYTEA** is a PostgreSQL data type that has the capability to store hexadecimal data which is used to store encrypted data. **BYTEA** is an equivalent of **VARBINARY** in **MySQL** or **RAW** datatype in **Oracle** database.
+
+**PostgreSQL**:
+The following table lists PostgreSQL supported data types for M_CTR mode in {{site.data.keyword.security_broker_short}} Manager. 
+
+| **Original Data Type**                                                            | **Encrypted Data Type** |   |
+|-----------------------------------------------------------------------------------|-------------------------|---|
+| SMALLINT                                                                          | BYTEA                   |   |
+| INT, INTEGER                                                                      | BYTEA                   |   |
+| BIGINT                                                                            | BYTEA                   |   |
+| REAL, FLOAT4                                                                      | BYTEA                   |   |
+| FLOAT8 - Used in Data Security Broker Shield  for "double precision"              | BYTEA                   |   |
+| DECIMAL, NUMERIC                                                                  | BYTEA                   |   |
+| VARCHAR - Used in Data Security Broker Shield for "character verification"        | BYTEA                   |   |
+| CHAR, CHARACTER, BPCHAR                                                           | BYTEA                   |   |
+| TEXT                                                                              | BYTEA                   |   |
+| JSON, JSONB                                                                       | BYTEA                   |   |
+| BYTEA                                                                             | BYTEA                   |   |
+| MONEY                                                                             | BYTEA                   |   |
+| DATE                                                                              | BYTEA                   |   |
+| TIMESTAMP - Used in Data Security Broker Shield for "timestamp without time zone" | BYTEA                   |   |
+| TIMESTAMPZ - Used in Data Security Broker Shield for "timestamp with time zone"   | BYTEA                   |   |
+| UUID                                                                              | BYTEA                   |   |
+| BIT                                                                               | BYTEA                   |   |
+| VARBIT - Used in Data Security Broker Shield for "bit verification"               | BYTEA                   |   |
+{: caption="Table 2. CTR Supported Data Types caption-side="bottom"}

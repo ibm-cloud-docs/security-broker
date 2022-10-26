@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-10-25"
+lastupdated: "2022-10-26"
 
 keywords: database, admin, priveleges, users, features, operations
 
@@ -67,3 +67,10 @@ The following are considered equality check operators and are supported:
 
 Indexes can be created on encrypted columns, but the ciphertext will be
 used to create the index and not the underlying cleartext values.
+
+## Unsupported Data Types and Warnings
+{: #sb_unsupported_data_types}
+
+The following table lists data types where migration, masking, or encryption and decryption is not supported in {{site.data.keyword.security_broker_short}}.
+
+
