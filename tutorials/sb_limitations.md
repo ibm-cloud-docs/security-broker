@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-10-26"
+lastupdated: "2022-10-27"
 
 keywords: database, admin, priveleges, users, features, operations
 
@@ -71,4 +71,4 @@ used to create the index and not the underlying cleartext values.
 ## Unsupported Data Types
 {: #sb_unsupported_data_types}
 
-Only **timestamptz** and **timetz** are unsupported for the PostgreSQL Database in {{site.data.keyword.security_broker_short}}. 
+Only **timestamptz** and **timetz** data types are not supported for the PostgreSQL Database in {{site.data.keyword.security_broker_short}}. 
