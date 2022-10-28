@@ -1,14 +1,14 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-10-26"
+lastupdated: "2022-10-28"
 
 keywords: database, admin, priveleges, users, features, operations
 
 subcollection: security-broker
 ---
 
-# Data Encryption using {{site.data.keyword.security_broker_short}}
+# Data Protection Services
 {: #sb_encrypt_postgress}
 
 ## Overview:

@@ -1,14 +1,14 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-10-25"
+lastupdated: "2022-10-28"
 
 keywords: install, ROKS, IKS, manifests, HELM
 
 subcollection: security-broker
 ---
 
-# Installing through IBM Cloud Catalog
+# Installating Data Security Broker Manager and Shield
 {: #sb_install_catalog}
 
 ## Overview:
