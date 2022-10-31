@@ -1,5 +1,5 @@
 toc:
- properties:
+  properties:
     subcollection: security-broker
     service-name: security-broker
     category: security
@@ -10,8 +10,8 @@ toc:
     path: security-broker
     label: IBM Cloud Data Security Broker
     version: 1
-    
- entries: 
+
+  entries: 
   - navgroup: 
       id: learn
       topics:
@@ -33,18 +33,18 @@ toc:
           topics:
           - tutorials/sb_encrypt_postgress.md
       - topicgroup:
-                topics:
-                - tutorials/add_keystore.md
-                - tutorials/add_db.md
-                - tutorials/sb_enroll_app.md
+          topics:
+          - tutorials/add_keystore.md
+          - tutorials/add_db.md
+          - tutorials/sb_enroll_app.md
       - topicgroup:
-            label: Standard Encryption
-            topics:
-            - tutorials/sb_encrypt_data.md   
+          label: Standard Encryption
+          topics:
+          - tutorials/sb_encrypt_data.md   
       - topicgroup:
-            label: Data Masking
-            topics:
-            - tutorials/sb_masking.md
+          label: Data Masking
+          topics:
+          - tutorials/sb_masking.md
       - topicgroup:
           label: Configurations in Data Security Broker Manager
           topics:
@@ -58,14 +58,14 @@ toc:
           topics:
           - tutorials/sb_update.md
           - tutorials/sb_uninstall.md
-                
+
   - navgroup:
       id: reference
       links:
       - link: 
           label: Blogs
           href: https://www.ibm.com/cloud/blog
-     
+
   - navgroup:
       id: help     
       topics:
@@ -73,6 +73,3 @@ toc:
       - sb_faqs.md
       - troubleshooting/sb_support.md
       - tutorials/sb_limitations.md
-
-          
-                    
