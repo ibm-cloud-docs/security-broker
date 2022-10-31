@@ -7,7 +7,6 @@ toc:
     href: /docs/security-broker
     console-page: /catalog/services/security-broker
     product-page: https://cloud.ibm.com/security-broker
-    path: security-broker
     label: IBM Cloud Data Security Broker
     version: 1
 
@@ -23,7 +22,7 @@ toc:
       id: howto
       topics:
       - topicgroup:
-          label: Installation   
+          label: Installation
           topics:
           - install/sb_install_catalog.md
           - tutorials/sb_configure.md
@@ -33,14 +32,9 @@ toc:
           topics:
           - tutorials/sb_encrypt_postgress.md
       - topicgroup:
-          topics:
-          - tutorials/add_keystore.md
-          - tutorials/add_db.md
-          - tutorials/sb_enroll_app.md
-      - topicgroup:
           label: Standard Encryption
           topics:
-          - tutorials/sb_encrypt_data.md   
+          - tutorials/sb_encrypt_data.md
       - topicgroup:
           label: Data Masking
           topics:
