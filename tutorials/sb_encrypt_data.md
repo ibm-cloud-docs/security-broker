@@ -13,6 +13,7 @@ subcollection: security-broker
 
 ## Overview:
 {: #sb_se_overview}
+
 {{site.data.keyword.security_broker_short}} functions as an
 application-level encryption (ALE) equivalent in this
 mode encrypting data on a field-level basis. This is performed using
