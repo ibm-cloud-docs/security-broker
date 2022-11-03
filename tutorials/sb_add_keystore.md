@@ -18,6 +18,7 @@ subcollection: security-broker
 1. Login to {{site.data.keyword.security_broker_short}} Manager.
 
 2.  Select **Keystores** from the left navigation and click **Add Keystore +**.
+
 ![Keystores](../images/keystore.svg){: caption="Figure 1. Keystores" caption-side="bottom"}
 
 3.  Specify a name for the Keystore in the **Keystore name** field and
