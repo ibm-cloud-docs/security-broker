@@ -8,7 +8,7 @@ keywords: database, admin, priveleges, users, features, operations
 subcollection: security-broker
 ---
 
-# Performing Standard Encryption in an IBM Cloud PostgreSQL Database
+# Performing Data Encryption in an IBM Cloud PostgreSQL Database
 {: #sb_encrypt_data}
 
 ## Overview:
@@ -23,7 +23,7 @@ schema and enable an encryption key mapping.
 ## Format Preserving Encryption (FPE) Supported Data Types:
 {: #sb_encrypt_FPE_data_types}
 
-The following tables lists the FPE supported data types for the standard encryption in {{site.data.keyword.security_broker_short}} Manager:
+The following tables lists the FPE supported data types for the data encryption in {{site.data.keyword.security_broker_short}} Manager:
 
 **PostgreSQL**:
 

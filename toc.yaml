@@ -33,15 +33,15 @@ toc:
           topics:
           - tutorials/sb_encrypt_postgress.md
       - topicgroup:
-          label: Standard Encryption
+          label: Adding a Keystore, Connecting to a Datastore, and Enrolling an Application
           topics:
           - tutorials/sb_add_keystore.md
           - tutorials/sb_add_db.md
           - tutorials/sb_enroll_app.md
-          - tutorials/sb_encrypt_data.md
-      - topicgroup:
-          label: Data Masking
+     - topicgroup:
+          label: Data Encryption and Data Masking
           topics:
+          - tutorials/sb_encrypt_data.md
           - tutorials/sb_masking.md
       - topicgroup:
           label: Configurations in Data Security Broker Manager
