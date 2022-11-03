@@ -1,14 +1,14 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2021-09-01"
+lastupdated: "2022-11-03"
 
 keywords: database, admin, priveleges, users, features, operations, application
 
 subcollection: security-broker
 ---
 
-## Connecting to a Datastore
+# Connecting to a Datastore
 {: #sb_add_db}
 
 To add and connect to a data store, complete the following steps in the {{site.data.keyword.security_broker_short}} Manager:

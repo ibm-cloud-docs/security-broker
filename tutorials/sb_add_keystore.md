@@ -8,7 +8,7 @@ keywords: database, admin, priveleges, users, features, operations, application
 subcollection: security-broker
 ---
 
-##  Adding Keystore in {{site.data.keyword.security_broker_short}} Manager
+# Adding Keystore in {{site.data.keyword.security_broker_short}} Manager
 {: #sb_add_keystore}
 
     Note: Before you can enroll your applications, add databases, and enable encryption, you must enroll your Keystore, so that the {{site.data.keyword.security_broker_short}} Manager can access and create data encryption keys (DEKs) that is used to protect your data. 
