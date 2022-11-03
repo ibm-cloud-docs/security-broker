@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-10-26"
+lastupdated: "2022-11-03"
 
 keywords: about the service, deploy policy, deployment plans, encryption technology, encryption modes, data protection modes
 
@@ -69,7 +69,7 @@ in four main modes.
 {{site.data.keyword.security_broker_short}} functions as an
 application-level encryption (ALE) equivalent in this
 mode encrypting data on a field-level basis. This is performed using
-{{site.data.keyword.security_broker_short}} Manager as described above to enumerate the data
+{{site.data.keyword.security_broker_short}} Manager to enumerate the data
 schema and enable an encryption key mapping.
 
 ### Data Tokenization:

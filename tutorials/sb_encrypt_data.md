@@ -1,126 +1,91 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-10-11"
+lastupdated: "2022-11-03"
 
 keywords: database, admin, priveleges, users, features, operations
 
 subcollection: security-broker
 ---
 
-# Encrypting the data with {{site.data.keyword.security_broker_short}} on an IBM Cloud PostgreSQL Database
+# Performing Standard Encryption in an IBM Cloud PostgreSQL Database
 {: #sb_encrypt_data}
 
-Complete the following steps to encrypt the data with Security Broker on
+## Overview:
+{: #sb_se_overview}
+{{site.data.keyword.security_broker_short}} functions as an
+application-level encryption (ALE) equivalent in this
+mode encrypting data on a field-level basis. This is performed using
+{{site.data.keyword.security_broker_short}} Manager to enumerate the data
+schema and enable an encryption key mapping.
+
+## Format Preserving Encryption (FPE) Supported Data Types:
+{: #sb_encrypt_FPE_data_types}
+
+The following tables lists the FPE supported data types for the standard encryption in {{site.data.keyword.security_broker_short}} Manager:
+
+**PostgreSQL**:
+
+| **Original Data Type** | **FPE Data Type**                         |
+|------------------------|-------------------------------------------|
+| smallint               | fpe-int                                   |
+| int                    | fpe-int                                   |
+| integer                | fpe-int                                   |
+| bigint                 | fpe-int                                   |
+| bytea                  | fpe-int                                   |
+| numeric                | fpe-decimal                               |
+| decimal                | fpe-decimal                               |
+| numeric (s,p)          | fpe-decimal                               |
+| decimal (s,p)          | fpe-decimal                               |
+| money                  | fpe-decimal                               |
+| var                    | - fpe-decimal - fpe-alphanum - fpe-latin1 |
+| char                   | - fpe-win1252 - fpe-cc                    |
+| text                   | - fpe-email1 - fpe-email2                 |
+| date                   | fpe-datetime                              |
+| time                   | fpe-datetime                              |
+| timestamp              | fpe-datetime                              |
+| uuid                   | fpe-hexadecimal                           |
+{: caption="Table 1. FPE Supported Data Types caption-side="bottom"}
+
+## Counter-Mode (CTR) Supported Data Types:
+{: #sb_encrypt_CTR_data_types}
+
+**Note**: {{site.data.keyword.security_broker_short}} Shield only supports one word for a data type name.
+**BYTEA** is a PostgreSQL data type that has the capability to store hexadecimal data which is used to store encrypted data. **BYTEA** is an equivalent of **VARBINARY** in **MySQL** or **RAW** datatype in **Oracle** database.
+
+**PostgreSQL**:
+The following table lists PostgreSQL supported data types for M_CTR mode in {{site.data.keyword.security_broker_short}} Manager. 
+
+| **Original Data Type**                                                            | **Encrypted Data Type** |   |
+|-----------------------------------------------------------------------------------|-------------------------|---|
+| SMALLINT                                                                          | BYTEA                   |   |
+| INT, INTEGER                                                                      | BYTEA                   |   |
+| BIGINT                                                                            | BYTEA                   |   |
+| REAL, FLOAT4                                                                      | BYTEA                   |   |
+| FLOAT8 - Used in Data Security Broker Shield  for "double precision"              | BYTEA                   |   |
+| DECIMAL, NUMERIC                                                                  | BYTEA                   |   |
+| VARCHAR - Used in Data Security Broker Shield for "character verification"        | BYTEA                   |   |
+| CHAR, CHARACTER, BPCHAR                                                           | BYTEA                   |   |
+| TEXT                                                                              | BYTEA                   |   |
+| JSON, JSONB                                                                       | BYTEA                   |   |
+| BYTEA                                                                             | BYTEA                   |   |
+| MONEY                                                                             | BYTEA                   |   |
+| DATE                                                                              | BYTEA                   |   |
+| TIMESTAMP - Used in Data Security Broker Shield for "timestamp without time zone" | BYTEA                   |   |
+| TIMESTAMPZ - Used in Data Security Broker Shield for "timestamp with time zone"   | BYTEA                   |   |
+| UUID                                                                              | BYTEA                   |   |
+| BIT                                                                               | BYTEA                   |   |
+| VARBIT - Used in Data Security Broker Shield for "bit verification"               | BYTEA                   |   |
+{: caption="Table 2. CTR Supported Data Types caption-side="bottom"}
+
+## Procedure:
+{: #sb_se_procedure}
+
+Complete the following steps to encrypt the data with {{site.data.keyword.security_broker_short}} Manager on
 an IBM Cloud PostgreSQL Database:
 
-Login to {{site.data.keyword.security_broker_short}} Manager by specifying the {{site.data.keyword.security_broker_short}} admin user id and password.
-
-##  Adding Keystore in {{site.data.keyword.security_broker_short}} Manager
-{: #sb_encrypt_data_add_keystore}
-
-    Note: Before you can enroll your applications, add databases, and enable encryption, you must enroll your Keystore, so that the {{site.data.keyword.security_broker_short}} Manager can access and create data encryption keys (DEKs) that is used to protect your data. 
-    
-    Follow the steps below to enroll a Keystore that you can use with {{site.data.keyword.security_broker_short}} Shields and
-    databases.
-
-a)  Select **Keystores** from the left navigation and click **Add Keystore +**.
-![Keystores](../images/keystore.svg){: caption="Figure 1. Keystores" caption-side="bottom"}
-
-b)  Specify a name for the Keystore in the **Keystore name** field and
-    provide a valid description in the **Description** field.
-
-c)  Select the Keystore Type as **IBM Key Protect** from the **Keystore Type** dropdown menu. 
-    Enter values for the **Instance ID**, **App Namespace**, **IBM Key Protect Alias**, and **IAM API Key**. Select the region in the **IBM Region** drop down and choose the Data
-    Encryption Key (DEK) Storage type from the **DEK Storage Type** drop down. For information on how to create encryption keys, see [Creating and importing encryption
-    keys](https://cloud.ibm.com/docs/key-protect?topic=key-protect-tutorial-import-keys).
-
-**Note**: Keystore parameters are specific to each Keystore type or
-vendor. Each of the following keystores has a specific set of required
-credentials and parameters.
-
-d)  Click **Add Keystore** to create a Keystore.
-
-
-## Connecting to a Datastore
-{: #sb_encrypt_data_connect_datastore}
-
-To add and connect to a data store, complete the following steps:
-
-a)  Select **Databases** from the left navigation and click **Add
-    Database +** to add a data store.
-
-b)  In the **Add Database** dialog, enter a name and description for the
-    database in the **Database Name** and **Database Description**
-    fields.
-
-![Database](../images/database.svg){: caption="Figure 2. Connecting to a Database" caption-side="bottom"}
-
-c)  Select the database type as **Postgres** from the **Database Type**
-    drop-down list.
-
-d)  Enter the IP address of the database in the **Hostname or IP
-    Address** field.
-
-e)  Specify the **Port** for the database and enter the user **Database
-    Username** and **Database Credential**.
-
-**Note**:
-
--   Create a new user on your database for use with IBM Cloud Security
-    Broker. For more information, see **Database Privileges** (Provide
-    link to Database Privileges topic).
-
--   For IBM Cloud use a **Postgres** database and enter your database
-    name in the **Postgres Database Name** field.
-
-f)  Optional: Select **Use SSL**, click **Add file**, and upload an SSL
-    Certificate.
-
-g)  Click **Add Database** to complete enrolment. The new database
-    appears in the list of configured databases.
-
-h)  Create the data that is required for encryption or decryption as
-    tables in the new database that is created.
-    
-## Enrolling an Application
-{: #sb_encrypt_data_enroll_app}
-
-    An application is the framework that links Security Broker Manager,
-    databases, and Security Broker Shield and instructs the Security
-    Broker Shield to encrypt and decrypt data. Complete the steps below
-    for enrolling an application in Security Broker Manager:
-
-a)  Select the **Applications** icon in the left navigation panel and
-    click **Enroll Application +**.
-    ![Applications](../images/add_app.svg){: caption="Figure 3. Applications" caption-side="bottom"}
-    The **Enroll Application** dialog appears.
-
-b)  Enter the name and description for the application in the
-    **Application Name** and **Application Description** fields.
-
-c)  Select a **Data Store** for encryption.
-
-d)  Select the **Keystore** to be used as a source for data encryption
-    keys.
-
-e)  To perform column level encryption, select **Column level** from the
-    **Encryption Method** drop down list.
-
-f)  To perform record level encryption, select **Record Level** as the
-    **Encryption Method**. Click **Upload Entity Schema**, select your
-    TOML BES file, and click **Open** and upload the entity schema file.
-
-**Note**: You must select **RLE** as the Key ID for data that uses
-record level encryption as an Encryption Method. From the **Key ID**
-drop-down menu, select **RLE**. You must select RLE as the Key ID for
-all the required records to ensure that that the record level
-encryption is applied to all the required records in the table.
-
-g)  Click **Enroll Application**.
-![Enroll Application](../images/enroll_app.svg){: caption="Figure 4. Enroll Application" caption-side="bottom"}
-
-1.  Click on an application and select the drop down which is present in
+1. Login to {{site.data.keyword.security_broker_short}} Manager.
+2. Click on an application and select the drop down which is present in
     the **Migration Details** field in the right side and click
     **Encrypt**.
 ![Encrypt Data](../images/encrypt.svg){: caption="Figure 5. Encrypt Data" caption-side="bottom"}
@@ -155,6 +120,7 @@ g)  Click **Enroll Application**.
 
 
 **Note**: If there is new data which gets inserted in the database, by default, the data is encrypted by using the default data encryption policy that is being selected by the user.
+
 
 
 

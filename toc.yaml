@@ -23,7 +23,7 @@ toc:
       id: howto
       topics:
       - topicgroup:
-          label: Installation
+          label: Installation and Setup
           topics:
           - install/sb_install_catalog.md
           - tutorials/sb_configure.md
@@ -35,6 +35,9 @@ toc:
       - topicgroup:
           label: Standard Encryption
           topics:
+          - tutorials/sb_add_keystore.md
+          - tutorials/sb_add_db.md
+          - tutorials/sb_enroll_app.md
           - tutorials/sb_encrypt_data.md
       - topicgroup:
           label: Data Masking

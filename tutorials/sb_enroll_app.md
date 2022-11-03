@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-10-11"
+lastupdated: "2022-11-03"
 
 keywords: database, admin, priveleges, users, features, operations, application
 
@@ -21,17 +21,18 @@ application.
 To enroll an application in Security Broker Manager, complete the
 following steps:
 
-1.  Click the **Applications** icon in the left navigation panel.
+1.  Login to {{site.data.keyword.security_broker_short}} Manager.
+2.  Click the **Applications** icon in the left navigation panel.
 
 ![Applications](../images/add_app.svg){: caption="Figure 1. Applications" caption-side="bottom"}
 
-2.  Click **Enroll Application +** in the upper right corner of the window. The
+3.  Click **Enroll Application +** in the upper right corner of the window. The
     Enroll Application dialog appears.
 
-3.  Enter an **Application Name** and **Application Description** in the
+4.  Enter an **Application Name** and **Application Description** in the
     respective fields.
 
-4.  Perform the following tasks:
+5.  Perform the following tasks:
     - Choose the {{site.data.keyword.security_broker_short}} Shield from the drop-down list.
     - Select a **Data Store** for encryption.
     - Select the **Keystore** to be used as a source for data encryption keys.  
@@ -39,4 +40,5 @@ following steps:
 
     ![Enroll Application](../images/enroll_app.svg){: caption="Figure 2. Enroll Application" caption-side="bottom"}
 
-5.  Click **Enroll Application**.
+6.  Click **Enroll Application**.
+
