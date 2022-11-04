@@ -51,6 +51,7 @@ toc:
           - tutorials/sb_settings.md
           - tutorials/sb_db_privileges.md
           - tutorials/sb_configure_keyprotect.md
+          - tutorials/sb_hpcs.md
       - topicgroup:
           label: Upgrade and Uninstall
           topics:
