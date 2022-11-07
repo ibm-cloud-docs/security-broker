@@ -8,7 +8,7 @@ keywords: database, admin, priveleges, users, configure, operations, keyprotect
 subcollection: security-broker
 ---
 
-# Configure HPCS
+# Configure IBM Cloud Hyper Protect Crypto Services (HPCS)
 {: #sb_hpcs}
 
 In this section, you can find details on how to add [IBM Cloud Hyper Protect Crypto Services (HPCS)](https://www.ibm.com/cloud/hyper-protect-crypto) as a keystore in {{site.data.keyword.security_broker_short}} Manager and configure HPCS.
