@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-10-26"
+lastupdated: "2022-11-07"
 
 keywords: support, getting started, data protection, data threats
 
@@ -94,7 +94,7 @@ Ensure that your environment meets the following minimum system level and resour
 ## Assign permissions for IBM Cloud credentials to access {{site.data.keyword.security_broker_short}} ##
 {: #sb_getting_assign_permission}
 
-As an IBM Cloud user, you need minimum permissions to setup and access {{site.data.keyword.security_broker_short}}. 
+As an IBM Cloud user, you need minimum permissions to install, setup and access {{site.data.keyword.security_broker_short}}. 
 By using the following steps and the information in the table, assign the required permissions:
 1. Log into your IBM Cloud account and click **Manage -> Access (IAM)**.
 2. In the Manage access and users dashboard, click **View all** in the **My user details** section.
@@ -102,12 +102,13 @@ By using the following steps and the information in the table, assign the requir
 4. In the **Roles and actions** section, select the specified permissions that are required.
 5. Click **Add** and **Assign** to assign the permissions required.
 
-| Service Name                            | Permission level |
-|-----------------------------------------|------------------|
-| Key Protect                             | Writer           |
-| Cloud Object Storage                    | Manager          |
-| Kubernetes Service                      | Editor           |
-| IBM Red Hat OpenShift Kubernetes Servie | Editor           |
+| Service Name                            | Permission level       |
+|-----------------------------------------|------------------------|
+| Key Protect                             | Writer                 |
+| Cloud Object Storage                    | Manager                |
+| Kubernetes Service                      | Manager, Editor        |
+| IBM Red Hat OpenShift Kubernetes Servie | Editor                 |
+| Schematics                              | Manager, Administrator | 
 {: caption="Table 1. Permissions required for {{site.data.keyword.security_broker_short}}" caption-side="bottom"}
 
 ## Next Steps
