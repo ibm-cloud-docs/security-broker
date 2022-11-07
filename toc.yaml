@@ -50,7 +50,11 @@ toc:
           - tutorials/sb_adding_users.md
           - tutorials/sb_settings.md
           - tutorials/sb_db_privileges.md
+      - topicgroup:
+          label: Key Protect Services
+          topics:
           - tutorials/sb_configure_keyprotect.md
+          - tutorials/sb_ibm_keyprotect.md
           - tutorials/sb_hpcs.md
       - topicgroup:
           label: Upgrade and Uninstall
