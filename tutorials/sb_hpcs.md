@@ -35,7 +35,7 @@ ibmcloud resource service-instance 'HPCS-DSB-1'
 
 **Note**: If you are using the IBM Cloud web console, navigate to **Services and Software** and select the HPCS instance. The **GUID** is displayed in the sidebar and the **instanceID** is the same as the **GUID**.
 2. Create and retrieve API Key, in the following way: 
-    a) Open a  web browser and navigate to [ https://cloud.ibm.com/iam/apikeys](https://cloud.ibm.com/iam/apikeys).
+    a) Open a  web browser and navigate to [https://cloud.ibm.com/iam/apikeys](https://cloud.ibm.com/iam/apikeys).
     b) Select **Create an IBM Cloud API Key** and provide a name for the key.
     c) Copy or download the key after it is created.
 3. Create Cloud Object Storage in the resource group.
