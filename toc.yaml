@@ -38,7 +38,7 @@ toc:
           - tutorials/sb_add_keystore.md
           - tutorials/sb_add_db.md
           - tutorials/sb_enroll_app.md
-     -  topicgroup:
+      - topicgroup:
           label: Data Encryption and Data Masking
           topics:
           - tutorials/sb_encrypt_data.md
