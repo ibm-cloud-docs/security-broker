@@ -32,15 +32,9 @@ toc:
           label: Data Protection Services
           topics:
           - tutorials/sb_encrypt_postgress.md
-      - topicgroup:
-          label: Adding a Keystore, Connecting to a Datastore, and Enrolling an Application
-          topics:
-          - tutorials/sb_add_keystore.md
-          - tutorials/sb_add_db.md
-          - tutorials/sb_enroll_app.md
-      - topicgroup:
-          label: Data Encryption and Data Masking
-          topics:
+            - tutorials/sb_add_keystore.md
+            - tutorials/sb_add_db.md
+            - tutorials/sb_enroll_app.md
           - tutorials/sb_encrypt_data.md
           - tutorials/sb_masking.md
       - topicgroup:
@@ -54,8 +48,8 @@ toc:
           label: Key Protect Services
           topics:
           - tutorials/sb_configure_keyprotect.md
-          - tutorials/sb_ibm_keyprotect.md
-          - tutorials/sb_hpcs.md
+            - tutorials/sb_ibm_keyprotect.md
+            - tutorials/sb_hpcs.md
       - topicgroup:
           label: Upgrade and Uninstall
           topics:

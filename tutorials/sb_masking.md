@@ -1,14 +1,14 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-11-03"
+lastupdated: "2022-11-10"
 
 keywords: database, admin, priveleges, users, features, operations
 
 subcollection: security-broker
 ---
 
-# Configure RBAC
+# Data Masking
 {: #sb_masking}
 
 ## Overview:

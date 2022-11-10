@@ -1,14 +1,14 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-11-03"
+lastupdated: "2022-11-10"
 
 keywords: database, admin, priveleges, users, features, operations
 
 subcollection: security-broker
 ---
 
-# Performing Data Encryption in an IBM Cloud PostgreSQL Database
+# Data Encryption using IBM Cloud PostgreSQL Database
 {: #sb_encrypt_data}
 
 ## Overview:

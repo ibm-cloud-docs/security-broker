@@ -1,14 +1,14 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-11-03"
+lastupdated: "2022-11-10"
 
 keywords: database, admin, priveleges, users, features, operations
 
 subcollection: security-broker
 ---
 
-# Types of Data Protection Services
+# Data Protection Services Overview
 {: #sb_encrypt_postgress}
 
 ## Overview:
