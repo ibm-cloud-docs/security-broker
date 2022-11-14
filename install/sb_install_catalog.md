@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-11-03"
+lastupdated: "2022-11-14"
 
 keywords: install, ROKS, IKS, manifests, HELM
 
@@ -34,97 +34,42 @@ Before you begin installing the {{site.data.keyword.security_broker_short}} Mana
 ## Data Security Broker Manager and Data Security Broker Shield Sizing Guidelines
 {: #sb_sizing}
 
-The factors that affect the sizing of the Data Security Broker deployments consist of the Data Security Broker Manager management console and one or more Data Security Broker Shield proxies. Each component has its own resource needs depending on the anticipated workloads.
+The factors that affect the sizing of the {{site.data.keyword.security_broker_short}} deployments consist of the {{site.data.keyword.security_broker_short}} Manager management console and one or more {{site.data.keyword.security_broker_short}} Shield proxies. Each component has its own resource needs depending on the anticipated workloads.
 
 ## Data Security Broker Manager ##
 {: #sb_sizing_dsbm}
 
-In general, resources allocated to a Data Security Broker Manager
-deployment needs to be scaled with the number of managed Data Security
-Broker Shields and the number of concurrent users using the Data
-Security Broker Manager.
+In general, resources allocated to a {{site.data.keyword.security_broker_short}} Manager
+deployment needs to be scaled with the number of managed {{site.data.keyword.security_broker_short}} Shields and the number of concurrent users using the {{site.data.keyword.security_broker_short}} Manager.
 
 ## Recommended sizing for Kubernetes or OpenShift Deployments: ##
 {: #sb_sizing_dsbr}
 
-Data Security Broker Manager consists of four containers, each running
-in its own pod.
+{{site.data.keyword.security_broker_short}} -manager:
 
-They are:
-
-1.  Data Security Broker -mongodb is the database.
-
-2.  Data Security Broker -manager is the backend REST API service.
-
-3.  Data Security Broker -web is the front-end dashboard.
-
-4.  Data Security Broker -nginx is the load balancer.
-
-All Data Security Broker Manager pods must run in the same cluster, and
-hence the cluster must be sized to accommodate the total resource needs
-of the Data Security Broker Manager pod and any other pods running in
-the same cluster.
-
-The sizing recommendation for each pod is as follows:
-
-1.  Data Security Broker -nginx:
-
-    0.5 CPU, 1GB Memory
-
-2.  Data Security Broker -web:
-
-    0.5 CPU, 1GB Memory
-
-3.  Data Security Broker -manager:
-
-| Specification                        | Small | Medium | Large  | X-Large |
-|--------------------------------------|-------|--------|--------|---------|
-| Concurrent Users                     | 1-5   | 6-20   | 21-100 | 101+    |
-| Shields                              | 1-5   | 6-20   | 21-100 | 101+    |
-| CPU                                  | 2     | 4      | 8      | 16      |
-| Memory                               | 4 GB  | 8 GB   | 16 GB  | 32 GB   |
-| Minimum Space (in persistent volume) | 5 GB  | 5 GB   | 5 GB   | 5 GB    |
-{: caption="Table 1. Resource level requirements for {{site.data.keyword.security_broker_short}}" Manager caption-side="bottom"} 
-
-
-4.  Data Security Broker -mangodb:
-
-    For all sizes: 1 CPU, 2GB Mem
-
-| Specification      | Small | Medium | Large  | X-Large |
-|--------------------|-------|--------|--------|---------|
-| Concurrent Users   | 1-5   | 6-20   | 21-100 | 101+    |
-| Minimum Disk Space | 10 GB | 25 GB  | 50 GB  | 100 GB  |
-{: caption="Table 2. Resource level requirements for {{site.data.keyword.security_broker_short}}" Mangodb caption-side="bottom"} 
+4 CPU, 8 GB Memory
 
 ## Data Security Broker Shield ##
 {: #sb_sizing_dsbs}
 
-The general rule for Data Security Broker Shield sizing, to handle peak
-utilization scenarios, is to match the sum of all Data Security Broker
-Shield's memory and CPU allocations to that of the database instance.
+The general rule for {{site.data.keyword.security_broker_short}} Shield sizing, to handle peak
+utilization scenarios, is to match the sum of all {{site.data.keyword.security_broker_short}} Shield's memory and CPU allocations to that of the database instance.
 The initial vCPU and memory requests for the pod installation can start
 low and can be scaled up based on utilization, based on pod scaling
 policies, and depending on the workload in a particular installation.
-Resource allocation to Data Security Broker Shield deployments typically
+Resource allocation to {{site.data.keyword.security_broker_short}} Shield deployments typically
 scales with the expected maximum number of concurrent connections.
 
 ## Recommended sizing for Kubernetes or OpenShift Deployments ##
 {: #sb_sizing_dsbrs}
 
-Data Security Broker Shield consists of a single container that runs in
-its own pod. The Data Security Broker Shield pod can be in the same or
-different cluster but must have network connectivity to Data Security
-Broker Manager.
+{{site.data.keyword.security_broker_short}} Shield consists of a single container that runs in
+its own pod. The {{site.data.keyword.security_broker_short}} Shield pod can be in the same or
+different cluster but must have network connectivity to {{site.data.keyword.security_broker_short}} Manager.
 
-The recommendations for sizing Data Security Broker Shield pods are as
-follows:
+{{site.data.keyword.security_broker_short}} -shield:
 
-| Peak Concurrent Sessions | 1-100 | 101-1000 | 1001-5000 | 5001-10,000 |
-|--------------------------|-------|----------|-----------|-------------|
-| CPU                      | 2     | 4        | 8         | 16          |
-| Memory                   | 8 GB  | 16 GB    | 32 GB     | 64 GB       |
-{: caption="Table 3. Resource level requirements for {{site.data.keyword.security_broker_short}}" Shield caption-side="bottom"}
+4 CPU, 8 GB Memory
 
 ## Procedure:
 {: #sb_install_ui_procedure}
