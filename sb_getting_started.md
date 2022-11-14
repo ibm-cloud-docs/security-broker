@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-11-07"
+lastupdated: "2022-11-14"
 
 keywords: support, getting started, data protection, data threats
 
@@ -45,7 +45,7 @@ subcollection: security-broker
 {: #sb_getting_started}
 
 {{site.data.keyword.security_broker_full_notm}} is a complete data protection solution
-that secures sensitive data in enterprise databases by fully integrating
+that secures sensitive data in enterprise databases by integrating
 with key management and databases to provide application-level
 encryption.
 {: shortdesc}
@@ -69,32 +69,30 @@ configurations by:
 {{site.data.keyword.security_broker_short}} Shield is a stateless reverse proxy that intercepts
 and encrypts application data sent to the database and decrypts encrypted data returned by the database.
 
-{{site.data.keyword.security_broker_short}} offers Data Protection Services which provide a range of data
-encryption, tokenization, and de-identification methods to protect data in data stores and cloud storage environments.
+{{site.data.keyword.security_broker_short}} offers Data Protection Services which provide a range of data protection services such as data encryption, data tokenization, record level encryption, and data masking.
 
 ## Before you begin
 {: #sb-before-you-begin}
 
-Before you begin configuring the {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield, verify that you have met the following requirements:
+Before you begin installing and configuring the {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield, ensure that you have met the following requirements:
 
 - Create an IBM Cloud account.
-- Database privileges for encryption and migration.
+- Database privileges for performing encryption.
 
 ### System Requirements
 {: #sb-system-requirements}
 
 Ensure that your environment meets the following minimum system level and resource level requirements:
-
-| Cluster                                         | Operating System | Number of Master nodes required | Number of Worker nodes required | Number of Pods required |
-|-------------------------------------------------|------------------|---------------------------------|---------------------------------|-------------------------|
-| IBM Red Hat OpenShift Kubernetes cluster (ROKS) | Ubuntu 18        | 1                               | 2                               | 5                       |
-| IBM Cloud Kubernetes cluster (IKS)              | RHEL 7           | 1                               | 2                               | 5
+| Cluster                                  | Operating System       | Number of Worker nodes required |
+|------------------------------------------|------------------------|---------------------------------|
+| IBM Red Hat Openshift Kubernetes Cluster | RHEL7/RHEL8 and CoreOS | 2                               |
+| IBM Cloud Kubernetes Cluster             | Ubuntu 18              | 2                               |
 {: caption="Table 2. Resource level requirements for {{site.data.keyword.security_broker_short}}" caption-side="bottom"}  
 
-## Assign permissions for IBM Cloud credentials to access {{site.data.keyword.security_broker_short}} ##
+## Minimum permissions required to install, setup, and  access {{site.data.keyword.security_broker_short}} ##
 {: #sb_getting_assign_permission}
 
-As an IBM Cloud user, you need minimum permissions to install, setup and access {{site.data.keyword.security_broker_short}}. 
+As an IBM Cloud user, you need to set the follwoing minimum permissions to install, setup and access {{site.data.keyword.security_broker_short}}. 
 By using the following steps and the information in the table, assign the required permissions:
 1. Log into your IBM Cloud account and click **Manage -> Access (IAM)**.
 2. In the Manage access and users dashboard, click **View all** in the **My user details** section.
