@@ -22,6 +22,9 @@ To carry out encryption and migration, {{site.data.keyword.security_broker_short
 certain user permissions on the database. It is recommended that you
 create a new user on your database for {{site.data.keyword.security_broker_short}} Shield to use.
 
+## Database privileges required for PostgreSQL 12:
+{: #sb-db-priveleges-postgresql}
+
 
 
 
