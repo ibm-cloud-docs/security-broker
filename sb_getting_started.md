@@ -71,6 +71,8 @@ and encrypts application data sent to the database and decrypts encrypted data r
 
 {{site.data.keyword.security_broker_short}} offers Data Protection Services which provide a range of data protection services such as data encryption, data tokenization, record level encryption, and data masking.
 
+**Note**: {{site.data.keyword.security_broker_short}} supports only PostgreSQL database.
+
 ## Before you begin
 {: #sb-before-you-begin}
 
