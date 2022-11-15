@@ -73,7 +73,6 @@ To specify RBAC configuration for an application, complete the following steps:
     Prefix field appears. This field defines the prefix string for SQL
     Comments containing the User ID. Here is an example SQL query with
     the appropriate comment:
-
     
 ```sh
 select * from public.table1 *+ User:user_name *
@@ -81,7 +80,7 @@ select * from public.table1 *+ User:user_name *
 {: codeblock}    
 
 -   You can specify an arbitrary string as the SQL Comment Prefix, but
-    the user ID itself must be defined in User Groups.
+    the user ID must be defined in User Groups.
 
 -   **SQL_COMMENT_JWT** signifies users connecting to the Shield are
     determined by a JWT specified in SQL comments. An SQL Comment Prefix
@@ -93,87 +92,83 @@ select * from public.table1 *+ User:user_name *
  JWT must match a User Group Name, in order to determine group
  membership. The following options are available:
 
-1.  **SQL Comment Prefix** -- for the prefix string for SQL Comments
+a.  **SQL Comment Prefix** -- for the prefix string for SQL Comments
     containing the JWT
 
-2.  **JWT TID** (optional) for consuming the tenant identifier 
+b.  **JWT TID** (optional) for consuming the tenant identifier 
 
-3.  **JWT AUD** (optional) for consuming the audience identifier 
+c.  **JWT AUD** (optional) for consuming the audience identifier 
 
-4.  **Key Value Pairs** (optional) to consume key-value pairs in a
+d.  **Key Value Pairs** (optional) to consume key-value pairs in a
     line-by-line format. Each key must be specified on a single line, in
     <key>:<value> format.
 
-5.  **JWT secret key** is required field for an HS256 key
+e.  **JWT secret key** is required field for an HS256 key
 
-6.  **JWKS Provider URL** is required field for a URL, for an RS256 key
+f.  **JWKS Provider URL** is required field for a URL, for an RS256 key
 
-**Note**: **At least one of the previous two fields is required. If you
+**Note**: At least one of the previous two fields is required. If you
 submit either a JWT secret key or JWKS Provider URL, you can proceed
 without submitting the other field. The {{site.data.keyword.security_broker_short}} Shield
 determines which algorithm to use.
 
-7.  **JWKS Cache Capacity** (optional) integer value - default is 10000.
+g.  **JWKS Cache Capacity** (optional) integer value - default is 10000.
     This field is only used with RS256 keys specified by the JWKS
     Provider URL.  
 
-6\. Click **Save**. A confirmation dialog appears.\
-\
-**Note: **When you update your RBAC configuration, all Data Security
-Broker Shields enrolled with the application must be restarted. This
-will cause a temporary outage of connectivity between the Data Security
-Broker Manager application and the database.\
-7. Click the **Yes, restart {{site.data.keyword.security_broker_short}}** **Shields** checkbox
-and then select **Restart Shield**. The configuration is saved for the
-given application, but you may update the configuration at any point. 
+6. Click **Save**. A confirmation dialog appears.
 
-8\. Continue to Task 2 to configure user groups.
+**Note**: When you update your RBAC configuration, all {{site.data.keyword.security_broker_short}} Shields enrolled with the application must be restarted. This
+will cause a temporary outage of connectivity between the {{site.data.keyword.security_broker_short}} Manager application and the database.
+
+7. Click the **Yes, restart {{site.data.keyword.security_broker_short}} Shields** checkbox
+and then select **Restart Shield**. The configuration is saved for the
+selected application.
+
+8. Continue to configure user groups.
 
 **Note:** You can edit your RBAC Configuration at any time, including
 the Mode and User settings.
 
-## **Task 2. Configure user groups**
+## Configure user groups
+{: #sb_mask_ug}
 
 User Groups allow you to define groups of database-level users and
 permitted IP addresses, based on the desired role and permission level.
-User groups are mapped to permissions to create an RBAC policy (Task 3).
-User groups are also shared across all applications on your Data
-Security Broker Manager. If a group's membership is modified, the change
+User groups are mapped to permissions to create an RBAC policy.
+User groups are also shared across all applications on your {{site.data.keyword.security_broker_short}} Manager. If a group's membership is modified, the change
 is persisted in every policy and application where the group is
 selected.
 
-#### Note:
+**Note**:
 
 -   The Users list can be changed at any time. You are simply changing
     the membership of a given User Group. There is no impact on the rest
-    of the RBAC configuration, other user groups, or policies. Nothing
-    is deselected from columns and no policies are removed.
+    of the RBAC configuration, other user groups, or policies.
 
 -   Allowed Subnet(s) can be changed at any time. You are changing the
     allowed subnets for a given User Group. There is no impact on the
     rest of the RBAC configuration, other user groups, or policies. 
 
-#### To configure RBAC user groups, do the following:
+To configure RBAC user groups, perform the following:
 
-1\. In the Data Protection Policies section, expand **RBAC** and
-select **User Groups**. Click on **Create User Groups** to proceed.
+1. In the Data Protection Policies section, expand **RBAC** and
+select **User Groups**. Click **Create User Groups**.
 
-2\. In the User Groups panel, enter a **User Group Name** of 30
+2. In the User Groups panel, enter a **User Group Name** of 30
 characters or less, and a unique **Description** of 100 characters or
 less.
 
-3.** Optional:** Select the **Global** checkbox to create a group where
+3. **Optional** Select the **Global** checkbox to create a group where
 individual Users are ignored. Anyone connecting to the Shield has
 membership to this Global group, provided their IP address is within
-the **Allowed Subnets** range (step 5). If you select Global, skip to
-step 5.
+the **Allowed Subnets** range. If you select Global, proceed with step 5.
 
-4\. Enter usernames as a CSV-formatted list in the **Users** text box.
+4. Enter usernames as a CSV-formatted list in the **Users** text box.
 This is the list of client IDs which {{site.data.keyword.security_broker_short}} Shield will
-consider when the User Determination (configured in task 1, step 5) is
-set to either SESSION or SQL_COMMENT_RAW.
+consider when the User Determination is set to either **SESSION** or **SQL_COMMENT_RAW**.
 
-5. **Optional:** Enter a range of permitted IP addresses as **Allowed
+5. **Optional:** Enter a range of permitted IP addresses as **Allowed
 Subnets**. When subnets are configured, a user's membership depends on
 the following conditions:
 
