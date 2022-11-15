@@ -168,98 +168,89 @@ the **Allowed Subnets** range. If you select Global, proceed with step 5.
 This is the list of client IDs which {{site.data.keyword.security_broker_short}} Shield will
 consider when the User Determination is set to either **SESSION** or **SQL_COMMENT_RAW**.
 
-5. **Optional:** Enter a range of permitted IP addresses as **Allowed
-Subnets**. When subnets are configured, a user's membership depends on
-the following conditions:
+5. **Optional:** Enter a range of permitted IP addresses as **Allowed Subnets**. When subnets are configured, a user's membership depends on the following conditions:
 
-1.  User is specified in the Users box (User Determination is either
-    SESSION or SQL_COMMENT_RAW) 
+a.  User is specified in the Users box (User Determination is either
+    SESSION or SQL_COMMENT_RAW) or User is specified by the JWT (User Determination is
+    SQL_COMMENT_JWT) and User has an IP address in the permitted range. 
 
-    1.  **OR** User is specified by the JWT (User Determination is
-        SQL_COMMENT_JWT)
+Multiple IP address ranges can be specified for one group, separated by commas. Spaces between IP addresses are fine.
 
-2.  **AND** User has an IP address in the permitted range. 
+**Note:** If **Allowed Subnets** is empty or 0.0.0.0/0 is specified, then **ALL IPs** are permitted for the user group.
 
-Multiple IP address ranges can be specified for one group, separated by
-commas. Spaces between IP addresses are ok.
+6. Click **Save**. 
 
-**Note:** If **Allowed Subnets** is empty or 0.0.0.0/0 is specified,
-then **ALL IPs** are permitted for that group.
+7. Perform one of the following actions:
 
-6\. Click **Save**. 
-
-7\. Perform one of the following actions:
-
--   Continue to Task 3 to create an RBAC Policy.
+-   Continue to create an RBAC Policy.
 
 -   Create another user group.
 
-## **Task 3. Create an RBAC policy**
+## Create an RBAC policy
+{: #sb_mask_RBACpolicy}
 
-The RBAC Policy Builder allows you to define Rules---that is,
-permissions for user groups. One or more groups can be given READ,
-READ_WRITE, or MASK permissions. The group-to-permission mapping
+The RBAC Policy Builder allows you to define Rules, which is, the permissions for user groups. One or more groups can be given READ, READ_WRITE, or MASK permissions. The group-to-permission mapping
 constitutes a single Rule, which in turn is added to the policy. Once a
-policy is established, you can apply it to selected columns in a table,
-thereby determining ***who*** has access to*** what*** data.
+policy is established, you can apply it to the selected columns in a table,
+thereby determining ***who*** has access to **what** data.
 
-#### To create an RBAC policy, do the following:
+To create an RBAC policy, do the following:
 
-1\. In the Data Protection Policies section, expand **RBAC** and
+1. In the Data Protection Policies section, expand **RBAC** and
 select **Policies.** On the RBAC Policy Builder panel, click **Create
 RBAC Policy**. You also have the option for creating another user group
 before going on to create a policy.
 
-2\. In the Policy Builder panel, enter a **Policy Name** of 30
+2. In the Policy Builder panel, enter a **Policy Name** of 30
 characters or less, and a unique **Description** of 100 characters or
 less.
 
-3\. From the Default Permissions drop-down, select one of the
+3. From the Default Permissions drop-down, select one of the
 following. **NOTE: **The Default Permission is applied to any user or
 client connection who does not belong to a user group in the given RBAC
 policy. 
 
-1.  **READ** assigns read-only permission as the default. The user sees
+a.  **READ** assigns read-only permission as the default. The user sees
     clear data.
 
-2.  **READ_WRITE** assigns read and write permissions as the default.
+b.  **READ_WRITE** assigns read and write permissions as the default.
     The user sees clear data and writes via Shield.
 
-3.  **MASK** assigns a data masking format as the default. The user sees
+c.  **MASK** assigns a data masking format as the default. The user sees
     masked data, according to the **Mask** mode specification that is
     selected here.  
 
-4.  All Mask Modes are available for selection. To **configure a mask
+d.  All Mask Modes are available for selection. To **configure a mask
     mode**, refer to
     this [article](https://support.baffle.io/hc/en-us/articles/4418260284439).  
 
-4\. Next, add a Rule to the Policy. Each Rule consists of two pieces:
+4. Next, add a Rule to the Policy. Each Rule consists of two pieces:
 User Groups and Permission. The individual Rule maps a Permission to one
 or more User Groups. 
 
-**Note: **A policy can have an unlimited number of rules, or no rules.
+**Note**: A policy can have an unlimited number of rules, or no rules.
 An RBAC Policy with no rules, containing only the Default Permission,
 can be used to apply simple data masking for all Users which connect to
 the Shield.
 
-1.  Enter a **Rule Name** of 30 characters or less.
+a.  Enter a **Rule Name** of 30 characters or less.
 
-2.  Select relevant User Groups from the drop-down list. All User Groups
+b.  Select relevant User Groups from the drop-down list. All User Groups
     are available, but only one Rule will be considered per User. See
     step 5. 
 
-3.  Select a **Permission** option from the
+c.  Select a **Permission** option from the
     drop-down: **READ**, **READ_WRITE**, or **MASK**. 
 
-**NOTE: **MASK permission allows you to specify an existing Masking
+**Note**: MASK permission allows you to specify an existing Masking
 mode for a given user group. In other words, upon accessing the data,
 members of that group view the data in the mask format that you
 specify. 
 
-5\. RBAC policy rules must be arranged in a hierarchy. Reorder the rules
+5. RBAC policy rules must be arranged in a hierarchy. Reorder the rules
 by clicking the Up and Down arrows to update the Rank number in the
-policy.\
-\
+policy.
+
 **Note on Rule hierarchy:** Technically, an individual database user can
 have membership to more than one user group. However, this exposes a
 potential contradiction where multiple rules could apply to an
@@ -284,7 +275,7 @@ Access Control is fully configured, and ready to apply to columns.
 8.** Optional:** After saving the policy, create another User Group or
 create another RBAC Policy.
 
-9\. Continue to Task 4, Apply an RBAC policy to columns. 
+9. Continue to Task 4, Apply an RBAC policy to columns. 
 
 ## **Task 4. Apply an RBAC policy to columns**
 
@@ -310,22 +301,22 @@ data. 
 
 #### To apply an RBAC policy to columns, do the following:
 
-1\. In {{site.data.keyword.security_broker_short}} Manager, navigate to
+1. In {{site.data.keyword.security_broker_short}} Manager, navigate to
 the **Applications **dashboard, select an application from the listing,
 and click **Encrypt** to access the Schema Builder.
 
-2\. In the Tree Menu, select a database, schema, and table. This
+2. In the Tree Menu, select a database, schema, and table. This
 populates the column selector with available columns.
 
-3\. Select columns to define with an RBAC policy.
+3. Select columns to define with an RBAC policy.
 
-4\. In the Data Protection dropdown menu, select an RBAC policy from the
+4. In the Data Protection dropdown menu, select an RBAC policy from the
 list. RBAC policies have a dependency on data types, because only
 certain Mask Modes can be applied for certain data types. Therefore, in
 the Column selector, only compatible RBAC Policies are available to
 select for each column.
 
-5\. By default, the standard Encryption mode 'DEFAULT_CTR_DET' is
+5. By default, the standard Encryption mode 'DEFAULT_CTR_DET' is
 selected. When an RBAC Policy and Encryption mode are selected on the
 same column, then the underlying database is encrypted as well. To apply
 an RBAC policy without encrypting, use the **Clear Selections **option,
@@ -334,9 +325,9 @@ then select the RBAC policy.
 6.** Optional:** Specify a Key ID for each column from the drop-down
 menu or accept the default.
 
-7\. Click** REVIEW** at the bottom left panel to review your selections.
+7. Click** REVIEW** at the bottom left panel to review your selections.
 
-8\. Review your policy and select a Migration Plan:
+8. Review your policy and select a Migration Plan:
 
 1.  **Save**: Saves the data schema for future use.
 
