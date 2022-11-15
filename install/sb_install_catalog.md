@@ -1,14 +1,14 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-11-14"
+lastupdated: "2022-11-15"
 
 keywords: install, ROKS, IKS, manifests, HELM
 
 subcollection: security-broker
 ---
 
-# Installating Data Security Broker Manager and Data Security Broker Shield
+# Install Data Security Broker Manager and Data Security Broker Shield
 {: #sb_install_catalog}
 
 ## Overview:

@@ -1,14 +1,14 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-10-28"
+lastupdated: "2022-11-15"
 
 keywords: logging, debugging, platform, dashboard, observability
 
 subcollection: security-broker
 ---
 
-# Logging into Data Security Broker Manager
+# Log into Data Security Broker Manager
 {: #sb_logging_dsbm}
 
 

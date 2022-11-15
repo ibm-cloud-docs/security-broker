@@ -1,14 +1,14 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-10-28"
+lastupdated: "2022-11-15"
 
 keywords: database, admin, priveleges, users, configure, operations
 
 subcollection: security-broker
 ---
 
-# Configuring Data Security Broker Manager
+# Configure Data Security Broker Manager
 {: #sb_configure}
 
 Configuring the Data Security Broker Manager console is the first step
