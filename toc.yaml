@@ -32,9 +32,9 @@ toc:
           label: Data Protection Services
           topics:
           - tutorials/sb_encrypt_postgress.md
-          - tutorials/sb_add_keystore.md
-          - tutorials/sb_add_db.md
-          - tutorials/sb_enroll_app.md
+            - tutorials/sb_add_keystore.md
+            - tutorials/sb_add_db.md
+            - tutorials/sb_enroll_app.md
           - tutorials/sb_encrypt_data.md
           - tutorials/sb_masking.md
       - topicgroup:
