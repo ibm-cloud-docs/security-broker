@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-11-14"
+lastupdated: "2022-11-15"
 
 keywords: support, getting started, data protection, data threats
 
@@ -85,6 +85,7 @@ Before you begin installing and configuring the {{site.data.keyword.security_bro
 {: #sb-system-requirements}
 
 Ensure that your environment meets the following minimum system level and resource level requirements:
+
 | Cluster                                  | Operating System       | Number of Worker nodes required |
 |------------------------------------------|------------------------|---------------------------------|
 | IBM Red Hat Openshift Kubernetes Cluster | RHEL7/RHEL8 and CoreOS | 2                               |
