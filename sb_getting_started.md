@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-11-15"
+lastupdated: "2022-11-16"
 
 keywords: support, getting started, data protection, data threats
 
@@ -117,4 +117,4 @@ By using the following steps and the information in the table, assign the requir
 
 Now that the software is installed on your cluster, you can start protecting your data by following the steps mentioned in the flow diagram below:
 
-![Encryption flow in {{site.data.keyword.security_broker_short}}](images/sb_flow.svg){: caption="Figure 1. Encyrption flow in {{site.data.keyword.security_broker_short}} Manager" caption-side="bottom"}
+![Encryption flow in {{site.data.keyword.security_broker_short}}](images/sb_userflow.svg){: caption="Figure 1. Encyrption flow in {{site.data.keyword.security_broker_short}} Manager" caption-side="bottom"}
