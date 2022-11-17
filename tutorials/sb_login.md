@@ -30,5 +30,4 @@ ibmcloud iam oauth-tokens
 2.  Copy the OAuth token without any space or additional characters and
     paste it in the **Enter token** text box as shown below:
 
-![](media/image1.png){width="4.061111111111111in" height="3.64375in"}
 ![Log into {{site.data.keyword.security_broker_short}} Manager](../images/sb_login.svg){: caption="Figure 1. Log into {{site.data.keyword.security_broker_short}} Manager" caption-side="bottom"}
