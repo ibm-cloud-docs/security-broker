@@ -9,7 +9,7 @@ subcollection: security-broker
 ---
 
 # Log into Data Security Broker Manager
-{: #sb_logging_dsbm}
+{: #sb_login}
 
 Once you have configured the Data Security Broker Manager, the next step
 is log into the Data Security Broker Manager to create keystore, connect
