@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-11-15"
+lastupdated: "2022-11-17"
 
 keywords: install, ROKS, IKS, manifests, HELM
 
@@ -78,21 +78,25 @@ different cluster but must have network connectivity to {{site.data.keyword.secu
 
 2.  Click **Catalog**. Enter **{{site.data.keyword.security_broker_short}}** in the **Catalog**
     search text box. A list of products appears in the Catalog.
+   
+3.  To sort the catalog products using the type, click **Software** in the **Type** option, which is present in the left-hand navigation of the Catalog.
 
-3.  To sort the products using the type, click **Software** in the **Type** option, which is present in the left-hand navigation of the Catalog.
+4.  The Data Security Broker software comprises of two components, which is displayed in the Catalog list as **{{site.data.keyword.security_broker_short}}** Manager and **{{site.data.keyword.security_broker_short}}** Shield.
 
-4.  You will find two catalog items for **{{site.data.keyword.security_broker_short}}**-Manager and **{{site.data.keyword.security_broker_short}}**-Shield as a result of the Catalog search.
+ ![IBM Cloud Catalog list](../images/catalog_items.svg)
 
-5. You must install the **{{site.data.keyword.security_broker_short}}**-Manager first and then get the Shield Sync ID from the **{{site.data.keyword.security_broker_short}}**-Manager to install the **{{site.data.keyword.security_broker_short}}** Shield.
+5. You must install the **{{site.data.keyword.security_broker_short}}** Manager first and then get the Shield Sync ID from the application in the **{{site.data.keyword.security_broker_short}}** Manager to install the **{{site.data.keyword.security_broker_short}}** Shield.
 
-## Install **{{site.data.keyword.security_broker_short}}**-Manager:
+## Install **{{site.data.keyword.security_broker_short}}** Manager:
 {: #sb_install_dsbm}
 
 Complete the following steps to insall the **{{site.data.keyword.security_broker_short}}** Manager from the IBM Cloud Catalog:
 
-1.  Click **{{site.data.keyword.security_broker_short}}**-Manager catalog item.
+1.  Click **{{site.data.keyword.security_broker_short}}** Manager catalog item.
 
 2.  In the **Select your deployment target** drop down, select **IBM Cloud Kubernetes service** or **Red    Hat Openshift**.
+
+![Deployment target](../images/dep_target.svg)
 
 3.  Select **HELM chart** as the delivery method for installation in the **Select a delivery method** drop down.
 
