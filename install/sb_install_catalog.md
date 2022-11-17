@@ -82,6 +82,7 @@ different cluster but must have network connectivity to {{site.data.keyword.secu
 3.  To sort the catalog products using the type, click **Software** in the **Type** option, which is present in the left-hand navigation of the Catalog.
 
 4.  The Data Security Broker software comprises of two components, which is displayed in the Catalog list as **{{site.data.keyword.security_broker_short}}** Manager and **{{site.data.keyword.security_broker_short}}** Shield.
+
 ![IBM Cloud Catalog list](../images/catalog_items.svg){: caption="IBM Cloud Catalog list" caption-side="bottom"}
 
 5. You must install the **{{site.data.keyword.security_broker_short}}** Manager first and then get the Shield Sync ID from the application in the **{{site.data.keyword.security_broker_short}}** Manager to install the **{{site.data.keyword.security_broker_short}}** Shield.
