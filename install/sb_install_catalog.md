@@ -98,18 +98,30 @@ Complete the following steps to insall the **{{site.data.keyword.security_broker
 
 ![Deployment target](../images/dep_target.svg)
 
-3.  Select **HELM chart** as the delivery method for installation in the **Select a delivery method** drop down.
+3.  The delivery method is selected as **HELM chart** by default under the **Select a delivery method** drop down.
 
-4.  Select the product version.
+4.  Select the version of the software to install in the **Select Version** drop-down.
 
+5.  From the list of available clusters, select the cluster on which you wish to perform the installation.
 
+![List of available clusters](../images/clusters.svg)
 
-8.  Set the deployment values and Click **Install** to complete the installation process.
+6.  Select an existing namespace or click **Add namespace** to add a new namespace. Specify the name for the namespace and click **Add** to create a new namespace within the selected cluster.
+
+7.  Configure your workspace by specifying the following details:
+
+a.  Specify the **Name** for the workspace. The workspace name must be unique and it is used during the Update or Uninstall process to identify from the IBM Schematics Workspace (https://cloud.ibm.com/schematics/workspaces).
+
+![Configure Workspace](../images/workspace.svg)
+
+b.  Select the **Resource group**, **Location**, and specify the **Tags** required for configuring the workspace.
+
+8.  Click **Install** in the **Summary** pane on the right to complete the installation process.
 
 ## Configure **{{site.data.keyword.security_broker_short}}** Manager:
 {: #install-catalog-configure}
 
-You must configuring the Data Security Broker Manager console before installing the **{{site.data.keyword.security_broker_short}}** Shield. See [Configuring {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_configure) to complete the configuration of the **{{site.data.keyword.security_broker_short}}** Manager and access the **{{site.data.keyword.security_broker_short}}** Manager console.
+You must configure the {{site.data.keyword.security_broker_short}} Manager console before installing the **{{site.data.keyword.security_broker_short}}** Shield. See [Configure {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_configure) to complete the configuration of the **{{site.data.keyword.security_broker_short}}** Manager and access the **{{site.data.keyword.security_broker_short}}** Manager console.
 
 ## Login to **{{site.data.keyword.security_broker_short}}** Manager:
 {: #install-catalog-login}
@@ -119,14 +131,14 @@ Login to the **{{site.data.keyword.security_broker_short}}** Manager using the s
 ## Enroll an application in the **{{site.data.keyword.security_broker_short}}** Manager:
 {: #install-catalog-enroll}
 
-Refer to the [Enrolling an Application in {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_enroll_app) to enroll the application in the **{{site.data.keyword.security_broker_short}}** Manager.
+Refer to the [Enrolling an Application in {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_enroll_app) section to enroll an application in the **{{site.data.keyword.security_broker_short}}** Manager.
 
 ## Install **{{site.data.keyword.security_broker_short}}** Shield:
 {: #sb_install_ui_procedure}
 
 Complete the following steps to insall the **{{site.data.keyword.security_broker_short}}** Shield from the IBM Cloud Catalog:
 
-(Need to complete the steps here....Work in progress)
+
 
 
 
