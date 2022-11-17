@@ -118,6 +118,12 @@ b.  Select the **Resource group**, **Location**, and specify the **Tags** requir
 
 8.  Click **Install** in the **Summary** pane on the right to complete the installation process.
 
+9. You will be navigated to the IBM Schematics Workspaces to track the installation progress. Once the installation is successful, a message **Workspace creation successfull** is displayed as shown below:
+
+![Installation of {{site.data.keyword.security_broker_short}} Manager](../images/install_success.svg){: caption="Installation of {{site.data.keyword.security_broker_short}} Manager" caption-side="bottom"}
+
+**Note**: If you get an error message like **Workspace creation failed**, refer to the Logs available in the Terraform output.
+
 ## Configure **{{site.data.keyword.security_broker_short}}** Manager:
 {: #install-catalog-configure}
 
