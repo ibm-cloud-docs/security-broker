@@ -38,6 +38,7 @@ following requirements:
 https://<load balancer url>
 ```
 {: codeblock}    
+
 The warning **Your connection is not private** is disaplayed.
 
 ![Warning: Connection not private](../images/warning.svg){: caption="Warning: Connection not private" caption-side="bottom"}
