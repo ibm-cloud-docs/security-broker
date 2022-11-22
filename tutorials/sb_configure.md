@@ -52,7 +52,7 @@ The warning **Your connection is not private** is disaplayed.
 5.  Configure the basic System Settings by entering the hostname, domain name, proxy access, and click **Continue**.
 
 6.  Create an Admin Account for the initial {{site.data.keyword.security_broker_short}} Manager administrator by specifying the email address in the **Configure Super Admin User** page. This account is   used to configure the subsequent components such as the keystore, data store connections,
-and {{site.data.keyword.security_broker_short}} Shields. Click **Continue**.
+and {{site.data.keyword.security_broker_short}} Shields. Click **Continue**.  
 
 ![Configure Super Admin User](../images/superadmin.svg){: caption="Configure Super Admin User" caption-side="bottom"}
 
