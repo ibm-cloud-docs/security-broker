@@ -91,9 +91,7 @@ b.  **JWT TID** (optional) for consuming the tenant identifier 
 
 c.  **JWT AUD** (optional) for consuming the audience identifier 
 
-d.  **Key Value Pairs** (optional) to consume key-value pairs in a
-    line-by-line format. Each key must be specified on a single line, in
-    <key>:<value> format.
+d.  **Key Value Pairs** (optional) to consume key-value pairs in a line-by-line format. Each key must be specified on a single line, in key:value format.
 
 e.  **JWT secret key** is required field for an HS256 key
 
@@ -114,8 +112,7 @@ g.  **JWKS Cache Capacity** (optional) integer value - default is 10000.
 will cause a temporary outage of connectivity between the {{site.data.keyword.security_broker_short}} Manager application and the database.
 
 7. Click the **Yes, restart {{site.data.keyword.security_broker_short}} Shields** checkbox
-and then select **Restart Shield**. The configuration is saved for the
-selected application.
+and then select **Restart Shield**. The configuration is saved for the selected application.
 
 8. Continue to configure user groups.
 

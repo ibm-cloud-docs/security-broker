@@ -18,12 +18,12 @@ Step 1: **RBAC configuration:**
 
 Configure RBAC for all connections to Shield, by setting the Mode as Required. Also, set the User Determination as Session, to reference the DB session user ID for User Group membership. However, when configuring a global RBAC policy, the User Determination is not relevant.
 
-Step 2: **User group: All-Users**
+Step 2: **User group - All-Users:**
 
 You can create a Global user group called "All-Users". Select the Global checkbox and do not specify any Allowed Subnets. (0.0.0.0/0 is automatically filled when this text box is left blank.) This User Group
 applies to all possible connections to Shield.
 
-Step 3: **RBAC policy: Default Masking**
+Step 3: **RBAC policy - Default Masking:**
 
 You can create two Masking policies which are nearly identical. The only
 difference is that one policy applies for VARCHAR columns, and the other
