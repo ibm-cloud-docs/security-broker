@@ -37,25 +37,16 @@ data. 
 the **Applications **dashboard, select an application from the listing,
 and click **Encrypt** to access the Schema Builder.
 
-2. In the Tree Menu, select a database, schema, and table. This
-populates the column selector with available columns.
+2. In the Tree Menu, select a database, schema, and table. This populates the column selector with available columns.
 
 3. Select columns to define with an RBAC policy.
 
-4. In the Data Protection dropdown menu, select an RBAC policy from the
-list. RBAC policies have a dependency on data types, because only
-certain Mask Modes can be applied for certain data types. Therefore, in
-the Column selector, only compatible RBAC Policies are available to
-select for each column.
+4. In the Data Protection dropdown menu, select an RBAC policy from the list. RBAC policies have a dependency on data types, because only certain Mask Modes can be applied for certain data types. Therefore, in the Column selector, only compatible RBAC Policies are available to select for each column.
 
-5. By default, the standard Encryption mode 'DEFAULT_CTR_DET' is
-selected. When an RBAC Policy and Encryption mode are selected on the
-same column, then the underlying database is encrypted as well. To apply
-an RBAC policy without encrypting, use the **Clear Selections **option,
-then select the RBAC policy.
+5. By default, the standard Encryption mode 'DEFAULT_CTR_DET' is selected. When an RBAC Policy and Encryption mode are selected on the same column, then the underlying database is encrypted as well. To apply
+an RBAC policy without encrypting, use the **Clear Selections **option, then select the RBAC policy.
 
-6.**Optional:** Specify a Key ID for each column from the drop-down
-menu or accept the default.
+6.**Optional:** Specify a Key ID for each column from the drop-down menu or accept the default.
 
 7. Click **REVIEW** at the bottom left panel to review your selections.
 
@@ -63,12 +54,9 @@ menu or accept the default.
 
 1.  **Save**: Saves the data schema for future use.
 
-2.  **Deploy**: Establishes a data schema for an environment that wasn't
-    processed through {{site.data.keyword.security_broker_short}} migration and data type
-    conversion but does not migrate the data.
+2.  **Deploy**: Establishes a data schema for an environment that was not rocessed through {{site.data.keyword.security_broker_short}} migration and data type conversion but does not migrate the data.
 
-3.  **Deploy and Migrate**: Establishes a data schema *and* transforms
-    the existing data in the data store.
+3.  **Deploy and Migrate**: Establishes a data schema *and* transforms the existing data in the data store.
 
 **NOTE:** If you have only configured RBAC Policies, without
 specifying encryption, then the **Deploy and Migrate** option is not
