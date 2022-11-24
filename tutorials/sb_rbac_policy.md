@@ -23,8 +23,9 @@ before going on to create a policy.
 
 2. In the Policy Builder panel, enter a **Policy Name** of 30 characters or less, and a unique **Description** of 100 characters or less.
 
-3. From the Default Permissions drop-down, select one of the following. **NOTE: **The Default Permission is applied to any user or client connection who does not belong to a user group in the given RBAC
-policy. 
+3. From the Default Permissions drop-down, select one of the following. 
+
+**NOTE:** The Default Permission is applied to any user or client connection who does not belong to a user group in the given RBAC policy. 
 
 a.  **READ** assigns read-only permission as the default. The user sees
     clear data.
@@ -34,8 +35,7 @@ b.  **READ_WRITE** assigns read and write permissions as the default.
 
 c.  **MASK** assigns a data masking format as the default. You can see the masked data, according to the **Mask** mode specification that is selected.  
 
-d.  All Mask Modes are available for selection. To **configure a mask mode**, refer to
-    this [article](https://support.baffle.io/hc/en-us/articles/4418260284439).  
+d.  All Mask Modes are available for selection.
 
 4. Add a Rule to the Policy. Each Rule consists of two pieces:
 User Groups and Permission. The individual Rule maps a Permission to one
@@ -60,9 +60,7 @@ mode for a given user group. In other words, upon accessing the data,
 members of that group view the data in the mask format that you
 specify. 
 
-5. RBAC policy rules must be arranged in a hierarchy. Reorder the rules
-by clicking the Up and Down arrows to update the Rank number in the
-policy.
+5. RBAC policy rules must be arranged in a hierarchy. Reorder the rules by clicking the Up and Down arrows to update the Rank number in the policy.
 
 **Note on Rule hierarchy:** Technically, an individual database user can have membership to more than one user group. However, this exposes a potential contradiction where multiple rules could apply to an
 individual database user. To avoid this, Rules must be arranged in a hierarchy, where only the highest-ranked rule is considered for each user group, and each user.
@@ -78,10 +76,9 @@ READ_WRITE permission, *not* MASK_VARCHAR permission.
 Rules can be collapsed, expanded and deleted. When collapsed, only the
 Rule Name and Rank are visible.
 
-7. When you are satisfied with the policy, click **Save**. Role-Based
-Access Control is fully configured, and ready to apply to columns.
+7. When you are satisfied with the policy, click **Save**. Role-Based Access Control is fully configured, and ready to apply to columns.
 
-8.** Optional:** After saving the policy, create another User Group or
-create another RBAC Policy.
+8. **Optional:** After saving the policy, create another User Group or create another RBAC Policy.
 
-9. Continue to Task 4, Apply an RBAC policy to columns. 
+9. Continue with applying an RBAC policy to the database columns. 
+
