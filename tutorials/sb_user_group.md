@@ -34,7 +34,9 @@ To configure RBAC user groups, perform the following:
 
 2. In the User Groups panel, enter a **User Group Name** of 30 characters or less, and a unique **Description** of 100 characters or less.
 
-3. **Optional**: Select the **Global** checkbox to create a group where individual Users are ignored. Anyone connecting to the Shield has membership to this Global group, provided their IP address is within
+3. **Optional**: Select the **Global** checkbox to create a group where individual Users are ignored. 
+
+Anyone connecting to the Shield has membership to this Global group, provided their IP address is within
 the **Allowed Subnets** range. If you select Global, proceed with step 5.
 
 4. Enter usernames as a CSV-formatted list in the **Users** text box. This is the list of client IDs which 
