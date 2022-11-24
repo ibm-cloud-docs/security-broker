@@ -43,11 +43,11 @@ toc:
           - topicgroup:
                     label: Steps to perform Data Masking
                     topics: 
-                            - tutorials/sb_congigure_rbac.md 
+                            - tutorials/sb_congigure_rbac.md
                             - tutorials/sb_rbac_policy.md
                             - tutorials/sb_user_group.md
                             - tutorials/sb_apply_rbac_policy.md
-                            - tutorials/sb_apply_mask.md                            
+                            - tutorials/sb_apply_mask.md                     
       - topicgroup:
           label: Configurations in Data Security Broker Manager
           topics:
