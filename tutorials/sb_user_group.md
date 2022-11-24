@@ -39,7 +39,7 @@ To configure RBAC user groups, perform the following:
 Anyone connecting to the Shield has membership to this Global group, provided their IP address is within
 the **Allowed Subnets** range. If you select Global, proceed with step 5.
 
-4. Enter usernames as a CSV-formatted list in the **Users** text box. 
+4. Enter usernames as a CSV-formatted list in the **Users** text box.
 
 This is the list of client IDs which {{site.data.keyword.security_broker_short}} Shield will consider when the User Determination is set to either **SESSION** or **SQL_COMMENT_RAW**.
 
