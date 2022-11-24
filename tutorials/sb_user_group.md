@@ -30,21 +30,15 @@ selected.
 
 To configure RBAC user groups, perform the following:
 
-1. In the Data Protection Policies section, expand **RBAC** and
-select **User Groups**. Click **Create User Groups**.
+1. In the Data Protection Policies section, expand **RBAC** and select **User Groups**. Click **Create User Groups**.
 
-2. In the User Groups panel, enter a **User Group Name** of 30
-characters or less, and a unique **Description** of 100 characters or
-less.
+2. In the User Groups panel, enter a **User Group Name** of 30 characters or less, and a unique **Description** of 100 characters or less.
 
-3. **Optional** Select the **Global** checkbox to create a group where
-individual Users are ignored. Anyone connecting to the Shield has
-membership to this Global group, provided their IP address is within
+3. **Optional**: Select the **Global** checkbox to create a group where individual Users are ignored. Anyone connecting to the Shield has membership to this Global group, provided their IP address is within
 the **Allowed Subnets** range. If you select Global, proceed with step 5.
 
-4. Enter usernames as a CSV-formatted list in the **Users** text box.
-This is the list of client IDs which {{site.data.keyword.security_broker_short}} Shield will
-consider when the User Determination is set to either **SESSION** or **SQL_COMMENT_RAW**.
+4. Enter usernames as a CSV-formatted list in the **Users** text box. This is the list of client IDs which 
+{{site.data.keyword.security_broker_short}} Shield will consider when the User Determination is set to either **SESSION** or **SQL_COMMENT_RAW**.
 
 5. **Optional:** Enter a range of permitted IP addresses as **Allowed Subnets**. When subnets are configured, a user's membership depends on the following conditions:
 
