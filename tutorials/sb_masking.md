@@ -22,7 +22,7 @@ typically irreversible. A Masking Mode defines the format used to mask
 selected data. You can create new Masking Modes and use them in a policy
 or map them to a column. 
 
-**Creating a new masking mode**
+**Creating a new masking mode:**
 
 This section demonstrates how to create a new masking mode that is added
 to the Data Protection Library. 
@@ -52,7 +52,7 @@ To create a masking mode, do the following:
     with the mode when you click Save. In this way, only the modes that
     are compatible with a column's data type are shown. 
 
-**Viewing and editing a masking mode**
+**Viewing and editing a masking mode:**
 
 This section demonstrates how to view and edit Masking Modes. However,
 editing is limited to modifying the name and description of the selected
