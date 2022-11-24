@@ -111,8 +111,7 @@ g.  **JWKS Cache Capacity** (optional) integer value - default is 10000.
 **Note**: When you update your RBAC configuration, all {{site.data.keyword.security_broker_short}} Shields enrolled with the application must be restarted. This
 will cause a temporary outage of connectivity between the {{site.data.keyword.security_broker_short}} Manager application and the database.
 
-7. Click the **Yes, restart {{site.data.keyword.security_broker_short}} Shields** checkbox
-and then select **Restart Shield**. The configuration is saved for the selected application.
+7. Click the **Yes, restart {{site.data.keyword.security_broker_short}} Shields** checkbox and then select **Restart Shield**. The configuration is saved for the selected application.
 
 8. Continue to configure user groups.
 
