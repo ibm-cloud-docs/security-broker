@@ -18,8 +18,9 @@ thereby determining ***who*** has access to **what** data.
 
 To create an RBAC policy, do the following:
 
-1. In the Data Protection Policies section, expand **RBAC** and select **Policies.** On the RBAC Policy builder panel, click **Create RBAC Policy**. You also have the option for creating another user group
-before creating a policy.
+1. In the Data Protection Policies section, expand **RBAC** and select **Policies.**
+
+On the RBAC Policy builder panel, click **Create RBAC Policy**. You also have the option for creating another user group before creating a policy.
 
 2. In the Policy Builder panel, enter a **Policy Name** of 30 characters or less, and a unique **Description** of 100 characters or less.
 
