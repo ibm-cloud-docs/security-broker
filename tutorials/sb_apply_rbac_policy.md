@@ -41,7 +41,7 @@ data. 
 
 4. In the Data Protection dropdown menu, select an RBAC policy from the list. RBAC policies have a dependency on data types, because only certain Mask Modes can be applied for certain data types. Therefore, in the Column selector, only compatible RBAC Policies are available to select for each column.
 
-5. By default, the standard Encryption mode 'DEFAULT_CTR_DET' is selected. When an RBAC Policy and Encryption mode are selected on the same column, then the underlying database is encrypted as well. To apply
+5. By default, the standard Encryption mode 'DEFAULT_CTR_DET' is selected. When an RBAC Policy and encryption mode is selected on the same column, then the underlying database is encrypted as well. To apply
 an RBAC policy without encrypting, use the **Clear Selections** option, then select the RBAC policy.
 
 6. **Optional:** Specify a Key ID for each column from the drop-down menu or accept the default.
