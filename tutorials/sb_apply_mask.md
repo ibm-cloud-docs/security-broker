@@ -14,16 +14,16 @@ subcollection: security-broker
 This section describes a simple RBAC policy to apply basic data masking
 for all users. Follow the steps below to apply masking on the data using {{site.data.keyword.security_broker_short}} Manager.
 
-**Step 1: RBAC configuration:**
+Step 1: **RBAC configuration:**
 
 Configure RBAC for all connections to Shield, by setting the Mode as Required. Also, set the User Determination as Session, to reference the DB session user ID for User Group membership. However, when configuring a global RBAC policy, the User Determination is not relevant.
 
-**Step 2: User group: All-Users**
+Step 2: **User group: All-Users**
 
 You can create a Global user group called "All-Users". Select the Global checkbox and do not specify any Allowed Subnets. (0.0.0.0/0 is automatically filled when this text box is left blank.) This User Group
 applies to all possible connections to Shield.
 
-**Step 3: RBAC policy: Default Masking**
+Step 3: **RBAC policy: Default Masking**
 
 You can create two Masking policies which are nearly identical. The only
 difference is that one policy applies for VARCHAR columns, and the other
@@ -37,7 +37,7 @@ the **All-Users** user group. 
 Because both rules contain the global **All-Users** group, the default
 permission is irrelevant in this case.
 
-**Step 4: Application of Masking policies on data columns:**
+Step 4: **Application of Masking policies on data columns:**
 
 Finally, select a number of columns to mask. For each column, remove the DEFAULT_CTR_DET selection and add one or the other RBAC policy based on the Data Type.
 
