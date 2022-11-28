@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-11-17"
+lastupdated: "2022-11-28"
 
 keywords: install, ROKS, IKS, manifests, HELM
 
@@ -143,6 +143,8 @@ Refer to the [Enrolling an Application in {{site.data.keyword.security_broker_sh
 {: #sb_install_ui_procedure}
 
 Complete the following steps to insall the **{{site.data.keyword.security_broker_short}}** Shield from the IBM Cloud Catalog:
+
+1. 
 
 
 
