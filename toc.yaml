@@ -33,21 +33,21 @@ toc:
           topics:
           - tutorials/sb_encrypt_postgress.md
           - topicgroup:
+                    label: Adding Keystore, Connecting to a Database, and Enrolling an Application
+                    topics:
+                            - tutorials/sb_add_keystore.md
+                            - tutorials/sb_add_db.md
+                            - tutorials/sb_enroll_app.md
+          - tutorials/sb_encrypt_data.md
+          - tutorials/sb_masking.md                  
+          - topicgroup:
                     label: Steps to perform Data Masking
                     topics:
                             - tutorials/sb_configure_rbac.md
                             - tutorials/sb_rbac_policy.md
                             - tutorials/sb_user_group.md
                             - tutorials/sb_apply_rbac_policy.md
-                            - tutorials/sb_apply_mask.md
-          - tutorials/sb_encrypt_data.md
-          - tutorials/sb_masking.md
-          - topicgroup:
-                    label: Adding Keystore, Connecting to a Database, and Enrolling an Application
-                    topics:
-                            - tutorials/sb_add_keystore.md
-                            - tutorials/sb_add_db.md
-                            - tutorials/sb_enroll_app.md               
+                            - tutorials/sb_apply_mask.md                  
       - topicgroup:
           label: Configurations in Data Security Broker Manager
           topics:
