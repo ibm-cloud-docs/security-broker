@@ -177,7 +177,8 @@ b.  Select the **Resource group**, **Location**, and specify the **Tags** requir
 ![Shield Sync ID from Application](../images/shield_syncid.svg){: caption="Shield Sync ID from Application" caption-side="bottom"}
 
 9. Provide the Shield Sync ID and Shield name under **Set the Input Variables** section. 
-Note: Shield Name is mandatory if you are installing multiple Shields.
+
+**Note**: Shield Name is mandatory if you are installing multiple Shields.
 
 ![Shield Sync ID](../images/shield_name.svg){: caption="Shield Sync ID" caption-side="bottom"}
 
