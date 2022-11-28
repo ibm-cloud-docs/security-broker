@@ -172,9 +172,24 @@ a.  Specify the **Name** for the workspace. The workspace name must be unique an
 
 b.  Select the **Resource group**, **Location**, and specify the **Tags** required for configuring the workspace. 
 
-8. Provide the Shield Sync ID that you copied from the {{site.data.keyword.security_broker_short}} Manager application in the Shield Sync ID text box.
+8. Copy the Shield Sync ID from the {{site.data.keyword.security_broker_short}} Manager application.
 
-9. 
+![Shield Sync ID from Application](../images/shield_syncid.svg){: caption="Shield Sync ID from Application" caption-side="bottom"}
+
+9. Provide the Shield Sync ID and Shield name under **Set the Input Variables** section. 
+Note: Shield Name is mandatory if you are installing multiple Shields.
+
+![Shield Sync ID](../images/shield_name.svg){: caption="Shield Sync ID" caption-side="bottom"}
+
+10. Click **Install** in the **Summary** pane on the right to complete the installation process.
+
+11. You will be navigated to the IBM Schematics Workspaces to track the installation progress. Once the installation is successful, a message **Workspace creation successfull** is displayed as shown below:
+
+![Installation of {{site.data.keyword.security_broker_short}} Manager](../images/install_success.svg){: caption="Installation of {{site.data.keyword.security_broker_short}} Manager" caption-side="bottom"}
+
+**Note**: If you get an error message like **Workspace creation failed**, refer to the Logs available in the Terraform output.
+
+
 
 
 
