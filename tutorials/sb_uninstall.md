@@ -57,7 +57,7 @@ The user must be aware of the workspace name which is provided during the {{site
 
 Log into IBM Cloud Schematic workspace and follow the steps below to uninstall the {{site.data.keyword.security_broker_short}} Manager:
 
-1.  Search for the workspace name that you provided during the {{site.data.keyword.security_broker_short}} Manager install and click on the workspace.
+1.  Search for the workspace name that you provided during the {{site.data.keyword.security_broker_short}} Manager install and click on the workspace to open it.
 
 ![IBM Schematics Workspace](../images/schematics_workspace.svg){: caption="IBM Schematics Workspace" caption-side="bottom"}
 
