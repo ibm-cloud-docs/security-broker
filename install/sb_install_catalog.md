@@ -144,8 +144,35 @@ Refer to the [Enrolling an Application in {{site.data.keyword.security_broker_sh
 
 Complete the following steps to insall the **{{site.data.keyword.security_broker_short}}** Shield from the IBM Cloud Catalog:
 
-1. 
+1. Once you log into the {{site.data.keyword.security_broker_short}} Manager, copy the Shield Sync ID from the application that you created.
 
+![Shield Sync ID](../images/shield_syncid.svg){: caption="Shield Sync ID" caption-side="bottom"}
+
+1.  Click **{{site.data.keyword.security_broker_short}}** Shield catalog item.
+
+2.  In the **Select your deployment target** drop down, select **IBM Cloud Kubernetes service** or **Red    Hat Openshift**.
+
+![Deployment target](../images/dep_target.svg){: caption="Deployment target" caption-side="bottom"}
+
+3.  The delivery method is selected as **HELM chart** by default under the **Select a delivery method** drop down.
+
+4.  Select the version of the software to install in the **Select Version** drop-down.
+
+5.  From the list of available clusters, select the cluster on which you wish to perform the installation.
+
+![List of available clusters](../images/clusters.svg){: caption="List of clusters" caption-side="bottom"}
+
+6.  Select an existing namespace or click **Add namespace** to add a new namespace. Specify the name for the namespace and click **Add** to create a new namespace within the selected cluster.
+
+7.  Configure your workspace by specifying the following details:
+
+a.  Specify the **Name** for the workspace. The workspace name must be unique and it is used during the Update or Uninstall process to identify from the IBM Schematics Workspace (https://cloud.ibm.com/schematics/workspaces).
+
+![Configure Workspace](../images/workspace.svg){: caption="Configure Workspace" caption-side="bottom"}
+
+b.  Select the **Resource group**, **Location**, and specify the **Tags** required for configuring the workspace. 
+
+8. Provide the Shield Sync ID that you copied in Step 1 from the {{site.data.keyword.security_broker_short}} application in the Shield Sync ID text box.
 
 
 
