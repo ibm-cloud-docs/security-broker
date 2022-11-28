@@ -1,14 +1,14 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-11-24"
+lastupdated: "2022-11-28"
 
 keywords: database, admin, priveleges, users, features, operations
 
 subcollection: security-broker
 ---
 
-## Apply an RBAC policy to columns
+# Apply an RBAC policy to columns
 {: #sb_apply_rbac_policy}
 
 This task demonstrates how to select an RBAC policy for an application

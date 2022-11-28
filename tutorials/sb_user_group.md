@@ -1,14 +1,14 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-11-24"
+lastupdated: "2022-11-28"
 
 keywords: database, admin, priveleges, users, features, operations
 
 subcollection: security-broker
 ---
 
-## Configure user groups
+# Configure user groups
 {: #sb_user_group}
 
 User Groups allow you to define groups of database-level users and

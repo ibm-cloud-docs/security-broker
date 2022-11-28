@@ -1,14 +1,14 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-11-24"
+lastupdated: "2022-11-28"
 
 keywords: database, admin, priveleges, users, features, operations
 
 subcollection: security-broker
 ---
 
-## Create an RBAC policy
+# Create an RBAC policy
 {: #sb_rbac_policy}
 
 The RBAC Policy Builder allows you to define Rules, which is, the permissions for user groups. One or more groups can be given READ, READ_WRITE, or MASK permissions. The group-to-permission mapping
