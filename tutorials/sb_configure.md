@@ -45,8 +45,7 @@ The warning **Your connection is not private** is disaplayed.
 
 3. Click **Advanced**, and click the **Proceed to link** at the bottom of the page.
 
-4. The **Getting Started** dialog to proceed with the configuration of the 
-{{site.data.keyword.security_broker_short}} Manager appears as shown below:
+4. The **Getting Started** dialog to proceed with the configuration of the {{site.data.keyword.security_broker_short}} Manager appears as shown below:
 
 ![Getting Started](../images/getting_started.svg){: caption="Getting Started" caption-side="bottom"}
 

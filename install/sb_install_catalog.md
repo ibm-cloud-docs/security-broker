@@ -172,7 +172,9 @@ a.  Specify the **Name** for the workspace. The workspace name must be unique an
 
 b.  Select the **Resource group**, **Location**, and specify the **Tags** required for configuring the workspace. 
 
-8. Provide the Shield Sync ID that you copied in Step 1 from the {{site.data.keyword.security_broker_short}} application in the Shield Sync ID text box.
+8. Provide the Shield Sync ID that you copied from the {{site.data.keyword.security_broker_short}} Manager application in the Shield Sync ID text box.
+
+9. 
 
 
 
