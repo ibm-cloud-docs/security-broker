@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-11-28"
+lastupdated: "2022-11-29"
 
 keywords: install, ROKS, IKS, manifests, HELM
 
@@ -14,9 +14,7 @@ subcollection: security-broker
 ## Overview:
 {: #sb_install_ui_overview}
 
-You can install the {{site.data.keyword.security_broker_short}} software by using the IBM Cloud Catalog. Refer to this link to access the {{site.data.keyword.security_broker_short}} in the IBM Cloud Catalog:
-<https://cloud.ibm.com/catalog/content/ibmcloud-security-broker> (Need
-to correct the link when the software is available in the Catalog).
+You can install the {{site.data.keyword.security_broker_short}} software by using the IBM Cloud Catalog. Access the IBM Cloud Catalog to install the {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield.
 
 ## Pre-requisites:
 {: #sb_install_ui_prereq}
