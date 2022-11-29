@@ -94,7 +94,7 @@ Complete the following steps to insall the **{{site.data.keyword.security_broker
 
 2.  In the **Select your deployment target** drop down, select **IBM Cloud Kubernetes service** or **Red    Hat Openshift**.
 
-![Deployment target](../images/dep_target.svg){: caption="Deployment target" caption-side="bottom"}
+    ![Deployment target](../images/dep_target.svg){: caption="Deployment target" caption-side="bottom"}
 
 3.  The delivery method is selected as **HELM chart** by default under the **Select a delivery method** drop down.
 
@@ -102,7 +102,7 @@ Complete the following steps to insall the **{{site.data.keyword.security_broker
 
 5.  From the list of available clusters, select the cluster on which you wish to perform the installation.
 
-![List of available clusters](../images/clusters.svg){: caption="List of clusters" caption-side="bottom"}
+    ![List of available clusters](../images/clusters.svg){: caption="List of clusters" caption-side="bottom"}
 
 6.  Select an existing namespace or click **Add namespace** to add a new namespace. Specify the name for the namespace and click **Add** to create a new namespace within the selected cluster.
 
@@ -110,7 +110,7 @@ Complete the following steps to insall the **{{site.data.keyword.security_broker
 
 a.  Specify the **Name** for the workspace. The workspace name must be unique and it is used during the Update or Uninstall process to identify from the IBM Schematics Workspace (https://cloud.ibm.com/schematics/workspaces).
 
-![Configure Workspace](../images/workspace.svg){: caption="Configure Workspace" caption-side="bottom"}
+    ![Configure Workspace](../images/workspace.svg){: caption="Configure Workspace" caption-side="bottom"}
 
 b.  Select the **Resource group**, **Location**, and specify the **Tags** required for configuring the workspace.
 
@@ -118,7 +118,7 @@ b.  Select the **Resource group**, **Location**, and specify the **Tags** requir
 
 9. You will be navigated to the IBM Schematics Workspaces to track the installation progress. Once the installation is successful, a message **Workspace creation successfull** is displayed as shown below:
 
-![Installation of {{site.data.keyword.security_broker_short}} Manager](../images/install_success.svg){: caption="Installation of {{site.data.keyword.security_broker_short}} Manager" caption-side="bottom"}
+    ![Installation of {{site.data.keyword.security_broker_short}} Manager](../images/install_success.svg){: caption="Installation of {{site.data.keyword.security_broker_short}} Manager" caption-side="bottom"}
 
 **Note**: If you get an error message like **Workspace creation failed**, refer to the Logs available in the Terraform output.
 
@@ -144,13 +144,13 @@ Complete the following steps to insall the **{{site.data.keyword.security_broker
 
 1. Once you log into the {{site.data.keyword.security_broker_short}} Manager, copy the Shield Sync ID from the application that you created.
 
-![Shield Sync ID](../images/shield_syncid.svg){: caption="Shield Sync ID" caption-side="bottom"}
+    ![Shield Sync ID](../images/shield_syncid.svg){: caption="Shield Sync ID" caption-side="bottom"}
 
 1.  Click **{{site.data.keyword.security_broker_short}}** Shield catalog item.
 
 2.  In the **Select your deployment target** drop down, select **IBM Cloud Kubernetes service** or **Red    Hat Openshift**.
 
-![Deployment target](../images/dep_target.svg){: caption="Deployment target" caption-side="bottom"}
+    ![Deployment target](../images/dep_target.svg){: caption="Deployment target" caption-side="bottom"}
 
 3.  The delivery method is selected as **HELM chart** by default under the **Select a delivery method** drop down.
 
@@ -158,7 +158,7 @@ Complete the following steps to insall the **{{site.data.keyword.security_broker
 
 5.  From the list of available clusters, select the cluster on which you wish to perform the installation.
 
-![List of available clusters](../images/clusters.svg){: caption="List of clusters" caption-side="bottom"}
+    ![List of available clusters](../images/clusters.svg){: caption="List of clusters" caption-side="bottom"}
 
 6.  Select an existing namespace or click **Add namespace** to add a new namespace. Specify the name for the namespace and click **Add** to create a new namespace within the selected cluster.
 
@@ -166,25 +166,25 @@ Complete the following steps to insall the **{{site.data.keyword.security_broker
 
 a.  Specify the **Name** for the workspace. The workspace name must be unique and it is used during the Update or Uninstall process to identify from the IBM Schematics Workspace (https://cloud.ibm.com/schematics/workspaces).
 
-![Configure Workspace](../images/workspace.svg){: caption="Configure Workspace" caption-side="bottom"}
+    ![Configure Workspace](../images/workspace.svg){: caption="Configure Workspace" caption-side="bottom"}
 
 b.  Select the **Resource group**, **Location**, and specify the **Tags** required for configuring the workspace. 
 
 8. Copy the Shield Sync ID from the {{site.data.keyword.security_broker_short}} Manager application.
 
-![Shield Sync ID from Application](../images/shield_syncid.svg){: caption="Shield Sync ID from Application" caption-side="bottom"}
+    ![Shield Sync ID from Application](../images/shield_syncid.svg){: caption="Shield Sync ID from Application" caption-side="bottom"}
 
 9. Provide the Shield Sync ID and Shield name under **Set the Input Variables** section. 
 
 **Note**: Shield Name is mandatory if you are installing multiple Shields.
 
-![Shield Sync ID](../images/shield_name.svg){: caption="Shield Sync ID" caption-side="bottom"}
+    ![Shield Sync ID](../images/shield_name.svg){: caption="Shield Sync ID" caption-side="bottom"}
 
 10. Click **Install** in the **Summary** pane on the right to complete the installation process.
 
 11. You will be navigated to the IBM Schematics Workspaces to track the installation progress. Once the installation is successful, a message **Workspace creation successfull** is displayed as shown below:
 
-![Installation of {{site.data.keyword.security_broker_short}} Manager](../images/install_success.svg){: caption="Installation of {{site.data.keyword.security_broker_short}} Manager" caption-side="bottom"}
+    ![Installation of {{site.data.keyword.security_broker_short}} Manager](../images/install_success.svg){: caption="Installation of {{site.data.keyword.security_broker_short}} Manager" caption-side="bottom"}
 
 **Note**: If you get an error message like **Workspace creation failed**, refer to the Logs available in the Terraform output.
 
