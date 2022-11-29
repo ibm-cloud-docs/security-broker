@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-11-28"
+lastupdated: "2022-11-29"
 
 keywords: uninstall, delete, helm, configuration, tls certificate, docker config secret, environment variable, regions, cluster, container, app security, memory encryption, data in use
 
@@ -44,7 +44,7 @@ subcollection: security-broker
 # Uninstalling through IBM Cloud Catalog
 {: #sb_uninstall}
 
-If you no longer need to use {{site.data.keyword.security_broker_short}}, you can uninstall all the workloads that are associated with the {{site.data.keyword.security_broker_short}} from the IBM Cloud Schematic workspace (https://cloud.ibm.com/schematics/workspaces).
+If you no longer need to use {{site.data.keyword.security_broker_short}}, you can uninstall all the workloads that are associated with the {{site.data.keyword.security_broker_short}} using the IBM Cloud Schematic workspace (https://cloud.ibm.com/schematics/workspaces).
 {: shortdesc}
 
 ## Pre-requisite:
@@ -61,8 +61,10 @@ Log into IBM Cloud Schematic workspace and follow the steps below to uninstall t
 
 ![IBM Schematics Workspace](../images/schematics_workspace.svg){: caption="IBM Schematics Workspace" caption-side="bottom"}
 
-2.  Select Actions -> Destroy Resources to destroy the workloads associated with the {{site.data.keyword.security_broker_short}} Manager.
+2.  Select **Actions** -> **Destroy Resources** to destroy the workloads associated with the {{site.data.keyword.security_broker_short}} Manager.
 
 ![Uninstall Data Security Broker Manager](../images/uninstall_dsb_manager.svg){: caption="Uninstall Data Security Broker Manager" caption-side="bottom"}
 
-3. Follow the same process for the {{site.data.keyword.security_broker_short}} Shield to uninstall the workloads associated with the {{site.data.keyword.security_broker_short}} Shield.
+3. Follow the same process for the {{site.data.keyword.security_broker_short}} Shield to uninstall the workloads associated with the {{site.data.keyword.security_broker_short}} Shield. Remember to work with the correct workspace name, which is provided during the {{site.data.keyword.security_broker_short}} Shield install.
+
+Once you uninstall the {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield workloads, you can see that the pods are being terminated and you can monitor the successfull uninstall operation through the logs.
