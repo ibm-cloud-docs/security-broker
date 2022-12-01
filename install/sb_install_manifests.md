@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-09-22"
+lastupdated: "2022-12-01"
 
 keywords: install, ROKS, IKS, manifests, HELM
 
@@ -266,7 +266,7 @@ command:
     following command:
 
     ```sh
-    kubectl get pods -n \<namespace\>
+    kubectl get pods -n <namespace>
     ```
     {: codeblock}
 
