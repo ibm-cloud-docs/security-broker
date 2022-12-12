@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-12-01"
+lastupdated: "2022-12-12"
 
 keywords: domain name, host name, https certificate, logger, smtp, settings
 
@@ -24,7 +24,17 @@ You can use the Settings page to change the basic system settings in the
 3.  Click the **Edit** icon to change the system settings. Modify the
     **Organization name**, and **domain settings**, and click **Save**.
 
+## HTTPS Certificate:
+{: #sb_https}
 
+During the configuration, you can Install the SSL Certificate for secure access to the {{site.data.keyword.security_broker_short}} Manager web interface. HTTPs Certificate allows you to enable SSL for the {{site.data.keyword.security_broker_short}} Manager console. This ensures that you have secure access to the {{site.data.keyword.security_broker_short}} Manager web interface.
+
+When you try to log into the {{site.data.keyword.security_broker_short}} Manager after the
+setup, you get a warning: **Untrusted certificate browser warning**.
+
+**Note**: The warning appears when you have not uploaded an HTTPS
+certificate. HTTPS certificate is a digital certificate that
+authenticates a website\'s identity and enables an encrypted connection.</hidden>
 
 ## SMTP:
 {: #sb_smtp}
@@ -71,4 +81,5 @@ Complete the following steps to configure the Logger settings for the
     ![Logger](../images/logger_settings.svg){: caption="Figure 3. Logger" caption-side="bottom"}
 
 4. Click Save to complete the **Logger** configuraion.
+
 
