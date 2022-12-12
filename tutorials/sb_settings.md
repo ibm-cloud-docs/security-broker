@@ -34,7 +34,7 @@ setup, you get a warning: **Untrusted certificate browser warning**.
 
 **Note**: The warning appears when you have not uploaded an HTTPS
 certificate. HTTPS certificate is a digital certificate that
-authenticates a website\'s identity and enables an encrypted connection.</hidden>
+authenticates a website\'s identity and enables an encrypted connection.
 
 ## SMTP:
 {: #sb_smtp}
