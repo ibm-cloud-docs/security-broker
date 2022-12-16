@@ -64,6 +64,11 @@ toc:
               topics: 
               - tutorials/sb_ibm_keyprotect.md
               - tutorials/sb_hpcs.md
+          - topicgroup:
+              label: Key rotation using IBM Key Protect and HPCS
+              topics: 
+              - tutorials/sb_ibm_keyrotate.md
+              - tutorials/sb_hpcs_rotate.md
       - topicgroup:
           label: Upgrade and Uninstall
           topics:
