@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2022, 2022
-lastupdated: "2022-11-30"
+  years: 2022, 2023
+lastupdated: "2023-01-03"
 
 keywords: database, admin, priveleges, users, configure, operations
 
@@ -28,26 +28,33 @@ following requirements:
 ## To configure {{site.data.keyword.security_broker_short}} Manager, perform the following steps:
 {: #sb_configure_overview}
 
-1. To obtain the **Load_balancer_url** from the Terraform output, perform the following steps:
+1. To obtain the **Load_balancer_url** of the **dsb-nginx** service, perform the following steps:
 
-    a. Navigate to the IBM CLI and execute the following command, provided that you are aware of the workspace name that you provided during the {{site.data.keyword.security_broker_short}} Manage install.
+    a.  Log into your IBM Cloud account.
+    
+    b.  Select **Resource List** from the left navigation menu. Click **Containers** to view the list of clusters.
 
-    ```sh
-    export LOADBALANCER_IP=$(kubectl get svc dsb-nginx  --namespace <namespace name> -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
+    c.  Select the cluster where you have installed the {{site.data.keyword.security_broker_short}} Manager instance.
 
-    echo "https://$LOADBALANCER_IP"
-    ```
-    {: codeblock}    
+    d.  Click Kubernetes Dashboard to navigate to the Kubernetes Dashboard.
 
-    **Note**: If you are not sure about the workspace name that you have used during the {{site.data.keyword.security_broker_short}} Manager install, fetch the export command from the Terraform output of the workspace from the IBM Schematics Workspace (https://cloud.ibm.com/schematics/workspaces) and execute it in the IBM CLI.
+    e.  Select the namespace from the drop-down, on which you have installed the {{site.data.keyword.security_broker_short}} Manager.
 
-2. Copy the **load_balancer_url** from the IBM CLI.
+    f.  Navigate to **Services** to view the list of {{site.data.keyword.security_broker_short}} Manager services running in the namespace.
+
+    g.  Fetch the **LoadBalancer IP** from the **External Endpoints** column for the **dsb-nginx** service.
+    
+    
+
+2. Copy the **load_balancer_url** from the Kubernetes dashboard.
 3. Open a browser window and paste the **load_balancer_url** in the following format:
 
     ```sh
-    https://<load balancer url>
+    https://<load balancer url without the port number>
     ```
     {: codeblock}    
+
+    **Example**:  If the LoadBalancer IP is http://150.238.243.117:443/, specify the IP in the format https://150.238.243.117
 
     The warning **Your connection is not private** is disaplayed.
 
@@ -73,4 +80,4 @@ following requirements:
 
     **Note**: The {{site.data.keyword.security_broker_short}} Secret Key must contain at least 10 characters, a mixture of upper and lower case, including at least one numeric character. The Secret Key is used to generate a random key to encrypt the Keystore Config Password.
 
-9. Login to the **{{site.data.keyword.security_broker_short}}** Manager using the steps mentioned in the [Logging into {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_login) section.
+9. Once you complete the configuration process for the {{site.data.keyword.security_broker_short}} Manager, the next step is to login to the {{site.data.keyword.security_broker_short}} Manager using the steps mentioned in the [Logging into {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_login) section.

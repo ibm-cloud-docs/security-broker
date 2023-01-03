@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2022, 2022
-lastupdated: "2022-11-03"
+  years: 2022, 2023
+lastupdated: "2023-01-03"
 
 keywords: database, admin, priveleges, users, features, operations, application
 
@@ -36,8 +36,7 @@ To add and connect to a data store, complete the following steps in the {{site.d
 **Note**:
 
 -   Create a new user on your database for use with IBM Cloud Security
-    Broker. For more information, see **Database Privileges** (Provide
-    link to Database Privileges topic).
+    Broker. For more information, see [Database Privileges](/docs/security-broker?topic=security-broker-sb_db_priveleges) section.
 
 -   For IBM Cloud use a **Postgres** database and enter your database
     name in the **Postgres Database Name** field.
