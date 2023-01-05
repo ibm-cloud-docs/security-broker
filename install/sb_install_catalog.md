@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-11-29"
+lastupdated: "2021-09-01"
 
 keywords: install, ROKS, IKS, manifests, HELM
 
@@ -161,9 +161,7 @@ Complete the following steps to insall the {{site.data.keyword.security_broker_s
 7.  Configure your workspace by specifying the following details:
 
     a.  Specify the **Name** for the workspace. The workspace name must be unique and using the name of the workspace, you can manage, update or uninstall {{site.data.keyword.security_broker_short}} Shield from the IBM Schematics Workspace (https://cloud.ibm.com/schematics/workspaces).
-
     ![Configure Workspace](../images/workspace.svg){: caption="Configure Workspace" caption-side="bottom"}
-
     b.  Select the **Resource group**, **Location**, and specify the **Tags** required for configuring the workspace. 
 
 8. Copy the Shield Sync ID from the {{site.data.keyword.security_broker_short}} Manager application.
