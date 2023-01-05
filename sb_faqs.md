@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-10-26"
+lastupdated: "2022-09-01"
 
 keywords: FAQ, setup, data protection
 

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-12-16"
+lastupdated: "2021-09-01"
 
 keywords: database, admin, priveleges, users, configure, operations, keyprotect
 

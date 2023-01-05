@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-10-25"
+lastupdated: "2021-09-01"
 
 keywords: logging, debugging, platform, dashboard, observability
 

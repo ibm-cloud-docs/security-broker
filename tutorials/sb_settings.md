@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-12-13"
+lastupdated: "2022-09-01"
 
 keywords: domain name, host name, https certificate, logger, smtp, settings
 
