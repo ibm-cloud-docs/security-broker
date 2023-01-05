@@ -27,8 +27,7 @@ create a new user on your database for {{site.data.keyword.security_broker_short
 
 |**Operation**|**Details**|**Queries used by Shield**|**Minimum required grants**|**Additional information**|
 | - | - | - | :- | - |
-|Proxy normal operation:- Support implicit inserts Obtain column information|Access information\_schema to get information about columns. This is needed to support queries such as implicit inserts (inserts that don’t have column names specified explicitly). Per database/schema/table that is defined in DSB]select ordinal\_position, column\_name, data\_type from information\_schema .COLUMNS where table\_catalog=<Dat abase> and table\_schema=<Sche ma> and table\_name=<TableN ame> order by ordinal\_position |Select grant is required for all tables that are defined in DSB.|If a new database, schema or column is added to your protection plan, ensure the grant is applied beforehand|
-|CheckProxyPort|Check if the port specified for the Shield is alive and responsive|Select 1|Select grant||
-
+|Proxy normal operation: Support implicit inserts, and Obtain column information|Access information_schema to get information about columns. This is needed to support queries such as implicit inserts (inserts that don’t have column names specified explicitly). [Per database or per schema or per table that is defined in Data Security Broker] select ordinal_position, column_name, data_type from information_schema .COLUMNS where table_catalog=Database Name and table_schema=Schema Name, and table_name=TableName order by ordinal_position |Select grant is required for all tables that are defined in Data Security Broker.|If a new database, schema or column is added to your protection plan, ensure the grant is applied|
+|CheckProxyPort|Check if the port specified for the Shield is responsive|Select 1|Select grant||
 {: caption="Table 1. Database privileges required for PostgreSQL 12 in {{site.data.keyword.security_broker_short}} Manager" caption-side="bottom"}
 
