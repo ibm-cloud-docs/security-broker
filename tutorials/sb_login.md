@@ -44,8 +44,10 @@ Complete the following steps to log into the {{site.data.keyword.security_broker
 
     ![OAuth token](../images/oauth_token.svg){: caption="Figure 2. OAuth token" caption-side="bottom"}
 
-2.  Copy the OAuth token without any space or additional characters and paste it in the **Enter token** text box as shown below and click **Sign In** to log into the {{site.data.keyword.security_broker_short}} Manager:
+2.  Open the {{site.data.keyword.security_broker_short}} Manager console which has already been configured in a browser window. For example, https://https://150.238.243.117.
+
+3.  Copy the OAuth token without any space or additional characters and paste it in the **Enter token** text box as shown below in the Login page and click **Sign In** to log into the {{site.data.keyword.security_broker_short}} Manager:
 
     ![Log into {{site.data.keyword.security_broker_short}} Manager](../images/sb_login.svg){: caption="Figure 3. Log into {{site.data.keyword.security_broker_short}} Manager" caption-side="bottom"}
     
-3.  Once you have logged into the {{site.data.keyword.security_broker_short}} Manager, the next step is add a database, connect to a keystore, and enroll an application to proceed with the data encryption. Refer to the [Data Protection Services Overview](/docs/security-broker?topic=security-broker-sb_encrypt_progress) section to proceed with the data protection services.
+4.  Once you have logged into the {{site.data.keyword.security_broker_short}} Manager, the next step is add a database, connect to a keystore, and enroll an application to proceed with the data encryption. Refer to the [Data Protection Services Overview](/docs/security-broker?topic=security-broker-sb_encrypt_progress) section to proceed with the data protection services.
