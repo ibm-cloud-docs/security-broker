@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-11-03"
+lastupdated: "2021-09-01"
 
 keywords: database, admin, priveleges, users, features, operations, application
 
@@ -40,5 +40,11 @@ following steps:
 
     ![Enroll Application](../images/enroll_app.svg){: caption="Figure 2. Enroll Application" caption-side="bottom"}
 
-6.  Click **Enroll Application**.
+6.  Click **Enroll Application**. After the application is enrolled, it is displayed under the Applications in the {{site.data.keyword.security_broker_short}} Manager.
+
+
+
+**Note**: The Shield Sync ID
+
+7.  Once you have completed enrolling an application, you can proceed with the data encyrption. Refer to the [Data Encryption using IBM Cloud PostgreSQL Database](/docs/security-broker?topic=security-broker-sb_encrypt_data) section to proceed with the data encryption.
 
