@@ -133,10 +133,12 @@ You must configure the {{site.data.keyword.security_broker_short}} Manager conso
 Login to the {{site.data.keyword.security_broker_short}} Manager using the steps mentioned in the [Logging into {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_login) section. 
 
 ## Add a Database in {{site.data.keyword.security_broker_short}} Manager:
+{: #install-catalog-add_db}
 
 Refer to the [Add a Database in {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_add_db) section to add a database in the {{site.data.keyword.security_broker_short}} Manager.
 
 ## Add a Keystore in {{site.data.keyword.security_broker_short}} Manager:
+{: #install-catalog-keystore}
 
 Refer to the [Add a Keystore in {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_add_keystore) section to connect to a keystore in the {{site.data.keyword.security_broker_short}} Manager.
 
