@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2022, 2023
-lastupdated: "2023-01-03"
+  years: 2022, 2022
+lastupdated: "2021-09-01"
 
 keywords: database, admin, priveleges, users, features, operations, application
 
@@ -49,3 +49,5 @@ To add and connect to a data store, complete the following steps in the {{site.d
 
 9.  Create the data that is required for encryption or decryption as
     tables in the new database that is created.
+
+10. Once you have completed adding a database, the next step is to connect to a keystore. Refer to the [Add a Keystore in {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_add_keystore) section to connect to a keystore in the {{site.data.keyword.security_broker_short}} Manager. 
