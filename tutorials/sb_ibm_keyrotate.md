@@ -1,14 +1,14 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-12-16"
+lastupdated: "2021-09-01"
 
 keywords: database, admin, priveleges, users, configure, keyrotate, keyprotect, operations
 
 subcollection: security-broker
 ---
 
-# Rotate Keys for IBM Key Protect {{site.data.keyword.security_broker_short}} Manager:
+# Rotate Keys for IBM Key Protect in {{site.data.keyword.security_broker_short}} Manager
 {: #sb_ibm_keyrotate}
 
 In this section, you can find details on how to rotate the Master and Data Encryption Keys for IBM Key Protect Keystore in {{site.data.keyword.security_broker_short}} Manager.

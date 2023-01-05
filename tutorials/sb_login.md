@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-11-29"
+lastupdated: "2021-09-01"
 
 keywords: logging, debugging, platform, dashboard, observability
 
@@ -12,20 +12,40 @@ subcollection: security-broker
 {: #sb_login}
 
 Once you have configured the {{site.data.keyword.security_broker_short}} Manager, the next step
-is log into the {{site.data.keyword.security_broker_short}} Manager to create keystore, connect
-to a database, enroll an application, and perform encryption.
+is log into the {{site.data.keyword.security_broker_short}} Manager using the OAuth token.
 
 Complete the following steps to log into the {{site.data.keyword.security_broker_short}} Manager:
 
-1.  Generate ab IBM OAuth token. To obtain the OAuth token, log into your IBM cloud account
-    from the CLI and run the following command:
+1.  Generate an IBM OAuth token. To obtain the OAuth token, log into your IBM cloud account
+    from the Command Line Interface using the following steps:
+
+    a. Open the Command terminal from your system.
+    b. Execute the following command to login to your IBM cloud account:
+
+    ```sh
+    ibmcloud login -sso
+    ```
+    {: codeblock}
+
+    When prompted to open the one-time passcode in a browser window, specify **Y** for "Yes". You will be re-directed to the browser window, from where you can copy and paste the one-time passcode. 
+
+    Navigate back to the CLI and paste the one-time passcode and select the account in which you wish to login using your IBM Cloud credentials. 
+
+    ![Log into IBM Cloud CLI](../images/ibm_cli.svg){: caption="Figure 1. Log into IBM Cloud CLI" caption-side="bottom"}
+
+    **Note**: Ensure that the IBM cloud account, which is used during the configuration of the {{site.data.keyword.security_broker_short}} Manager as the Super Admin user, and the IBM cloud account that you are using to login using the CLI to generate the OAuth token must be the same. Otherwise, you might get an error which says that the OAuth token is invalid.
+    
+2.  Run the following command to generate the OAuth token:
 
     ```sh
     ibmcloud iam oauth-tokens
     ```
     {: codeblock}
 
+    ![OAuth token](../images/oauth_token.svg){: caption="Figure 2. OAuth token" caption-side="bottom"}
+
 2.  Copy the OAuth token without any space or additional characters and paste it in the **Enter token** text box as shown below and click **Sign In** to log into the {{site.data.keyword.security_broker_short}} Manager:
 
-    ![Log into {{site.data.keyword.security_broker_short}} Manager](../images/sb_login.svg){: caption="Figure 1. Log into {{site.data.keyword.security_broker_short}} Manager" caption-side="bottom"}
+    ![Log into {{site.data.keyword.security_broker_short}} Manager](../images/sb_login.svg){: caption="Figure 3. Log into {{site.data.keyword.security_broker_short}} Manager" caption-side="bottom"}
     
+3.  Once you have logged into the {{site.data.keyword.security_broker_short}} Manager, the next step is add a database, connect to a keystore, and enroll an application to proceed with the data encryption. Refer to the [Data Protection Services Overview](/docs/security-broker?topic=security-broker-sb_encrypt_progress) section to proceed with the data protection services.

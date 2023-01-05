@@ -122,22 +122,30 @@ b.  Select the **Resource group**, **Location**, and specify the **Tags** requir
 
 **Note**: If you get an error message saying,  **Workspace creation failed**, refer to the Logs available in the Terraform output.
 
-## Configure **{{site.data.keyword.security_broker_short}} Manager**:
+## Configure {{site.data.keyword.security_broker_short}} Manager:
 {: #install-catalog-configure}
 
 You must configure the {{site.data.keyword.security_broker_short}} Manager console before installing the {{site.data.keyword.security_broker_short}} Shield. See [Configure {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_configure) to complete the configuration of the {{site.data.keyword.security_broker_short}} Manager and access the {{site.data.keyword.security_broker_short}} Manager console.
 
-## Login to **{{site.data.keyword.security_broker_short}}** Manager:
+## Login to {{site.data.keyword.security_broker_short}} Manager:
 {: #install-catalog-login}
 
 Login to the {{site.data.keyword.security_broker_short}} Manager using the steps mentioned in the [Logging into {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_login) section. 
 
-## Enroll an application in the **{{site.data.keyword.security_broker_short}}** Manager:
+## Add a Database in {{site.data.keyword.security_broker_short}} Manager:
+
+Refer to the [Add a Database in {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_add_db) section to add a database in the {{site.data.keyword.security_broker_short}} Manager.
+
+## Add a Keysotre in {{site.data.keyword.security_broker_short}} Manager:
+
+Refer to the [Add a Keystore in {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_add_keystore) section to connect to a keystore in the {{site.data.keyword.security_broker_short}} Manager.
+
+## Enroll an application in the {{site.data.keyword.security_broker_short}} Manager:
 {: #install-catalog-enroll}
 
 Refer to the [Enrolling an Application in {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_enroll_app) section to enroll an application in the {{site.data.keyword.security_broker_short}} Manager.
 
-## Install **{{site.data.keyword.security_broker_short}}** Shield:
+## Install {{site.data.keyword.security_broker_short}} Shield:
 {: #sb_install_ui_procedure}
 
 Complete the following steps to insall the {{site.data.keyword.security_broker_short}} Shield from the IBM Cloud Catalog:
@@ -161,7 +169,11 @@ Complete the following steps to insall the {{site.data.keyword.security_broker_s
 7.  Configure your workspace by specifying the following details:
 
     a.  Specify the **Name** for the workspace. The workspace name must be unique and using the name of the workspace, you can manage, update or uninstall {{site.data.keyword.security_broker_short}} Shield from the IBM Schematics Workspace (https://cloud.ibm.com/schematics/workspaces).
+
     ![Configure Workspace](../images/workspace.svg){: caption="Configure Workspace" caption-side="bottom"}
+
+    **Note**: If you are installing more than one instance of {{site.data.keyword.security_broker_short}} Manager in the same namespace, ensure that you provide unique workspace names to each of the {{site.data.keyword.security_broker_short}} Manager installation. Otherwise, you might get error which describes that the same workspace already exists in the namespace.
+    
     b.  Select the **Resource group**, **Location**, and specify the **Tags** required for configuring the workspace. 
 
 8. Copy the Shield Sync ID from the {{site.data.keyword.security_broker_short}} Manager application.
