@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2022-11-16"
+lastupdated: "2022-09-01"
 
 keywords: support, getting started, data protection, data threats
 
@@ -112,9 +112,13 @@ By using the following steps and the information in the table, assign the requir
 | Schematics                              | Manager, Administrator | 
 {: caption="Table 1. Permissions required for {{site.data.keyword.security_broker_short}}" caption-side="bottom"}
 
+You can find more information about {{site.data.keyword.security_broker_short}} in the [About {{site.data.keyword.security_broker_short}}](/docs/security-broker?topic=security-broker-sb_about) section.
+
 ## Next Steps
 {: #sb_getting_next_steps}
 
-Now that the software is installed on your cluster, you can start protecting your data by following the steps mentioned in the flow diagram below:
+After the enrironment is setup and you have the required roles and permissions, you can start installing the {{site.data.keyword.security_broker_short}} by following the instructions in the [Installing {{site.data.keyword.security_broker_short}}](/docs/security-broker?topic=security-broker-sb_install_catalog) section.
+
+The flow diagram below explains the work flow that the user has to follow to encrypt the data using {{site.data.keyword.security_broker_short}}:
 
 ![Encryption flow in {{site.data.keyword.security_broker_short}}](images/sb_userflow.svg){: caption="Figure 1. Encyrption flow in {{site.data.keyword.security_broker_short}} Manager" caption-side="bottom"}
