@@ -62,6 +62,7 @@ toc:
           - topicgroup:
               label: IBM Key Protect and HPCS
               topics: 
+              - tutorials/sb_local_keystore.md
               - tutorials/sb_ibm_keyprotect.md
               - tutorials/sb_hpcs.md
           - topicgroup:
