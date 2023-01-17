@@ -38,8 +38,8 @@ following requirements:
 
     **IBM Cloud Kubernetes service (IKS)**:
 
-    - If you have installed the {{site.data.keyword.security_broker_short}} Manager in a Kubernetes cluster, click Kubernetes Dashboard to navigate to the Kubernetes Dashboard from the cluster.
-
+    - If you have installed the {{site.data.keyword.security_broker_short}} Manager in a Kubernetes cluster, click **Kubernetes Dashboard** to navigate to the Kubernetes Dashboard from the cluster.
+ 
     - Select the namespace from the drop-down, on which you have installed the {{site.data.keyword.security_broker_short}} Manager.
 
     - Navigate to **Services** to view the list of {{site.data.keyword.security_broker_short}} Manager services running in the namespace.
@@ -48,13 +48,13 @@ following requirements:
 
     **Red Hat Openshift (ROKS)**:
 
-    - If you have installed the {{site.data.keyword.security_broker_short}} Manager in a Red Hat Openshift cluster, click  from the cluster.
+    - If you have installed the {{site.data.keyword.security_broker_short}} Manager in a Red Hat Openshift cluster, click **Openshift web console** from the cluster.
 
-    - Select the namespace from the drop-down, on which you have installed the {{site.data.keyword.security_broker_short}} Manager.
+    - Click **Projects** in the left navigation menu and select the project from the drop-down, on which you have installed the {{site.data.keyword.security_broker_short}} Manager.
 
-    - Navigate to **Services** to view the list of {{site.data.keyword.security_broker_short}} Manager services running in the namespace.
+    - Navigate to **Networking -> Routes** to view the list of {{site.data.keyword.security_broker_short}} Manager services running in the project.
 
-    - Fetch the **LoadBalancer IP** from the **External Endpoints** column for the **dsb-nginx** service.
+    - Fetch the **Data Security Broker Manager URL** from the **Locations** column for the **dsb-nginx** service.
     
     
 
