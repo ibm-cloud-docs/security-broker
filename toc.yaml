@@ -3,7 +3,7 @@ toc:
     subcollection: security-broker
     service-name: security-broker
     category: security
-    audience: service
+    audience: software
     href: /docs/security-broker
     console-page: /catalog/services/security-broker
     product-page: https://cloud.ibm.com/security-broker
