@@ -28,21 +28,33 @@ following requirements:
 ## To configure {{site.data.keyword.security_broker_short}} Manager, perform the following steps:
 {: #sb_configure_overview}
 
-1. To obtain the **Load_balancer_url** of the **dsb-nginx** service, perform the following steps:
-
-    a.  Log into your IBM Cloud account.
+1. To obtain the **Load_balancer_url** of the **dsb-nginx** service, perform the following steps. 
+ 
+    - Log into your IBM Cloud account.
     
-    b.  Select **Resource List** from the left navigation menu. Click **Containers** to view the list of clusters.
+    - Select **Resource List** from the left navigation menu. Click **Containers** to view the list of clusters.
 
-    c.  Select the cluster where you have installed the {{site.data.keyword.security_broker_short}} Manager instance.
+    - Select the cluster where you have installed the {{site.data.keyword.security_broker_short}} Manager instance.
 
-    d.  Click Kubernetes Dashboard to navigate to the Kubernetes Dashboard.
+    **IBM Cloud Kubernetes service (IKS)**:
 
-    e.  Select the namespace from the drop-down, on which you have installed the {{site.data.keyword.security_broker_short}} Manager.
+    - If you have installed the {{site.data.keyword.security_broker_short}} Manager in a Kubernetes cluster, click Kubernetes Dashboard to navigate to the Kubernetes Dashboard from the cluster.
 
-    f.  Navigate to **Services** to view the list of {{site.data.keyword.security_broker_short}} Manager services running in the namespace.
+    - Select the namespace from the drop-down, on which you have installed the {{site.data.keyword.security_broker_short}} Manager.
 
-    g.  Fetch the **LoadBalancer IP** from the **External Endpoints** column for the **dsb-nginx** service.
+    - Navigate to **Services** to view the list of {{site.data.keyword.security_broker_short}} Manager services running in the namespace.
+
+    - Fetch the **LoadBalancer IP** from the **External Endpoints** column for the **dsb-nginx** service.
+
+    **Red Hat Openshift (ROKS)**:
+
+    - If you have installed the {{site.data.keyword.security_broker_short}} Manager in a Red Hat Openshift cluster, click  from the cluster.
+
+    - Select the namespace from the drop-down, on which you have installed the {{site.data.keyword.security_broker_short}} Manager.
+
+    - Navigate to **Services** to view the list of {{site.data.keyword.security_broker_short}} Manager services running in the namespace.
+
+    - Fetch the **LoadBalancer IP** from the **External Endpoints** column for the **dsb-nginx** service.
     
     
 
