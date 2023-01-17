@@ -12,7 +12,7 @@ subcollection: security-broker
 {: #sb_configure}
 
 Configuring the {{site.data.keyword.security_broker_short}} Manager console is the first step
-in implementing the data protection services.
+to login and implement the data protection services.
 
 ## **Prerequisites:**
 {: #sb_configure_prereq}
@@ -20,8 +20,8 @@ in implementing the data protection services.
 Before you begin configuring {{site.data.keyword.security_broker_short}} Manager, ensure you meet the
 following requirements:
 
-    1. {{site.data.keyword.security_broker_short}} Manager must have been installed.
-    2. Load Balancer URL is required to access the {{site.data.keyword.security_broker_short}} Manager.
+- {{site.data.keyword.security_broker_short}} Manager must have been installed.
+- Load Balancer URL is required to access the {{site.data.keyword.security_broker_short}} Manager.
 
 
 
