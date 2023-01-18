@@ -8,22 +8,22 @@ keywords: database, admin, priveleges, users, features, operations
 subcollection: security-broker
 ---
 
-# Limitations
+# Known issues (Limitations)
 {: #sb_limitations}
 
-## Limitations of Application-level Encryption:
+Use this topic to find the details of the limitations that are applicable to the {{site.data.keyword.security_broker_short}} software.
+
+## Application-level Encryption:
 {: #sb_app_level}
 
-Data Security Broker Encryption gives database applications a no-code
+{{site.data.keyword.security_broker_short}} encryption gives database applications a no-code
 way to implement application-level encryption. Application-level
 encryption can be implemented by including a database proxy that
 intercepts and encrypts sensitive data in accordance with the
 pre-established data protection policy.
 
-DSB Encryption has some restrictions, just like other approaches to
-application-level encryption implementation. Please find below the
-limitations of performing application -level encryption through Data
-Security Broker:
+{{site.data.keyword.security_broker_short}} encryption has some restrictions, like any other approaches to the application-level encryption implementation. 
+The various aspects of the application level encryption limitations are explained below:
 
 **Performance hit**: Data encryption consumes more time and resources
 than data decryption. This overhead is normally negligible. If the proxy
