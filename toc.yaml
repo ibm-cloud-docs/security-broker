@@ -10,6 +10,7 @@ toc:
     path: security-broker
     label: IBM Cloud Data Security Broker
     version: 1
+    release-level: beta
 
   entries: 
   - navgroup: 

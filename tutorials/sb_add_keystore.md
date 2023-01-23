@@ -15,7 +15,7 @@ subcollection: security-broker
     
 Follow the steps below to enroll a Keystore that you can use with {{site.data.keyword.security_broker_short}} Shields and databases.
 
-1. Login to {{site.data.keyword.security_broker_short}} Manager.
+1.  Login to {{site.data.keyword.security_broker_short}} Manager.
 
 2.  Select **Keystores** from the left navigation and click **Add Keystore +**.
 
