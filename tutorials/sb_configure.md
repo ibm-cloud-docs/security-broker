@@ -56,9 +56,7 @@ following requirements:
 
     - Fetch the **Data Security Broker Manager URL** from the **Locations** column for the **dsb-nginx** service.
     
-    
-
-2. Copy the **load_balancer_url** from the Kubernetes dashboard.
+2. Copy the **load_balancer_url** from the Kubernetes dashboard for the IKS cluster or from the Openshift web console for the ROKS cluster.
 3. Open a browser window and paste the **load_balancer_url** in the following format:
 
     ```sh
