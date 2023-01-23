@@ -25,8 +25,8 @@ The HPCS service, which is based on IBM LinuxONE technology, helps to guarantee 
 
 Configure IBM Cloud Hyper Protect Crypto Services by following the steps below. You can then add IBM Cloud Hyper Protect Crypto Services as a keystore in {{site.data.keyword.security_broker_short}} Manager.
 
-1. Get an IBM Instance ID in one of the following ways:
-    * Using the IBM CLI – enter the following command in a shell window: 
+1. Get an IBM HPCS Instance ID in one of the following ways:
+    * Using the IBM CLI – Login to your IBM CLI and execute the following command: 
 
 ```sh
 ibmcloud resource service-instance 'HPCS-DSB-1'
