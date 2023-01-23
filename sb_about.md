@@ -17,6 +17,29 @@ when it is being processed by databases and applications. {{site.data.keyword.se
 protect databases at a column-level granularity.
 {: shortdesc}
 
+{{site.data.keyword.security_broker_short}} offers Data Protection Services which consists of two main
+components, namely:
+
+__{{site.data.keyword.security_broker_short}} Manager__ is the administrative console for
+the solution that integrates with enterprise key managers and databases
+and manages the {{site.data.keyword.security_broker_short}} solution components.
+
+__{{site.data.keyword.security_broker_short}} Shield__ is the SQL / NOSQL proxy that
+functions to encrypt and decrypt data at the field or record level.
+
+{{site.data.keyword.security_broker_short}} Manager enforces encryption policies and
+configurations by:
+
+- Communicating with key management solutions, the {{site.data.keyword.security_broker_short}} Shield, and databases.
+- Orchestrating configuration and deployment.
+
+{{site.data.keyword.security_broker_short}} Shield is a stateless reverse proxy that intercepts
+and encrypts application data sent to the database and decrypts encrypted data returned by the database.
+
+{{site.data.keyword.security_broker_short}} offers Data Protection Services which provide a range of data protection services such as data encryption, data tokenization, record level encryption, and data masking.
+
+**Note**: {{site.data.keyword.security_broker_short}} supports only PostgreSQL database.
+
 ## How it works
 {: #sb-how-it-works}
 

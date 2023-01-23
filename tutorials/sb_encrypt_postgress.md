@@ -8,11 +8,8 @@ keywords: database, admin, priveleges, users, features, operations
 subcollection: security-broker
 ---
 
-# Data Protection Services Overview
+# Data Protection Services 
 {: #sb_encrypt_postgress}
-
-## Overview:
-{: #sb_encrypt_overview}
 
 {{site.data.keyword.security_broker_short}} offers Data Protection services which enables the
 provisioning of {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield and configures encryption or decryption rules against the IBM Cloud
@@ -27,8 +24,7 @@ or columns on the fly and migrate the existing database records, apply record
 ## Pre-requisite:
 {: #sb_encrypt_prereq}
 
-Ensure that the {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}}
-Shield service is installed and ready to use. For more information on
+Ensure that the {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield service is installed and ready to use. For more information on
 creating {{site.data.keyword.security_broker_short}} Shield service, see [Installing {{site.data.keyword.security_broker_short}} Shield](/docs/security-broker?topic=security-broker-sb_install_catalog). 
  
 ## Procedure:

@@ -44,34 +44,9 @@ subcollection: security-broker
 # Getting started with IBM Cloud Data Security Broker
 {: #getting_started}
 
-{{site.data.keyword.security_broker_full_notm}} is a complete data protection solution
-that secures sensitive data in enterprise databases by integrating
-with key management and databases to provide application-level
-encryption.
+Protect your data in the cloud with the {{site.data.keyword.security_broker_full_notm}}, which is a complete data protection solution that secures sensitive data in enterprise databases by integrating
+with key management and databases to provide application-level encryption.
 {: shortdesc}
-
-{{site.data.keyword.security_broker_short}} offers Data Protection Services which consists of two main
-components, namely:
-
-__{{site.data.keyword.security_broker_short}} Manager__ is the administrative console for
-the solution that integrates with enterprise key managers and databases
-and manages the {{site.data.keyword.security_broker_short}} solution components.
-
-__{{site.data.keyword.security_broker_short}} Shield__ is the SQL / NOSQL proxy that
-functions to encrypt and decrypt data at the field or record level.
-
-{{site.data.keyword.security_broker_short}} Manager enforces encryption policies and
-configurations by:
-
-- Communicating with key management solutions, the {{site.data.keyword.security_broker_short}} Shield, and databases.
-- Orchestrating configuration and deployment.
-
-{{site.data.keyword.security_broker_short}} Shield is a stateless reverse proxy that intercepts
-and encrypts application data sent to the database and decrypts encrypted data returned by the database.
-
-{{site.data.keyword.security_broker_short}} offers Data Protection Services which provide a range of data protection services such as data encryption, data tokenization, record level encryption, and data masking.
-
-**Note**: {{site.data.keyword.security_broker_short}} supports only PostgreSQL database.
 
 ## Before you begin
 {: #sb-before-you-begin}
@@ -79,9 +54,10 @@ and encrypts application data sent to the database and decrypts encrypted data r
 Before you begin installing and configuring the {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield, ensure that you have met the following requirements:
 
 - Create an IBM Cloud account.
-- Database privileges for performing encryption.
+- Setup your environment.
+- Setup the minimum permissions required in the IBM Cloud account.
 
-### System Requirements
+### Setting up your environment
 {: #sb-system-requirements}
 
 Ensure that your environment meets the following minimum system level and resource level requirements:
@@ -90,9 +66,9 @@ Ensure that your environment meets the following minimum system level and resour
 |------------------------------------------|------------------------|---------------------------------|
 | IBM Red Hat Openshift Kubernetes Cluster | RHEL7/RHEL8 and CoreOS | 2                               |
 | IBM Cloud Kubernetes Cluster             | Ubuntu 18              | 2                               |
-{: caption="Table 2. Resource level requirements for {{site.data.keyword.security_broker_short}}" caption-side="bottom"}  
+{: caption="Table 1. Resource level requirements for {{site.data.keyword.security_broker_short}}" caption-side="bottom"}  
 
-## Minimum permissions required to install, setup, and  access {{site.data.keyword.security_broker_short}} ##
+## Setting up minimum permissions required to install, setup, and  access {{site.data.keyword.security_broker_short}} ##
 {: #sb_getting_assign_permission}
 
 As an IBM Cloud user, you need to set the follwoing minimum permissions to install, setup and access {{site.data.keyword.security_broker_short}}. 
@@ -110,7 +86,7 @@ By using the following steps and the information in the table, assign the requir
 | Kubernetes Service                      | Manager, Editor        |
 | IBM Red Hat OpenShift Kubernetes Servie | Editor                 |
 | Schematics                              | Manager, Administrator | 
-{: caption="Table 1. Permissions required for {{site.data.keyword.security_broker_short}}" caption-side="bottom"}
+{: caption="Table 2. Permissions required for {{site.data.keyword.security_broker_short}}" caption-side="bottom"}
 
 You can find more information about {{site.data.keyword.security_broker_short}} in the [About {{site.data.keyword.security_broker_short}}](/docs/security-broker?topic=security-broker-sb_about) section.
 
