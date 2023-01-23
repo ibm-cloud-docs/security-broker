@@ -41,10 +41,10 @@ subcollection: security-broker
 {:release-note: data-hd-content-type='release-note'}
 
 
-# Frequently asked questions (FAQ)
+# FAQs for {{site.data.keyword.security_broker_short}}
 {: #sb_faqs}
 
-This FAQ provides answers to common questions about the {{site.data.keyword.security_broker_short}} service.
+This section provides answers to common questions about the {{site.data.keyword.security_broker_short}} service.
 {: shortdesc}
 
 **What is {{site.data.keyword.security_broker_short}} Manager?**
