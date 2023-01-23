@@ -11,7 +11,7 @@ subcollection: security-broker
 # Configure IBM Cloud Hyper Protect Crypto Services (HPCS)
 {: #sb_hpcs}
 
-In this section, you can find details on how to add [IBM Cloud Hyper Protect Crypto Services (HPCS)](https://www.ibm.com/cloud/hyper-protect-crypto) as a keystore in {{site.data.keyword.security_broker_short}} Manager and configure HPCS.
+In this section, you can find details on how to configure HPCS and add [IBM Cloud Hyper Protect Crypto Services (HPCS)](https://www.ibm.com/cloud/hyper-protect-crypto) as a keystore in {{site.data.keyword.security_broker_short}} Manager.
 
 ## Overview
 {: #sb_hpcs_overview}
@@ -20,10 +20,11 @@ In this section, you can find details on how to add [IBM Cloud Hyper Protect Cry
 
 The HPCS service, which is based on IBM LinuxONE technology, helps to guarantee that only you have access to your keys. Using a dedicated customer-controlled HSM that provides single-tenant key management and key vaulting makes it simple to create encryption keys. You can also bring your own encryption keys to manage instead.
 
-## Procedure
+
+## Configure HPCS instance:
 {: #sb_configure_hpcs}
 
-Configure IBM Cloud Hyper Protect Crypto Services by following the steps below. You can then add IBM Cloud Hyper Protect Crypto Services as a keystore in {{site.data.keyword.security_broker_short}} Manager.
+Configure IBM Cloud Hyper Protect Crypto Services by following the steps below.
 
 1. Get an IBM HPCS Instance ID in one of the following ways:
     * Using the IBM CLI – Login to your IBM CLI and execute the following command: 
@@ -49,18 +50,17 @@ ibmcloud resource service-instance 'HPCS-DSB-1'
 ## Add IBM Cloud Hyper Protect Crypto Services as a keystore in {{site.data.keyword.security_broker_short}} Manager
 {: #sb_add_hpcs_DSB}
 
-Use IBM Cloud Hyper Protect Crypto Services as a keystore in {{site.data.keyword.security_broker_short}} Manager by completing the following steps.
+You can add the IBM Cloud Hyper Protect Crypto Services instance as a keystore in {{site.data.keyword.security_broker_short}} Manager by completing the following steps.
 
 1. Log into {{site.data.keyword.security_broker_short}} Manager.
 2. Select **Keystores** from the left navigation and click **Add Keystore +**.
 3. Specify a name for the Keystore in the **Keystore name** field and provide a valid description in the **Description** field and select **IBM Cloud Hyper Protect Crypto Services** in the **Keystore Type** drop-down list.
-4. Enter the Instance ID for the KeyProtect Instance.
+4. Enter the Instance ID for the HPCS KeyProtect Instance, which is obtained from the Step 1 in configuring the HPCS instance.
 5. For App Namespace, enter a string to identify the application.
-6. For IBM Cloud Hyper Protect Crypto Services Alias, enter a unique string value.
-7. For the IAM API Key, use the key you created.
+6. For IBM Cloud Hyper Protect Crypto Services Alias, get the Alias name of the Key which has been created in the HPCS instance.
+7. For the IAM API Key, use the key you created using Step 2 in Configuring the HPCS section.
 8. For IBM region, specify the region for the IBM Cloud Hyper Protect Crypto Services instance. See [Available IBM region listing](https://docs.baffle.io/v1/docs/configure-ibm-key-protect-and-add-it-as-a-keystore-baffle#available-ibm-region-listing) for more information.
 9. For the IBM Cloud Object Storage URL, specify the IBM endpoint URL for COS, for example: https://s3.us-south.cloud-object-storage.appdomain.cloud
 10. Enter the **cos_hmac_keys** for the Access Key ID and Secret Key.
 11. Click **Add Keystore**.
 
-**Note** The key will not appear in IBM Cloud Hyper Protect Crypto Services until the {{site.data.keyword.security_broker_short}} Shield has been connected and data encryption has been performed. 
