@@ -42,7 +42,7 @@ subcollection: security-broker
 
 
 # Getting started with IBM Cloud Data Security Broker
-{: #sb_getting_started}
+{: #getting_started}
 
 {{site.data.keyword.security_broker_full_notm}} is a complete data protection solution
 that secures sensitive data in enterprise databases by integrating
