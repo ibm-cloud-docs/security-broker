@@ -8,7 +8,7 @@ keywords: install, ROKS, IKS, manifests, HELM
 subcollection: security-broker
 ---
 
-# Install Data Security Broker Manager and Data Security Broker Shield
+# Install {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield
 {: #sb_install_catalog}
 
 ## Overview:
@@ -29,12 +29,12 @@ You can install the {{site.data.keyword.security_broker_short}} software by usin
 
 Before you begin installing the {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield, verify that you have met the following resource requirements with the help of the sizing guidelines given below:
 
-## Data Security Broker Manager and Data Security Broker Shield Sizing Guidelines
+## {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield Sizing Guidelines
 {: #sb_sizing}
 
 The factors that affect the sizing of the {{site.data.keyword.security_broker_short}} deployments consist of the {{site.data.keyword.security_broker_short}} Manager management console and one or more {{site.data.keyword.security_broker_short}} Shield proxies. Each component has its own resource needs depending on the anticipated workloads.
 
-## Data Security Broker Manager ##
+## {{site.data.keyword.security_broker_short}} Manager ##
 {: #sb_sizing_dsbm}
 
 In general, resources allocated to a {{site.data.keyword.security_broker_short}} Manager
@@ -47,7 +47,7 @@ deployment needs to be scaled with the number of managed {{site.data.keyword.sec
 
 4 CPU, 8 GB Memory
 
-## Data Security Broker Shield ##
+## {{site.data.keyword.security_broker_short}} Shield ##
 {: #sb_sizing_dsbs}
 
 The general rule for {{site.data.keyword.security_broker_short}} Shield sizing, to handle peak
@@ -79,7 +79,7 @@ different cluster but must have network connectivity to {{site.data.keyword.secu
    
 3.  To sort the catalog products using the type, click **Software** in the **Type** option, which is present in the left-hand navigation.
 
-4.  The Data Security Broker software comprises of two components, which is displayed in the Catalog list as **{{site.data.keyword.security_broker_short}} Manager** and **{{site.data.keyword.security_broker_short}} Shield**.
+4.  The {{site.data.keyword.security_broker_short}} software comprises of two components, which is displayed in the Catalog list as **{{site.data.keyword.security_broker_short}} Manager** and **{{site.data.keyword.security_broker_short}} Shield**.
 
     ![{{site.data.keyword.security_broker_short}} components in IBM Cloud Catalog list](../images/catalog_items.svg){: caption="{{site.data.keyword.security_broker_short}} components in IBM Cloud Catalog list" caption-side="bottom"}
 

@@ -63,7 +63,7 @@ Log into IBM Cloud Schematic workspace and follow the steps below to uninstall t
 
 2.  Select **Actions** -> **Destroy Resources** to destroy the workloads associated with the {{site.data.keyword.security_broker_short}} Manager.
 
-![Uninstall Data Security Broker Manager](../images/uninstall_dsb_manager.svg){: caption="Uninstall Data Security Broker Manager" caption-side="bottom"}
+![Uninstall {{site.data.keyword.security_broker_short}} Manager](../images/uninstall_dsb_manager.svg){: caption="Uninstall {{site.data.keyword.security_broker_short}} Manager" caption-side="bottom"}
 
 3. Follow the same process for the {{site.data.keyword.security_broker_short}} Shield to uninstall the workloads associated with the {{site.data.keyword.security_broker_short}} Shield. Remember to work with the correct workspace name, which is provided during the {{site.data.keyword.security_broker_short}} Shield install.
 

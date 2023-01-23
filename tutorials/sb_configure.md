@@ -8,7 +8,7 @@ keywords: database, admin, priveleges, users, configure, operations
 subcollection: security-broker
 ---
 
-# Configure Data Security Broker Manager
+# Configure {{site.data.keyword.security_broker_short}} Manager
 {: #sb_configure}
 
 Configuring the {{site.data.keyword.security_broker_short}} Manager console is the first step
@@ -54,7 +54,7 @@ following requirements:
 
     - Navigate to **Networking -> Routes** to view the list of {{site.data.keyword.security_broker_short}} Manager services running in the project.
 
-    - Fetch the **Data Security Broker Manager URL** from the **Locations** column for the **dsb-nginx** service.
+    - Fetch the **{{site.data.keyword.security_broker_short}} Manager URL** from the **Locations** column for the **dsb-nginx** service.
     
 2. Copy the **load_balancer_url** from the Kubernetes dashboard for the IKS cluster or from the Openshift web console for the ROKS cluster.
 3. Open a browser window and paste the **load_balancer_url** in the following format:
@@ -80,7 +80,7 @@ following requirements:
 
     **Note**: 
     a. The domain is part of the email, followed after the "@" character, that is specified during the configuration. For example, if the email specified is **test@ibm.com**, then the domain name must be specified as **ibm.com**. 
-    b. The proxy access name is the name that is responsible for the connectivity from Proxy to Data Security Broker Manager (the IP, or DNS, or the Service Name). For example, **dsb-nginx**.
+    b. The proxy access name is the name that is responsible for the connectivity from Proxy to {{site.data.keyword.security_broker_short}} Manager (the IP, or DNS, or the Service Name). For example, **dsb-nginx**.
 
 7. Create an Admin Account for the initial {{site.data.keyword.security_broker_short}} Manager administrator by specifying the email address in the **Configure Super Admin User** page. This account is   used to configure the subsequent components such as the keystore, data store connections, and {{site.data.keyword.security_broker_short}} Shields. Click **Continue**.
 

@@ -16,9 +16,9 @@ In this section, you can find details on how to configure local keystore in {{si
 ## Procedure
 {: #sb_local_keystore_procedure}
 
-Complete the following steps to add a local keystore in Data Security Broker Manager.
+Complete the following steps to add a local keystore in {{site.data.keyword.security_broker_short}} Manager.
 
-1.  In the Data Security Broker Manager console, click the key icon in
+1.  In the {{site.data.keyword.security_broker_short}} Manager console, click the key icon in
     the left navigation bar. The Keystore window appears.** **
 
 2.  Click **+Keystore**. The Add Keystore dialog appears.
@@ -26,7 +26,7 @@ Complete the following steps to add a local keystore in Data Security Broker Man
 3.  Enter a Keystore Name of up to 30 characters and select **LOCAL** in the Keystore
     Type drop-down menu.
 
-4.  Enter the Data Security Broker Secret Key in the text field. The Data Security Broker Secret Key must contain at least 10 characters, a mixture of upper and lower case, including at least 1 number.
+4.  Enter the {{site.data.keyword.security_broker_short}} Secret Key in the text field. The {{site.data.keyword.security_broker_short}} Secret Key must contain at least 10 characters, a mixture of upper and lower case, including at least 1 number.
 
 5. Click **Add Keystore**.
 

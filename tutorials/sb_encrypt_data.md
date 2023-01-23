@@ -63,20 +63,20 @@ The following table lists PostgreSQL supported data types for M_CTR mode in {{si
 | INT, INTEGER                                                                      | BYTEA                   |   |
 | BIGINT                                                                            | BYTEA                   |   |
 | REAL, FLOAT4                                                                      | BYTEA                   |   |
-| FLOAT8 - Used in Data Security Broker Shield  for "double precision"              | BYTEA                   |   |
+| FLOAT8 - Used in {{site.data.keyword.security_broker_short}} Shield  for "double precision"              | BYTEA                   |   |
 | DECIMAL, NUMERIC                                                                  | BYTEA                   |   |
-| VARCHAR - Used in Data Security Broker Shield for "character verification"        | BYTEA                   |   |
+| VARCHAR - Used in {{site.data.keyword.security_broker_short}} Shield for "character verification"        | BYTEA                   |   |
 | CHAR, CHARACTER, BPCHAR                                                           | BYTEA                   |   |
 | TEXT                                                                              | BYTEA                   |   |
 | JSON, JSONB                                                                       | BYTEA                   |   |
 | BYTEA                                                                             | BYTEA                   |   |
 | MONEY                                                                             | BYTEA                   |   |
 | DATE                                                                              | BYTEA                   |   |
-| TIMESTAMP - Used in Data Security Broker Shield for "timestamp without time zone" | BYTEA                   |   |
-| TIMESTAMPZ - Used in Data Security Broker Shield for "timestamp with time zone"   | BYTEA                   |   |
+| TIMESTAMP - Used in {{site.data.keyword.security_broker_short}} Shield for "timestamp without time zone" | BYTEA                   |   |
+| TIMESTAMPZ - Used in {{site.data.keyword.security_broker_short}} Shield for "timestamp with time zone"   | BYTEA                   |   |
 | UUID                                                                              | BYTEA                   |   |
 | BIT                                                                               | BYTEA                   |   |
-| VARBIT - Used in Data Security Broker Shield for "bit verification"               | BYTEA                   |   |
+| VARBIT - Used in {{site.data.keyword.security_broker_short}} Shield for "bit verification"               | BYTEA                   |   |
 {: caption="Table 2. CTR Supported Data Types caption-side="bottom"}
 
 ## Procedure:

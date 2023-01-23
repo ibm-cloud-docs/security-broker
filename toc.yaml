@@ -8,7 +8,7 @@ toc:
     console-page: /catalog/services/security-broker
     product-page: https://cloud.ibm.com/security-broker
     path: security-broker
-    label: IBM Cloud Data Security Broker
+    label: IBM Cloud {{site.data.keyword.security_broker_short}}
     version: 1
     release-level: beta
 
@@ -49,7 +49,7 @@ toc:
               - tutorials/sb_apply_rbac_policy.md
               - tutorials/sb_apply_mask.md                  
       - topicgroup:
-          label: Configurations in Data Security Broker Manager
+          label: Configurations in {{site.data.keyword.security_broker_short}} Manager
           topics:
           - tutorials/sb_assign_policy.md
           - tutorials/sb_adding_users.md

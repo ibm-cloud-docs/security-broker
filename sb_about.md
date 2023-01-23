@@ -8,7 +8,7 @@ keywords: about the service, deploy policy, deployment plans, encryption technol
 subcollection: security-broker
 ---
 
-# About the Software: IBM Cloud Data Security Broker
+# About the Software: IBM Cloud {{site.data.keyword.security_broker_short}}
 {: #sb_about}
 
 {{site.data.keyword.security_broker_short}} is a software that makes data breaches irrelevant

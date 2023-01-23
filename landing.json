@@ -1,37 +1,37 @@
 {
-    "title": "IBM Cloud Data Security Broker docs",
+    "title": "IBM Cloud {{site.data.keyword.security_broker_short}} docs",
     "lastupdated": "2023-01-17",
-    "introduction": "Explore the ways to install Data Security Broker Manager and Data Security Broker Shield, steps to configure and login to Data Security Broker Manager and perform data encryption. ",
+    "introduction": "Explore the ways to install {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield, steps to configure and login to {{site.data.keyword.security_broker_short}} Manager and perform data encryption. ",
     },
     "section_recommended": [
       {
-        "title": "Install Data Security Broker",
-        "description": "Installing Data Security Broker Manager and Data Security Broker Shield from IBM Cloud Catalog ",
+        "title": "Install {{site.data.keyword.security_broker_short}}",
+        "description": "Installing {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield from IBM Cloud Catalog ",
         "href": "/docs/security-broker?topic=security-broker-sb_install_catalog"
       },  
       {
-        "title": "Configure Data Security Broker Manager",
-        "description": "You can find details on configuring the Data Security Broker Manager console in this section.",
+        "title": "Configure {{site.data.keyword.security_broker_short}} Manager",
+        "description": "You can find details on configuring the {{site.data.keyword.security_broker_short}} Manager console in this section.",
         "href": "/docs/security-broker?topic=security-broker-sb_configure"
       },
       {
-        "title": "Login to Data Security Broker Manager",
-        "description": "This section details the steps to log into the Data Security Broker Manager console.",
+        "title": "Login to {{site.data.keyword.security_broker_short}} Manager",
+        "description": "This section details the steps to log into the {{site.data.keyword.security_broker_short}} Manager console.",
         "href": "/docs/security-broker?topic=security-broker-sb_login"
       },
       {
-        "title": "Setup the Data Security Broker Manager console",
-        "description": "You can find the details on adding a keystore, connecting to a database, and enrolling an application in Data Security Broker Manager console.",
+        "title": "Setup the {{site.data.keyword.security_broker_short}} Manager console",
+        "description": "You can find the details on adding a keystore, connecting to a database, and enrolling an application in {{site.data.keyword.security_broker_short}} Manager console.",
         "href": "/docs/security-broker?topic=security-broker-sb_encrypt_postgress"
       },
       {
         "title": "FAQs",
-        "description": "This section provides answers to frequently asked questions about the Data Security Broker software.",
+        "description": "This section provides answers to frequently asked questions about the {{site.data.keyword.security_broker_short}} software.",
         "href": "/docs/security-broker?topic=security-broker-sb_faqs"
       },
       {
         "title": "Troubleshooting",
-        "description": "You can find the common error scenarios and troubleshooting steps for the Data Security Broker software in this section.",
+        "description": "You can find the common error scenarios and troubleshooting steps for the {{site.data.keyword.security_broker_short}} software in this section.",
         "href": "/docs/security-broker?topic=security-broker-sb_support"
       }
     ],

@@ -47,41 +47,41 @@ subcollection: security-broker
 This FAQ provides answers to common questions about the {{site.data.keyword.security_broker_short}} service.
 {: shortdesc}
 
-**What is Data Security Broker Manager?**
+**What is {{site.data.keyword.security_broker_short}} Manager?**
 
-Data Security Broker Manager enables encryption policies and
-configurations by communicating with the Data Security Broker Shield and
-the desired databases. Data Security Broker Manager constructs a privacy
+{{site.data.keyword.security_broker_short}} Manager enables encryption policies and
+configurations by communicating with the {{site.data.keyword.security_broker_short}} Shield and
+the desired databases. {{site.data.keyword.security_broker_short}} Manager constructs a privacy
 schema that maps key IDs to data columns, thus enabling encryption in a
-simplified manner. Data Security Broker Shield carries out
+simplified manner. {{site.data.keyword.security_broker_short}} Shield carries out
 de-identification, masking, and encryption tasks for cloud databases.
 
-Data Security Broker integrates with key management stores through a key
+{{site.data.keyword.security_broker_short}} integrates with key management stores through a key
 virtualization layer. It also provides for a local key store, so you can
 use your own keys for data protection in the cloud.
 
-**Is the instance hosted by Data Security Broker?**
+**Is the instance hosted by {{site.data.keyword.security_broker_short}}?**
 
-Data Security Broker software is hosted entirely in the customer's
-environment. Data Security Broker Manager and Data Security Broker
+{{site.data.keyword.security_broker_short}} software is hosted entirely in the customer's
+environment. {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}}
 Shield may be hosted on-premises or on cloud platforms such as IBM
 Cloud.
 
 **What size instance is good for getting set up?**
 
-30 gigabytes are sufficient for Data Security Broker Manager because it
+30 gigabytes are sufficient for {{site.data.keyword.security_broker_short}} Manager because it
 controls the Shields and the memory needed stays static. Sizing for Data
 Security Broker Shield depends on the number of shields and the number
 of concurrent users.
 
-**What are the prerequisites for installing Data Security Broker?**
+**What are the prerequisites for installing {{site.data.keyword.security_broker_short}}?**
 
 Make sure you meet the following requirements before configuring Data
-Security Broker Manager and Data Security Broker Shield:
+Security Broker Manager and {{site.data.keyword.security_broker_short}} Shield:
 
 * Admin privileges for your platform
 
-* The user account used to log in to the Data Security Broker Shield host machine must have a home directory on that system
+* The user account used to log in to the {{site.data.keyword.security_broker_short}} Shield host machine must have a home directory on that system
 
 * SSH client
 
@@ -89,17 +89,17 @@ Security Broker Manager and Data Security Broker Shield:
 
 * Database privileges for encryption and migration
 
-**Do Data Security Broker Manager and Shield run on different instances?**
+**Do {{site.data.keyword.security_broker_short}} Manager and Shield run on different instances?**
 
-Technically, it is possible for the Data Security Broker Manager and
-Data Security Broker Shield to both run on the same host. However, it is
+Technically, it is possible for the {{site.data.keyword.security_broker_short}} Manager and
+{{site.data.keyword.security_broker_short}} Shield to both run on the same host. However, it is
 recommended that separate host instances are provisioned for the Data
-Security Broker Manager and Data Security Broker Shield, to accommodate
+Security Broker Manager and {{site.data.keyword.security_broker_short}} Shield, to accommodate
 different workloads.
 
-**Which OS is necessary to setup the Data Security Broker Shield?**
+**Which OS is necessary to setup the {{site.data.keyword.security_broker_short}} Shield?**
 
-Data Security Broker Shield can be installed on instances running with
+{{site.data.keyword.security_broker_short}} Shield can be installed on instances running with
 Ubuntu 18 for **IBM Cloud Kubernetes cluster** (IKS) or RedHat
 Enterprise Linux (RHEL) 7 for **IBM Red Hat OpenShift Kubernetes
 cluster** (ROKS).
@@ -111,14 +111,14 @@ Broker Manager is not initialized with an HTTPS certificate. To avoid
 the warning, configure HTTPS in the settings page in Data Security
 Broker Manager.
 
-**Where are the secrets submitted to Data Security Broker kept?**
+**Where are the secrets submitted to {{site.data.keyword.security_broker_short}} kept?**
 
-A secure credential store is created in MongoDB by Data Security Broker
+A secure credential store is created in MongoDB by {{site.data.keyword.security_broker_short}}
 Manager. This is encrypted with a key that is configured during setup.
 
-**Why is the Deploy Policy and Migrate Data option disabled in the Data Security Broker Manager UI?**
+**Why is the Deploy Policy and Migrate Data option disabled in the {{site.data.keyword.security_broker_short}} Manager UI?**
 
-The application in which you are trying to perform the encryption or decryption does not have a Data Security Broker Shield attached to it. Associate a Data Security Broker Shield to the application before performing the encryption or decryption process.
+The application in which you are trying to perform the encryption or decryption does not have a {{site.data.keyword.security_broker_short}} Shield attached to it. Associate a {{site.data.keyword.security_broker_short}} Shield to the application before performing the encryption or decryption process.
 
 **Where do I get the information to connect the application to {{site.data.keyword.security_broker_short}} Shield?**
 

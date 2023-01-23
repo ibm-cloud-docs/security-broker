@@ -25,7 +25,7 @@ lifecycle from a single location.
 
 Complete the following steps to configure IBM Key Protect. After
 completing this procedure, you can add IBM Key Protect as a keystore in
-Data Security Broker Manager.
+{{site.data.keyword.security_broker_short}} Manager.
 
 ## **To configure IBM Key Protect, do the following:**
 {: #sb_configure_keyprotect_procedure}
@@ -61,15 +61,15 @@ Data Security Broker Manager.
 
 7.  Enable HMAC and click **Add**.
 
-## **Add IBM Key Protect as a keystore in Data Security Broker Manager**
+## **Add IBM Key Protect as a keystore in {{site.data.keyword.security_broker_short}} Manager**
 {: #sb_configure_keyprotect_add}
 
 Complete the following steps to complete the process for using IBM Key
-Protect as a keystore in Data Security Broker Manager.
+Protect as a keystore in {{site.data.keyword.security_broker_short}} Manager.
 
 **To add IBM Key Protect as a keystore, perform the following steps:**
 
-1.  In the Data Security Broker Manager console, click the key icon in
+1.  In the {{site.data.keyword.security_broker_short}} Manager console, click the key icon in
     the left navigation bar. The Keystore window appears.** **
 
 2.  Click **+Keystore**. The Add Keystore dialog appears.

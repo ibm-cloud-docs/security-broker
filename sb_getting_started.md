@@ -41,7 +41,7 @@ subcollection: security-broker
 {:release-note: data-hd-content-type='release-note'}
 
 
-# Getting started with IBM Cloud Data Security Broker
+# Getting started with IBM Cloud {{site.data.keyword.security_broker_short}}
 {: #getting_started}
 
 Protect your data in the cloud with the {{site.data.keyword.security_broker_full_notm}}, which is a complete data protection solution that secures sensitive data in enterprise databases by integrating
