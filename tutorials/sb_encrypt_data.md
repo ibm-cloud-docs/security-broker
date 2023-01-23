@@ -91,7 +91,7 @@ an IBM Cloud PostgreSQL Database:
     **Encrypt**.
 ![Encrypt Data](../images/encrypt.svg){: caption="Figure 5. Encrypt Data" caption-side="bottom"}
 
-2.  Select the Database and the table where you have the data created
+3. Select the Database and the table where you have the data created
     and select the **Column** which needs to be encrypted. Choose the
     **Data Protection** policy, **Encryption mode**, and **masking
     mode** for the encryption process and click **Review.** For more
@@ -103,7 +103,7 @@ an IBM Cloud PostgreSQL Database:
 
     ![Encryption](../images/encryption_schema.svg){: caption="Figure 6. Standard Encryption" caption-side="bottom"}
 
-3.  Choose **Deploy Policy & Migrate Data** under the **Deployment
+4. Choose **Deploy Policy & Migrate Data** under the **Deployment
     Plan** option. There are three options that you can choose to
     implement your data encryption policy. For more information on
     Deployment plans, see **Deployment Plans in IBM Cloud Data Security
@@ -112,10 +112,10 @@ an IBM Cloud PostgreSQL Database:
     service IP address in the **Migration Shield** field and click
     **Save** to start the encryption process.
 
-4.  The status of the application shows **Migrating** when the
+5. The status of the application shows **Migrating** when the
     encryption process starts.
 
-5.  Once the encryption is complete, the status is changed to
+6. Once the encryption is complete, the status is changed to
     **Protected**. You can view more information by clicking **Migration
     Details** in the **Applications** sidebar.
 
