@@ -88,5 +88,12 @@ toc:
       topics:
       - tutorials/sb_logging.md
       - sb_faqs.md
-      - troubleshooting/sb_support.md
+      - topicgroup:
+              label: Troubleshooting
+              topics:
+              - sb_support_initialization.md
+              - sb_support_database.md
+              - sb_shield.md
+              - sb_keystore.md
+              - sb_workflow.md              
       - tutorials/sb_limitations.md
