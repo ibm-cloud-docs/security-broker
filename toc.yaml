@@ -49,7 +49,7 @@ toc:
               - tutorials/sb_apply_rbac_policy.md
               - tutorials/sb_apply_mask.md                  
       - topicgroup:
-          label: Configurations in {{site.data.keyword.security_broker_short}} Manager
+          label: Configurations in Data Security Broker Manager
           topics:
           - tutorials/sb_assign_policy.md
           - tutorials/sb_adding_users.md

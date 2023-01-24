@@ -16,7 +16,7 @@ content-type: troubleshoot
 Use this release notes to learn about the latest changes to {{site.data.keyword.security_broker_full_notm}} that are grouped by date.
 {: shortdesc}
 
-## 15th November 2022
+## January 2023
 {: #sb_date}
 
 ### Introducing {{site.data.keyword.security_broker_full_notm}}
