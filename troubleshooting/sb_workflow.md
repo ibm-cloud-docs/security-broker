@@ -8,7 +8,7 @@ keywords: users, admin, priveleges, profiles, {{site.data.keyword.security_broke
 subcollection: security-broker
 ---
 
-## How to resolve the Application workflow issues?
+# How to resolve the Application workflow issues?
 {: #sb_workflow}
 
 If you get error messages or warnings during the application workflow,

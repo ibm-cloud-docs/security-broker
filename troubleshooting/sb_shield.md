@@ -8,7 +8,7 @@ keywords: users, admin, priveleges, profiles, {{site.data.keyword.security_broke
 subcollection: security-broker
 ---
 
-## How to resolve issues that occur during Shield enrollment:
+# How to resolve issues that occur during Shield enrollment:
 {: #sb_shield}
 
 If you get error messages or warnings during the Shield enrollment,

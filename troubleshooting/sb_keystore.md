@@ -8,7 +8,7 @@ keywords: users, admin, priveleges, profiles, {{site.data.keyword.security_broke
 subcollection: security-broker
 ---
 
-## How to resolve issues with respect to Keystore enrollment?
+# How to resolve issues with respect to Keystore enrollment?
 {: #sb_keystore}
 
 If you get error messages or warnings during the Keystore enrolment,
