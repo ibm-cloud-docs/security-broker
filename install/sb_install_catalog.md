@@ -16,6 +16,8 @@ subcollection: security-broker
 
 You can install the {{site.data.keyword.security_broker_short}} software by using the IBM Cloud Catalog. Access the IBM Cloud Catalog to install the {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield.
 
+**Note**: You can install {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield only in classic clusters.
+
 ## Pre-requisites:
 {: #sb_install_ui_prereq}
 
