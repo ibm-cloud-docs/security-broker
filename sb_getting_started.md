@@ -54,8 +54,8 @@ with key management and databases to provide application-level encryption.
 Before you begin installing and configuring the {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield, ensure that you have met the following requirements:
 
 - Create an IBM Cloud account.
-- Setup your environment.
-- Setup the minimum permissions required in the IBM Cloud account.
+- Set up your environment.
+- Set up the minimum permissions required in the IBM Cloud account.
 
 ### Setting up your environment
 {: #sb-system-requirements}
