@@ -8,7 +8,7 @@ keywords: database, admin, priveleges, users, features, operations
 subcollection: security-broker
 ---
 
-# Data Masking
+# About Data Masking
 {: #sb_masking}
 
 ## Overview:

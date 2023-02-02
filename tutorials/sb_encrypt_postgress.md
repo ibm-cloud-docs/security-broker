@@ -23,12 +23,6 @@ It also helps in migrating the existing database records, apply record or colu
 1. [Data Encryption](/docs/security-broker?topic=security-broker-sb_encrypt_data)
 2. [Data Masking](/docs/security-broker?topic=security-broker-sb_masking)
 
-## Pre-requisite:
-{: #sb_encrypt_prereq}
-
-Ensure that the {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield service is installed and ready to use. For more information on
-creating {{site.data.keyword.security_broker_short}} Shield service, see [Installing {{site.data.keyword.security_broker_short}} Shield](/docs/security-broker?topic=security-broker-sb_install_catalog). 
- 
 ## Procedure:
 {: #sb_encrypt_procedure}
 
