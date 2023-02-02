@@ -11,9 +11,8 @@ subcollection: security-broker
 # Enrolling an Application in {{site.data.keyword.security_broker_short}} Manager
 {: #sb_enroll_app}
 
-An application is the framework that links Security Broker Manager,
-databases, and Security Broker Shield and instructs the Security Broker
-Shield to encrypt and decrypt data.
+An application is the framework that links {{site.data.keyword.security_broker_short}} Manager,
+databases, and {{site.data.keyword.security_broker_short}} Shield and instructs the {{site.data.keyword.security_broker_short}} Shield to encrypt and decrypt data.
 
 **Note**: A {{site.data.keyword.security_broker_short}} Shield is limited to be enrolled with one
 application.
@@ -42,9 +41,7 @@ following steps:
 
 6.  Click **Enroll Application**. After the application is enrolled, it is displayed under the Applications in the {{site.data.keyword.security_broker_short}} Manager.
 
+**Note**: The Shield Sync ID is used when you install {{site.data.keyword.security_broker_short}} Shield. Ensure that you have the Shield Sync ID handy during the {{site.data.keyword.security_broker_short}} Shield installation.
 
-
-**Note**: The Shield Sync ID
-
-7.  Once you have completed enrolling an application, you can proceed with the data encyrption. Refer to the [Data Encryption using IBM Cloud PostgreSQL Database](/docs/security-broker?topic=security-broker-sb_encrypt_data) section to proceed with the data encryption.
+7.  Once you have completed enrolling an application, you can proceed with the data encyrption. Refer to the [Data Encryption using IBM Cloud PostgreSQL Database](/docs/security-broker?topic=security-broker-sb_encrypt_data) section to start protecting your data.
 
