@@ -12,9 +12,11 @@ subcollection: security-broker
 {: #sb_encrypt_postgress}
 
 {{site.data.keyword.security_broker_short}} offers Data Protection services which enables the
-provisioning of {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield and configures encryption or decryption rules against the IBM Cloud
+provisioning of {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield.
+It also helps in configuring encryption or decryption rules against the IBM Cloud
 Databases such as PostgreSQL to encrypt and decrypt the database records
-or columns on the fly and migrate the existing database records, apply record or column level encryption rules.
+or columns on the fly.
+It also helps in migrating the existing database records, apply record or column level encryption rules.
 
 {{site.data.keyword.security_broker_short}} supports two types of Data Protection services. They are:
 
