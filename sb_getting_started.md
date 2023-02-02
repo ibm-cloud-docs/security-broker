@@ -85,7 +85,7 @@ By using the following steps and the information in the table, assign the requir
 | Cloud Object Storage                    | Manager                |
 | Kubernetes Service                      | Manager, Editor        |
 | IBM Red Hat OpenShift Kubernetes Servie | Editor                 |
-| Schematics                              | Manager, Administrator | 
+| Schematicss                              | Manager, Administrator | 
 {: caption="Table 2. Permissions required for {{site.data.keyword.security_broker_short}}" caption-side="bottom"}
 
 You can find more information about {{site.data.keyword.security_broker_short}} in the [About {{site.data.keyword.security_broker_short}}](/docs/security-broker?topic=security-broker-sb_about) section.

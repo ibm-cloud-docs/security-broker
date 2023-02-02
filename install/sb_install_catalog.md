@@ -110,7 +110,7 @@ Complete the following steps to insall the **{{site.data.keyword.security_broker
 
 7.  Configure your workspace by specifying the following details:
 
-a.  Specify the **Name** for the workspace. The workspace name must be unique and using the name of the workspace, you can manage, update or uninstall {{site.data.keyword.security_broker_short}} Manager from the IBM Schematics Workspace (https://cloud.ibm.com/schematics/workspaces).
+a.  Specify the **Name** for the workspace. The workspace name must be unique and using the name of the workspace, you can manage, update or uninstall {{site.data.keyword.security_broker_short}} Manager from the IBM Schematicss Workspace (https://cloud.ibm.com/schematics/workspaces).
 
     ![Configure Workspace](../images/workspace.svg){: caption="Configure Workspace" caption-side="bottom"}
 
@@ -118,7 +118,7 @@ b.  Select the **Resource group**, **Location**, and specify the **Tags** requir
 
 8.  Click **Install** in the **Summary** pane on the right to complete the installation process.
 
-9. You will be navigated to the IBM Schematics Workspace to track the installation progress. Once the installation is successful, a message **Workspace creation successfull** is displayed as shown below:
+9. You will be navigated to the IBM Schematicss Workspace to track the installation progress. Once the installation is successful, a message **Workspace creation successfull** is displayed as shown below:
 
     ![Installation of {{site.data.keyword.security_broker_short}} Manager](../images/install_success.svg){: caption="Installation of {{site.data.keyword.security_broker_short}} Manager" caption-side="bottom"}
 
@@ -172,7 +172,7 @@ Complete the following steps to insall the {{site.data.keyword.security_broker_s
 
 7.  Configure your workspace by specifying the following details:
 
-    a.  Specify the **Name** for the workspace. The workspace name must be unique and using the name of the workspace, you can manage, update or uninstall {{site.data.keyword.security_broker_short}} Shield from the IBM Schematics Workspace (https://cloud.ibm.com/schematics/workspaces).
+    a.  Specify the **Name** for the workspace. The workspace name must be unique and using the name of the workspace, you can manage, update or uninstall {{site.data.keyword.security_broker_short}} Shield from the IBM Schematicss Workspace (https://cloud.ibm.com/schematics/workspaces).
 
     ![Configure Workspace](../images/workspace.svg){: caption="Configure Workspace" caption-side="bottom"}
 
@@ -192,7 +192,7 @@ Complete the following steps to insall the {{site.data.keyword.security_broker_s
 
 10. Click **Install** in the **Summary** pane on the right to complete the installation process.
 
-11. You will be navigated to the IBM Schematics Workspaces to track the installation progress. Once the installation is successful, a message **Workspace creation successfull** is displayed as shown below:
+11. You will be navigated to the IBM Schematicss Workspaces to track the installation progress. Once the installation is successful, a message **Workspace creation successfull** is displayed as shown below:
 
     ![Installation of {{site.data.keyword.security_broker_short}} Shield](../images/install_success.svg){: caption="Installation of {{site.data.keyword.security_broker_short}} Shield" caption-side="bottom"}
 

@@ -44,7 +44,7 @@ subcollection: security-broker
 # Uninstalling through IBM Cloud Catalog
 {: #sb_uninstall}
 
-If you no longer need to use {{site.data.keyword.security_broker_short}}, you can uninstall all the workloads that are associated with the {{site.data.keyword.security_broker_short}} using the IBM Cloud Schematic workspace (https://cloud.ibm.com/schematics/workspaces).
+If you no longer need to use {{site.data.keyword.security_broker_short}}, you can uninstall all the workloads that are associated with the {{site.data.keyword.security_broker_short}} using the IBM Cloud Schematics workspace (https://cloud.ibm.com/schematics/workspaces).
 {: shortdesc}
 
 ## Pre-requisite:
@@ -55,11 +55,11 @@ The user must be aware of the workspace name which is provided during the {{site
 ## Uninstalling {{site.data.keyword.security_broker_short}} Manager:
 {: #unistall-sb-IKS}
 
-Log into IBM Cloud Schematic workspace and follow the steps below to uninstall the {{site.data.keyword.security_broker_short}} Manager:
+Log into IBM Cloud Schematics workspace and follow the steps below to uninstall the {{site.data.keyword.security_broker_short}} Manager:
 
 1.  Search for the workspace name that you provided during the {{site.data.keyword.security_broker_short}} Manager install and click on the workspace to open it.
 
-![IBM Schematics Workspace](../images/schematics_workspace.svg){: caption="IBM Schematics Workspace" caption-side="bottom"}
+![IBM Schematicss Workspace](../images/schematics_workspace.svg){: caption="IBM Schematicss Workspace" caption-side="bottom"}
 
 2.  Select **Actions** -> **Destroy Resources** to destroy the workloads associated with the {{site.data.keyword.security_broker_short}} Manager.
 

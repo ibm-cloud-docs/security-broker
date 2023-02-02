@@ -11,7 +11,7 @@ subcollection: security-broker
 # Upgrading using IBM Cloud Catalog
 {: #sb_update}
 
-After {{site.data.keyword.security_broker_short}} is installed on your cluster, you can upgrade it at any time using the IBM Cloud Schematic workspace (https://cloud.ibm.com/schematics/workspaces)
+After {{site.data.keyword.security_broker_short}} is installed on your cluster, you can upgrade it at any time using the IBM Cloud Schematics workspace (https://cloud.ibm.com/schematics/workspaces)
 {: shortdesc}
 
 ## Pre-requisite:
@@ -22,11 +22,11 @@ The user must be aware of the workspace name which is provided during the {{site
 ## Upgrading {{site.data.keyword.security_broker_short}} Manager:
 {: #upgrade-sb-ROKS}
 
-Log into IBM Cloud Schematic workspace and follow the steps below to upgrade the {{site.data.keyword.security_broker_short}} Manager version:
+Log into IBM Cloud Schematics workspace and follow the steps below to upgrade the {{site.data.keyword.security_broker_short}} Manager version:
 
 1.  Search for the workspace name that you provided during the {{site.data.keyword.security_broker_short}} Manager install and click on the workspace to open it.
 
-    ![IBM Schematics Workspace](../images/schematics_workspace.svg){: caption="IBM Schematics Workspace" caption-side="bottom"}
+    ![IBM Schematicss Workspace](../images/schematics_workspace.svg){: caption="IBM Schematicss Workspace" caption-side="bottom"}
 
 2.  Click **Settings** option in the left navigation.
 
@@ -38,7 +38,7 @@ Log into IBM Cloud Schematic workspace and follow the steps below to upgrade the
 
     ![{{site.data.keyword.security_broker_short}} Manager Version](../images/update_version.svg){: caption="{{site.data.keyword.security_broker_short}} Manager Version" caption-side="bottom"}
 
-**Note**: Once you click **Update**, IBM Cloud Schematic runs the terraform code in the backend to execute the newer version of the {{site.data.keyword.security_broker_short}} Manager from the IBM Cloud Helm Catalog. After the upgrade is complete, the pods are refreshed in the namespace where you have upgraded the {{site.data.keyword.security_broker_short}} Manager.
+**Note**: Once you click **Update**, IBM Cloud Schematics runs the terraform code in the backend to execute the newer version of the {{site.data.keyword.security_broker_short}} Manager from the IBM Cloud Helm Catalog. After the upgrade is complete, the pods are refreshed in the namespace where you have upgraded the {{site.data.keyword.security_broker_short}} Manager.
 
 5. Follow the same process to proceed with upgrading the {{site.data.keyword.security_broker_short}} Shield. Remember to work with the correct workspace name, which is provided during the {{site.data.keyword.security_broker_short}} Shield install.
 
