@@ -25,11 +25,11 @@ installation:
 
 -   Install IBM Cloud Command Line Interface (CLI). For more
     information, see [How to install IBM Cloud
-    CLI](https://ibm.github.io/cloud-enterprise-examples/iac/setup-environment/#install-ibm-cloud-cli).
+    CLI](https://ibm.github.io/cloud-enterprise-examples/iac/set up-environment/#install-ibm-cloud-cli).
 
 -   Login to IBM Cloud using the CLI. For more information, see [How to
     log into IBM Cloud using the
-    CLI](https://ibm.github.io/cloud-enterprise-examples/iac/setup-environment/#login-to-ibm-cloud).
+    CLI](https://ibm.github.io/cloud-enterprise-examples/iac/set up-environment/#login-to-ibm-cloud).
 
 -   Install OpenShift Container Platform. For more information, see [How
     to install OpenShift Container

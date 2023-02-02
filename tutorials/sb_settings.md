@@ -30,7 +30,7 @@ You can use the Settings page to change the basic system settings in the
 HTTPs Certificate allows you to enable SSL for the {{site.data.keyword.security_broker_short}} Manager console. This ensures that you have secure access to the {{site.data.keyword.security_broker_short}} Manager web interface.
 
 When you try to log into the {{site.data.keyword.security_broker_short}} Manager after the
-setup, you get a warning: **Untrusted certificate browser warning**.
+set up, you get a warning: **Untrusted certificate browser warning**.
 
 **Note**: The warning appears when you have not uploaded an HTTPS
 certificate. HTTPS certificate is a digital certificate that

@@ -12,7 +12,7 @@ subcollection: security-broker
 {: #sb_support_initialization}
 
 If you get error messages or warnings during the initialization or the
-setup of {{site.data.keyword.security_broker_short}}, check for the following troubleshooting
+set up of {{site.data.keyword.security_broker_short}}, check for the following troubleshooting
 tips:
 
 Message: Untrusted certificate browser warning

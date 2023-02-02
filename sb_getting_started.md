@@ -68,10 +68,10 @@ Ensure that your environment meets the following minimum system level and resour
 | IBM Cloud Kubernetes Cluster             | Ubuntu 18              | 2                               |
 {: caption="Table 1. Resource level requirements for {{site.data.keyword.security_broker_short}}" caption-side="bottom"}  
 
-## Setting up minimum permissions required to install, setup, and  access {{site.data.keyword.security_broker_short}} ##
+## Setting up minimum permissions required to install, set up, and  access {{site.data.keyword.security_broker_short}} ##
 {: #sb_getting_assign_permission}
 
-As an IBM Cloud user, you need to set the follwoing minimum permissions to install, setup and access {{site.data.keyword.security_broker_short}}. 
+As an IBM Cloud user, you need to set the follwoing minimum permissions to install, set up and access {{site.data.keyword.security_broker_short}}. 
 By using the following steps and the information in the table, assign the required permissions:
 1. Log into your IBM Cloud account and click **Manage -> Access (IAM)**.
 2. In the Manage access and users dashboard, click **View all** in the **My user details** section.
@@ -93,7 +93,7 @@ You can find more information about {{site.data.keyword.security_broker_short}} 
 ## Next Steps
 {: #sb_getting_next_steps}
 
-After the enrironment is setup and you have the required roles and permissions, you can start installing the {{site.data.keyword.security_broker_short}} by following the instructions in the [Installing {{site.data.keyword.security_broker_short}}](/docs/security-broker?topic=security-broker-sb_install_catalog) section.
+After the enrironment is set up and you have the required roles and permissions, you can start installing the {{site.data.keyword.security_broker_short}} by following the instructions in the [Installing {{site.data.keyword.security_broker_short}}](/docs/security-broker?topic=security-broker-sb_install_catalog) section.
 
 The flow diagram below explains the work flow that the user has to follow to encrypt the data using {{site.data.keyword.security_broker_short}}:
 

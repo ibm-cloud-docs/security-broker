@@ -3,7 +3,7 @@ copyright:
   years: 2022, 2022
 lastupdated: "2022-09-01"
 
-keywords: FAQ, setup, data protection
+keywords: FAQ, set up, data protection
 
 subcollection: security-broker
 ---
@@ -97,7 +97,7 @@ recommended that separate host instances are provisioned for the Data
 Security Broker Manager and {{site.data.keyword.security_broker_short}} Shield, to accommodate
 different workloads.
 
-**Which OS is necessary to setup the {{site.data.keyword.security_broker_short}} Shield?**
+**Which OS is necessary to set up the {{site.data.keyword.security_broker_short}} Shield?**
 
 {{site.data.keyword.security_broker_short}} Shield can be installed on instances running with
 Ubuntu 18 for **IBM Cloud Kubernetes cluster** (IKS) or RedHat
@@ -114,7 +114,7 @@ Broker Manager.
 **Where are the secrets submitted to {{site.data.keyword.security_broker_short}} kept?**
 
 A secure credential store is created in MongoDB by {{site.data.keyword.security_broker_short}}
-Manager. This is encrypted with a key that is configured during setup.
+Manager. This is encrypted with a key that is configured during set up.
 
 **Why is the Deploy Policy and Migrate Data option disabled in the {{site.data.keyword.security_broker_short}} Manager UI?**
 

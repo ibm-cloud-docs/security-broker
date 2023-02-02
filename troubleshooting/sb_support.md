@@ -26,11 +26,11 @@ You can find troubleshooting tips on the following sections:
 
 5.  Application workflow
 
-## Initialization and setup:
+## Initialization and set up:
 {: #sb_init}
 
 If you get error messages or warnings during the initialization or the
-setup of {{site.data.keyword.security_broker_short}}, check for the following troubleshooting
+set up of {{site.data.keyword.security_broker_short}}, check for the following troubleshooting
 tips:
 
 1.  Untrusted certificate browser warning: HTTPS certificate has not
