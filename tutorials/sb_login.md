@@ -16,11 +16,11 @@ is log into the {{site.data.keyword.security_broker_short}} Manager using the OA
 
 Complete the following steps to log into the {{site.data.keyword.security_broker_short}} Manager:
 
-1.  Generate an IBM OAuth token. To obtain the OAuth token, log into your IBM cloud account
+1.  Generate an IBM OAuth token. To obtain the OAuth token, log into your IBM Cloud account
     from the Command Line Interface using the following steps:
 
     a. Open the Command terminal from your system.
-    b. Execute the following command to login to your IBM cloud account:
+    b. Execute the following command to login to your IBM Cloud account:
 
     ```sh
     ibmcloud login -sso
@@ -33,7 +33,7 @@ Complete the following steps to log into the {{site.data.keyword.security_broker
 
     ![Log into IBM Cloud CLI](../images/ibm_cli.svg){: caption="Figure 1. Log into IBM Cloud CLI" caption-side="bottom"}
 
-    **Note**: Ensure that the IBM cloud account, which is used during the configuration of the {{site.data.keyword.security_broker_short}} Manager as the Super Admin user, and the IBM cloud account that you are using to login using the CLI to generate the OAuth token must be the same. Otherwise, you might get an error which says that the OAuth token is invalid.
+    **Note**: Ensure that the IBM Cloud account, which is used during the configuration of the {{site.data.keyword.security_broker_short}} Manager as the Super Admin user, and the IBM Cloud account that you are using to login using the CLI to generate the OAuth token must be the same. Otherwise, you might get an error which says that the OAuth token is invalid.
     
 2.  Run the following command to generate the OAuth token:
 
