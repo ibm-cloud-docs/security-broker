@@ -75,7 +75,7 @@ following requirements:
 5. The **Getting Started** dialog to proceed with the configuration of the {{site.data.keyword.security_broker_short}} Manager appears as shown below:
 
     ![Getting Started](../images/getting_started.svg){: caption="Getting Started" caption-side="bottom"}
-
+    
 6. Configure the basic System Settings by entering the hostname, domain name, proxy access, and click **Continue**.
 
 **Note**
