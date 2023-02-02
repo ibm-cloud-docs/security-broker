@@ -44,7 +44,7 @@ Complete the following steps to log into the {{site.data.keyword.security_broker
 
     ![OAuth token](../images/oauth_token.svg){: caption="Figure 2. OAuth token" caption-side="bottom"}
 
-2.  Open the {{site.data.keyword.security_broker_short}} Manager console which has already been configured in a browser window. For example, https://https://150.238.243.117.
+2.  Open the {{site.data.keyword.security_broker_short}} Manager console which has already been configured in a browser window. For example, https://150.238.243.117.
 
 3.  Copy the OAuth token without any space or additional characters and paste it in the **Enter token** text box as shown below in the Login page and click **Sign In** to log into the {{site.data.keyword.security_broker_short}} Manager:
 
