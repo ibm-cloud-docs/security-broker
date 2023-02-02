@@ -34,7 +34,7 @@ by horizontal scaling. In the event of failure, Shield can be
 horizontally scaled by adding more of them behind a load balancer.
 
 **Key management**: You must have a place to store your secret key or
-key file. You can use IBM Key protect. IBM Key Protect provides full encryption visibility and control,
+key file. You can use IBM Key Protect. IBM Key Protect provides full encryption visibility and control,
 allowing you to see and manage data encryption and the entire key lifecycle from a single location. Alternatively, you can secure the information with a password,
 but this reduces security, depending on the level of your password's
 strength.
