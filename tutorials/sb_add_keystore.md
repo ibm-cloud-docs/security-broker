@@ -11,7 +11,7 @@ subcollection: security-broker
 # Adding Keystore in {{site.data.keyword.security_broker_short}} Manager
 {: #sb_add_keystore}
 
-**Note**: Before you can enroll your applications, add databases, and enable encryption, you must enroll your Keystore, so that the {{site.data.keyword.security_broker_short}} Manager can access and create data encryption keys (DEKs) that is used to protect your data. 
+Before you can enroll your applications, add databases, and enable encryption, you must enroll your Keystore, so that the {{site.data.keyword.security_broker_short}} Manager can access and create data encryption keys (DEKs) that is used to protect your data. 
     
 Follow the steps below to enroll a Keystore that you can use with {{site.data.keyword.security_broker_short}} Shields and databases.
 
@@ -21,8 +21,7 @@ Follow the steps below to enroll a Keystore that you can use with {{site.data.ke
 
 ![Keystores](../images/keystore.svg){: caption="Figure 1. Keystores" caption-side="bottom"}
 
-3. Specify a name for the Keystore in the **Keystore name** field and
-    provide a valid description in the **Description** field.
+3. Specify a **Keystore name** and provide a valid **Description**.
 
 4. Select the Keystore Type from the **Keystore Type** dropdown menu. 
     Enter values for the **Instance ID**, **App Namespace**, **IBM Key Protect Alias**, and **IAM API Key**. Select the region in the **IBM Region** drop down and choose the Data
@@ -30,8 +29,7 @@ Follow the steps below to enroll a Keystore that you can use with {{site.data.ke
     keys](https://cloud.ibm.com/docs/key-protect?topic=key-protect-tutorial-import-keys).
 
 **Note**: Keystore parameters are specific to each Keystore type or
-vendor. Each of the following keystores has a specific set of required
-credentials and parameters. 
+vendor. 
 
 For more information on configuring the IBM Key Protect and configuring the IBM Cloud Hyper Protect Crypto Services (HPCS), refer to the [Configure IBM Key Protect and HPCS](/docs/security-broker?topic=security-broker-sb_configure_Keyprotect) section.
 
