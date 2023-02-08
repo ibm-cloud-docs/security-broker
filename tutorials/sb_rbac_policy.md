@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2021-09-01"
+lastupdated: "2023-02-08"
 
 keywords: database, admin, priveleges, users, features, operations
 
