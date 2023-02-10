@@ -47,7 +47,7 @@ and encrypts application data sent to the database and decrypts encrypted data r
 
 The encyrption is made simpler, faster, and seamless.
 
-![High level architectre of {{site.data.keyword.security_broker_short}} Manager](images/architecture.svg){: caption="Figure 1. High level architectre of {{site.data.keyword.security_broker_short}} Manager" caption-side="bottom"}
+![High level architectre of {{site.data.keyword.security_broker_short}} Manager](images/arch_overview.svg){: caption="Figure 1. High level architectre of {{site.data.keyword.security_broker_short}} Manager" caption-side="bottom"}
 
 The {{site.data.keyword.security_broker_short}} supports data encryption by
 migrating the data from an existing SQL/NoSQL database into a secure
