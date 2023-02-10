@@ -74,13 +74,13 @@ following requirements:
 
 5.  The **Getting Started** dialog to proceed with the configuration of the {{site.data.keyword.security_broker_short}} Manager appears as shown below:
 
-![Getting Started](../images/getting_started.svg){: caption="Getting Started" caption-side="bottom"}
+    ![Getting Started](../images/getting_started.svg){: caption="Getting Started" caption-side="bottom"}
     
 6.  Configure the basic System Settings by entering the hostname, domain name, proxy access, and click **Continue**.
 
-**Note**
-  - The domain is part of the email, followed after the "@" character, that is specified during the configuration. For example, if the email specified is **test@example.com**, then the domain name must be specified as **example.com**. 
-  - The proxy access name is the name that is responsible for the connectivity from Proxy to {{site.data.keyword.security_broker_short}} Manager (the IP, or DNS, or the Service Name). For example, **dsb-nginx**.
+    The domain is part of the email, followed after the "@" character, that is specified during the configuration. For example, if the email specified is **test@example.com**, then the domain name must be specified as **example.com**. 
+    The proxy access name is the name that is responsible for the connectivity from Proxy to {{site.data.keyword.security_broker_short}} Manager (the IP, or DNS, or the Service Name). For example, **dsb-nginx**.
+    {: note}
     
 7.  Create an Admin Account for the initial {{site.data.keyword.security_broker_short}} Manager administrator by specifying the email address in the **Configure Super Admin User** page. This account is   used to configure the subsequent components such as the keystore, data store connections, and {{site.data.keyword.security_broker_short}} Shields. Click **Continue**.
 
