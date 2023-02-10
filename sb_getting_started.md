@@ -41,69 +41,91 @@ subcollection: security-broker
 {:release-note: data-hd-content-type='release-note'}
 
 
-# Getting started with IBM Cloud Data Security Broker
-{: #sb_getting_started}
+# Getting started with IBM Cloud {{site.data.keyword.security_broker_short}}
+{: #getting_started}
 
-IBM Cloud Data Security Broker is a complete data protection solution
-that secures sensitive data in enterprise databases by fully integrating
-with key management and databases to provide application-level
-encryption.
-{:shortdesc: .shortdesc}
-
-Data Security Broker Data Protection Services consists of two main
-components, namely:
-
-__Data Security Broker Manager__ is the administrative console for
-the solution that integrates with enterprise key managers and databases
-and manages the Data Security Broker solution components.
-
-__Data Security Broker Shield__ is the SQL / NOSQL proxy that
-functions to encrypt and decrypt data at the field or record level.
-
-Data Security Broker Manager enforces encryption policies and
-configurations by:
-
-- Communicating with key management solutions, the Security Broker Shield, and databases
-- Orchestrating configuration and deployment
-
-
-Data Security Broker Shield is a stateless reverse proxy that intercepts
-and encrypts application data sent to the database and decrypts
-encrypted data returned by the database.
-
-Data Security Broker Data Protection Services provide a range of data
-encryption, tokenization, and de-identification methods to protect data
-in data stores and cloud storage environments.
+Protect your data in the cloud with the {{site.data.keyword.security_broker_full_notm}}, which is a complete data protection solution that secures sensitive data in enterprise databases by integrating
+with key management and databases to provide application-level encryption.
+{: shortdesc}
 
 ## Before you begin
 {: #sb-before-you-begin}
 
-Before you begin configuring the Data Security Broker Manager and Data
-Security Broker Shield, verify that you have met the following
-requirements:
+Before you begin installing and configuring the {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield, ensure that you have met the following requirements:
 
-- Admin privileges for your platform
-- The user account used to log in to the Data Security Broker Shield host machine must have a home directory on that system
-- SSH client
-- Private key pair
-- Database privileges for encryption and migration
+- Create an IBM Cloud account.
+- Set up your environment.
+- Set up the minimum permissions required in the IBM Cloud account.
 
-### System Requirements
+### Setting up your environment
 {: #sb-system-requirements}
 
 Ensure that your environment meets the following minimum system level and resource level requirements:
 
-| Data Security Component Broker | Memory | Java Version     | Virtual CPU (vCPU) |
-|--------------------------------|--------|------------------|--------------------|
-| Data Security Broker Manager   | 8 GB   | OpenJDK Java 1.8 | 2                  |
-| Data Security Broker Shield    | 8 GB   | OpenJDK Java 1.8 | 16                 |
-| IBM Postgress Database         | 256 GB | OpenJDK Java 1.8 | 4                  |
-{: caption="Table 1. System Requirements for Data Security Broker" caption-side="bottom"}  
+| Cluster                                  | Operating System       | Number of Worker nodes required |
+|------------------------------------------|------------------------|---------------------------------|
+| IBM Red Hat Openshift Kubernetes Cluster | RHEL7/RHEL8 and CoreOS | 2                               |
+| IBM Cloud Kubernetes Cluster             | Ubuntu 18              | 2                               |
+{: caption="Table 1. Resource level requirements for {{site.data.keyword.security_broker_short}}" caption-side="bottom"}  
 
-| Cluster                                         | Operating System | Number of Master nodes required | Number of Worker nodes required | Number of Pods required |
-|-------------------------------------------------|------------------|---------------------------------|---------------------------------|-------------------------|
-| IBM Red Hat OpenShift Kubernetes cluster (ROKS) | Ubuntu 18        | 1                               | 2                               | 5                       |
-| IBM Cloud Kubernetes cluster (IKS)              | RHEL 7           | 1                               | 2   
-{: caption="Table 2. Resource level requirements for Data Security Broker" caption-side="bottom"}  
+## {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield Sizing Guidelines
+{: #sb_sizing}
 
+The factors that affect the sizing of the {{site.data.keyword.security_broker_short}} deployments consist of the {{site.data.keyword.security_broker_short}} Manager management console and one or more {{site.data.keyword.security_broker_short}} Shield proxies. Each component has its own resource needs depending on the anticipated workloads.
 
+## {{site.data.keyword.security_broker_short}} Manager ##
+{: #sb_sizing_dsbm}
+
+In general, resources allocated to a {{site.data.keyword.security_broker_short}} Manager
+deployment needs to be scaled with the number of managed {{site.data.keyword.security_broker_short}} Shields and the number of concurrent users using the {{site.data.keyword.security_broker_short}} Manager.
+
+## {{site.data.keyword.security_broker_short}} Shield ##
+{: #sb_sizing_dsbs}
+
+The general rule for {{site.data.keyword.security_broker_short}} Shield sizing, to handle peak
+utilization scenarios, is to match the sum of all {{site.data.keyword.security_broker_short}} Shield's memory and CPU allocations to that of the database instance.
+The initial vCPU and memory requests for the pod installation can start
+low and can be scaled up based on utilization, based on pod scaling
+policies, and depending on the workload in a particular installation.
+Resource allocation to {{site.data.keyword.security_broker_short}} Shield deployments typically
+scales with the expected maximum number of concurrent connections.
+
+{{site.data.keyword.security_broker_short}} Shield consists of a single container that runs in
+its own pod. The {{site.data.keyword.security_broker_short}} Shield pod can be in the same or
+different cluster but must have network connectivity to {{site.data.keyword.security_broker_short}} Manager.
+
+## Recommended sizing for Kubernetes or OpenShift Deployments for {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield: ##
+{: #sb_sizing_dsbr}
+
+4 CPU, 8 GB Memory
+
+## Setting up minimum permissions required to install, set up, and  access {{site.data.keyword.security_broker_short}} ##
+{: #sb_getting_assign_permission}
+
+As an IBM Cloud user, you need to set the follwoing minimum permissions to install, set up and access {{site.data.keyword.security_broker_short}}. 
+By using the following steps and the information in the table, assign the required permissions:
+1. Log into your IBM Cloud account and click **Manage -> Access (IAM)**.
+2. In the Manage access and users dashboard, click **View all** in the **My user details** section.
+3. In the **Access** tab, click **Assign access +**. From the Table 1, select a service and click **Next**.
+4. In the **Roles and actions** section, select the specified permissions that are required.
+5. Click **Add** and **Assign** to assign the permissions required.
+
+| Service Name                            | Permission level       |
+|-----------------------------------------|------------------------|
+| Key Protect                             | Writer                 |
+| Cloud Object Storage                    | Manager                |
+| Kubernetes Service                      | Manager, Editor        |
+| IBM Red Hat OpenShift Kubernetes Servie | Editor                 |
+| Schematicss                              | Manager, Administrator | 
+{: caption="Table 2. Permissions required for {{site.data.keyword.security_broker_short}}" caption-side="bottom"}
+
+You can find more information about {{site.data.keyword.security_broker_short}} in the [About {{site.data.keyword.security_broker_short}}](/docs/security-broker?topic=security-broker-sb_about) section.
+
+## Next Steps
+{: #sb_getting_next_steps}
+
+After the enrironment is set up and you have the required roles and permissions, you can start installing the {{site.data.keyword.security_broker_short}} by following the instructions in the [Installing {{site.data.keyword.security_broker_short}}](/docs/security-broker?topic=security-broker-sb_install_catalog) section.
+
+The flow diagram below explains the work flow that the user has to follow to encrypt the data using {{site.data.keyword.security_broker_short}}:
+
+![Encryption flow in {{site.data.keyword.security_broker_short}}](images/sb_userflow.svg){: caption="Figure 1. Encyrption flow in {{site.data.keyword.security_broker_short}} Manager" caption-side="bottom"}

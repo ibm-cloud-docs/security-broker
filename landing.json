@@ -1,0 +1,51 @@
+{
+    "title": "IBM Cloud Data Security Broker docs",
+    "lastupdated": "2023-01-17",
+    "introduction": "Explore the ways to install Data Security Broker Manager and Data Security Broker Shield, steps to configure and login to Data Security Broker Manager and perform data encryption. ",
+    "section_devtools": {
+      "api": "", 
+      "cli": "", 
+      "terraform": ""
+},
+"section_recommended": [
+      {
+        "title": "Install Data Security Broker",
+        "description": "Installing Data Security Broker Manager and Data Security Broker Shield from IBM Cloud Catalog ",
+        "href": "/docs/security-broker?topic=security-broker-sb_install_catalog"
+      },  
+      {
+        "title": "Configure Data Security Broker Manager",
+        "description": "You can find details on configuring the Data Security Broker Manager console in this section.",
+        "href": "/docs/security-broker?topic=security-broker-sb_configure"
+      },
+      {
+        "title": "Login to Data Security Broker Manager",
+        "description": "This section details the steps to log into the Data Security Broker Manager console.",
+        "href": "/docs/security-broker?topic=security-broker-sb_login"
+      },
+      {
+        "title": "Setup the Data Security Broker Manager console",
+        "description": "You can find the details on adding a keystore, connecting to a database, and enrolling an application in Data Security Broker Manager console.",
+        "href": "/docs/security-broker?topic=security-broker-sb_encrypt_postgress"
+      },
+      {
+        "title": "FAQs",
+        "description": "This section provides answers to frequently asked questions about the Data Security Broker software.",
+        "href": "/docs/security-broker?topic=security-broker-sb_faqs"
+      },
+      {
+        "title": "Troubleshooting",
+        "description": "You can find the common error scenarios and troubleshooting steps for the Data Security Broker software in this section.",
+        "href": "/docs/security-broker?topic=security-broker-sb_support"
+      }
+    ],
+
+    "section_learn": {
+      "architecture": "",
+      "training": "",
+      "community": ""
+    }
+    
+  }
+
+

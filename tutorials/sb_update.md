@@ -8,187 +8,41 @@ keywords: upgrade, delete, helm, configuration, tls certificate, docker config s
 subcollection: security-broker
 ---
 
-# Upgrading Data Security Broker using Manifests
+# Upgrading using IBM Cloud Catalog
 {: #sb_update}
 
-After IBM Cloud® Data Security Broker is installed on your cluster, you
-can update it at any time.
+After {{site.data.keyword.security_broker_short}} is installed on your cluster, you can upgrade it at any time using the IBM Cloud Schematics workspace (https://cloud.ibm.com/schematics/workspaces)
+{: shortdesc}
 
-## Upgrading Data Security Broker in ROKS
+## Pre-requisite:
+{: #upgrade-prereq}
+
+The user must be aware of the workspace name which is provided during the {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield installation process.
+
+## Upgrading {{site.data.keyword.security_broker_short}} Manager:
 {: #upgrade-sb-ROKS}
 
-Log into OpenShift Container Platform and complete the steps mentioned
-below to upgrade Data Security Broker on ROKS:
+Log into IBM Cloud Schematics workspace and follow the steps below to upgrade the {{site.data.keyword.security_broker_short}} Manager version:
 
-1.  Navigate to the path where you have installed the Data Security
-    Broker.
+1.  Search for the workspace name that you provided during the {{site.data.keyword.security_broker_short}} Manager install and click on the workspace to open it.
 
-2.  Download the latest images of Data Security Broker in the relevant path.
+    ![IBM Schematicss Workspace](../images/schematics_workspace.svg){: caption="IBM Schematicss Workspace" caption-side="bottom"}
 
-3.  Perform the upgrade by executing the following deployment commands
-    to deploy the latest images of Data Security Broker:
+2.  Click **Settings** option in the left navigation.
 
-    ```sh
-    1. oc set image deployment/security-broker-manager security-broker
-    -manager=\<image_location\>
-    ```
-   {: codeblock}
+    ![{{site.data.keyword.security_broker_short}} Manager Upgrade](../images/manager_update.svg){: caption="{{site.data.keyword.security_broker_short}} Manager Upgrade" caption-side="bottom"}
 
-    ```sh
-    2. oc set image deployment/ security-broker -mongodb security-broker
-    -mongodb=\<image_location\>
-    ```
-    {: codeblock}
+3. If the new version is available for the {{site.data.keyword.security_broker_short}} Manager, then the **Update** button is enabled and you can click the **Update** button to proceed with upgrading the {{site.data.keyword.security_broker_short}} Manager.
 
-    ```sh
-    3. oc set image deployment/ security-broker -web security-broker
-    -web=\<image_location\>
-    ```
-    {: codeblock}
+4. In the **Update Workspace resources** window, select the version of the {{site.data.keyword.security_broker_short}} Manager, which you wish to upgrade to, and click **Update**.
 
-    ```sh
-    4. oc set image deployment/ security-broker -nginx security-broker
-    -nginx=\<image_location\>
-    ```
-    {: codeblock}
+    ![{{site.data.keyword.security_broker_short}} Manager Version](../images/update_version.svg){: caption="{{site.data.keyword.security_broker_short}} Manager Version" caption-side="bottom"}
 
-    ```sh
-    5. oc get cm security-broker -shield-\<app_name\>-config -o yaml \| sed
-    -e \'s\|\<current_version\>\|\<new_version\>\|\' \| oc apply -f -
-    ```
-    {: codeblock}
+**Note**: Once you click **Update**, IBM Cloud Schematics runs the terraform code in the backend to execute the newer version of the {{site.data.keyword.security_broker_short}} Manager from the IBM Cloud Helm Catalog. After the upgrade is complete, the pods are refreshed in the namespace where you have upgraded the {{site.data.keyword.security_broker_short}} Manager.
 
-    ```sh
-    6. oc set image deployment/ security-broker-shield-\<app_name\>
-    security-broker-shield-\<app_name\>=\<image_location\>
-    ```
-    {: codeblock}
+5. Follow the same process to proceed with upgrading the {{site.data.keyword.security_broker_short}} Shield. Remember to work with the correct workspace name, which is provided during the {{site.data.keyword.security_broker_short}} Shield install.
 
-4.  Verify that the pods are re-launched and are in **Running** state. To
-    view the status of the pods in the namespace, execute the following
-    command:
+**Note**: Once the {{site.data.keyword.security_broker_short}} Shield upgrade completes, based on the prior Shield Sync ID, new {{site.data.keyword.security_broker_short}} Shield instances is automatically picked up by the enrolled application in {{site.data.keyword.security_broker_short}} Manager.
 
-    ```sh
-    oc get pods -n \<namespace\>
-    ```
-    {: codeblock}
-    
-5.  Identify the external IP address of the Load Balancer with the following command:
-
-    ```sh
-    kubectl get svc security-broker-nginx
-    ```
-    The output of this command is displayed as shown in the example below:
-
-    NAME           TYPE                   CLUSTER-IP       EXTERNAL-IP       PORT(S)             AGE
-    Security-broker-nginx   LoadBalancer   1.1.1.1       10.10.10.10        43:31689/TCP           18h
-
-6.  Open a Web browser window and enter the **Load Balancer External
-    IP** preceded by **https://** to access the Data Security Broker Manager.
-    In the above example, the web browser address to access the Security Broker Manager would be https://10.10.10.10.
-
-7.  To confirm the upgrade, login to the Security Broker Manager and
-    click Help to view the version number of the Data Security Broker,
-    which has been upgraded.
-
-**Note**: If you are upgrading the Security Broker Shield, you need to
-complete the following steps to ensure that the Security Broker Shield
-which is in idle state is deleted.
-
-a.  Login to the Security Broker Manager and Select the **Applications**
-    icon in the left navigation panel and click **Application**
-    **settings**.
-
-b.  Select the Security Broker Shield which is in stopped state and
-    click the Delete (**--)** button to delete the Security Broker
-    Shield.
-
-## Upgrading Data Security Broker in IKS
-{: #upgrade-sb-IKS}
-
-Log into **kubectl** and complete the steps mentioned below to upgrade
-Data Security Broker on IKS:
-
-1.  Navigate to the path where you have installed the Data Security
-    Broker.
-
-2.  Download the latest images of Data Security Broker for the latest
-    version, which you need to upgrade.
-
-3.  Perform the upgrade by executing the following deployment commands
-    to deploy the latest images of Data Security Broker:
-
-    ```sh
-    kubectl set image deployment/security-broker-manager security-broker
-    -manager=\<image_location\>
-    ```
-    {: codeblock}
-
-    ```sh
-    kubectl set image deployment/ security-broker -mongodb
-    security-broker -mongodb=\<image_location\>
-    ```
-    {: codeblock}
-
-    ```sh
-    kubectl set image deployment/ security-broker -web security-broker
-    -web=\<image_location\>
-    ```
-    {: codeblock}
-
-    ```sh
-    kubectl set image deployment/ security-broker -nginx security-broker
-    -nginx=\<image_location\>
-    ```
-    {: codeblock}
-
-    ```sh
-    kubectl get cm security-broker -shield-\<app_name\>-config -o yaml
-    \| sed -e \'s\|\<current_version\>\|\<new_version\>\|\' \| oc apply -f
-    ```
-    {: codeblock}
-
-    ```sh
-    kubectl set image deployment/ security-broker-shield-\<app_name\>
-    security-broker-shield-\<app_name\>=\<image_location\>
-    ```
-    {: codeblock}
-
-4.  Verify that the pods are launched and are in **Running** state. To
-    view the status of the pods in the namespace, execute the following
-    command:
-
-    ```sh
-    kubectl get pods -n \<namespace\>
-    ```
-    {: codeblock}
-
-5.  Identify the external IP address of the Load Balancer with the following command:
-
-    ```sh
-    kubectl get svc security-broker-nginx
-    ```
-    The output of this command is displayed as shown in the example below:
-
-    NAME           TYPE                   CLUSTER-IP       EXTERNAL-IP       PORT(S)             AGE
-    Security-broker-nginx   LoadBalancer   1.1.1.1       10.10.10.10        43:31689/TCP           18h
-
-6.  Open a Web browser window and enter the **Load Balancer External
-    IP** preceded by **https://** to access the Data Security Broker Manager.
-    In the above example, the web browser address to access the Security Broker Manager would be https://10.10.10.10.
-
-7.  Open a Web browser window and enter the **Load Balancer External
-    IP** preceded by **https://** to access the Security Broker Manager.
-
-**Note**: If you are upgrading the Security Broker Shield, you need to
-complete the following steps to ensure that the Security Broker Shield
-which is in idle state is deleted.
-
-a.  Login to the Security Broker Manager and Select the **Applications**
-    icon in the left navigation panel and click **Application**
-    **settings**.
-
-b.  Select the Security Broker Shield which is in stopped state and
-    click the Delete (**--)** button to delete the Security Broker
-    Shield.
+Once the upgrade operation is successfull, the pods will come to **Running** state in the target cluster.
 

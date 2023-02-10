@@ -41,69 +41,30 @@ subcollection: security-broker
 {:release-note: data-hd-content-type='release-note'}
 
 
-# Uninstalling Data Security Broker through Manifests
+# Uninstalling through IBM Cloud Catalog
 {: #sb_uninstall}
 
-If you no longer need to use IBM Cloud® Security Broker, you can delete
-the namespace to delete all the services, and the objects associated
-with the namespace.
+If you no longer need to use {{site.data.keyword.security_broker_short}}, you can uninstall all the workloads that are associated with the {{site.data.keyword.security_broker_short}} using the IBM Cloud Schematics workspace (https://cloud.ibm.com/schematics/workspaces).
+{: shortdesc}
 
-## Uninstalling Data Security Broker in IKS:
+## Pre-requisite:
+{: #unistall-prereq}
+
+The user must be aware of the workspace name which is provided during the {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield installation process.
+
+## Uninstalling {{site.data.keyword.security_broker_short}} Manager:
 {: #unistall-sb-IKS}
 
-Log into OpenShift Container Platform and follow the steps below to uninstall the Data Security Broker:
+Log into IBM Cloud Schematics workspace and follow the steps below to uninstall the {{site.data.keyword.security_broker_short}} Manager:
 
-1.  Get the list of namespaces available in the cluster by executing the following command:
+1.  Search for the workspace name that you provided during the {{site.data.keyword.security_broker_short}} Manager install and click on the workspace to open it.
 
-```sh
-oc get namespace
-```
-{: codeblock}
+![IBM Schematicss Workspace](../images/schematics_workspace.svg){: caption="IBM Schematicss Workspace" caption-side="bottom"}
 
-2.  Identify the namespace, where you have the Data Security Broker installed.
+2.  Select **Actions** -> **Destroy Resources** to destroy the workloads associated with the {{site.data.keyword.security_broker_short}} Manager.
 
-3.  Delete the namespace, where the Data Security Broker is present by executing the following command:
+![Uninstall {{site.data.keyword.security_broker_short}} Manager](../images/uninstall_dsb_manager.svg){: caption="Uninstall {{site.data.keyword.security_broker_short}} Manager" caption-side="bottom"}
 
-```sh
-oc delete -f namespace \<name of the namespace where Data Security
-Broker is installed\>
-```
-{: codeblock}
+3. Follow the same process for the {{site.data.keyword.security_broker_short}} Shield to uninstall the workloads associated with the {{site.data.keyword.security_broker_short}} Shield. Remember to work with the correct workspace name, which is provided during the {{site.data.keyword.security_broker_short}} Shield install.
 
-4.  Verify if the namespace is deleted by listing all the namespaces available in the cluster by executing the following command:
-
-```sh
-oc get namespace
-```
-{: codeblock}
-
-## Uninstalling Data Security Broker in ROKS:
-{: #uninstall-sb-ROKS}
-
-Log into **kubectl** and complete the and follow the steps below to uninstall the Data Security Broker:
-
-1.  Get the list of namespaces available in the cluster by executing the following command:
-
-```sh
-kubectl get namespace
-```
-{: codeblock}
-
-2.  Identify the namespace, where you have the Data Security Broker installed.
-
-3.  Delete the namespace, where the Data Security Broker is present by executing the following command:
-
-```sh
-kubectl delete -f namespace \<name of the namespace where Data Security
-Broker is installed\>
-```
-{: codeblock}
-
-4.  Verify if the namespace is deleted by listing all the namespaces available in the cluster by executing the following command:
-
-```sh
-kubectl get namespace
-```
-{: codeblock}
-
-
+Once you uninstall the {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield workloads, you can see that the pods are being terminated and you can monitor the successfull uninstall operation through the logs.

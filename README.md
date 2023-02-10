@@ -2,7 +2,7 @@
 
 copyright: 
   years: 2022, 2022
-lastupdated: "2022-09-06"
+lastupdated: "2023-04-01"
 
 keywords: security broker, read-me,
 
@@ -10,14 +10,8 @@ subcollection: security-broker
 
 ---
 
-{{site.data.keyword.attribute-definition-list}}
-
 # security-broker
 {: #readme-sb}
-
-Documentation repository for security-broker
-
-
 
 ## Source files for customer-facing documentation
 
