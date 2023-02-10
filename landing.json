@@ -1,13 +1,9 @@
 {
     "title": "IBM Cloud Data Security Broker docs",
     "lastupdated": "2023-01-17",
-    "introduction": "Explore the ways to install Data Security Broker Manager and Data Security Broker Shield, steps to configure and login to Data Security Broker Manager and perform data encryption. ",
-    "section_devtools": {
-      "api": "", 
-      "cli": "", 
-      "terraform": ""
-},
-"section_recommended": [
+    "introduction": "Explore the data protection services that Data Security Broker offers and the ways to install, configure, and login to Data Security Broker Manager and perform data encryption. ",
+    },
+    "section_recommended": [
       {
         "title": "Install Data Security Broker",
         "description": "Installing Data Security Broker Manager and Data Security Broker Shield from IBM Cloud Catalog ",
@@ -40,10 +36,6 @@
       }
     ],
 
-    "section_learn": {
-      "architecture": "",
-      "training": "",
-      "community": ""
     }
     
   }
