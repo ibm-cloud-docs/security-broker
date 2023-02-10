@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2022
-lastupdated: "2023-02-08"
+lastupdated: "2023-02-10"
 
 keywords: database, admin, priveleges, users, configure, operations
 
@@ -36,7 +36,7 @@ following requirements:
 
     - Select the cluster where you have installed the {{site.data.keyword.security_broker_short}} Manager instance.
 
-    **IBM Cloud Kubernetes service (IKS)**:
+    **{{site.data.keyword.containerlong}} (IKS)**:
 
     - If you have installed the {{site.data.keyword.security_broker_short}} Manager in a Kubernetes cluster, click **Kubernetes Dashboard** to navigate to the Kubernetes Dashboard from the cluster.
  

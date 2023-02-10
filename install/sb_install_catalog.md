@@ -46,7 +46,7 @@ Complete the following steps to insall the **{{site.data.keyword.security_broker
 
 1.  Click **{{site.data.keyword.security_broker_short}} Manager** catalog item.
 
-2.  The {{site.data.keyword.security_broker_short}} Manager catalog item opens in a seperate window. In the **Select your deployment target** drop down, select **IBM Cloud Kubernetes service (IKS)** or **Red Hat Openshift (ROKS)** to install the {{site.data.keyword.security_broker_short}} Manager in the IKS or ROKS cluster.
+2.  The {{site.data.keyword.security_broker_short}} Manager catalog item opens in a seperate window. In the **Select your deployment target** drop down, select **{{site.data.keyword.containerlong}} (IKS)** or **Red Hat Openshift (ROKS)** to install the {{site.data.keyword.security_broker_short}} Manager in the IKS or ROKS cluster.
 
     ![{{site.data.keyword.security_broker_short}} Manager Catalog Page](../images/dep_target.svg){: caption="{{site.data.keyword.security_broker_short}} Manager Catalog Page" caption-side="bottom"}
 
@@ -108,7 +108,7 @@ Complete the following steps to insall the {{site.data.keyword.security_broker_s
 
 1.  Click **{{site.data.keyword.security_broker_short}} Shield** catalog item.
 
-2.  In the **Select your deployment target** drop down, select **IBM Cloud Kubernetes service** or **Red    Hat Openshift** to install the {{site.data.keyword.security_broker_short}} Shield in the IKS or ROKS cluster.
+2.  In the **Select your deployment target** drop down, select **{{site.data.keyword.containerlong_notm}}** or **Red    Hat Openshift** to install the {{site.data.keyword.security_broker_short}} Shield in the IKS or ROKS cluster.
 
     ![{{site.data.keyword.security_broker_short}} Shield Catalog Page](../images/dsb_shield.svg){: caption="{{site.data.keyword.security_broker_short}} Shield Catalog Page" caption-side="bottom"}
 
