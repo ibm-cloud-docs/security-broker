@@ -68,6 +68,37 @@ Ensure that your environment meets the following minimum system level and resour
 | IBM Cloud Kubernetes Cluster             | Ubuntu 18              | 2                               |
 {: caption="Table 1. Resource level requirements for {{site.data.keyword.security_broker_short}}" caption-side="bottom"}  
 
+## {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield Sizing Guidelines
+{: #sb_sizing}
+
+The factors that affect the sizing of the {{site.data.keyword.security_broker_short}} deployments consist of the {{site.data.keyword.security_broker_short}} Manager management console and one or more {{site.data.keyword.security_broker_short}} Shield proxies. Each component has its own resource needs depending on the anticipated workloads.
+
+## {{site.data.keyword.security_broker_short}} Manager ##
+{: #sb_sizing_dsbm}
+
+In general, resources allocated to a {{site.data.keyword.security_broker_short}} Manager
+deployment needs to be scaled with the number of managed {{site.data.keyword.security_broker_short}} Shields and the number of concurrent users using the {{site.data.keyword.security_broker_short}} Manager.
+
+## {{site.data.keyword.security_broker_short}} Shield ##
+{: #sb_sizing_dsbs}
+
+The general rule for {{site.data.keyword.security_broker_short}} Shield sizing, to handle peak
+utilization scenarios, is to match the sum of all {{site.data.keyword.security_broker_short}} Shield's memory and CPU allocations to that of the database instance.
+The initial vCPU and memory requests for the pod installation can start
+low and can be scaled up based on utilization, based on pod scaling
+policies, and depending on the workload in a particular installation.
+Resource allocation to {{site.data.keyword.security_broker_short}} Shield deployments typically
+scales with the expected maximum number of concurrent connections.
+
+{{site.data.keyword.security_broker_short}} Shield consists of a single container that runs in
+its own pod. The {{site.data.keyword.security_broker_short}} Shield pod can be in the same or
+different cluster but must have network connectivity to {{site.data.keyword.security_broker_short}} Manager.
+
+## Recommended sizing for Kubernetes or OpenShift Deployments for {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield: ##
+{: #sb_sizing_dsbr}
+
+4 CPU, 8 GB Memory
+
 ## Setting up minimum permissions required to install, set up, and  access {{site.data.keyword.security_broker_short}} ##
 {: #sb_getting_assign_permission}
 
