@@ -16,13 +16,16 @@ content-type: troubleshoot
 Use this release notes to learn about the latest changes to {{site.data.keyword.security_broker_full_notm}} that are grouped by date.
 {: shortdesc}
 
-## January 2023
+## February 2023
 {: #sb_date}
 
-### Introducing {{site.data.keyword.security_broker_full_notm}}
+### Introducing {{site.data.keyword.security_broker_full_notm}} Beta version
 {: #sb_release_version1}
 
 {{site.data.keyword.security_broker_full_notm}} is a complete data protection solution
-that secures sensitive data in enterprise databases by fully integrating
-with key management and databases to provide application-level
-encryption.
+that secures sensitive data in enterprise databases by integrating with key management and databases to provide application-level encryption.
+
+Following features are supported in the Beta version:
+
+-  Data Encryption and Decryption
+-  Data Masking

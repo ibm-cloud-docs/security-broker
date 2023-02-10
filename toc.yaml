@@ -17,6 +17,7 @@ toc:
       id: learn
       topics:
       - sb_getting_started.md
+      - sb_about.md
       - sb_release_notes.md
 
   - navgroup: 
