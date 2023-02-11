@@ -17,10 +17,33 @@ Protect your data in the cloud with the {{site.data.keyword.security_broker_full
 with key management and databases to provide application-level encryption.
 {: shortdesc}
 
+{{site.data.keyword.security_broker_short}} offers Data Protection Services which consists of two main
+components, namely:
+
+  **{{site.data.keyword.security_broker_short}} Manager** is the administrative console for
+  the solution that integrates with enterprise key managers and databases
+  and manages the {{site.data.keyword.security_broker_short}} solution components.
+
+  **{{site.data.keyword.security_broker_short}} Shield** is the SQL / NOSQL proxy that
+  functions to encrypt and decrypt data at the field or record level.
+
+  **{{site.data.keyword.security_broker_short}} Manager** enforces encryption policies and
+  configurations by:
+
+  - Communicating with key management solutions, the {{site.data.keyword.security_broker_short}} Shield, and databases.
+  - Orchestrating configuration and deployment.
+
+  **{{site.data.keyword.security_broker_short}} Shield** is a stateless reverse proxy that intercepts
+  and encrypts application data sent to the database and decrypts encrypted data returned by the database.
+
+  {{site.data.keyword.security_broker_short}} offers Data Protection Services which provide a range of data protection services such as data encryption, data tokenization, record level encryption, and data masking.
+
+**Note**: {{site.data.keyword.security_broker_short}} supports only PostgreSQL database.
+
 ## Before you begin
 {: #sb-before-you-begin}
 
-Before you begin installing and configuring the {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield, ensure that you have met the following requirements:
+Before you begin installing and configuring the {{site.data.keyword.security_broker_short}}, ensure that you have met the following requirements:
 
 - Create an {{site.data.keyword.cloud_notm}} account.
 - Set up your environment.
