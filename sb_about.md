@@ -24,7 +24,7 @@ The software supports tokenization, format-preserving encryption (FPE), and role
 
 The encyrption is made simpler, faster, and seamless.
 
-![High level architectre of {{site.data.keyword.security_broker_short}} Manager](images/arch_overview.svg "High level architectre of {{site.data.keyword.security_broker_short}} Manager"){: caption="High level architectre of {{site.data.keyword.security_broker_short}} Manager" caption-side="center"}
+![High level architecture of {{site.data.keyword.security_broker_short}} Manager](images/arch_overview.svg "High level architecture of {{site.data.keyword.security_broker_short}} Manager"){: caption="High level architecture of {{site.data.keyword.security_broker_short}} Manager" caption-side="center"}
 
 The {{site.data.keyword.security_broker_short}} supports data encryption by migrating the data from an existing SQL/NoSQL database into a secure database with the ability to encrypt fields at a column granularity, thereby enabling selective privacy.
 
