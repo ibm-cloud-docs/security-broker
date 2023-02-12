@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2022, 2022
-lastupdated: "2023-02-08"
+  years: 2022, 2023
+lastupdated: "2023-02-12"
 
 keywords: database, admin, priveleges, users, features, operations
 
@@ -23,7 +23,7 @@ It also helps in migrating the existing database records, apply record or colu
 1. [Data Encryption](/docs/security-broker?topic=security-broker-sb_encrypt_data)
 2. [Data Masking](/docs/security-broker?topic=security-broker-sb_masking)
 
-## Procedure:
+## Procedure
 {: #sb_encrypt_procedure}
 
 After you have completed setting up and configuring the {{site.data.keyword.security_broker_short}} Manager, you can perform standard encryption or data masking by defining a Data Protection policy and performing the steps below:

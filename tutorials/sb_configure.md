@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-11"
+lastupdated: "2023-02-12"
 
 keywords: database, admin, priveleges, users, configure, operations
 
@@ -14,7 +14,7 @@ subcollection: security-broker
 Configuring the {{site.data.keyword.security_broker_short}} Manager console is the first step
 to login and implement the data protection services.
 
-## **Prerequisites:**
+## **Prerequisites**
 {: #sb_configure_prereq}
 
 Before you begin configuring {{site.data.keyword.security_broker_short}} Manager, ensure you meet the
@@ -31,7 +31,7 @@ following requirements:
 
     - Select the cluster where you have installed the {{site.data.keyword.security_broker_short}} Manager instance.
 
-    **{{site.data.keyword.containerlong}}**:
+    **{{site.data.keyword.containerlong}}**
 
     - If you have installed the {{site.data.keyword.security_broker_short}} Manager in a Kubernetes cluster, click **Kubernetes Dashboard** to navigate to the Kubernetes Dashboard from the cluster.
  
@@ -41,7 +41,7 @@ following requirements:
 
     - Fetch the **LoadBalancer IP** from the **External Endpoints** column for the **dsb-nginx** service.
 
-    **{{site.data.keyword.redhat_openshift_full}}**:
+    **{{site.data.keyword.redhat_openshift_full}}**
 
     - If you have installed the {{site.data.keyword.security_broker_short}} Manager in a {{site.data.keyword.redhat_openshift_notm}} cluster, click **Openshift web console** from the cluster.
 
@@ -51,7 +51,7 @@ following requirements:
 
     - Fetch the **{{site.data.keyword.security_broker_short}} Manager URL** from the **Locations** column for the **dsb-nginx** service.
 
-## To configure {{site.data.keyword.security_broker_short}} Manager, perform the following steps:
+## To configure {{site.data.keyword.security_broker_short}} Manager, perform the following steps
 {: #sb_configure_overview}
  
 1. Copy the **load_balancer_url** from the Kubernetes dashboard for the IKS cluster or from the Openshift   web console for the ROKS cluster.
@@ -89,4 +89,4 @@ following requirements:
     The {{site.data.keyword.security_broker_short}} Secret Key must contain at least 10 characters, a mixture of upper and lower case, including at least one numeric character. The Secret Key is used to generate a random key to encrypt the Keystore Config Password.
     {: note}
 
-8. Once you complete the configuration process for the {{site.data.keyword.security_broker_short}} Manager, the next step is to login to the {{site.data.keyword.security_broker_short}} Manager using the steps mentioned in the [Logging into {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_login) section.
+8. Once you complete the configuration process for the {{site.data.keyword.security_broker_short}} Manager, the next step is to login to the {{site.data.keyword.security_broker_short}} Manager using the steps mentioned in the [Login to {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_login) section.

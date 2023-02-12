@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-11"
+lastupdated: "2023-02-12"
 
 keywords: support, getting started, data protection, data threats
 
@@ -10,7 +10,7 @@ subcollection: security-broker
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Getting started with {{site.data.keyword.cloud}} {{site.data.keyword.security_broker_short}}
+# Getting started with IBM Cloud Data Security Broker
 {: #getting_started}
 
 Protect your data in the cloud with the {{site.data.keyword.security_broker_full_notm}}, which is a complete data protection solution that secures sensitive data in enterprise databases by integrating
@@ -33,10 +33,10 @@ components, namely:
   - Communicating with key management solutions, the {{site.data.keyword.security_broker_short}} Shield, and databases.
   - Orchestrating configuration and deployment.
 
-  **{{site.data.keyword.security_broker_short}} Shield** is a stateless reverse proxy that intercepts
-  and encrypts application data sent to the database and decrypts encrypted data returned by the database.
+**{{site.data.keyword.security_broker_short}} Shield** is a stateless reverse proxy that intercepts
+and encrypts application data sent to the database and decrypts encrypted data returned by the database.
 
-  {{site.data.keyword.security_broker_short}} offers Data Protection Services which provide a range of data protection services such as data encryption, data tokenization, record level encryption, and data masking.
+{{site.data.keyword.security_broker_short}} offers Data Protection Services which provide a range of data protection services such as data encryption, data tokenization, record level encryption, and data masking.
 
 **Note**: {{site.data.keyword.security_broker_short}} supports only PostgreSQL database.
 
@@ -86,7 +86,7 @@ scales with the expected maximum number of concurrent connections.
 its own pod. The {{site.data.keyword.security_broker_short}} Shield pod can be in the same or
 different cluster but must have network connectivity to {{site.data.keyword.security_broker_short}} Manager.
 
-## Recommended sizing for Kubernetes or {{site.data.keyword.redhat_openshift_full_notm}} Deployments for {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield: ##
+## Recommended sizing for Kubernetes or {{site.data.keyword.redhat_openshift_notm}} Deployments for {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield: ##
 {: #sb_sizing_dsbr}
 
 4 CPU, 8 GB Memory
@@ -107,7 +107,7 @@ By using the following steps and the information in the table, assign the requir
 | {{site.data.keyword.keymanagementserviceshort}}                             | Writer                 |
 | {{site.data.keyword.cos_full}}                   | Manager                |
 | {{site.data.keyword.containershort}}                     | Manager, Editor        |
-| IBM {{site.data.keyword.redhat_openshift_full_notm}} {{site.data.keyword.containershort}} | Editor                 |
+| IBM {{site.data.keyword.redhat_openshift_notm}} {{site.data.keyword.containershort}} | Editor                 |
 | {{site.data.keyword.bpshort}}                              | Manager, Administrator | 
 {: caption="Table 2. Permissions required for {{site.data.keyword.security_broker_short}}" caption-side="bottom"}
 

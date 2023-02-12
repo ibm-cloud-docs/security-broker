@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2022, 2022
-lastupdated: "2023-02-08"
+  years: 2022, 2023
+lastupdated: "2023-02-12"
 
 keywords: database, admin, priveleges, users, features, operations, application
 
@@ -19,7 +19,7 @@ Follow the steps below to enroll a Keystore that you can use with {{site.data.ke
 
 2. Select **Keystores** from the left navigation and click **Add Keystore +**.
 
-![Keystores](../images/keystore.svg){: caption="Figure 1. Keystores" caption-side="bottom"}
+   ![Keystores](../images/keystore.svg){: caption="Figure 1. Keystores" caption-side="bottom"}
 
 3. Specify a **Keystore name** and provide a valid **Description**.
 
@@ -28,10 +28,10 @@ Follow the steps below to enroll a Keystore that you can use with {{site.data.ke
     Encryption Key (DEK) Storage type from the **DEK Storage Type** drop down. For information on how to create encryption keys, see [Creating and importing encryption
     keys](https://cloud.ibm.com/docs/key-protect?topic=key-protect-tutorial-import-keys).
 
-**Note**: Keystore parameters are specific to each Keystore type or
-vendor. 
+   Keystore parameters are specific to each Keystore type or vendor. 
+   {: note}
 
-For more information on configuring the IBM Key Protect and configuring the IBM Cloud Hyper Protect Crypto Services (HPCS), refer to the [Configure IBM Key Protect and HPCS](/docs/security-broker?topic=security-broker-sb_configure_Keyprotect) section.
+   For more information on configuring the IBM Key Protect and configuring the IBM Cloud Hyper Protect Crypto Services (HPCS), refer to the [Configure IBM Key Protect and HPCS](/docs/security-broker?topic=security-broker-sb_configure_Keyprotect) section.
 
 5. Click **Add Keystore** to create a Keystore.
 

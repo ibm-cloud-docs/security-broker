@@ -1,14 +1,14 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-11"
+lastupdated: "2023-02-12"
 
 keywords: about the service, deploy policy, deployment plans, encryption technology, encryption modes, data protection modes
 
 subcollection: security-broker
 ---
 
-# About the Software: {{site.data.keyword.cloud}} {{site.data.keyword.security_broker_short}}
+# About IBM Cloud Data Security Broker
 {: #sb_about}
 
 {{site.data.keyword.security_broker_short}} is a software that makes data breaches irrelevant
