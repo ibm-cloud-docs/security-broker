@@ -26,14 +26,29 @@
         "href": "/docs/security-broker?topic=security-broker-sb_encrypt_postgress"
       },
       {
+        "title": "Data Encryption",
+        "description": "You can find the detailed steps on how to perform data encryption.",
+        "href": "/docs/security-broker?topic=security-broker-sb_encrypt_data"
+      },
+      {
+        "title": "Data Masking",
+        "description": "You can find the detailed steps on how to perform data masking.",
+        "href": "/docs/security-broker?topic=security-broker-sb_masking"
+      },
+      {
+        "title": "Data Encryption",
+        "description": "You can find the detailed steps on how to perform data encryption.",
+        "href": "/docs/security-broker?topic=security-broker-sb_encrypt_data"
+      },
+      {
+        "title": "Configure IBM Key Protect and IBM Cloud Hyper Protect Crypto Services (HPCS)",
+        "description": "In this section, you can find details on how to configure IBM Key Protect and IBM Cloud Hyper Protect Crypto Services (HPCS) and add it as a keystore in Data Security Broker Manager.",
+        "href": "/docs/security-broker?topic=security-broker-sb_configure_keyprotect"        
+      },
+      {
         "title": "FAQs",
         "description": "This section provides answers to frequently asked questions about the Data Security Broker software.",
         "href": "/docs/security-broker?topic=security-broker-sb_faqs"
-      },
-      {
-        "title": "Troubleshooting",
-        "description": "You can find the common error scenarios and troubleshooting steps for the Data Security Broker software in this section.",
-        "href": "/docs/security-broker?topic=security-broker-sb_support"
       }
     ]
 }

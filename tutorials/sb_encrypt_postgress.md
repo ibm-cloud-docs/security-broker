@@ -26,7 +26,7 @@ It also helps in migrating the existing database records, apply record or colu
 ## Procedure
 {: #sb_encrypt_procedure}
 
-After you have completed setting up and configuring the {{site.data.keyword.security_broker_short}} Manager, you can perform standard encryption or data masking by defining a Data Protection policy and performing the steps below:
+After you have completed setting up and configuring the {{site.data.keyword.security_broker_short}} Manager, you can perform standard encryption or data masking by defining a Data Protection policy. Ensure that you complete the steps below before you can use the data protection services offered by {{site.data.keyword.security_broker_short}}.
 
 1. You must add a Keystore, so that the {{site.data.keyword.security_broker_short}} Manager can access and create data encryption keys (DEKs) that is used to protect your data. For more information, see [Adding a Keystore in {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_add_keystore).
 
