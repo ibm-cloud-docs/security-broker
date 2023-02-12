@@ -38,7 +38,8 @@ and encrypts application data sent to the database and decrypts encrypted data r
 
 {{site.data.keyword.security_broker_short}} offers Data Protection Services which provide a range of data protection services such as data encryption, data tokenization, record level encryption, and data masking.
 
-**Note**: {{site.data.keyword.security_broker_short}} supports only PostgreSQL database.
+{{site.data.keyword.security_broker_short}} supports only PostgreSQL database.
+{: note}
 
 ## Before you begin
 {: #sb-before-you-begin}
@@ -57,7 +58,7 @@ Ensure that your environment meets the following minimum system level and resour
 | Cluster                                  | Operating System       | Number of Worker nodes required |
 |------------------------------------------|------------------------|---------------------------------|
 | {{site.data.keyword.redhat_openshift_full}} cluster | RHEL7/RHEL8 and CoreOS | 2                               |
-| IBM Cloud Kubernetes cluster             | Ubuntu 18              | 2                               |
+| {{site.data.keyword.cloud_notm}} Kubernetes cluster             | Ubuntu 18              | 2                               |
 {: caption="Table 1. Resource level requirements for {{site.data.keyword.security_broker_short}}" caption-side="bottom"}  
 
 ## {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield Sizing Guidelines
