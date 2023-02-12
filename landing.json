@@ -1,6 +1,3 @@
-
-{{site.data.keyword.cloud}} {{site.data.keyword.security_broker_short}} documentation is avaialble as a Beta version for evaluation and testing purposes. It is not intended for production usage.
-{: beta}
 {
     "title": "IBM Cloud Data Security Broker docs",
     "lastupdated": "2023-01-17",
