@@ -21,7 +21,8 @@ subcollection: security-broker
 
 The following tables lists the FPE supported data types for the data encryption in {{site.data.keyword.security_broker_short}} Manager:
 
-**PostgreSQL**
+## PostgreSQL
+{: #sb_encrypt_db_psl}
 
 | **Original Data Type** | **FPE Data Type**                         |
 |------------------------|-------------------------------------------|

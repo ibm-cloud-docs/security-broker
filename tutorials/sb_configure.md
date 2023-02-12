@@ -31,7 +31,8 @@ following requirements:
 
     - Select the cluster where you have installed the {{site.data.keyword.security_broker_short}} Manager instance.
 
-    **{{site.data.keyword.containerlong}}**
+    ## {{site.data.keyword.containerlong}}
+    {: #sb_lb_iks}
 
     - If you have installed the {{site.data.keyword.security_broker_short}} Manager in a Kubernetes cluster, click **Kubernetes Dashboard** to navigate to the Kubernetes Dashboard from the cluster.
  
@@ -41,7 +42,8 @@ following requirements:
 
     - Fetch the **LoadBalancer IP** from the **External Endpoints** column for the **dsb-nginx** service.
 
-    **{{site.data.keyword.redhat_openshift_full}}**
+    ## {{site.data.keyword.redhat_openshift_full}}
+    {: #sb_lb_roks}
 
     - If you have installed the {{site.data.keyword.security_broker_short}} Manager in a {{site.data.keyword.redhat_openshift_notm}} cluster, click **Openshift web console** from the cluster.
 

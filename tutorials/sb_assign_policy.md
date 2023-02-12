@@ -44,12 +44,9 @@ A list of Default Data Protection Policies is available in the Data Protection L
    modes, selecting the opposite mode will not affect the default policy. 
    For example: 
 
-   - If you select Default FPE and any Mask Mode, both are applied to
-   that column.
+   - If you select Default FPE and any Mask Mode, both are applied to that column.
 
-   - If you select Default FPE and any other FPE mode, (like FPE-cc), the
-   FPE-cc option **overwrites the** Default FPE option for that
-   column. 
+   - If you select Default FPE and any other FPE mode, (like FPE-cc), the FPE-cc option **overwrites the**  default FPE option for that column. 
 
 6. Select a **Key ID** from the drop-down menu or accept the default.
 

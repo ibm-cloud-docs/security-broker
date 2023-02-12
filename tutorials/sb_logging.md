@@ -19,14 +19,13 @@ The logging agent collects and forwards logs to your IBM Log Analysis instance. 
 in {{site.data.keyword.security_broker_short}} Manager. For more information on provisioning a
 log instance, see [Logging with IBM Cloud Services](https://cloud.ibm.com/docs/log-analysis?topic=log-analysis-getting-started).
 
-**Pre-requisites**
+## Pre-requisites
+{: #sb_logging_prereq}
 
--   You need an IBM Cloud account.
+- You need a **logdna** instance, which is configured to receive platform logs.
 
--   You need a **logdna** instance, which is configured to receive
-    platform logs.
-
-**Procedure**:
+## Procedure
+{: #sb_logging_procedure}
 
 To configure a logging instance from the **Observability** dashboard in the IBM Cloud, complete the following steps:
 
