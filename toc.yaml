@@ -1,3 +1,104 @@
+toc:
+  properties:
+    subcollection: security-broker
+    service-name: security-broker
+    category: security
+    audience: software
+    href: /docs/security-broker
+    console-page: /catalog/services/security-broker
+    product-page: https://cloud.ibm.com/security-broker
+    path: security-broker
+    label: IBM Cloud Data Security Broker
+    version: 1
+    release-level: beta
+
+  entries: 
+  - navgroup: 
+      id: learn
+      topics:
+      - sb_getting_started.md
+      - sb_about.md
+      - sb_release_notes.md
+
+  - navgroup: 
+      id: howto
+      topics:
+      - topicgroup:
+          label: Installation and Setup
+          topics:
+          - install/sb_install_catalog.md
+          - tutorials/sb_configure.md
+          - tutorials/sb_login.md
+            - topicgroup:
+              label: Setting up Data Security Broker Manager
+              topics:
+              - tutorials/sb_add_db.md
+              - tutorials/sb_add_keystore.md
+              - tutorials/sb_enroll_app.md
+          - install/sb_install_ui_procedure.md   
+      - topicgroup:
+          label: Data Protection Services
+          topics:
+          - tutorials/sb_encrypt_postgress.md
+          - tutorials/sb_encrypt_data.md
+          - tutorials/sb_masking.md                  
+          - topicgroup:
+              label: Steps to perform Data Masking
+              topics:
+              - tutorials/sb_configure_rbac.md
+              - tutorials/sb_rbac_policy.md
+              - tutorials/sb_user_group.md
+              - tutorials/sb_apply_rbac_policy.md
+              - tutorials/sb_apply_mask.md                  
+      - topicgroup:
+          label: Configurations in Data Security Broker Manager
+          topics:
+          - tutorials/sb_assign_policy.md
+          - tutorials/sb_adding_users.md
+          - tutorials/sb_settings.md
+          - tutorials/sb_db_privileges.md
+          - tutorials/sb_local_keystore.md
+      - topicgroup:
+          label: Key Protect Services
+          topics:
+          - tutorials/sb_configure_keyprotect.md
+          - topicgroup:
+              label: IBM Key Protect and HPCS
+              topics: 
+              - tutorials/sb_ibm_keyprotect.md
+              - tutorials/sb_hpcs.md
+          - topicgroup:
+              label: Key rotation using IBM Key Protect and HPCS
+              topics: 
+              - tutorials/sb_ibm_keyrotate.md
+              - tutorials/sb_hpcs_rotate.md
+      - topicgroup:
+          label: Upgrade and Uninstall
+          topics:
+          - tutorials/sb_update.md
+          - tutorials/sb_uninstall.md
+
+  - navgroup:
+      id: reference
+      links:
+      - link: 
+          label: Blogs
+          href: https://www.ibm.com/cloud/blog
+
+  - navgroup:
+      id: help
+      topics:
+      - tutorials/sb_logging.md
+      - sb_faqs.md
+      - topicgroup:
+              label: Troubleshooting
+              topics:
+              - troubleshooting/sb_support_initialization.md
+              - troubleshooting/sb_support_database.md
+              - troubleshooting/sb_shield.md
+              - troubleshooting/sb_keystore.md
+              - troubleshooting/sb_workflow.md              
+      - tutorials/sb_limitations.md
 
       
       
