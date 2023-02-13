@@ -1,45 +1,16 @@
 ---
 copyright:
-  years: 2022, 2022
-lastupdated: "2022-09-01"
+  years: 2022, 2023
+lastupdated: "2023-02-13"
 
 keywords: FAQ, set up, data protection
 
 subcollection: security-broker
 ---
 
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:download: .download}
-{:external: target="_blank" .external}
-{:faq: data-hd-content-type='faq'}
-{:gif: data-image-type='gif'}
-{:important: .important}
-{:note: .note}
-{:pre: .pre}
-{:tip: .tip}
-{:preview: .preview}
-{:deprecated: .deprecated}
-{:beta: .beta}
-{:term: .term}
-{:shortdesc: .shortdesc}
-{:script: data-hd-video='script'}
-{:support: data-reuse='support'}
-{:table: .aria-labeledby="caption"}
-{:troubleshoot: data-hd-content-type='troubleshoot'}
-{:help: data-hd-content-type='help'}
-{:tsCauses: .tsCauses}
-{:tsResolve: .tsResolve}
-{:tsSymptoms: .tsSymptoms}
-{:java: .ph data-hd-programlang='java'}
-{:javascript: .ph data-hd-programlang='javascript'}
-{:swift: .ph data-hd-programlang='swift'}
-{:curl: .ph data-hd-programlang='curl'}
-{:video: .video}
-{:step: data-tutorial-type='step'}
-{:tutorial: data-hd-content-type='tutorial'}
-{:release-note: data-hd-content-type='release-note'}
+{{site.data.keyword.attribute-definition-list}}
 
+{{site.data.keyword.attribute-definition-list}}
 
 # FAQs for {{site.data.keyword.security_broker_short}}
 {: #sb_faqs}
@@ -79,15 +50,15 @@ of concurrent users.
 Make sure you meet the following requirements before configuring Data
 Security Broker Manager and {{site.data.keyword.security_broker_short}} Shield:
 
-* Admin privileges for your platform
+- Admin privileges for your platform
 
-* The user account used to log in to the {{site.data.keyword.security_broker_short}} Shield host machine must have a home directory on that system
+- The user account used to log in to the {{site.data.keyword.security_broker_short}} Shield host machine must have a home directory on that system
 
-* SSH client
+- SSH client
 
-* Private key pair
+- Private key pair
 
-* Database privileges for encryption and migration
+- Database privileges for encryption and migration
 
 **Do {{site.data.keyword.security_broker_short}} Manager and Shield run on different instances?**
 

@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2022, 2022
-lastupdated: "2023-02-08"
+  years: 2022, 2023
+lastupdated: "2023-02-12"
 
 keywords: users, admin, priveleges, profiles, {{site.data.keyword.security_broker_short}} Manager, SMTP
 
@@ -11,9 +11,7 @@ subcollection: security-broker
 # What if the HTTPS certificate is not added?
 {: #sb_support_initialization}
 
-If you get error messages or warnings during the initialization or the
-set up of {{site.data.keyword.security_broker_short}}, check for the following troubleshooting
-tips:
+If you get error messages or warnings during the initialization or the set up of {{site.data.keyword.security_broker_short}}, check for the following troubleshooting tips:
 
 Message: Untrusted certificate browser warning
 

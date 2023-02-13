@@ -1,28 +1,28 @@
 ---
 copyright:
-  years: 2022, 2022
-lastupdated: "2023-02-08"
+  years: 2022, 2023
+lastupdated: "2023-02-13"
 
 keywords: database, admin, priveleges, users, features, operations
 
 subcollection: security-broker
 ---
 
+{{site.data.keyword.attribute-definition-list}}
+
 # Database Privileges
 {: #sb_db_priveleges}
 
-In this section, you can find the details about minimum required database
-privileges for encryption using {{site.data.keyword.security_broker_short}}.
+In this section, you can find the details about minimum required database privileges for encryption using {{site.data.keyword.security_broker_short}}.
 {: shortdesc}
 
 ## Database privileges for encryption and migration
 {: #sb-db-priveleges-encrypt-decrypt}
 
 To carry out encryption and migration, {{site.data.keyword.security_broker_short}} Shield requires
-certain user permissions on the database. It is recommended that you
-create a new user on your database for {{site.data.keyword.security_broker_short}} Shield to use.
+certain user permissions on the database. It is recommended that you create a new user on your database for {{site.data.keyword.security_broker_short}} Shield to use.
 
-## Database privileges required for PostgreSQL 12:
+## Database privileges required for PostgreSQL 12
 {: #sb-db-priveleges-postgresql}
 
 |**Operation**|**Details**|**Queries used by Shield**|**Minimum required grants**|**Additional information**|

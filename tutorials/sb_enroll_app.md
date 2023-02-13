@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2022, 2022
-lastupdated: "2023-02-08"
+  years: 2022, 2023
+lastupdated: "2023-02-12"
 
 keywords: database, admin, priveleges, users, features, operations, application
 
@@ -14,34 +14,31 @@ subcollection: security-broker
 An application is the framework that links {{site.data.keyword.security_broker_short}} Manager,
 databases, and {{site.data.keyword.security_broker_short}} Shield and instructs the {{site.data.keyword.security_broker_short}} Shield to encrypt and decrypt data.
 
-**Note**: A {{site.data.keyword.security_broker_short}} Shield is limited to be enrolled with one
-application.
+A {{site.data.keyword.security_broker_short}} Shield is limited to be enrolled with one application.
+{: note}
 
-To enroll an application in Security Broker Manager, complete the
-following steps:
+To enroll an application in Security Broker Manager, complete the following steps:
 
-1.  Login to {{site.data.keyword.security_broker_short}} Manager.
-2.  Click the **Applications** icon in the left navigation panel.
+1. Login to {{site.data.keyword.security_broker_short}} Manager.
+2. Click the **Applications** icon in the left navigation panel.
 
-![Applications](../images/add_app.svg){: caption="Figure 1. Applications" caption-side="bottom"}
+3. Click **Enroll Application +** in the upper right corner of the window. The **Enroll Application** dialog appears.
 
-3.  Click **Enroll Application +** in the upper right corner of the window. The
-    Enroll Application dialog appears.
-
-4.  Enter an **Application Name** and **Application Description** in the
+4. Enter an **Application Name** and **Application Description** in the
     respective fields.
 
-5.  Perform the following tasks:
-    - Choose the {{site.data.keyword.security_broker_short}} Shield from the drop-down list.
-    - Select a **Data Store** for encryption.
-    - Select the **Keystore** to be used as a source for data encryption keys.  
-    - Specify an **Encryption Method** as Column Level or Row Level. 
+5. Perform the following tasks:
+   - Choose the {{site.data.keyword.security_broker_short}} Shield from the drop-down list.
+   - Select a **Data Store** for encryption.
+   - Select the **Keystore** to be used as a source for data encryption keys.  
+   - Specify an **Encryption Method** as Column Level or Row Level. 
 
-    ![Enroll Application](../images/enroll_app.svg){: caption="Figure 2. Enroll Application" caption-side="bottom"}
+   ![Enroll Application](../images/enroll_app.svg){: caption="Enroll Application" caption-side="bottom"}
 
-6.  Click **Enroll Application**. After the application is enrolled, it is displayed under the Applications in the {{site.data.keyword.security_broker_short}} Manager.
+6. Click **Enroll Application**. After the application is enrolled, it is displayed under the Applications in the {{site.data.keyword.security_broker_short}} Manager.
 
-**Note**: The Shield Sync ID is used when you install {{site.data.keyword.security_broker_short}} Shield. Ensure that you have the Shield Sync ID handy during the {{site.data.keyword.security_broker_short}} Shield installation.
+   The Shield Sync ID is used when you install {{site.data.keyword.security_broker_short}} Shield. Ensure that you have the Shield Sync ID handy during the {{site.data.keyword.security_broker_short}} Shield installation.
+   {: note}
 
-7.  Once you have completed enrolling an application, you can proceed with the data encyrption. Refer to the [Data Encryption using IBM Cloud PostgreSQL Database](/docs/security-broker?topic=security-broker-sb_encrypt_data) section to start protecting your data.
+7. Once you have completed enrolling an application, you can proceed with the data encyrption. Refer to the [Data Encryption using IBM Cloud PostgreSQL Database](/docs/security-broker?topic=security-broker-sb_encrypt_data) section to start protecting your data.
 
