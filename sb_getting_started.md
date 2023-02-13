@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-12"
+lastupdated: "2023-02-13"
 
 keywords: support, getting started, data protection, data threats
 
@@ -12,6 +12,8 @@ subcollection: security-broker
 
 # Getting started with IBM Cloud Data Security Broker
 {: #getting_started}
+
+
 
 Protect your data in the cloud with the {{site.data.keyword.security_broker_full_notm}}, which is a complete data protection solution that secures sensitive data in enterprise databases by integrating
 with key management and databases to provide application-level encryption.
