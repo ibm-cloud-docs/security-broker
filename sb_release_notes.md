@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-11"
+lastupdated: "2023-02-13"
 
 keywords: support, troubleshooting, data protection, data threats
 
@@ -9,6 +9,8 @@ subcollection: security-broker
 
 content-type: release-note
 ---
+
+{{site.data.keyword.attribute-definition-list}}
 
 # Release notes
 {: #sb_release_notes}

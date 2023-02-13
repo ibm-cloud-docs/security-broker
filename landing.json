@@ -2,8 +2,6 @@
     "title": "IBM Cloud Data Security Broker docs",
     "lastupdated": "2023-02-23",
     "introduction": "Explore the data protection services that Data Security Broker offers and the ways to install, configure, and login to Data Security Broker Manager and perform data encryption. ",
-    "section_devtools": {
-    },
     "section_recommended": [
       {
         "title": "Install Data Security Broker",
