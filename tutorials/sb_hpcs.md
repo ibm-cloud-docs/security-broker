@@ -1,12 +1,14 @@
 ---
 copyright:
-  years: 2022, 2022
-lastupdated: "2023-02-08"
+  years: 2022, 2023
+lastupdated: "2023-02-13"
 
 keywords: database, admin, priveleges, users, configure, operations, keyprotect
 
 subcollection: security-broker
 ---
+
+{{site.data.keyword.attribute-definition-list}}
 
 # Configure IBM Cloud Hyper Protect Crypto Services (HPCS)
 {: #sb_hpcs}

@@ -1,14 +1,16 @@
 ---
 copyright:
-  years: 2022, 2022
-lastupdated: "2023-02-08"
+  years: 2022, 2023
+lastupdated: "2023-02-13"
 
 keywords: database, admin, priveleges, users, configure, operations, keyprotect
 
 subcollection: security-broker
 ---
 
-# Rotate Keys for IBM Cloud Hyper Protect Crypto Services (HPCS) in {{site.data.keyword.security_broker_short}} Manager:
+{{site.data.keyword.attribute-definition-list}}
+
+# Rotate Keys for IBM Cloud Hyper Protect Crypto Services (HPCS) in {{site.data.keyword.security_broker_short}} Manager
 {: #sb_hpcs_keyrotate}
 
 In this section, you can find details on how to rotate the Master and Data Encryption Keys for HPCS Keystore in {{site.data.keyword.security_broker_short}} Manager.

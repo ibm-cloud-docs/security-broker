@@ -1,12 +1,14 @@
 ---
 copyright:
-  years: 2022, 2022
-lastupdated: "2022-09-01"
+  years: 2022, 2023
+lastupdated: "2023-02-13"
 
 keywords: upgrade, delete, helm, configuration, tls certificate, docker config secret, environment variable, regions, cluster, container, app security, memory encryption, data in use
 
 subcollection: security-broker
 ---
+
+{{site.data.keyword.attribute-definition-list}}
 
 # Upgrading using IBM Cloud Catalog
 {: #sb_update}

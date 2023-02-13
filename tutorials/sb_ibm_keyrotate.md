@@ -1,12 +1,14 @@
 ---
 copyright:
-  years: 2022, 2022
-lastupdated: "2023-02-08"
+  years: 2022, 2023
+lastupdated: "2023-02-13"
 
 keywords: database, admin, priveleges, users, configure, keyrotate, keyprotect, operations
 
 subcollection: security-broker
 ---
+
+{{site.data.keyword.attribute-definition-list}}
 
 # Rotate Keys for IBM Key Protect in {{site.data.keyword.security_broker_short}} Manager
 {: #sb_ibm_keyrotate}
