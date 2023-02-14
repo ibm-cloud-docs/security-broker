@@ -31,11 +31,13 @@ toc:
           - tutorials/sb_login.md
           - topicgroup:
               label: Setting up Data Security Broker Manager
-              - tutorials/sb_setup_dsb.md
               topics:
-              - tutorials/sb_add_db.md
-              - tutorials/sb_add_keystore.md
-              - tutorials/sb_enroll_app.md
+              - tutorials/sb_setup_dsb.md
+              - topicgroup:
+                  topics:
+                  - tutorials/sb_add_db.md
+                  - tutorials/sb_add_keystore.md
+                  - tutorials/sb_enroll_app.md
           - install/sb_ui_procedure.md   
       - topicgroup:
           label: Data Protection Services
@@ -44,13 +46,15 @@ toc:
           - tutorials/sb_encrypt_data.md                          
           - topicgroup:
               label: Steps to perform Data Masking
-              - tutorials/sb_masking.md
               topics:
-              - tutorials/sb_configure_rbac.md
-              - tutorials/sb_rbac_policy.md
-              - tutorials/sb_user_group.md
-              - tutorials/sb_apply_rbac_policy.md
-              - tutorials/sb_apply_mask.md                  
+              - tutorials/sb_masking.md
+              - topicgroup:
+                  topics:
+                  - tutorials/sb_configure_rbac.md
+                  - tutorials/sb_rbac_policy.md
+                  - tutorials/sb_user_group.md
+                  - tutorials/sb_apply_rbac_policy.md
+                  - tutorials/sb_apply_mask.md                  
       - topicgroup:
           label: Configurations in Data Security Broker Manager
           topics:
