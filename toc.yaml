@@ -33,8 +33,6 @@ toc:
               label: Setting up Data Security Broker Manager
               topics:
               - tutorials/sb_setup_dsb.md
-              - topicgroup:
-                  topics:
                   - tutorials/sb_add_db.md
                   - tutorials/sb_add_keystore.md
                   - tutorials/sb_enroll_app.md
@@ -48,8 +46,6 @@ toc:
               label: Steps to perform Data Masking
               topics:
               - tutorials/sb_masking.md
-              - topicgroup:
-                  topics:
                   - tutorials/sb_configure_rbac.md
                   - tutorials/sb_rbac_policy.md
                   - tutorials/sb_user_group.md
