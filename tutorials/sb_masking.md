@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-13"
+lastupdated: "2023-02-14"
 
 keywords: database, admin, priveleges, users, features, operations
 
@@ -27,7 +27,7 @@ or map them to a column.
 
 This section demonstrates how to create a new masking mode that is added to the Data Protection Library. 
 
-To create a masking mode, do the following
+To create a masking mode, complete the following steps:
 
 1. Go to the Data Protection Library and in the header, click the Plus (**+**) sign to begin creating a new mode.
 
@@ -49,24 +49,34 @@ To create a masking mode, do the following
 
 This section demonstrates how to view and edit Masking Modes. However, editing is limited to modifying the name and description of the selected mode. 
 
-To view the details of a masking mode, do the following
+To view the details of a masking mode, complete the following steps:
 
-1. Go to the Data Protection Library and click the carrot icon (**>**) next to **Masking Modes **to view the list of modes.
+1. Go to the Data Protection Library and click the carrot icon (**>**) next to **Masking Modes** to view the list of modes.
 
-2.  Select a mode from the list. The details for the mode appear in the window on the right.
+2. Select a mode from the list. The details for the mode appear in the window on the right.
 
-To edit a masking mode, do the following
+   To edit a masking mode, peform the following steps:
 
-a. Go to the Data Protection Library and click the carrot icon (**>**) next to **Masking Modes** to view the list of modes. The details for the mode appear in the window on the right.
+   a. Go to the Data Protection Library and click the carrot icon (**>**) next to **Masking Modes** to view the list of modes. The details for the mode appear in the window on the right.
 
-b. Click the **Pencil** icon in the upper right corner to edit the mode.
+   b. Click the **Pencil** icon in the upper right corner to edit the mode.
 
-c. Modify the **Mask Mode Name**.
+   c. Modify the **Mask Mode Name**.
 
-d. Modify the **Description** for the mode.
+   d. Modify the **Description** for the mode.
 
-5.  Click **Save**.
+3. Click **Save**.
 
-Data Masking in the {{site.data.keyword.security_broker_short}} Manager requires you to configure RBAC policy.
+To perform Data Masking , follow the steps below:
+
+1. Refer to the [Configure RBAC Policy](/docs/security-broker?topic=security-broker-sb_confifure_rbac) section configure a Role-Based Access Control (RBAC) policy.
+
+2. Refer to the [Create RBAC Policy](/docs/security-broker?topic=security-broker-sb_add_rbac_policy) section to create a RBAC policy.
+
+3. Refer to the [Configure User groups](/docs/security-broker?topic=security-broker-sb_user_group) section to configure or add user groups. 
+
+4. Refer to the [Apply RBAC policy](/docs/security-broker?topic=security-broker-sb_apply_rbac_policy) section to a RBAC policy to user groups. 
+
+5. Perform a simple masking by following the instructions in the [Apply simple masking](/docs/security-broker?topic=security-broker-sb_apply_mask) section to a RBAC policy to user groups. 
 
 

@@ -31,6 +31,7 @@ toc:
           - tutorials/sb_login.md
           - topicgroup:
               label: Setting up Data Security Broker Manager
+              - tutorials/sb_setup_dsb.md
               topics:
               - tutorials/sb_add_db.md
               - tutorials/sb_add_keystore.md
@@ -40,10 +41,10 @@ toc:
           label: Data Protection Services
           topics:
           - tutorials/sb_encrypt_postgress.md
-          - tutorials/sb_encrypt_data.md
-          - tutorials/sb_masking.md                  
+          - tutorials/sb_encrypt_data.md                          
           - topicgroup:
               label: Steps to perform Data Masking
+              - tutorials/sb_masking.md
               topics:
               - tutorials/sb_configure_rbac.md
               - tutorials/sb_rbac_policy.md
