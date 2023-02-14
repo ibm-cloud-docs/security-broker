@@ -115,4 +115,3 @@ select * from public.table1 *+ User:user_name *
 
 You can edit your RBAC Configuration at any time, including the Mode and User settings.
 {: note}
-
