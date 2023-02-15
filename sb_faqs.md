@@ -1,14 +1,12 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-13"
+lastupdated: "2023-02-15"
 
 keywords: FAQ, set up, data protection
 
 subcollection: security-broker
 ---
-
-{{site.data.keyword.attribute-definition-list}}
 
 {{site.data.keyword.attribute-definition-list}}
 
