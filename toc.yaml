@@ -43,7 +43,7 @@ toc:
           - tutorials/sb_encrypt_postgress.md
           - tutorials/sb_encrypt_data.md                          
           - topicgroup:
-              label: Steps to perform Data Masking
+              label: Data Masking
               topics:
               - tutorials/sb_masking.md
               - tutorials/sb_configure_rbac.md
