@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-14"
+lastupdated: "2023-02-15"
 
 keywords: database, admin, priveleges, users, features, operations
 
@@ -43,60 +43,44 @@ To specify RBAC configuration for an application, complete the following steps:
 
 4. In the window on the right, select a Mode from the drop-down list:
 
-   - **Disable** switches off RBAC for the whole application.
-    Definitions of policies and groups do not change but the shield
-    does not use these policies. You can select this mode to start and
+   - **Disable** switches off RBAC for the whole application. Definitions of policies and groups do not change but the shield does not use these policies. You can select this mode to start and
     define users and policies.
 
-   - **Supported** switches on RBAC but does not require it for all
-    connections to the Shield.
+   - **Supported** switches on RBAC but does not require it for all connections to the Shield.
 
-   - **Required** switches on RBAC and requires it for all sessions or
-    transactions on the Shield. If the session or transaction is not
-    found in a defined RBAC Policy, then that session is dropped by the
+   - **Required** switches on RBAC and requires it for all sessions or transactions on the Shield. If the session or transaction is not found in a defined RBAC Policy, then that session is dropped by the
     Shield. 
 
 5. Select an option for User Determination from the drop-down list:
 
-   - **SESSION** signifies that the users connecting to the Shield are
-    determined by the session user ID, as defined in the specified User
-    Groups.
+   - **SESSION** signifies that the users connecting to the Shield are determined by the session user ID, as defined in the specified User Groups.
 
-   - **SQL_COMMENT_RAW** signifies that users connecting to the Shield
-    are determined by user IDs specified in SQL comments. An SQL Comment
-    Prefix field appears. This field defines the prefix string for SQL
-    Comments containing the User ID. Here is an example SQL query with
-    the appropriate comment:
+   - **SQL_COMMENT_RAW** signifies that users connecting to the Shield are determined by user IDs specified in SQL comments. An SQL Comment Prefix field appears. This field defines the prefix string for SQL
+    Comments containing the User ID. Here is an example SQL query with the appropriate comment:
     
-```sh
-select * from public.table1 *+ User:user_name *
-```
-{: pre}    
+   ```sh
+   select * from public.table1 *+ User:user_name *
+   ```
+   {: pre}    
+   You can specify an arbitrary string as the SQL Comment Prefix, but the user ID must be defined in User Groups.
+   {: note}
 
-    You can specify an arbitrary string as the SQL Comment Prefix, but the user ID must be defined in User Groups.
-    {: note}
-
-   - **SQL_COMMENT_JWT** signifies users connecting to the Shield are
-    determined by a JWT specified in SQL comments. An SQL Comment Prefix
-    field appears. This field defines the refix string for SQL Comments
-    containing the JWT.
+   - **SQL_COMMENT_JWT** signifies users connecting to the Shield are determined by a JWT specified in SQL comments. An SQL Comment Prefix field appears. This field defines the refix string for SQL comments containing the JWT.
 
    The JWT serves as an authenticator for the User Group. Individual User IDs are ignored in this RBAC mode; instead, the Role argument in the JWT must match a User Group Name, in order to determine group
    membership. The following options are available:
 
-   a. **SQL Comment Prefix** -- for the prefix string for SQL Comments
-    containing the JWT
+   a. **SQL Comment Prefix** -- for the prefix string for SQL Comments containing the JWT.
 
-   b. **JWT TID** (optional) for consuming the tenant identifier 
+   b. **JWT TID** (optional) for consuming the tenant identifier.
 
-   c. **JWT AUD** (optional) for consuming the audience identifier 
+   c. **JWT AUD** (optional) for consuming the audience identifier.
 
    d. **Key Value Pairs** (optional) to consume key-value pairs in a line-by-line format. Each key must be specified on a single line, in key:value format.
 
-   e. **JWT secret key** is required field for an HS256 key
+   e. **JWT secret key** is required field for an HS256 key.
 
-   f. **JWKS Provider URL** is required field for a URL, for an RS256 key
-
+   f. **JWKS Provider URL** is required field for a URL, for an RS256 key.
    At least one of the previous two fields is required. If you submit either a JWT secret key or JWKS Provider URL, you can proceed without submitting the other field. The {{site.data.keyword.security_broker_short}} Shield determines which algorithm to use.
    {: note}
 
