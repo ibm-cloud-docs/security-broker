@@ -61,7 +61,8 @@ To specify RBAC configuration for an application, complete the following steps:
    ```sh
    select * from public.table1 *+ User:user_name *
    ```
-   {: pre}    
+   {: pre}   
+    
    You can specify an arbitrary string as the SQL Comment Prefix, but the user ID must be defined in User Groups.
    {: note}
 
