@@ -18,25 +18,11 @@
         "description": "This section details the steps to log into the Data Security Broker Manager console.",
         "href": "/docs/security-broker?topic=security-broker-sb_login"
       },
+      
       {
-        "title": "Setup the Data Security Broker Manager console",
-        "description": "You can find the details on adding a keystore, connecting to a database, and enrolling an application in Data Security Broker Manager console.",
+        "title": "Data Protection Services",
+        "description": "You can find the details on the types of data protection services offered by Data Security Broker.",
         "href": "/docs/security-broker?topic=security-broker-sb_encrypt_postgress"
-      },
-      {
-        "title": "Data Encryption",
-        "description": "You can find the detailed steps on how to perform data encryption.",
-        "href": "/docs/security-broker?topic=security-broker-sb_encrypt_data"
-      },
-      {
-        "title": "Data Masking",
-        "description": "You can find the detailed steps on how to perform data masking.",
-        "href": "/docs/security-broker?topic=security-broker-sb_masking"
-      },
-      {
-        "title": "Data Encryption",
-        "description": "You can find the detailed steps on how to perform data encryption.",
-        "href": "/docs/security-broker?topic=security-broker-sb_encrypt_data"
       },
       {
         "title": "Configure IBM Key Protect and IBM Cloud Hyper Protect Crypto Services (HPCS)",

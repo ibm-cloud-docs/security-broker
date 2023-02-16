@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-13"
+lastupdated: "2023-02-14"
 
 keywords: install, ROKS, IKS, manifests, HELM
 
@@ -27,7 +27,7 @@ You can install {{site.data.keyword.security_broker_short}} Manager and {{site.d
 
 -   User must be able to access the {{site.data.keyword.cloud_notm}} Kubernetes cluster (IKS) or {{site.data.keyword.redhat_openshift_full}} Kubernetes (ROKS) cluster.
 
-## Procedure:
+## Procedure
 {: #sb_install_ui_procedure}
 
 1. Log into the IBM Cloud Account (https://cloud.ibm.com) with a valid username and password.
@@ -43,16 +43,16 @@ You can install {{site.data.keyword.security_broker_short}} Manager and {{site.d
 
 5. You must install the **{{site.data.keyword.security_broker_short}} Manager** first and then get the Shield Sync ID from the application in the **{{site.data.keyword.security_broker_short}} Manager** to install the **{{site.data.keyword.security_broker_short}} Shield**.
 
-## Install **{{site.data.keyword.security_broker_short}} Manager**:
+## Install **{{site.data.keyword.security_broker_short}} Manager**
 {: #sb_install_dsbm}
 
-Complete the following steps to install the **{{site.data.keyword.security_broker_short}} Manager** from the {{site.data.keyword.cloud_notm}} Catalog:
+Complete the following steps to install the **{{site.data.keyword.security_broker_short}} Manager** from the {{site.data.keyword.cloud_notm}} catalog:
 
 1. Click **{{site.data.keyword.security_broker_short}} Manager** catalog item.
 
 2. The {{site.data.keyword.security_broker_short}} Manager catalog item opens in a seperate window. In the **Select your deployment target** drop down, select **{{site.data.keyword.containerlong}} (IKS)** or **Red Hat Openshift (ROKS)** to install the {{site.data.keyword.security_broker_short}} Manager in the IKS or ROKS cluster.
 
-   ![{{site.data.keyword.security_broker_short}} Manager Catalog Page](../images/dep_target.svg){: caption="{{site.data.keyword.security_broker_short}} Manager Catalog Page" caption-side="bottom"}
+   ![{{site.data.keyword.security_broker_short}} Manager](../images/dep_target.svg){: caption="{{site.data.keyword.security_broker_short}} Manager" caption-side="bottom"}
 
 3. The delivery method is selected as **HELM chart** by default under the **Select a delivery method** drop down.
 
@@ -66,7 +66,7 @@ Complete the following steps to install the **{{site.data.keyword.security_broke
 
 7. Configure your workspace by specifying the following details:
 
-a. Specify the **Name** for the workspace. The workspace name must be unique and using the name of the workspace, you can manage, update or uninstall {{site.data.keyword.security_broker_short}} Manager from the IBM Schematicss Workspace (https://cloud.ibm.com/schematics/workspaces).
+a. Specify the **Name** for the workspace. The workspace name must be unique and using the name of the workspace, you can manage, update or uninstall {{site.data.keyword.security_broker_short}} Manager from the [IBM Schematicss Workspace](https://cloud.ibm.com/schematics/workspaces).
 
    ![Configure Workspace](../images/workspace.svg){: caption="Configure Workspace" caption-side="bottom"}
 
@@ -86,7 +86,7 @@ b. Select the **Resource group**, **Location**, and specify the **Tags** require
 
 After installing {{site.data.keyword.security_broker_short}} Manager, follow the steps listed below to configure and setup the {{site.data.keyword.security_broker_short}} Manager:
 
-## Step1: Configure {{site.data.keyword.security_broker_short}} Manager
+## Step 1: Configure {{site.data.keyword.security_broker_short}} Manager
 {: #install-catalog-configure}
 
 You must configure the {{site.data.keyword.security_broker_short}} Manager console before installing the {{site.data.keyword.security_broker_short}} Shield. See [Configure {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_configure) to complete the configuration of the {{site.data.keyword.security_broker_short}} Manager and access the {{site.data.keyword.security_broker_short}} Manager console.
@@ -94,7 +94,7 @@ You must configure the {{site.data.keyword.security_broker_short}} Manager conso
 ## Step 2: Login to {{site.data.keyword.security_broker_short}} Manager
 {: #install-catalog-login}
 
-Login to the {{site.data.keyword.security_broker_short}} Manager using the steps mentioned in the [Logging into {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_login) section. 
+Login to {{site.data.keyword.security_broker_short}} Manager using the steps mentioned in the [Login to {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_login) section. 
 
 ## Step 3: Add a Database in {{site.data.keyword.security_broker_short}} Manager
 {: #install-catalog-add_db}
@@ -111,7 +111,7 @@ Refer to the [Add a Keystore in {{site.data.keyword.security_broker_short}} Mana
 
 Refer to the [Enrolling an Application in {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_enroll_app) section to enroll an application in the {{site.data.keyword.security_broker_short}} Manager.
 
-Once you have the completed setting up the {{site.data.keyword.security_broker_short}} Manager, the next step is to install the {{site.data.keyword.security_broker_short}} Shield. Copy the **Shield Sync ID** from the {{site.data.keyword.security_broker_short}} Manager application that you have added in [Step 5](/docs/security-broker?topic=security-broker-sb_enroll_app) to use during the {{site.data.keyword.security_broker_short}} Shield installation. Refer to [Installing {{site.data.keyword.security_broker_short}} Shield](/docs/security-broker?topic=security-broker-sb_install_ui_procedure) section to continue with the 
+Once you have the completed setting up the {{site.data.keyword.security_broker_short}} Manager, the next step is to install the {{site.data.keyword.security_broker_short}} Shield. Copy the **Shield Sync ID** from the {{site.data.keyword.security_broker_short}} Manager application that you have added in [Step 5](/docs/security-broker?topic=security-broker-sb_enroll_app) to use during the {{site.data.keyword.security_broker_short}} Shield installation. Refer to [Installing {{site.data.keyword.security_broker_short}} Shield](/docs/security-broker?topic=security-broker-sb_ui_procedure) section to continue with the 
 {{site.data.keyword.security_broker_short}} Shield installation. 
 {: important}
 
