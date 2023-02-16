@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-14"
+lastupdated: "2023-02-16"
 
 keywords: install, ROKS, IKS, manifests, HELM
 
@@ -11,7 +11,7 @@ subcollection: security-broker
 {{site.data.keyword.attribute-definition-list}}
 
 # Install {{site.data.keyword.security_broker_short}} Shield
-{: #sb_install_ui_procedure}
+{: #sb_ui_procedure}
 
 Complete the following steps to install the {{site.data.keyword.security_broker_short}} Shield from the {{site.data.keyword.cloud}} Catalog:
 

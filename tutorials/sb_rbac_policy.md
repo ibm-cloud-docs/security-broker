@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-15"
+lastupdated: "2023-02-16"
 
 keywords: database, admin, priveleges, users, features, operations
 
@@ -61,5 +61,7 @@ To create an RBAC policy, complete the following steps:
 8. **Optional:** After saving the policy, create another User Group or create another RBAC Policy.
 
 9. Continue with applying an RBAC policy to the database columns. 
+
+
 
 
