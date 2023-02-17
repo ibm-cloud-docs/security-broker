@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-14"
+lastupdated: "2023-02-17"
 
 keywords: database, admin, priveleges, users, features, operations
 
@@ -10,7 +10,7 @@ subcollection: security-broker
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Setting up the Data Security Broker Manager Console
+# Adding a Keystore, connecting to a Database and enrolling an Application
 {: #sb_setup_dsb}
 
 After you have completed configuring the {{site.data.keyword.security_broker_short}} Manager, the next steps is to connect to a database, add a keystore and enroll an application to perform the data encryption.
