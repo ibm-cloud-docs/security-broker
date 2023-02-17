@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-16"
+lastupdated: "2023-02-17"
 
 keywords: database, admin, priveleges, users, features, operations
 
@@ -38,7 +38,7 @@ To create an RBAC policy, complete the following steps:
    **User Groups** and **Permission**. The individual Rule maps a Permission to one or more User Groups. 
    A policy can have an unlimited number of rules, or no rules. An RBAC Policy with no rules, containing only the Default Permission, can be used to apply simple data masking for all Users which connect to
    the Shield.
-   {:note}
+   {: note}
 
    a. Enter a **Rule Name** of 30 characters or less.
 
