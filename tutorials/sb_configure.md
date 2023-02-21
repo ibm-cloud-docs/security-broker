@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-13"
+lastupdated: "2023-02-21"
 
 keywords: database, admin, priveleges, users, configure, operations
 
@@ -36,24 +36,24 @@ following requirements:
 ## {{site.data.keyword.containerlong}}
 {: #sb_lb_iks}
 
-    - If you have installed the {{site.data.keyword.security_broker_short}} Manager in a Kubernetes cluster, click **Kubernetes Dashboard** to navigate to the Kubernetes Dashboard from the cluster.
+- If you have installed the {{site.data.keyword.security_broker_short}} Manager in a Kubernetes cluster, click **Kubernetes Dashboard** to navigate to the Kubernetes Dashboard from the cluster.
  
-    - Select the namespace from the drop-down, on which you have installed the {{site.data.keyword.security_broker_short}} Manager.
+- Select the namespace from the drop-down, on which you have installed the {{site.data.keyword.security_broker_short}} Manager.
 
-    - Navigate to **Services** to view the list of {{site.data.keyword.security_broker_short}} Manager services running in the namespace.
+- Navigate to **Services** to view the list of {{site.data.keyword.security_broker_short}} Manager services running in the namespace.
 
-    - Fetch the **LoadBalancer IP** from the **External Endpoints** column for the **dsb-nginx** service.
+- Fetch the **LoadBalancer IP** from the **External Endpoints** column for the **dsb-nginx** service.
 
 ## {{site.data.keyword.redhat_openshift_full}}
 {: #sb_lb_roks}
 
-    - If you have installed the {{site.data.keyword.security_broker_short}} Manager in a {{site.data.keyword.redhat_openshift_notm}} cluster, click **Openshift web console** from the cluster.
+- If you have installed the {{site.data.keyword.security_broker_short}} Manager in a {{site.data.keyword.redhat_openshift_notm}} cluster, click **Openshift web console** from the cluster.
 
-    - Click **Projects** in the left navigation menu and select the project from the drop-down, on which you have installed the {{site.data.keyword.security_broker_short}} Manager.
+- Click **Projects** in the left navigation menu and select the project from the drop-down, on which you have installed the {{site.data.keyword.security_broker_short}} Manager.
 
-    - Navigate to **Networking -> Routes** to view the list of {{site.data.keyword.security_broker_short}} Manager services running in the project.
+- Navigate to **Networking -> Routes** to view the list of {{site.data.keyword.security_broker_short}} Manager services running in the project.
 
-    - Fetch the **{{site.data.keyword.security_broker_short}} Manager URL** from the **Locations** column for the **dsb-nginx** service.
+- Fetch the **{{site.data.keyword.security_broker_short}} Manager URL** from the **Locations** column for the **dsb-nginx** service.
 
 ## To configure {{site.data.keyword.security_broker_short}} Manager, perform the following steps
 {: #sb_configure_overview}
@@ -78,9 +78,11 @@ following requirements:
     
 5. Configure the basic System Settings by entering the hostname, domain name, proxy access, and click **Continue**.
 
-    The domain is part of the email, followed after the "@" character, that is specified during the configuration. For example, if the email specified is **test@example.com**, then the domain name must be specified as **example.com**. 
-    The proxy access name is the name that is responsible for the connectivity from Proxy to {{site.data.keyword.security_broker_short}} Manager (the IP, or DNS, or the Service Name). For example, **dsb-nginx**.
-    {: note}
+   - The domain name is part of the email, followed after the "@" character.
+   - For example, if the email specified is **test@example.com**, the domain name must be specified as **example.com**. 
+   - The proxy access name is the name that is responsible for the connectivity from Proxy to {{site.data.- keyword.security_broker_short}} Manager (the IP, or DNS, or the Service Name). 
+   - For example, **dsb-nginx**.
+   {: note}
     
 6. Create an Admin Account for the initial {{site.data.keyword.security_broker_short}} Manager administrator by specifying the email address in the **Configure Super Admin User** page. This account is   used to configure the subsequent components such as the keystore, data store connections, and {{site.data.keyword.security_broker_short}} Shields. Click **Continue**.
 
