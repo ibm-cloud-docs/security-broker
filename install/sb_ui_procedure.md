@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-16"
+lastupdated: "2023-02-21"
 
 keywords: install, ROKS, IKS, manifests, HELM
 
@@ -12,6 +12,9 @@ subcollection: security-broker
 
 # Install {{site.data.keyword.security_broker_short}} Shield
 {: #sb_ui_procedure}
+
+Once you have the completed setting up the {{site.data.keyword.security_broker_short}} Manager, the next step is to install the {{site.data.keyword.security_broker_short}} Shield. Copy the **Shield Sync ID** from the {{site.data.keyword.security_broker_short}} Manager application, to use during the {{site.data.keyword.security_broker_short}} Shield installation.
+{: important}
 
 Complete the following steps to install the {{site.data.keyword.security_broker_short}} Shield from the {{site.data.keyword.cloud}} Catalog:
 
