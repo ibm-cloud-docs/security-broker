@@ -29,7 +29,7 @@ To add and connect to a data store, complete the following steps in the {{site.d
 
 7. Create a new user on your database for use with IBM Cloud Security Broker. For more information, see [Database Privileges](/docs/security-broker?topic=security-broker-sb_db_priveleges) section.
    
-8. For IBM Cloud use a **Postgres** database and enter your database name in the **Postgres Database Name** field.
+8. You cnan use only a **Postgres** database and enter your database name in the **Postgres Database Name** field.
     
 9. **Optional**: Select **Use SSL**, click **Add file**, and upload an SSL Certificate.
 
