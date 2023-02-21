@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-14"
+lastupdated: "2023-02-21"
 
 keywords: install, ROKS, IKS, manifests, HELM
 
@@ -114,6 +114,10 @@ Refer to the [Enrolling an Application in {{site.data.keyword.security_broker_sh
 Once you have the completed setting up the {{site.data.keyword.security_broker_short}} Manager, the next step is to install the {{site.data.keyword.security_broker_short}} Shield. Copy the **Shield Sync ID** from the {{site.data.keyword.security_broker_short}} Manager application that you have added in [Step 5](/docs/security-broker?topic=security-broker-sb_enroll_app) to use during the {{site.data.keyword.security_broker_short}} Shield installation. Refer to [Installing {{site.data.keyword.security_broker_short}} Shield](/docs/security-broker?topic=security-broker-sb_ui_procedure) section to continue with the 
 {{site.data.keyword.security_broker_short}} Shield installation. 
 {: important}
+
+The flow diagram below explains the work flow that the user has to follow to encrypt the data using {{site.data.keyword.security_broker_short}}:
+
+![Encryption flow in {{site.data.keyword.security_broker_short}}](../images/sb_userflow.svg){: caption="Figure 1. Encyrption flow in {{site.data.keyword.security_broker_short}} Manager" caption-side="bottom"}
 
 
 
