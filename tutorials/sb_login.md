@@ -10,15 +10,15 @@ subcollection: security-broker
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Log into {{site.data.keyword.security_broker_short}} Manager
+# Login to {{site.data.keyword.security_broker_short}} Manager
 {: #sb_login}
 
 Once you have configured the {{site.data.keyword.security_broker_short}} Manager, the next step
-is log into the {{site.data.keyword.security_broker_short}} Manager using the OAuth token.
+is login to the {{site.data.keyword.security_broker_short}} Manager using the OAuth token.
 
-Complete the following steps to log into the {{site.data.keyword.security_broker_short}} Manager:
+Complete the following steps to login to the {{site.data.keyword.security_broker_short}} Manager:
 
-1. Generate an IBM OAuth token. To obtain the OAuth token, log into your {{site.data.keyword.cloud}} account from the Command Line Interface using the following steps:
+1. Generate an IBM OAuth token. To obtain the OAuth token, login to your {{site.data.keyword.cloud}} account from the Command Line Interface using the following steps:
 
    a. Open the Command terminal from your system.
    b. Execute the following command to login to your {{site.data.keyword.cloud_notm}} account:
@@ -31,7 +31,7 @@ Complete the following steps to log into the {{site.data.keyword.security_broker
 
    Navigate back to the CLI and paste the one-time passcode and select the account in which you wish to login using your IBM Cloud credentials. 
 
-   ![Log into IBM Cloud CLI](../images/ibm_cli.svg){: caption="Log into IBM Cloud CLI" caption-side="bottom"}
+   ![Login to IBM Cloud CLI](../images/ibm_cli.svg){: caption="Login to IBM Cloud CLI" caption-side="bottom"}
 
    Ensure that the IBM Cloud account, which is used during the configuration of the {{site.data.keyword.security_broker_short}} Manager as the Super Admin user, and the IBM Cloud account that you are using to login using the CLI to generate the OAuth token must be the same. Otherwise, you might get an error which says that the OAuth token is invalid.
    {: note}
@@ -46,8 +46,8 @@ Complete the following steps to log into the {{site.data.keyword.security_broker
 
 3. Open the {{site.data.keyword.security_broker_short}} Manager console which has already been configured in a browser window. For example, https://150.238.243.117.
 
-4. Copy the OAuth token without any space or additional characters and paste it in the **Enter token** text box as shown below in the Login page and click **Sign In** to log into the {{site.data.keyword.security_broker_short}} Manager:
+4. Copy the OAuth token without any space or additional characters and paste it in the **Enter token** text box as shown below in the Login page and click **Sign In** to login to the {{site.data.keyword.security_broker_short}} Manager:
 
-   ![Log into {{site.data.keyword.security_broker_short}} Manager](../images/sb_login.svg){: caption="Log into {{site.data.keyword.security_broker_short}} Manager" caption-side="bottom"}
+   ![Login to {{site.data.keyword.security_broker_short}} Manager](../images/sb_login.svg){: caption="Login to {{site.data.keyword.security_broker_short}} Manager" caption-side="bottom"}
     
 5. Once you have logged into the {{site.data.keyword.security_broker_short}} Manager, the next step is add a database, connect to a keystore, and enroll an application to proceed with the data encryption. Refer to the [Data Protection Services Overview](/docs/security-broker?topic=security-broker-sb_encrypt_progress) section to proceed with the data protection services.
