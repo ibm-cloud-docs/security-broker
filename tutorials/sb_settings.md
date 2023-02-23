@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-13"
+lastupdated: "2023-02-23"
 
 keywords: domain name, host name, https certificate, logger, smtp, settings
 
@@ -34,6 +34,8 @@ set up, you get a warning: **Untrusted certificate browser warning**.
 
 The warning appears when you have not uploaded an HTTPS certificate. HTTPS certificate is a digital certificate that authenticates a website's identity and enables an encrypted connection.
 {: note}
+
+Upload an HTTPS certificate by following the instructions in [Adding HTTPS certificate](/docs/security-broker?topic=security-broker-sb_add_https) section.
 
 ## SMTP
 {: #sb_smtp}
