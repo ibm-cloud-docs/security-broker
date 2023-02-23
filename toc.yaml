@@ -98,7 +98,8 @@ toc:
               - troubleshooting/sb_support_database.md
               - troubleshooting/sb_shield.md
               - troubleshooting/sb_keystore.md
-              - troubleshooting/sb_workflow.md              
+              - troubleshooting/sb_workflow.md
+              - troubleshooting/sb_pvc_pending.md              
       - tutorials/sb_limitations.md
       
             
