@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-15"
+lastupdated: "2023-02-23"
 
 keywords: FAQ, set up, data protection
 
@@ -103,7 +103,7 @@ Refer to the [Logging and Debugging in {{site.data.keyword.security_broker_short
 
 **How do I add multiple {{site.data.keyword.security_broker_short}} Shields?**
 
-For containerized, self-registered Shields, replicas can be configured in the YAML file and pointed to the Manager application by using the same Shield Sync ID. Horizontal scaling can be enabled to deploy multiple Shields. For standalone Shields, additional Shields can be added to a Manager application through the UI.
+Yes, you can install multiple instances of the {{site.data.keyword.security_broker_short}} Shields using the IBM Cloud Catalog. Ensure that you have specified different Shield names during the installation for each Shield.
 
 **How is the load balanced between Shield instances?**
 
