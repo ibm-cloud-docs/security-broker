@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-14"
+lastupdated: "2023-02-21"
 
 keywords: install, ROKS, IKS, manifests, HELM
 
@@ -84,36 +84,9 @@ b. Select the **Resource group**, **Location**, and specify the **Tags** require
 ## Next Steps
 {: #install-catalog-next steps}
 
-After installing {{site.data.keyword.security_broker_short}} Manager, follow the steps listed below to configure and setup the {{site.data.keyword.security_broker_short}} Manager:
+After installing {{site.data.keyword.security_broker_short}} Manager, follow the steps listed below in the flow diagram to configure and setup the {{site.data.keyword.security_broker_short}} Manager:
 
-## Step 1: Configure {{site.data.keyword.security_broker_short}} Manager
-{: #install-catalog-configure}
-
-You must configure the {{site.data.keyword.security_broker_short}} Manager console before installing the {{site.data.keyword.security_broker_short}} Shield. See [Configure {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_configure) to complete the configuration of the {{site.data.keyword.security_broker_short}} Manager and access the {{site.data.keyword.security_broker_short}} Manager console.
-
-## Step 2: Login to {{site.data.keyword.security_broker_short}} Manager
-{: #install-catalog-login}
-
-Login to {{site.data.keyword.security_broker_short}} Manager using the steps mentioned in the [Login to {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_login) section. 
-
-## Step 3: Add a Database in {{site.data.keyword.security_broker_short}} Manager
-{: #install-catalog-add_db}
-
-Refer to the [Add a Database in {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_add_db) section to add a database in the {{site.data.keyword.security_broker_short}} Manager.
-
-## Step 4: Add a Keystore in {{site.data.keyword.security_broker_short}} Manager
-{: #install-catalog-keystore}
-
-Refer to the [Add a Keystore in {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_add_keystore) section to connect to a keystore in the {{site.data.keyword.security_broker_short}} Manager.
-
-## Step 5: Enroll an application in the {{site.data.keyword.security_broker_short}} Manager
-{: #install-catalog-enroll}
-
-Refer to the [Enrolling an Application in {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_enroll_app) section to enroll an application in the {{site.data.keyword.security_broker_short}} Manager.
-
-Once you have the completed setting up the {{site.data.keyword.security_broker_short}} Manager, the next step is to install the {{site.data.keyword.security_broker_short}} Shield. Copy the **Shield Sync ID** from the {{site.data.keyword.security_broker_short}} Manager application that you have added in [Step 5](/docs/security-broker?topic=security-broker-sb_enroll_app) to use during the {{site.data.keyword.security_broker_short}} Shield installation. Refer to [Installing {{site.data.keyword.security_broker_short}} Shield](/docs/security-broker?topic=security-broker-sb_ui_procedure) section to continue with the 
-{{site.data.keyword.security_broker_short}} Shield installation. 
-{: important}
+![Encryption flow in {{site.data.keyword.security_broker_short}}](../images/sb_userflow.svg){: caption="Figure 1. Encyrption flow in {{site.data.keyword.security_broker_short}} Manager" caption-side="bottom"}
 
 
 

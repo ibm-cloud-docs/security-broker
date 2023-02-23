@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-14"
+lastupdated: "2023-02-21"
 
 keywords: install, ROKS, IKS, manifests, HELM
 
@@ -11,7 +11,10 @@ subcollection: security-broker
 {{site.data.keyword.attribute-definition-list}}
 
 # Install {{site.data.keyword.security_broker_short}} Shield
-{: #sb_install_ui_procedure}
+{: #sb_ui_procedure}
+
+Once you have the completed setting up the {{site.data.keyword.security_broker_short}} Manager, the next step is to install the {{site.data.keyword.security_broker_short}} Shield. Copy the **Shield Sync ID** from the {{site.data.keyword.security_broker_short}} Manager application, to use during the {{site.data.keyword.security_broker_short}} Shield installation.
+{: important}
 
 Complete the following steps to install the {{site.data.keyword.security_broker_short}} Shield from the {{site.data.keyword.cloud}} Catalog:
 
@@ -51,8 +54,6 @@ Complete the following steps to install the {{site.data.keyword.security_broker_
    Shield Name is mandatory if you are installing multiple Shields.
    {: note}
 
-   ![Shield Sync ID](../images/shield_name.svg){: caption="Shield Sync ID" caption-side="bottom"}
-
 10. Click **Install** in the **Summary** pane on the right to complete the installation process.
 
 11. You will be navigated to the IBM Schematicss Workspaces to track the installation progress. Once the installation is successful, a message **Workspace creation successfull** is displayed as shown below:
@@ -65,6 +66,4 @@ If you get an error message like **Workspace creation failed**, refer to the Log
 ## Next steps
 {: #sb_install_ui_procedure_nextsteps}
 
-Once you have successfully installed {{site.data.keyword.security_broker_short}} Shield, you can explore the data protection services in the {{site.data.keyword.security_broker_short}} Manager.
-
-Refer to the [Data Protection Services](/docs/security-broker?topic=security-broker-sb_encrypt_postgress) section to perform the data protection services offered by {{site.data.keyword.security_broker_short}} Manager.
+Once you have successfully installed {{site.data.keyword.security_broker_short}} Shield, you can refer to the [Data Protection Services](/docs/security-broker?topic=security-broker-sb_encrypt_postgress) section to encrypt data.

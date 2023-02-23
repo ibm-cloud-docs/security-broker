@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-13"
+lastupdated: "2023-02-21"
 
 keywords: support, getting started, data protection, data threats
 
@@ -122,6 +122,3 @@ You can find more information about {{site.data.keyword.security_broker_short}} 
 
 After the environment is set up and you have the required roles and permissions, you can start installing the {{site.data.keyword.security_broker_short}} by following the instructions in the [Installing {{site.data.keyword.security_broker_short}}](/docs/security-broker?topic=security-broker-sb_install_catalog) section.
 
-The flow diagram below explains the work flow that the user has to follow to encrypt the data using {{site.data.keyword.security_broker_short}}:
-
-![Encryption flow in {{site.data.keyword.security_broker_short}}](images/sb_userflow.svg){: caption="Figure 1. Encyrption flow in {{site.data.keyword.security_broker_short}} Manager" caption-side="bottom"}
