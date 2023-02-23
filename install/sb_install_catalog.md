@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-21"
+lastupdated: "2023-02-23"
 
 keywords: install, ROKS, IKS, manifests, HELM
 
@@ -64,7 +64,9 @@ Complete the following steps to install the **{{site.data.keyword.security_broke
 
 6. Select an existing namespace to deploy the {{site.data.keyword.security_broker_short}} Manager or click **Add namespace** to add a new namespace. Specify the name for the namespace and click **Add** to create a new namespace within the selected cluster.
 
-7. Configure your workspace by specifying the following details:
+7. You must run the preinstallation script by clicking on the **Run Script** button after you select the cluster and the namespace. If you do not run the preinstallation script, you cannot proceed with the installation of the {{site.data.keyword.security_broker_short}} Manager.
+
+8. Configure your workspace by specifying the following details:
 
 a. Specify the **Name** for the workspace. The workspace name must be unique and using the name of the workspace, you can manage, update or uninstall {{site.data.keyword.security_broker_short}} Manager from the [IBM Schematicss Workspace](https://cloud.ibm.com/schematics/workspaces).
 
@@ -72,9 +74,9 @@ a. Specify the **Name** for the workspace. The workspace name must be unique and
 
 b. Select the **Resource group**, **Location**, and specify the **Tags** required for configuring the workspace.
 
-8.  lick **Install** in the **Summary** pane on the right to complete the installation process.
+9.  lick **Install** in the **Summary** pane on the right to complete the installation process.
 
-9. You will be navigated to the {{site.data.keyword.bpshort}} Workspace to track the installation progress. Once the installation is successful, a message **Workspace creation successfull** is displayed as shown below:
+10. You will be navigated to the {{site.data.keyword.bpshort}} Workspace to track the installation progress. Once the installation is successful, a message **Workspace creation successfull** is displayed as shown below:
 
    ![Installation of {{site.data.keyword.security_broker_short}} Manager](../images/install_success.svg){: caption="Installation of {{site.data.keyword.security_broker_short}} Manager" caption-side="bottom"}
    
