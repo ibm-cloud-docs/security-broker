@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-21"
+lastupdated: "2023-02-27"
 
 keywords: database, admin, priveleges, users, configure, operations
 
@@ -80,7 +80,8 @@ following requirements:
 
    - The domain name is part of the email, followed after the "@" character.
    - For example, if the email specified is **test@example.com**, the domain name must be specified as **example.com**. 
-   - The proxy access name is the name that is responsible for the connectivity from Proxy to {{site.data.- keyword.security_broker_short}} Manager (the IP, or DNS, or the Service Name). 
+   - The proxy access name is the name that is responsible for the connectivity from Proxy to 
+   {{site.data.keyword.security_broker_short}} Manager (the IP, or DNS, or the Service Name). 
    - For example, **dsb-nginx**.
    {: note}
     
