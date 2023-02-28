@@ -58,6 +58,7 @@ toc:
           - tutorials/sb_adding_users.md
           - tutorials/sb_settings.md
           - tutorials/sb_db_privileges.md
+          - tutorials/sb_update_db.md
           - tutorials/sb_local_keystore.md
       - topicgroup:
           label: Key Protect Services
