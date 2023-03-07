@@ -85,7 +85,7 @@ toc:
       links:
       - link: 
           label: Blogs
-          href: https://www.ibm.com/cloud/blog
+          href: https://www.ibm.com/cloud/blog/announcements/readily-encrypt-de-identify-and-mask-sensitive-data-with-zero-code-changes
 
   - navgroup:
       id: help
