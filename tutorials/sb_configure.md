@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-27"
+lastupdated: "2023-03-27"
 
 keywords: database, admin, priveleges, users, configure, operations
 
@@ -78,11 +78,8 @@ following requirements:
     
 5. Configure the basic System Settings by entering the hostname, domain name, proxy access, and click **Continue**.
 
-   - The domain name is part of the email, followed after the "@" character.
-   - For example, if the email specified is **test@example.com**, the domain name must be specified as **example.com**. 
-   - The proxy access name is the name that is responsible for the connectivity from Proxy to 
-   {{site.data.keyword.security_broker_short}} Manager (the IP, or DNS, or the Service Name). 
-   - For example, **dsb-nginx**.
+   - The domain name is part of the email, followed after the "@" character. For example, if the email specified is **test@example.com**, the domain name must be specified as **example.com**. 
+   - The proxy access name is the name that is responsible for the connectivity from Proxy to {{site.data.keyword.security_broker_short}} Manager (the IP, or DNS, or the Service Name). For example, **dsb-nginx**.
    {: note}
     
 6. Create an Admin Account for the initial {{site.data.keyword.security_broker_short}} Manager administrator by specifying the email address in the **Configure Super Admin User** page. This account is   used to configure the subsequent components such as the keystore, data store connections, and {{site.data.keyword.security_broker_short}} Shields. Click **Continue**.

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-23"
+lastupdated: "2023-03-27"
 
 keywords: database, admin, priveleges, users, features, operations, application
 
@@ -39,8 +39,8 @@ To add or update an HTTPS certificate, follow the steps below:
    ```
    {: codeblock}   
    
-7. Once the certificate files are copied, select the **Refresh** button in the **HTTPS Certificate**
-section in the **Settings** page of {{site.data.keyword.security_broker_short}} Manager.
+7. Once the certificate files are copied, select the **Refresh** button in the **HTTPS Certificate** section in the **Settings** page of {{site.data.keyword.security_broker_short}} Manager.
+
 
 
 
