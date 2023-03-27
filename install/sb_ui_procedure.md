@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-21"
+lastupdated: "2023-03-27"
 
 keywords: install, ROKS, IKS, manifests, HELM
 
@@ -34,7 +34,9 @@ Complete the following steps to install the {{site.data.keyword.security_broker_
 
 6. Select an existing namespace to deploy the {{site.data.keyword.security_broker_short}} Shield or click **Add namespace** to add a new namespace. Specify the name for the namespace and click **Add** to create a new namespace within the selected cluster.
 
-7. Configure your workspace by specifying the following details:
+7. You must run the preinstallation script by clicking on the **Run Script** button after you select the cluster and the namespace. If you do not run the preinstallation script, you cannot proceed with the installation of the {{site.data.keyword.security_broker_short}} Manager.
+
+8. Configure your workspace by specifying the following details:
 
    a. Specify the **Name** for the workspace. The workspace name must be unique and using the name of the workspace, you can manage, update or uninstall {{site.data.keyword.security_broker_short}} Shield from the IBM Schematicss Workspace (https://cloud.ibm.com/schematics/workspaces).
 
@@ -45,18 +47,18 @@ Complete the following steps to install the {{site.data.keyword.security_broker_
     
    b. Select the **Resource group**, **Location**, and specify the **Tags** required for configuring the workspace. 
 
-8. Copy the Shield Sync ID from the {{site.data.keyword.security_broker_short}} Manager application.
+9. Copy the Shield Sync ID from the {{site.data.keyword.security_broker_short}} Manager application.
 
    ![Shield Sync ID from Application](../images/shield_syncid.svg){: caption="Shield Sync ID from Application" caption-side="bottom"}
 
-9. Provide the Shield Sync ID and Shield name under **Set the Input Variables** section. 
+10. Provide the Shield Sync ID and Shield name under **Set the Input Variables** section. 
 
    Shield Name is mandatory if you are installing multiple Shields.
    {: note}
 
-10. Click **Install** in the **Summary** pane on the right to complete the installation process.
+11. Click **Install** in the **Summary** pane on the right to complete the installation process.
 
-11. You will be navigated to the IBM Schematicss Workspaces to track the installation progress. Once the installation is successful, a message **Workspace creation successfull** is displayed as shown below:
+12. You will be navigated to the IBM Schematicss Workspaces to track the installation progress. Once the installation is successful, a message **Workspace creation successfull** is displayed as shown below:
 
     ![Installation of {{site.data.keyword.security_broker_short}} Shield](../images/install_success.svg){: caption="Installation of {{site.data.keyword.security_broker_short}} Shield" caption-side="bottom"}
 
