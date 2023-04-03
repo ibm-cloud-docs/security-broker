@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-12"
+lastupdated: "2023-02-23"
 
 keywords: database, admin, priveleges, users, features, operations, application
 
@@ -14,7 +14,7 @@ subcollection: security-broker
 An application is the framework that links {{site.data.keyword.security_broker_short}} Manager,
 databases, and {{site.data.keyword.security_broker_short}} Shield and instructs the {{site.data.keyword.security_broker_short}} Shield to encrypt and decrypt data.
 
-A {{site.data.keyword.security_broker_short}} Shield is limited to be enrolled with one application.
+A {{site.data.keyword.security_broker_short}} Shield is limited to be enrolled with one application. But you can associate one application with multiple {{site.data.keyword.security_broker_short}} Shields.
 {: note}
 
 To enroll an application in Security Broker Manager, complete the following steps:

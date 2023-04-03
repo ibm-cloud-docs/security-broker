@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-21"
+lastupdated: "2023-02-27"
 
 keywords: logging, debugging, platform, dashboard, observability
 
@@ -44,6 +44,9 @@ Complete the following steps to login to the {{site.data.keyword.security_broker
 
    ![OAuth token](../images/oauth_token.svg){: caption="OAuth token" caption-side="bottom"}
 
+   The **Admin** users that are added to {{site.data.keyword.security_broker_short}} Manager must use the tokens generated in the same {{site.data.keyword.cloud}} account, where the **Super Admin** user resides. {{site.data.keyword.security_broker_short}} Manager does not support cross account access, considering the security risks involved. 
+   {: important}
+
 3. Open the {{site.data.keyword.security_broker_short}} Manager console which has already been configured in a browser window. For example, https://150.238.243.117.
 
 4. Copy the OAuth token without any space or additional characters and paste it in the **Enter token** text box as shown below in the Login page and click **Sign In** to login to the {{site.data.keyword.security_broker_short}} Manager:
@@ -51,3 +54,4 @@ Complete the following steps to login to the {{site.data.keyword.security_broker
    ![Login to {{site.data.keyword.security_broker_short}} Manager](../images/sb_login.svg){: caption="Login to {{site.data.keyword.security_broker_short}} Manager" caption-side="bottom"}
     
 5. Once you have logged into the {{site.data.keyword.security_broker_short}} Manager, the next step is add a database, connect to a keystore, and enroll an application to proceed with the data encryption. Refer to the [Data Protection Services Overview](/docs/security-broker?topic=security-broker-sb_encrypt_progress) section to proceed with the data protection services.
+

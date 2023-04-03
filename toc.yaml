@@ -58,6 +58,7 @@ toc:
           - tutorials/sb_adding_users.md
           - tutorials/sb_settings.md
           - tutorials/sb_db_privileges.md
+          - tutorials/sb_update_db.md
           - tutorials/sb_local_keystore.md
       - topicgroup:
           label: Key Protect Services
@@ -84,7 +85,7 @@ toc:
       links:
       - link: 
           label: Blogs
-          href: https://www.ibm.com/cloud/blog
+          href: https://www.ibm.com/cloud/blog/announcements/readily-encrypt-de-identify-and-mask-sensitive-data-with-zero-code-changes
 
   - navgroup:
       id: help
@@ -98,7 +99,8 @@ toc:
               - troubleshooting/sb_support_database.md
               - troubleshooting/sb_shield.md
               - troubleshooting/sb_keystore.md
-              - troubleshooting/sb_workflow.md              
+              - troubleshooting/sb_workflow.md
+              - troubleshooting/sb_pvc_pending.md              
       - tutorials/sb_limitations.md
       
             
