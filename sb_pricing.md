@@ -31,3 +31,5 @@ Displayed prices do not include tax.
 | -------------------- | --------------- | -------------------------- |
 | Plan                 | Description     | Details                    |
 | Hourly Pay-as-you-go | Shield per hour | $2 USD/per Shield-per Hour |
+{: caption="Table 1. Pricing Plans for {{site.data.keyword.security_broker_short}}" caption-side="bottom"} 
+
