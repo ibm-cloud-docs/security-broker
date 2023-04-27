@@ -80,6 +80,7 @@ toc:
           topics:
           - tutorials/sb_update.md
           - tutorials/sb_uninstall.md
+      - sb_ha.md    
       - sb_dr.md    
 
   - navgroup:
