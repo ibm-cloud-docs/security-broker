@@ -31,13 +31,13 @@ This section outlines the procedures for backing up and restoring the
 The following services are required for a complete {{site.data.keyword.security_broker_short}}
 deployment:
 
--   Key management
+-   Key management services
 
 -   Database
 
 -   Cloud Object storage
 
-Ensure that the backup schedule for these services aligns with the {{site.data.keyword.security_broker_short}} backups. Additionally, administrators must keep records which are used for linking the {{site.data.keyword.security_broker_short}} backup and the backups of the other
+Ensure that the backup schedule for these services align with the {{site.data.keyword.security_broker_short}} backups. Additionally, administrators must keep records which are used for linking the {{site.data.keyword.security_broker_short}} backup and the backups of the other
 services, as well as all backups for the {{site.data.keyword.security_broker_short}} deployment
 and the above mentioned services, in a secure location.
 
@@ -48,20 +48,18 @@ In {{site.data.keyword.security_broker_short}} Manager, all configuration and me
 needed for a {{site.data.keyword.security_broker_short}} deployment is stored. {{site.data.keyword.security_broker_short}} Manager's most recent configuration is always accessible to {{site.data.keyword.security_broker_short}} Shields. As a result, {{site.data.keyword.security_broker_short}} Manager is
 the only part of {{site.data.keyword.security_broker_short}} that requires backup.
 
-## Backing up Data Security Broker Manager deployed on {{site.data.keyword.cloud_notm}} Kubernetes cluster (Kubernetes) or {{site.data.keyword.redhat_openshift_full}} Kubernetes ({{site.data.keyword.redhat_openshift_notm}}) cluster
+## Backing up Data Security Broker Manager deployed on {{site.data.keyword.cloud_notm}} cluster or ({{site.data.keyword.redhat_openshift_notm}}) cluster
 {: #sb_dr_bkp_dsb_manager}
 
-{{site.data.keyword.security_broker_short}}  Manager instances running in an Kubernetes cluster or
-{{site.data.keyword.redhat_openshift_notm}} cluster require network access to the cluster as well as access to a
-workstation with permission to run Kubernetes or {{site.data.keyword.redhat_openshift_notm}} command line
-tools. Additionally, the workstation must have a directory with write
+{{site.data.keyword.security_broker_short}}  Manager instances running in a Kubernetes cluster or
+{{site.data.keyword.redhat_openshift_notm}} cluster require network access to the cluster as well as access to the workstation with permission to execute Kubernetes or {{site.data.keyword.redhat_openshift_notm}} command line tools. Additionally, the workstation must have a directory with write
 permissions and sufficient storage to store the backup. 125GB of storage space is sufficient for all deployments.
 
-**To take a backup, follow these steps:**
+To take a backup, follow these steps:
 
-1.  Access the cluster where {{site.data.keyword.security_broker_short}} Manager is deployed by logging into a Kubernetes or {{site.data.keyword.redhat_openshift_notm}} workstation.
+1. Access the cluster where {{site.data.keyword.security_broker_short}} Manager is deployed by logging into a Kubernetes or {{site.data.keyword.redhat_openshift_notm}} workstation.
 
-2.  To back up the MongoDB collections and {{site.data.keyword.security_broker_short}} Manager configuration files, create the script provided below and execute it. The location specified after the necessary **-b** option is where the backup file is kept by this script. Check whether the script is being used to back up a {{site.data.keyword.security_broker_short}} Manager deployment on an {{site.data.keyword.redhat_openshift_notm}} cluster or a Kubernetes cluster, and uncomment the relevant command alias for the specified type of cluster where {{site.data.keyword.security_broker_short}} Manager is installed.
+2. To back up the MongoDB collections and {{site.data.keyword.security_broker_short}} Manager configuration files, create the script provided below and execute it. The location that is specified after the **-b** option is where the backup file is kept by the script. Check whether the script is being used to back up a {{site.data.keyword.security_broker_short}} Manager deployment on a {{site.data.keyword.redhat_openshift_notm}} cluster or a Kubernetes cluster, and uncomment the relevant command alias for the specified type of cluster where {{site.data.keyword.security_broker_short}} Manager is installed.
 
 ```
 #!/bin/bash
@@ -157,7 +155,7 @@ BMbackup
 ```
 {: codeblock}
 
-3.  The following files are added to the specified backup location after you have finished executing the script:
+3. The following files are added to the specified backup location after you have finished executing the script:
 
 ```
 Release-DSB.\<release\>MONGO.tar.gz
@@ -165,19 +163,17 @@ Release-DSB.\<release\>BM.tar.gz
 ```
 {: codeblock}
 
-4.  Transfer the backups of the key management, object storage, and
-    database services related to the {{site.data.keyword.security_broker_short}} deployment,
-    as well as the {{site.data.keyword.security_broker_short}} Manager backup files, to a
-    reliable backup storage location.
+4. Transfer the backups of the key management, object storage, and database services related to the {{site.data.keyword.security_broker_short}} deployment, as well as the {{site.data.keyword.security_broker_short}} Manager backup files, to a reliable backup storage location.
 
-**Restore procedure**
+## Restore procedure
+{: #sb_dr_restore_procedure}
 
 The {{site.data.keyword.security_broker_short}} deployment can be recovered in a disaster
 recovery situation to a state that was previously backed up, provided
 that all the dependent services are also recovered in the same manner. This
 applies to any services that has suffered a irrecoverable failure. If
 the dependent services were not affected, all that is required is to
-ensure that network connectivity between the {{site.data.keyword.security_broker_short}}
+ensure that the network connectivity between the {{site.data.keyword.security_broker_short}}
 deployment and the dependent services is restored.
 
 Since {{site.data.keyword.security_broker_short}} Manager contains all the configuration and
@@ -185,17 +181,17 @@ metadata needed for a {{site.data.keyword.security_broker_short}} deployment, th
 process is to restore {{site.data.keyword.security_broker_short}} Manager to a previous state
 so that a new shield can be deployed to enforce the previously configured security policies.
 
-## Restoring Data Security Broker Manager deployed on Kubernetes or {{site.data.keyword.redhat_openshift_notm}} cluster to a previous state**
+## Restoring Data Security Broker Manager deployed on a Kubernetes or {{site.data.keyword.redhat_openshift_notm}} cluster to a previous state
+{: #sb_dr_restore_procedure_dsb_manager}
 
-A new {{site.data.keyword.security_broker_short}} Manager deployment needs to be set up in the Kubernetes or {{site.data.keyword.redhat_openshift_notm}} cluster, in order to return {{site.data.keyword.security_broker_short}} Manager to its previous
-state. 
-The administrator carrying out the restore operation requires network connectivity to the cluster as well as access to a workstation with permission to use the command-line tools for Kubernetes or {{site.data.keyword.redhat_openshift_notm}}.
+A new {{site.data.keyword.security_broker_short}} Manager deployment needs to be set up in a Kubernetes or {{site.data.keyword.redhat_openshift_notm}} cluster, in order to return {{site.data.keyword.security_broker_short}} Manager to its previous state. 
+The administrator carrying out the restore operation requires network connectivity to the cluster as well as access to a workstation with permission to use the command-line tools for Kubernetes or {{site.data.keyword.redhat_openshift_notm}} cluster.
 
 To restore a {{site.data.keyword.security_broker_short}} deployment, follow the steps:
 
-1.  Log in to the workstation using command-line tools, and use the recently installed {{site.data.keyword.security_broker_short}} Manager to access the Kubernetes or {{site.data.keyword.redhat_openshift_notm}} cluster.
+1. Log in to the workstation using command-line tools, and use the recently installed {{site.data.keyword.security_broker_short}} Manager to access the Kubernetes or {{site.data.keyword.redhat_openshift_notm}} cluster.
 
-2.  To create a temporary storage area on the workstation, copy the {{site.data.keyword.security_broker_short}} Manager backup files there. The names of the backup files includes the following:
+2. To create a temporary storage area on the workstation, copy the {{site.data.keyword.security_broker_short}} Manager backup files there. The names of the backup files includes the following:
 
 ```
 Release-DSB.\<release\>MONGO.tar.gz
@@ -203,7 +199,7 @@ Release-DSB.\<release\>BM.tar.gz
 ```
 {: codeblock}
 
-5.  To restore the {{site.data.keyword.security_broker_short}} Manager configuration files and MongoDB collections, create and execute the script provided below. As an input to the script, specify the location of the temporary storage location for backup files.
+3. To restore the {{site.data.keyword.security_broker_short}} Manager configuration files and MongoDB collections, create and execute the script provided below. As an input to the script, specify the location of the temporary storage location for backup files.
 
 ```
 #!/bin/bash
@@ -309,10 +305,10 @@ RestoreBM
 ```
 {: codeblock}
 
-6.  Open a new browser tab and log into {{site.data.keyword.security_broker_short}} Manager
-    after you have finished executing the script. Log in {{site.data.keyword.security_broker_short}} Manager to verify, that the original configurations of the applications, databases, and key stores have been restored.
+4. Open a new browser tab and log into {{site.data.keyword.security_broker_short}} Manager
+    after you have finished executing the script. Verify that the original configurations of the applications, databases, and key stores have been restored.
 
-7.  For all of the applications of {{site.data.keyword.security_broker_short}} Manager, with data security policies, deploy new {{site.data.keyword.security_broker_short}} Shields by adhering to the deployment    procedures. Ensure that the Helm chart is updated with the appropriate Sync ID for each application.
+5. For all of the applications of {{site.data.keyword.security_broker_short}} Manager, with data security policies, deploy new {{site.data.keyword.security_broker_short}} Shields by adhering to the deployment    procedures. Ensure that the Helm chart is updated with the appropriate Sync ID for each application.
 
-8.  Log into {{site.data.keyword.security_broker_short}} Manager after the {{site.data.keyword.security_broker_short}} Shield pods have been deployed to ensure that the newly installed {{site.data.keyword.security_broker_short}} Shields are in the **RUNNING** status.
+6. Log into {{site.data.keyword.security_broker_short}} Manager after the {{site.data.keyword.security_broker_short}} Shield have been deployed to ensure that the newly installed {{site.data.keyword.security_broker_short}} Shields are in the **RUNNING** status.
 
