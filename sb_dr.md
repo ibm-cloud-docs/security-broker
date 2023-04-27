@@ -159,9 +159,11 @@ BMbackup
 
 3.  The following files are added to the specified backup location after you have finished executing the script:
 
+```
 Release-DSB.\<release\>MONGO.tar.gz
-
 Release-DSB.\<release\>BM.tar.gz
+```
+{: codeblock}
 
 4.  Transfer the backups of the key management, object storage, and
     database services related to the {{site.data.keyword.security_broker_short}} deployment,
@@ -172,324 +174,145 @@ Release-DSB.\<release\>BM.tar.gz
 
 The {{site.data.keyword.security_broker_short}} deployment can be recovered in a disaster
 recovery situation to a state that was previously backed up, provided
-that all dependent services are also recovered in the same manner. This
+that all the dependent services are also recovered in the same manner. This
 applies to any services that has suffered a irrecoverable failure. If
 the dependent services were not affected, all that is required is to
 ensure that network connectivity between the {{site.data.keyword.security_broker_short}}
-deployment and those services is restored.
+deployment and the dependent services is restored.
 
 Since {{site.data.keyword.security_broker_short}} Manager contains all the configuration and
 metadata needed for a {{site.data.keyword.security_broker_short}} deployment, the goal of the
 process is to restore {{site.data.keyword.security_broker_short}} Manager to a previous state
-so that a new shield can be deployed to enforce the previously
-configured security policies.
+so that a new shield can be deployed to enforce the previously configured security policies.
 
 ## Restoring Data Security Broker Manager deployed on Kubernetes or {{site.data.keyword.redhat_openshift_notm}} cluster to a previous state**
 
-A new {{site.data.keyword.security_broker_short}} Manager deployment needs to be set up in the
-cluster in order to return {{site.data.keyword.security_broker_short}} Manager to its previous
-state. Please implement {{site.data.keyword.security_broker_short}} Manager on a Kubernetes or
-{{site.data.keyword.redhat_openshift_notm}} cluster by following the deployment instructions.
+A new {{site.data.keyword.security_broker_short}} Manager deployment needs to be set up in the Kubernetes or {{site.data.keyword.redhat_openshift_notm}} cluster, in order to return {{site.data.keyword.security_broker_short}} Manager to its previous
+state. 
+The administrator carrying out the restore operation requires network connectivity to the cluster as well as access to a workstation with permission to use the command-line tools for Kubernetes or {{site.data.keyword.redhat_openshift_notm}}.
+
+To restore a {{site.data.keyword.security_broker_short}} deployment, follow the steps:
+
+1.  Log in to the workstation using command-line tools, and use the recently installed {{site.data.keyword.security_broker_short}} Manager to access the Kubernetes or {{site.data.keyword.redhat_openshift_notm}} cluster.
+
+2.  To create a temporary storage area on the workstation, copy the {{site.data.keyword.security_broker_short}} Manager backup files there. The names of the backup files includes the following:
+
+```
+Release-DSB.\<release\>MONGO.tar.gz
+Release-DSB.\<release\>BM.tar.gz
+```
+{: codeblock}
+
+5.  To restore the {{site.data.keyword.security_broker_short}} Manager configuration files and MongoDB collections, create and execute the script provided below. As an input to the script, specify the location of the temporary storage location for backup files.
+
+```
+#!/bin/bash
+if [ $# -eq 0 ]
+then
+echo "No arguments supplied"
+echo "Usage: $0 -m <mongodb backup tar.gz> -b <BM backup tar.gz file> -u
+<MongoDB user name used for original dsb Manager deployment> -p <MongoDB
+password used in original dsb Manager deployment> -n <k8s namespace>"
+fi
+while getopts m:b:u:p:n: flag
+do
+case "${flag}" in
+m) MONGO_DUMP_FILE=${OPTARG};;
+b) BM_DUMP_FILE=${OPTARG};;
+u) MONGO_USER=${OPTARG};;
+p) MONGO_PASS=${OPTARG};;
+n) NAMESPACE=${OPTARG};;
+esac
+done
+if [ -z "${MONGO_DUMP_FILE}" ];
+then
+echo "Please provide backup location with -m option"
+exit
+fi
+if [ -z "${BM_DUMP_FILE}" ];
+then
+echo "Please provide backup location with -b option"
+exit
+fi
+if [ ! -f "$MONGO_DUMP_FILE" ];
+then
+echo "Please provide a valid backup location with -b option"
+exit
+fi
+if [ ! -f "$BM_DUMP_FILE" ];
+then
+echo "Please provide a valid backup location with -b option"
+exit
+fi
+if [ -z "${MONGO_USER}" ];
+then
+echo "Please provide Mongodb user via -u option. It should be same user used
+for backup"
+exit
+fi
+if [ -z "${MONGO_PASS}" ];
+then
+echo "Please provide Mongodb password via -p option. It should be same password
+specified in the original dsb Manager deployment"
+exit
+fi
+if [ -z "${NAMESPACE}" ];
+then
+
+echo "Please provide kubernetes NAMESPACE via -n option."
+exit
+fi
+### NOTE: SET THE kb ALIAS TO THE CORRECT ONE FOR THE CLUSTER TYPE
+## For Kubernetes
+#kb='kubectl --namespace '$NAMESPACE
+#echo "KB = "$kb
+## For OpenShift
+kb='kubectl --namespace '$NAMESPACE
+echo "OC = "$kb
+
+# Retrieving container details
+BM_container="$($kb get pods -o=jsonpath='{range .items[?(@.metadata.labels.app=="dsb-manager")]}{.metadata.name}' )"
+Mongo_container="$($kb get pods -o=jsonpath='{range .items[?(@.metadata.labels.app=="dsb-mongodb")]}{.metadata.name}')"
+echo "BM_container ==>" $BM_container
+echo "Mongo_container ==>" $Mongo_container
+
+version="$($kb exec -it $BM_container -- bash -c 'cat /opt/baffle/BAFFLEVERSIONS | grep BMVERSION' | awk -F "=" '{print $2}' )"
+version="${version//$'\r'/}"
+echo "version ==>" $version
+
+# Restore DSB MongoDB
+RestoreMongo() 
+{
+echo "Mongodb Restore..."
+MONGO_FILE=$(basename $MONGO_DUMP_FILE)
+echo "MONGO_FILE ==> "$MONGO_FILE
+$kb cp $MONGO_DUMP_FILE $Mongo_container:/tmp/$MONGO_FILE
+$kb exec -it $Mongo_container -- sh -c 'tar -xvf /tmp/'$MONGO_FILE
+$kb exec -it $Mongo_container -- sh -c 'mongorestore --username='${MONGO_USER}' --password='${MONGO_PASS}' --nsInclude=ibm.* --verbose --authenticationDatabase=admin /tmp/dump'
+}
 
-The administrator carrying out the restore operation will require
-network connectivity to the cluster as well as access to a workstation
-with permission to use the command-line tools for Kubernetes or {{site.data.keyword.redhat_openshift_notm}}.
+# Restore DSB Manager
+RestoreBM() 
+{
+echo "BM Restore..."
+BM_FILE=$(basename $BM_DUMP_FILE)
+echo "BM_FILE ==> "$BM_FILE
+$kb cp $BM_DUMP_FILE $NAMESPACE/$BM_container:/tmp/$BM_FILE
+$kb exec -it $BM_container -- sh -c 'tar -xmvf /tmp/'$BM_FILE
 
-**To restore a {{site.data.keyword.security_broker_short}} deployment, follow these steps
+#$kb exec -it $BM_container -- sh -c 'cp -pr /tmp/opt/dsb/dsb-manager/config /opt/dsb/dsb-manager/'
+}
 
-1.  Log in to the workstation using command-line tools, and use the
-    > recently installed Data Security Broker Manager to access the
-    > Kubernetes or {{site.data.keyword.redhat_openshift_notm}} cluster.
+RestoreMongo
+RestoreBM
 
-2.  To create a temporary storage area on the workstation, copy the Data
-    > Security Broker Manager backup files there. The names of the
-    > backup files will include:
+```
+{: codeblock}
 
-3.  Release-Baffle.\<release\>MONGO.tar.gz
+6.  Open a new browser tab and log into {{site.data.keyword.security_broker_short}} Manager
+    after you have finished executing the script. Log in {{site.data.keyword.security_broker_short}} Manager to verify, that the original configurations of the applications, databases, and key stores have been restored.
 
-4.  Release-Baffle.\<release\>BM.tar.gz
+7.  For all of the applications of {{site.data.keyword.security_broker_short}} Manager, with data security policies, deploy new {{site.data.keyword.security_broker_short}} Shields by adhering to the deployment    procedures. Ensure that the Helm chart is updated with the appropriate Sync ID for each application.
 
-> Text
->
-> Copy
+8.  Log into {{site.data.keyword.security_broker_short}} Manager after the {{site.data.keyword.security_broker_short}} Shield pods have been deployed to ensure that the newly installed {{site.data.keyword.security_broker_short}} Shields are in the **RUNNING** status.
 
-5.  To restore the Data Security Broker Manager configuration files and
-    > MongoDB collections, create and execute the script provided below.
-    > As an input to the script, specify the location of the temporary
-    > storage location for backup files.
-
-6.  Open a new browser tab and log into Data Security Broker Manager
-    > after the script has finished running. Log in to confirm that the
-    > applications, databases, and key stores\' original configurations
-    > have been restored.
-
-7.  For all of the applications with data security policies, deploy new
-    > Data Security Broker Shields by adhering to the deployment
-    > procedures. Make sure the Helm chart is updated with the
-    > appropriate Sync ID for each application.
-
-8.  Log into Data Security Broker Manager after the Data Security Broker
-    > Shield pods have been deployed to make sure the newly installed
-    > Data Security Broker Shields are in the RUNNING status.
-
-**Restoring Data Security Broker Manager deployed using Docker on a
-standalone machine**
-
-On the standalone machine, a new Data Security Broker Manager deployment
-must be created in order to return Data Security Broker Manager to a
-previous state. Please do so by adhering to the guidelines for deploying
-Data Security Broker Manager on a standalone machine.
-
-The restore operation will be carried out by an administrator with sudo
-access to the standalone machine.
-
-**Following these steps will restore Data Security Broker Manager:**
-
-1.  Enter the computer where a Data Security Broker Manager has been set
-    > up.
-
-2.  To create a temporary storage area on the computer, copy the Data
-    > Security Broker Manager backup files there. The names of the
-    > backup files will include:
-
-3.  Release-Baffle.\<release\>MONGO.tar.gz
-
-4.  Release-Baffle.\<release\>BM.tar.gz
-
-> Text
->
-> Copy
-
-5.  To restore the Data Security Broker Manager configuration files and
-    > MongoDB collections, create and execute the script provided below.
-    > As the script\'s input, specify the location where backup files
-    > are momentarily stored.
-
-6.  Run the script listed below to recover the MongoDB collections and
-    > Data Security Broker Manager configuration files. This script
-    > requires as input a folder where backup files are located and that
-    > is open to the script.
-
-7.  #!/bin/bash
-
-8.  
-
-9.  if \[ \$# -eq 0 \]
-
-10. then
-
-11. echo \"No arguments supplied\"
-
-12. echo \"Usage: \$0 -m \<mongodb backup tar.gz\> -b \<BM backup tar.gz
-    > file\> -u \<mongdb user name used for backup\> -p \<mongdb
-    > password used for backing up\> -n \<k8s namespace\>\"
-
-13. fi
-
-14. 
-
-15. while getopts m:b:u:p: flag
-
-16. do
-
-17. case \"\${flag}\" in
-
-18. m\) MongoDumpFile=\${OPTARG};;
-
-19. b\) BMDumpFile=\${OPTARG};;
-
-20. u\) MONGO_USER=\${OPTARG};;
-
-21. p\) MONGO_PASS=\${OPTARG};;
-
-22. \# n) namespace=\${OPTARG};;
-
-23. esac
-
-24. done
-
-25. 
-
-26. if \[ \$# -eq 0 \]
-
-27. then
-
-28. echo \"No arguments supplied\"
-
-29. echo \"Usage: \$0 -b \<backup loaction\> -u \<mongdb user name used
-    > for backup\> -p \<mongdb password used for backing up\>\"
-
-30. fi
-
-31. 
-
-32. if \[ -z \"\${MongoDumpFile}\" \];
-
-33. then
-
-34. echo \"Please provide backup location with -m option\"
-
-35. exit
-
-36. fi
-
-37. 
-
-38. if \[ -z \"\${BMDumpFile}\" \];
-
-39. then
-
-40. echo \"Please provide backup location with -b option\"
-
-41. exit
-
-42. fi
-
-43. 
-
-44. if \[ ! -f \"\$MongoDumpFile\" \];
-
-45. then
-
-46. echo \"Please provide a valid backup location with -m option\"
-
-47. exit
-
-48. fi
-
-49. 
-
-50. if \[ ! -f \"\$BMDumpFile\" \];
-
-51. then
-
-52. echo \"Please provide a valid backup location with -b option\"
-
-53. exit
-
-54. fi
-
-55. 
-
-56. if \[ -z \"\${MONGO_USER}\" \];
-
-57. then
-
-58. echo \"Please provide Mongodb user via -u option. It should be same
-    > user used for backup\"
-
-59. exit
-
-60. fi
-
-61. 
-
-62. if \[ -z \"\${MONGO_PASS}\" \];
-
-63. then
-
-64. echo \"Please provide Mongodb password via -p option. It should be
-    > same password used for backup\"
-
-65. exit
-
-66. fi
-
-67. 
-
-68. #if \[ -z \"\${namespace}\" \];
-
-69. #then
-
-70. \# echo \"Please provide kubernetes namespace via -n option.\"
-
-71. \# exit
-
-72. #fi
-
-73. 
-
-74. version=\"\$(docker exec -it baffle_manager_1 sh -c \'cat
-    > /opt/baffle/BAFFLEVERSIONS \| grep BMVERSION\' \| awk -F \"=\"
-    > \'{print \$2}\')\"
-
-75. version=\${version//\$\'\\r\'/}
-
-76. echo \"version ==\> \"\$version
-
-77. 
-
-78. RestoreMongo() {
-
-79. echo \"Mongodb Restore\...\"
-
-80. mongocontainerdump=\"\$(basename \-- \$MongoDumpFile)\"
-
-81. echo \"mongocontainerdump is ==\>\"\$mongocontainerdump
-
-82. mongocontainerdump1=\"/tmp/\"\$mongocontainerdump
-
-83. echo \"mongocontainerdump1 is ==\>\"\$mongocontainerdump1
-
-84. sudo docker cp \$MongoDumpFile baffle_mongodb_1:/tmp/
-
-85. sudo docker exec -it baffle_mongodb_1 sh -c \'tar -xvf
-    > \'\${mongocontainerdump1}\' \'
-
-86. sudo docker exec -it baffle_mongodb_1 sh -c \'mongorestore
-    > \--username=\'\${MONGO_USER}\' \--db=baff
-    > \--password=\'\${MONGO_PASS}\' \--authenticationDatabase=admin
-    > /tmp/dump/baff\'
-
-87. 
-
-88. }
-
-89. 
-
-90. RestoreBM() {
-
-91. echo \"BM Restore\...\"
-
-92. BMcontainerdump=\"\$(basename \-- \$BMDumpFile)\"
-
-93. BMcontainerdump1=\"/tmp/\"\$BMcontainerdump
-
-94. sudo docker cp \$BMDumpFile baffle_manager_1:/tmp/
-
-95. sudo docker exec -it baffle_manager_1 sh -c \'tar -xvf
-    > \'\${BMcontainerdump1}\' \'
-
-96. sudo docker exec -it baffle_manager_1 sh -c \'cp -pr
-    > /tmp/opt/baffle/baffle-manager/\* /opt/baffle/baffle-manager/\'
-
-97. 
-
-98. }
-
-99. 
-
-100. RestoreMongo
-
-101. RestoreBM
-
-> Text
->
-> Copy
-
-102. Open a new browser tab and log into Data Security Broker Manager
-     > after the script has finished running. Log in to confirm that the
-     > applications, databases, and key stores\' original configurations
-     > have been restored.
-
-103. For all of the applications with data security policies, deploy new
-     > Data Security Broker Shields by adhering to the deployment
-     > procedures. To set the BM_IP with the new IP address or host name
-     > for the recently deployed Data Security Broker Manager, make sure
-     > to update the.env file. Update the SYNC_ID variable as well with
-     > the appropriate Sync_ID for each application that the deployed
-     > Data Security Broker Shield is linked to.
-
-104. Log into Data Security Broker Manager after the Data Security
-     > Broker Shield instances have been set up to ensure that they are
-     > in the RUNNING status.
