@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-04-27"
+lastupdated: "2023-05-02"
 
 keywords: support, backup, high availability
 
@@ -101,3 +101,7 @@ To ensure that {{site.data.keyword.security_broker_short}} Shields are aware of 
 1. The IP address of the deployment of the standby {{site.data.keyword.security_broker_short}} Manager must be configured in the primary {{site.data.keyword.security_broker_short}} Manager's **Proxy_Access** parameter.
 
 2. The primary {{site.data.keyword.security_broker_short}} Manager deployment's IP address must be entered in the **BM_IP** parameter for the Helm Chart that is used to deploy {{site.data.keyword.security_broker_short}} Shield.
+
+Ensure that you add and configure the Application in {{site.data.keyword.security_broker_short}} Manager after completing High availability configuration.
+{: note}
+
