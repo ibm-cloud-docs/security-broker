@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-04-27"
+lastupdated: "2023-05-02"
 
 keywords: support, backup, restore, disaster
 
@@ -35,7 +35,7 @@ deployment:
 
 -   Database
 
--   Cloud Object storage
+-   {{site.data.keyword.cos_full}}
 
 Ensure that the backup schedule for these services align with the {{site.data.keyword.security_broker_short}} backups. Additionally, administrators must keep records which are used for linking the {{site.data.keyword.security_broker_short}} backup and the backups of the other
 services, as well as all backups for the {{site.data.keyword.security_broker_short}} deployment
@@ -163,7 +163,7 @@ Release-DSB.\<release\>BM.tar.gz
 ```
 {: codeblock}
 
-4. Transfer the backups of the key management, object storage, and database services related to the {{site.data.keyword.security_broker_short}} deployment, as well as the {{site.data.keyword.security_broker_short}} Manager backup files, to a reliable backup storage location.
+4. Transfer the backups of the key management, {{site.data.keyword.cos_short}}, and database services related to the {{site.data.keyword.security_broker_short}} deployment, as well as the {{site.data.keyword.security_broker_short}} Manager backup files, to a reliable backup storage location.
 
 ## Restore procedure
 {: #sb_dr_restore_procedure}
@@ -311,4 +311,16 @@ RestoreBM
 5. For all of the applications of {{site.data.keyword.security_broker_short}} Manager, with data security policies, deploy new {{site.data.keyword.security_broker_short}} Shields by adhering to the deployment    procedures. Ensure that the Helm chart is updated with the appropriate Sync ID for each application.
 
 6. Log into {{site.data.keyword.security_broker_short}} Manager after the {{site.data.keyword.security_broker_short}} Shield have been deployed to ensure that the newly installed {{site.data.keyword.security_broker_short}} Shields are in the **RUNNING** status.
+
+## Best Practices for backups and restore:
+{: #sb_dr_bp_COS_backup}
+
+## Setting Up Configuration backup in {{site.data.keyword.cos_full_notm}}
+{: #sb_dr_COS_backup}
+
+It is recommended to store the database configuration and the backup objects in a {{site.data.keyword.cos_short}} instance. The backup is stored in a separate cloud account with {{site.data.keyword.cos_short}} buckets created.
+
+
+
+
 
