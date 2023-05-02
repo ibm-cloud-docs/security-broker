@@ -19,7 +19,8 @@ toc:
       - sb_getting_started.md
       - sb_about.md
       - sb_release_notes.md
-
+      - sb_pricing.md
+      
   - navgroup: 
       id: howto
       topics:
@@ -79,6 +80,8 @@ toc:
           topics:
           - tutorials/sb_update.md
           - tutorials/sb_uninstall.md
+      - sb_ha.md    
+      - sb_dr.md    
 
   - navgroup:
       id: reference

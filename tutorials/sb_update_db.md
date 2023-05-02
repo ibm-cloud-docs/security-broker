@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-28"
+lastupdated: "2023-04-18"
 
 keywords: database, admin, priveleges, users, features, operations, application
 
@@ -20,3 +20,4 @@ To update the database certificate, complete the following steps in the {{site.d
 2. Click **Update** in the Database Summary pane on the right to update the Database Certificate.
 
 If the credentials change for your database,  
+
