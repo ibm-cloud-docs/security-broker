@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-05-02"
+lastupdated: "2023-05-24"
 
 keywords: support, backup, high availability
 
@@ -49,7 +49,7 @@ For applications in each region, one or more load balancers must be set up with 
 
 {{site.data.keyword.security_broker_short}} advises using horizontal pod scaling for each cluster to increase service availability within the cluster. {{site.data.keyword.security_broker_short}} Shield's deployment cluster's HorizontalAutoscaler (HPA) feature can be used to configure horizontal scaling. Based on the proper resource utilization, this HPA can be configured. The HPA configuration described in the following YAML file supports scaling for increased cluster availability. {{site.data.keyword.security_broker_short}} recommends boosting the **maxReplica** setting to a value appropriate for the anticipated peak load in order to scale and handle the large peak loads. It is recommended to allocate the same number of CPUs to the database server's CPUs as you would do for the maximum number of replicas.
 
-```
+```sh
 apiVersion: autoscaling/v2beta2
 kind: HorizontalPodAutoscaler
 metadata:

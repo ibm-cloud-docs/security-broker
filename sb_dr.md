@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-05-02"
+lastupdated: "2023-05-24"
 
 keywords: support, backup, restore, disaster
 
@@ -61,7 +61,7 @@ To take a backup, follow these steps:
 
 2. To back up the MongoDB collections and {{site.data.keyword.security_broker_short}} Manager configuration files, create the script provided below and execute it. The location that is specified after the **-b** option is where the backup file is kept by the script. Check whether the script is being used to back up a {{site.data.keyword.security_broker_short}} Manager deployment on a {{site.data.keyword.redhat_openshift_notm}} cluster or a Kubernetes cluster, and uncomment the relevant command alias for the specified type of cluster where {{site.data.keyword.security_broker_short}} Manager is installed.
 
-```
+```sh
 #!/bin/bash
 if [ $# -eq 0 ]
  then
@@ -157,7 +157,7 @@ BMbackup
 
 3. The following files are added to the specified backup location after you have finished executing the script:
 
-```
+```sh
 Release-DSB.\<release\>MONGO.tar.gz
 Release-DSB.\<release\>BM.tar.gz
 ```
@@ -201,7 +201,7 @@ Release-DSB.\<release\>BM.tar.gz
 
 3. To restore the {{site.data.keyword.security_broker_short}} Manager configuration files and MongoDB collections, create and execute the script provided below. As an input to the script, specify the location of the temporary storage location for backup files.
 
-```
+```sh
 #!/bin/bash
 if [ $# -eq 0 ]
 then

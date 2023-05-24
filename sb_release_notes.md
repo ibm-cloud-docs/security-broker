@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-13"
+lastupdated: "2023-05-24"
 
 keywords: support, troubleshooting, data protection, data threats
 
@@ -37,3 +37,17 @@ Following features are supported in the Beta version:
 
 - Data Encryption and Decryption
 - Data Masking
+
+## May 2023
+{: #sb_date_ga}
+
+Review the release notes for May 2023.
+{: shortdesc}
+
+### 31 May 2023
+{: #sb-may3123}
+{: release-note}
+
+{{site.data.keyword.security_broker_full_notm}} is now generally available. For more information, see [IBM Cloud Data Security Broker](https://www.ibm.com/cloud/data-security-broker)
+
+Pricing plans have been added to the {{site.data.keyword.security_broker_short}} in this version. For more information, see [Pricing plans for {{site.data.keyword.security_broker_short}}](/docs/security-broker?topic=security-broker-sb_pricing).
