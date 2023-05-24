@@ -318,7 +318,9 @@ RestoreBM
 ## Setting Up Configuration backup in {{site.data.keyword.cos_full_notm}}
 {: #sb_dr_COS_backup}
 
-It is recommended to store the database configuration and the backup objects in a {{site.data.keyword.cos_short}} instance. The backup is stored in a separate cloud account with {{site.data.keyword.cos_short}} buckets created.
+- It is recommended to store the database configuration and the backup objects in a {{site.data.keyword.cos_short}} instance. The backup is stored in a separate cloud account with {{site.data.keyword.cos_short}} buckets created.
+- Ensure that the backup {{site.data.keyword.cos_short}} bucket is configured with immutabe settings.
+- Setup an Automation jobs to back up the database, preferrably twice a day and upload it to the {{site.data.keyword.cos_short}} bucket. It is recommeded to setup an automation job to restore the database whenever necessary by picking up the latest changes from the backup {{site.data.keyword.cos_short}} bucket.
 
 
 
