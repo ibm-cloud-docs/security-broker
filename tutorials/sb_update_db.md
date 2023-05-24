@@ -13,7 +13,7 @@ subcollection: security-broker
 # Update Database Certificate
 {: #sb_update_db}
 
-It is recommended to update the database certificate before it expires. If the database certificate expires, the connection from the application to the database will be lost. 
+It is recommended to update the database certificate before it expires. If the database certificate expires, the connection between the application and the database is lost. 
 
 To update the database certificate, complete the following steps in the {{site.data.keyword.security_broker_short}} Manager:
 
