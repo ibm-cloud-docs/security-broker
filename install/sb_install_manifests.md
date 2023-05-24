@@ -8,7 +8,7 @@ keywords: install, ROKS, IKS, manifests, HELM
 subcollection: security-broker
 ---
 
-# Installing {{site.data.keyword.security_broker_short}} using Manifests
+# Not used --- Installing {{site.data.keyword.security_broker_short}} using Manifests
 {: #sb_install_manifests}
 
 You can install {{site.data.keyword.security_broker_short}} on an IBM Cloud Kubernetes cluster (IKS) or an
