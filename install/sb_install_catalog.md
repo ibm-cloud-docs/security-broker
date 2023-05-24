@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-04-18"
+lastupdated: "2023-05-24"
 
 keywords: install, ROKS, IKS, manifests, HELM
 
@@ -77,9 +77,16 @@ Complete the following steps to install the **{{site.data.keyword.security_broke
 
     b. Select the **Resource group**, **Location**, and specify the **Tags** required for configuring the workspace.
 
-9.  Click **Install** in the **Summary** pane on the right to complete the installation process.
+9.  Set the input variables, as mentioned below:
+    
+    a. Specify the password, which is used to encrypt the MangoDB password in the **secrets.credstorePass** parameter. 
+    b. Specify the password, which is used to unlock the initial registration page for {{site.data.keyword.security_broker_short}} Manager in the **secrets.initPass** parameter.
 
-10.  You will be navigated to the {{site.data.keyword.bpshort}} Workspace to track the installation progress. Once the installation is successful, a message **Workspace creation successfull** is displayed as shown below:
+    It is recommended to save the passwords for later use.
+
+10.  Click **Install** in the **Summary** pane on the right to complete the installation process.
+
+11.  You will be navigated to the {{site.data.keyword.bpshort}} Workspace to track the installation progress. Once the installation is successful, a message **Workspace creation successfull** is displayed as shown below:
 
      ![Installation of {{site.data.keyword.security_broker_short}} Manager](../images/install_success.svg){: caption="Installation of {{site.data.keyword.security_broker_short}} Manager" caption-side="bottom"}
    
