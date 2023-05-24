@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-17"
+lastupdated: "2023-05-24"
 
 keywords: database, admin, priveleges, users, features, operations
 
@@ -61,6 +61,9 @@ To create an RBAC policy, complete the following steps:
 8. **Optional:** After saving the policy, create another User Group or create another RBAC Policy.
 
 9. Continue with applying an RBAC policy to the database columns. 
+
+Once you edit the RBAC configuration, the {{site.data.keyword.security_broker_short}} Shield is restarted and this might result in a brief outage of connectivity between the database and the application.
+{: note}
 
 
 

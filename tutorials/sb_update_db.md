@@ -22,4 +22,5 @@ To update the database certificate, complete the following steps in the {{site.d
 2. Click **Update** in the Database Summary pane on the right to update the Database Certificate.
 
 Once you update the database certificate, the {{site.data.keyword.security_broker_short}} Shield is restarted and this might result in a brief outage of connectivity between the database and the application.
+{: note}
 
