@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-05-24"
+lastupdated: "2023-05-26"
 
 keywords: support, backup, restore, disaster
 
@@ -193,7 +193,7 @@ To restore a {{site.data.keyword.security_broker_short}} deployment, follow the 
 
 2. To create a temporary storage area on the workstation, copy the {{site.data.keyword.security_broker_short}} Manager backup files there. The names of the backup files includes the following:
 
-```
+```sh
 Release-DSB.\<release\>MONGO.tar.gz
 Release-DSB.\<release\>BM.tar.gz
 ```
