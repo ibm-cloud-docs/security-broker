@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-21"
+lastupdated: "2023-05-26"
 
 keywords: support, getting started, data protection, data threats
 
@@ -102,7 +102,7 @@ As an {{site.data.keyword.cloud_notm}} user, you need to set the follwoing minim
 By using the following steps and the information in the table, assign the required permissions:
 1. Log into your {{site.data.keyword.cloud_notm}} account and click **Manage -> Access (IAM)**.
 2. In the Manage access and users dashboard, click **View all** in the **My user details** section.
-3. In the **Access** tab, click **Assign access +**. From the Table 1, select a service and click **Next**.
+3. In the **Access** tab, click **Assign access +**. From the Table 2, select a service and click **Next**.
 4. In the **Roles and actions** section, select the specified permissions that are required.
 5. Click **Add** and **Assign** to assign the permissions required.
 
@@ -114,6 +114,16 @@ By using the following steps and the information in the table, assign the requir
 | IBM {{site.data.keyword.redhat_openshift_notm}} {{site.data.keyword.containershort}} | Editor                 |
 | {{site.data.keyword.bpshort}}                              | Manager, Administrator | 
 {: caption="Table 2. Permissions required for {{site.data.keyword.security_broker_short}}" caption-side="bottom"}
+
+You can find details about platform roles and the actions mapped to each of the role in the table below: 
+
+| Platform Roles | Description                                                                                                                                                        |   |   |   |
+|:--------------:|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|---|---|
+| Administrator  | As an administrator, you can  perform all platform actions based on the resource this role is being  assigned, including assigning access policies to other users. |   |   |   |
+| Editor         | As an editor, you can perform all platform actions except for managing the account and assigning access policies.                                                  |   |   |   |
+| Operator       | As an operator, you can  perform platform actions required to configure and operate service  instances, such as viewing a service's dashboard.                     |   |   |   |
+| Viewer         | As a viewer, you can view service instances, but you can't modify them.                                                                                            |   |   |   |
+{: caption="Table 3. Platform roles and their actions caption-side="bottom"}
 
 You can find more information about {{site.data.keyword.security_broker_short}} in the [About {{site.data.keyword.security_broker_short}}](/docs/security-broker?topic=security-broker-sb_about) section.
 
