@@ -42,7 +42,8 @@ toc:
           label: Data Protection Services
           topics:
           - tutorials/sb_encrypt_postgress.md
-          - tutorials/sb_encrypt_data.md                          
+          - tutorials/sb_encrypt_data.md  
+          - tutorials/sb_data_migration.md                        
           - topicgroup:
               label: Data Masking
               topics:
@@ -73,8 +74,7 @@ toc:
           - topicgroup:
               label: Key rotation using IBM Key Protect and HPCS
               topics: 
-              - tutorials/sb_ibm_keyrotate.md
-              - tutorials/sb_hpcs_keyrotate.md
+              - tutorials/sb_keyrotate.md           
       - topicgroup:
           label: Upgrade and Uninstall
           topics:
