@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-05-24"
+lastupdated: "2023-05-31"
 
 keywords: install, ROKS, IKS, manifests, HELM
 
@@ -18,9 +18,6 @@ subcollection: security-broker
 {: #sb_install_ui_overview}
 
 Access the {{site.data.keyword.cloud_notm}} catalog to install the {{site.data.keyword.security_broker_short}} Manager.
-
-You can install {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield only in classic clusters.
-{: important}
 
 ## Pre-requisites:
 {: #sb_install_ui_prereq}

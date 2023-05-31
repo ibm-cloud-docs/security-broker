@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-05-24"
+lastupdated: "2023-05-31"
 
 keywords: database, admin, priveleges, users, features, operations, application
 
@@ -13,7 +13,7 @@ subcollection: security-broker
 # Update Database Certificate
 {: #sb_update_db}
 
-It is recommended to update the database certificate before it expires. If the database certificate expires, the connection between the application and the database is lost. 
+You need to update the database certificate in {{site.data.keyword.security_broker_short}} Manager before it expires. Ensure that you keep a track on the database certificate expiry date. If the database certificate expires, the connection between the application and the database is lost. 
 
 To update the database certificate, complete the following steps in the {{site.data.keyword.security_broker_short}} Manager:
 
