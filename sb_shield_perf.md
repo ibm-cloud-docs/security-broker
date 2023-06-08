@@ -26,4 +26,5 @@ In cases where there is a high concurrent workload, a single {{site.data.keyword
 |------------------------------------------------------------|---------------------------------------------|---------------------------------------------------------------------------------------------------|---|---|---|---|---|---|---|
 | Minimize latency between the application and Baffle Shield | DSB Shield on the application host          | Small number of application servers and Sufficient CPU and memory capacity per application server |   |   |   |   |   |   |   |
 | Prevent Baffle Shield from becoming bottleneck             | Multiple DSB Shields behind a load balancer | High concurrent workload and Resourced machines     
+{: caption="Table 1. {{site.data.keyword.security_broker_short}} Shield Performance" caption-side="bottom"} 
 
