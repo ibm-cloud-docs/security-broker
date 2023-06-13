@@ -11,7 +11,6 @@ toc:
     label: IBM Cloud Data Security Broker
     version: 1
     release-level: beta
-
   entries: 
   - navgroup: 
       id: learn
@@ -20,7 +19,6 @@ toc:
       - sb_about.md
       - sb_release_notes.md
       - sb_pricing.md
-      
   - navgroup: 
       id: howto
       topics:
@@ -39,7 +37,7 @@ toc:
               - tutorials/sb_enroll_app.md
           - install/sb_ui_procedure.md   
       - topicgroup:
-          label: Data Protection Services
+          label: Data Encryption Services
           topics:
           - tutorials/sb_encrypt_postgress.md
           - tutorials/sb_encrypt_data.md  
@@ -83,14 +81,12 @@ toc:
       - sb_shield_perf.md    
       - sb_ha.md    
       - sb_dr.md    
-
   - navgroup:
       id: reference
       links:
       - link: 
           label: Blogs
           href: https://www.ibm.com/cloud/blog/announcements/readily-encrypt-de-identify-and-mask-sensitive-data-with-zero-code-changes
-
   - navgroup:
       id: help
       topics:
@@ -106,5 +102,4 @@ toc:
               - troubleshooting/sb_workflow.md
               - troubleshooting/sb_pvc_pending.md              
       - tutorials/sb_limitations.md
-      
             

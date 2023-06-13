@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-15"
+lastupdated: "2023-06-13"
 
 keywords: about the service, deploy policy, deployment plans, encryption technology, encryption modes, data protection modes
 
@@ -42,7 +42,7 @@ Application performance is minimally impacted allowing for enterprise workflows 
 ## Encryption Technology Configuration Overview:
 {: #sb-encryption-technology-overview}
 
-{{site.data.keyword.security_broker_short}} supports data protection services that can be configured
+{{site.data.keyword.security_broker_short}} supports data encryption services that can be configured
 in four main modes.
 
 ### Data Encryption: 

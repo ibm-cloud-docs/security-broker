@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-05-26"
+lastupdated: "2023-06-13"
 
 keywords: support, getting started, data protection, data threats
 
@@ -39,7 +39,7 @@ configurations by:
 **{{site.data.keyword.security_broker_short}} Shield** is a stateless reverse proxy that intercepts
 and encrypts application data sent to the database and decrypts encrypted data returned by the database.
 
-{{site.data.keyword.security_broker_short}} offers Data Protection Services which provide a range of data protection services such as data encryption, data tokenization, record level encryption, and data masking.
+{{site.data.keyword.security_broker_short}} offers Data Encryption Services which provide a range of data encryption services such as data encryption, data tokenization, record level encryption, and data masking.
 
 {{site.data.keyword.security_broker_short}} supports only PostgreSQL database.
 {: note}

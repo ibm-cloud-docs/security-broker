@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-05-24"
+lastupdated: "2023-06-13"
 
 keywords: install, ROKS, IKS, manifests, HELM
 
@@ -68,4 +68,4 @@ If you get an error message like **Workspace creation failed**, refer to the Log
 ## Next steps
 {: #sb_install_ui_procedure_nextsteps}
 
-Once you have successfully installed {{site.data.keyword.security_broker_short}} Shield, you can refer to the [Data Protection Services](/docs/security-broker?topic=security-broker-sb_encrypt_postgress) section to encrypt data.
+Once you have successfully installed {{site.data.keyword.security_broker_short}} Shield, you can refer to the [Data Encryption Services](/docs/security-broker?topic=security-broker-sb_encrypt_postgress) section to encrypt data.

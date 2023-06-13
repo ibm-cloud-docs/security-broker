@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-03-27"
+lastupdated: "2023-06-13"
 
 keywords: database, admin, priveleges, users, configure, operations
 
@@ -14,7 +14,7 @@ subcollection: security-broker
 {: #sb_configure}
 
 Configuring the {{site.data.keyword.security_broker_short}} Manager console is the first step
-to login and implement the data protection services.
+to login and implement the data encryption services.
 
 ## **Prerequisites**
 {: #sb_configure_prereq}

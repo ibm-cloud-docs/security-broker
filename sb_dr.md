@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-05-26"
+lastupdated: "2023-06-13"
 
 keywords: support, backup, restore, disaster
 
@@ -13,7 +13,7 @@ subcollection: security-broker
 # Understanding disaster recovery for IBM Cloud Data Security Broker
 {: #sb_dr}
 
-Components of the {{site.data.keyword.security_broker_short}} data protection services do not
+Components of the {{site.data.keyword.security_broker_short}} data encryption services do not
 require any protected data to be stored or cached to operate. This
 guarantees that the data is not lost if any {{site.data.keyword.security_broker_short}}
 component fails or goes down. In {{site.data.keyword.security_broker_short}} components, only

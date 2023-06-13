@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-05-24"
+lastupdated: "2023-06-13"
 
 keywords: support, backup, high availability
 
@@ -13,7 +13,7 @@ subcollection: security-broker
 # Understanding High Availability for IBM Cloud Data Security Broker
 {: #sb_ha}
 
-{{site.data.keyword.security_broker_short}} components can be deployed in an environment with highly available configuration to minimize or eliminate the downtime caused by momentary failures of {{site.data.keyword.security_broker_short}} components or the infrastructure they depend on, ensuring the continuous availability of data protected by {{site.data.keyword.security_broker_short}} Data Protection services. The high volume of data access during peak load periods that can result from deployment in a highly available configuration can also help mitigate service degradations.
+{{site.data.keyword.security_broker_short}} components can be deployed in an environment with highly available configuration to minimize or eliminate the downtime caused by momentary failures of {{site.data.keyword.security_broker_short}} components or the infrastructure they depend on, ensuring the continuous availability of data protected by {{site.data.keyword.security_broker_short}} Data encryption services. The high volume of data access during peak load periods that can result from deployment in a highly available configuration can also help mitigate service degradations.
 
 ## Overview of High Availability Architecture
 {: #sb_ha_overview}
