@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-06-13"
+lastupdated: "2023-06-14"
 
 keywords: support, getting started, data protection, data threats
 
@@ -16,7 +16,7 @@ subcollection: security-broker
 {{site.data.keyword.security_broker_full_notm}} is available as a Beta version, for evaluation and testing purposes. It is not intended for production usage.
 {: beta}
 
-Protect your data in the cloud with the {{site.data.keyword.security_broker_full_notm}}, which is a complete data protection solution that secures sensitive data in enterprise databases by integrating
+Protect your data in the cloud with the {{site.data.keyword.security_broker_full_notm}}, which is a complete data encryption solution that secures sensitive data in enterprise databases by integrating
 with key management and databases to provide application-level encryption.
 {: shortdesc}
 

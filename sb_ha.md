@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-06-13"
+lastupdated: "2023-06-14"
 
 keywords: support, backup, high availability
 
@@ -18,7 +18,7 @@ subcollection: security-broker
 ## Overview of High Availability Architecture
 {: #sb_ha_overview}
 
-A management server connects to the proxies and manages their configuration and settings, and proxies are placed in the data paths between applications and data stores as part of the {{site.data.keyword.security_broker_short}} Data Protection service. Figure 1 shows the control path, which is made up of the management servers and the connections between the proxies and the management servers.
+A management server connects to the proxies and manages their configuration and settings, and proxies are placed in the data paths between applications and data stores as part of the {{site.data.keyword.security_broker_short}} Data Encryption service. Figure 1 shows the control path, which is made up of the management servers and the connections between the proxies and the management servers.
 
 ![Control path vs data path](images/ha_ctr_data_path.svg "Control path vs data path"){: caption="Figure 1: Control path vs data path" caption-side="center"}
 
@@ -87,7 +87,7 @@ The metadata kept by the {{site.data.keyword.security_broker_short}} Manager ins
 ## Synchronization Frequency
 {: #sb_ha_sf}
 
-In order to configure data protection policies or audit current policies, service availability requirements determine how frequently the active and standby {{site.data.keyword.security_broker_short}} Managers synchronize. Typically, these are rare occurrences, and a job that automatically synchronizes metadata between the primary and standby must be adequate.
+In order to configure data encryption policies or audit current policies, service availability requirements determine how frequently the active and standby {{site.data.keyword.security_broker_short}} Managers synchronize. Typically, these are rare occurrences, and a job that automatically synchronizes metadata between the primary and standby must be adequate.
 
 The synchronization job between the primary and standby {{site.data.keyword.security_broker_short}} Managers must be run after each configuration change if you do not wish for configuration loss.
 

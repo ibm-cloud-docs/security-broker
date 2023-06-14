@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-04-18"
+lastupdated: "2023-06-14"
 
 keywords: about the service, pricing details, shield billing, billing
 
@@ -13,7 +13,7 @@ subcollection: security-broker
 # Pricing Plans for {{site.data.keyword.security_broker_short}}
 {: #sb_pricing}
 
-{{site.data.keyword.security_broker_short}} offers Data Protection Services which consists of two main
+{{site.data.keyword.security_broker_short}} offers Data Encryption Services which consists of two main
 components, namely:
 
 **{{site.data.keyword.security_broker_short}} Manager** is the administrative console for
