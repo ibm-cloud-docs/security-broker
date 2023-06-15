@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-05-26"
+lastupdated: "2023-06-15"
 
 keywords: database, admin, priveleges, users, migration, shield, migration properties
 
@@ -24,8 +24,8 @@ This option is only available when you select **Deploy Policy & Migrate Data** a
 
 3.  Under the **Migration Shield** dropdown, select the {{site.data.keyword.security_broker_short}} Shield you need to use for migration.
 
-Only the Shields enrolled with the application are available for selection.
-{: note}
+    Only the Shields enrolled with the application are available for selection.
+    {: note}
 
 4.  Click **+Migration Shield**. The Add {{site.data.keyword.security_broker_short}} Shield dialog appears. Make a note in the Shield description that this shield was added for migration.
 
