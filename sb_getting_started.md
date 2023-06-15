@@ -10,10 +10,10 @@ subcollection: security-broker
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Getting started with IBM Cloud Data Security Broker
+# Getting started with IBM Cloud Security Compliance Center Data Security Broker
 {: #getting_started}
 
-{{site.data.keyword.security_broker_full_notm}} is available as a Beta version, for evaluation and testing purposes. It is not intended for production usage.
+IBM Cloud Security Compliance Center Data Security Broker is available as a Beta version, for evaluation and testing purposes. It is not intended for production usage.
 {: beta}
 
 Protect your data in the cloud with the {{site.data.keyword.security_broker_full_notm}}, which is a complete data encryption solution that secures sensitive data in enterprise databases by integrating
@@ -23,11 +23,11 @@ with key management and databases to provide application-level encryption.
 {{site.data.keyword.security_broker_short}} offers Data Protection Services which consists of two main
 components, namely:
 
-**{{site.data.keyword.security_broker_short}} Manager** is the administrative console for
+**IBM Cloud Security Compliance Center Data Security Broker Manager** is the administrative console for
 the solution that integrates with enterprise key managers and databases
 and manages the {{site.data.keyword.security_broker_short}} solution components.
 
-**{{site.data.keyword.security_broker_short}} Shield** is the SQL / NOSQL proxy that
+**IBM Cloud Security Compliance Center Data Security Broker Shield** is the SQL / NOSQL proxy that
 functions to encrypt and decrypt data at the field or record level.
 
 **{{site.data.keyword.security_broker_short}} Manager** enforces encryption policies and

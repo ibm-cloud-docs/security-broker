@@ -8,7 +8,7 @@ toc:
     console-page: /catalog/services/security-broker
     product-page: https://cloud.ibm.com/security-broker
     path: security-broker
-    label: IBM Cloud Data Security Broker
+    label: IBM Cloud Security Compliance Center Data Security Broker
     version: 1
     release-level: beta
   entries: 
