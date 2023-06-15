@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-06-13"
+lastupdated: "2023-06-15"
 
 keywords: database, admin, priveleges, users, configure, operations
 
@@ -78,7 +78,7 @@ following requirements:
     
 5. Configure the basic System Settings by entering the hostname, domain name, proxy access, and click **Continue**.
 
-   - The domain name is part of the email, followed after the "@" character. For example, if the email specified is **test@example.com**, the domain name must be specified as **example.com**. 
+   - The domain name is part of the email, followed after the "@" character. For example, if the email specified is **test@example.com**, the domain name must be specified as **example.com**. The domain name that you enter must match in step 1 and step 2.
    - The proxy access name is the name that is responsible for the connectivity from Proxy to {{site.data.keyword.security_broker_short}} Manager (the IP, or DNS, or the Service Name). For example, **dsb-nginx**.
    {: note}
     
