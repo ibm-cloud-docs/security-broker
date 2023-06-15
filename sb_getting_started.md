@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-06-14"
+lastupdated: "2023-06-15"
 
 keywords: support, getting started, data protection, data threats
 
@@ -64,7 +64,7 @@ Ensure that your environment meets the following minimum system level and resour
 | {{site.data.keyword.cloud_notm}} Kubernetes cluster             | Ubuntu 18              | 2                               |
 {: caption="Table 1. Resource level requirements for {{site.data.keyword.security_broker_short}}" caption-side="bottom"}  
 
-## {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield Sizing Guidelines
+## Sizing Guidelines
 {: #sb_sizing}
 
 The factors that affect the sizing of the {{site.data.keyword.security_broker_short}} deployments consist of the {{site.data.keyword.security_broker_short}} Manager management console and one or more {{site.data.keyword.security_broker_short}} Shield proxies. Each component has its own resource needs depending on the anticipated workloads.
@@ -90,12 +90,12 @@ scales with the expected maximum number of concurrent connections.
 its own pod. The {{site.data.keyword.security_broker_short}} Shield pod can be in the same or
 different cluster but must have network connectivity to {{site.data.keyword.security_broker_short}} Manager.
 
-## Recommended sizing for Kubernetes or {{site.data.keyword.redhat_openshift_notm}} Deployments for {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield: ##
+## Recommended sizing: ##
 {: #sb_sizing_dsbr}
 
 4 CPU, 8 GB Memory
 
-## Setting up minimum permissions required to install, set up, and  access {{site.data.keyword.security_broker_short}} ##
+## Minimum permissions required to install, set up, and  access {{site.data.keyword.security_broker_short}} ##
 {: #sb_getting_assign_permission}
 
 As an {{site.data.keyword.cloud_notm}} user, you need to set the follwoing minimum permissions to install, set up and access {{site.data.keyword.security_broker_short}}. 
