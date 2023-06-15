@@ -1,9 +1,9 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-05-31"
+lastupdated: "2023-06-15"
 
-keywords: database, admin, priveleges, users, features, operations, application
+keywords: database, certificate, priveleges, users, features, operations, application
 
 subcollection: security-broker
 ---
