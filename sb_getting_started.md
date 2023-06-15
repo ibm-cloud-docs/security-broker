@@ -123,7 +123,7 @@ You can find details about platform roles and the actions mapped to each of the 
 | Editor         | As an editor, you can perform all platform actions except for managing the account and assigning access policies.                                                  |   |   |   |
 | Operator       | As an operator, you can  perform platform actions required to configure and operate service  instances, such as viewing a service's dashboard.                     |   |   |   |
 | Viewer         | As a viewer, you can view service instances, but you can't modify them.                                                                                            |   |   |   |
-{: caption="Table 3. Platform roles and their actions caption-side="bottom"}
+{: caption="Table 3. Platform roles and their actions" caption-side="bottom"}
 
 You can find more information about {{site.data.keyword.security_broker_short}} in the [About {{site.data.keyword.security_broker_short}}](/docs/security-broker?topic=security-broker-sb_about) section.
 
