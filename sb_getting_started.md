@@ -93,23 +93,13 @@ different cluster but must have network connectivity to {{site.data.keyword.secu
 ## Minimum system requirements for deploying in {{site.data.keyword.cloud_notm}} Kubernetes cluster (IKS) or {{site.data.keyword.redhat_openshift_full}} Kubernetes (ROKS) cluster: ##
 {: #sb_sizing_dsbr}
 
-| **Product**                        | **Container/service**          | **IKS/ROKS Version**           | **vCPU** | **Memory**                       | **Disk Space**                   |
-| ---------------------------------- | ------------------------------ | ------------------------------ | -------- | -------------------------------- | -------------------------------- |
-| Data Security Broker (DSB) Manager | DSB-manager                    | IKS v 1.17+,
-
-ROKS 4.8.54+ | 4        | 8 GB                             | 5 GB                             |
-| DSB-web                            | IKS v 1.17+,
-
-ROKS 4.8.54+ | 0.5                            | 1 GB     | (No persistent volume necessary) |
-| DSB-mongodb                        | IKS v 1.17+,
-
-ROKS 4.8.54+ | 1                              | 2 GB     | 30 GB                            |
-| DSB-nginx                          | IKS v 1.17+,
-
-ROKS 4.8.54+ | 0.5                            | 1 GB     | (No persistent volume necessary) |
-| Data Security Broker (DSB) Shield  | DSB-shield                     | IKS v 1.17+,
-
-ROKS 4.8.54+ | 2        | 8 GB                             | (No persistent volume necessary) |
+| Product                            | Container/service | IKS/ROKSVersion             | vCPU | Memory | Disk Space                       |
+|------------------------------------|-------------------|-----------------------------|------|--------|----------------------------------|
+| Data Security Broker (DSB) Manager | DSB-manager       | IKS v 1.17+, ROKS v 4.8.54+ | 4    | 8 GB   | 5 GB                             |
+|                                    | DSB-web           | IKS v 1.17+, ROKS v 4.8.54+ | 0.5  | 1 GB   | (No persistent volume necessary) |
+|                                    | DSB-mongodb       | IKS v 1.17+, ROKS v 4.8.54+ | 1    | 2 GB   | 30 GB                            |
+|                                    | DSB-nginx         | IKS v 1.17+, ROKS v 4.8.54+ | 0.5  | 1 GB   | (No persistent volume necessary) |
+| Data Security Broker (DSB) Shield  | DSB-shield        | IKS v 1.17+, ROKS v 4.8.54+ | 2    | 8 GB   | (No persistent volume necessary) |
 {: caption="Table 2. Sizing guidelines" caption-side="bottom"}
 
 ## Minimum permissions required to install, set up, and  access {{site.data.keyword.security_broker_short}} ##
