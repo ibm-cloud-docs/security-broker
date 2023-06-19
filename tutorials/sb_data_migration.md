@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-06-15"
+lastupdated: "2023-06-19"
 
 keywords: database, admin, priveleges, users, migration, shield, migration properties
 
@@ -13,7 +13,12 @@ subcollection: security-broker
 # Data Migration using {{site.data.keyword.security_broker_short}} Manager
 {: #sb_data_migration}
 
-In this section, you can find details on how to add or select specific {{site.data.keyword.security_broker_short}} Shield that is used for migration and set migration properties in {{site.data.keyword.security_broker_short}} Manager.
+## Overview:
+{: #sb_data_migration_overview}
+
+{{site.data.keyword.security_broker_short}} provides a data migration utility that assists with the offline encryption (and optionally, decryption) of existing data stored in supported databases. The utility accomplishes this by querying cleartext from the database and inserting the same data back into the database through {{site.data.keyword.security_broker_short}} Shield to perform encryption.
+
+You can add or select specific {{site.data.keyword.security_broker_short}} Shield that is used for migration and set migration properties in {{site.data.keyword.security_broker_short}} Manager.
 
 This option is only available when you select **Deploy Policy & Migrate Data** as the Data Protection Policy.
 {: note}
