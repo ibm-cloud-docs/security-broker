@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-06-15"
+lastupdated: "2023-06-19"
 
 keywords: support, getting started, data protection, data threats
 
@@ -90,10 +90,26 @@ scales with the expected maximum number of concurrent connections.
 its own pod. The {{site.data.keyword.security_broker_short}} Shield pod can be in the same or
 different cluster but must have network connectivity to {{site.data.keyword.security_broker_short}} Manager.
 
-## Recommended sizing: ##
+## Minimum system requirements for deploying in {{site.data.keyword.cloud_notm}} Kubernetes cluster (IKS) or {{site.data.keyword.redhat_openshift_full}} Kubernetes (ROKS) cluster: ##
 {: #sb_sizing_dsbr}
 
-4 CPU, 8 GB Memory
+| **Product**                        | **Container/service**          | **IKS/ROKS Version**           | **vCPU** | **Memory**                       | **Disk Space**                   |
+| ---------------------------------- | ------------------------------ | ------------------------------ | -------- | -------------------------------- | -------------------------------- |
+| Data Security Broker (DSB) Manager | DSB-manager                    | IKS v 1.17+,<br>
+
+ROKS 4.8.54+ | 4        | 8 GB                             | 5 GB                             |
+| DSB-web                            | IKS v 1.17+,<br>
+
+ROKS 4.8.54+ | 0.5                            | 1 GB     | (No persistent volume necessary) |
+| DSB-mongodb                        | IKS v 1.17+,<br>
+
+ROKS 4.8.54+ | 1                              | 2 GB     | 30 GB                            |
+| DSB-nginx                          | IKS v 1.17+,<br>
+
+ROKS 4.8.54+ | 0.5                            | 1 GB     | (No persistent volume necessary) |
+| Data Security Broker (DSB) Shield  | DSB-shield                     | IKS v 1.17+,<br>
+
+ROKS 4.8.54+ | 2        | 8 GB                             | (No persistent volume necessary) |
 
 ## Minimum permissions required to install, set up, and  access {{site.data.keyword.security_broker_short}} ##
 {: #sb_getting_assign_permission}
