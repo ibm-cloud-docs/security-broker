@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-05-26"
+lastupdated: "2023-06-20"
 
 keywords: support, troubleshooting, data protection, data threats
 
@@ -38,13 +38,13 @@ Following features are supported in the Beta version:
 - Data Encryption and Decryption
 - Data Masking
 
-## May 2023
+## July 2023
 {: #sb_date_ga}
 
 Review the release notes for May 2023.
 {: shortdesc}
 
-### 31 May 2023
+### July 2023
 {: #sb-may3123}
 {: release-note}
 
