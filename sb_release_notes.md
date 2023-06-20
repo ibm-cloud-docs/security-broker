@@ -41,14 +41,24 @@ Following features are supported in the Beta version:
 ## July 2023
 {: #sb_date_ga}
 
-Review the release notes for May 2023.
+Review the release notes for July 2023.
 {: shortdesc}
 
-### July 2023
-{: #sb-may3123}
+### July 10 2023
+{: #sb-july3123}
 {: release-note}
 
 {{site.data.keyword.security_broker_full_notm}} is now generally available. For more information, see [IBM Cloud Data Security Broker](https://www.ibm.com/cloud/data-security-broker)
 
-Pricing plans have been added to the {{site.data.keyword.security_broker_short}} in this version. For more information, see [Pricing plans for {{site.data.keyword.security_broker_short}}](/docs/security-broker?topic=security-broker-sb_pricing).
+## Security Enhancements:
+{: release-note-security-enhancements}
+
+- Fixes to some of the Common Vulnerabilities and Exposures (CVEs) is provided in this version.
+- Added support for second-level domain name configuration for {{site.data.keyword.security_broker_short}} Manager user accounts.
+- Fix to the issue, where {{site.data.keyword.security_broker_short}} users with an email on a sub-domain of the primary domain name could not enroll has been provided in this version.
+- Fix to the issue where repeated login attempts with an invalid OAuth token does not lock the {{site.data.keyword.security_broker_short}} Manager is addressed. In the new version, after five attempts, the {{site.data.keyword.security_broker_short}} manager gets locked for 30 minutes.
+-  Fix to the issue where invalid connecction parameters (API Key and Instance ID) could be
+passed successfully for an IBM Key Protect instance and for an IBM Cloud Hyper Protect Crypto Services (HPCS) enrollment is provided.
+
+Also, pricing plans have been added to the {{site.data.keyword.security_broker_short}} in this version. For more information, see [Pricing plans for {{site.data.keyword.security_broker_short}}](/docs/security-broker?topic=security-broker-sb_pricing).
 
