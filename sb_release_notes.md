@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-06-20"
+lastupdated: "2023-06-21"
 
 keywords: support, troubleshooting, data protection, data threats
 
@@ -44,7 +44,7 @@ Following features are supported in the Beta version:
 Review the release notes for July 2023.
 {: shortdesc}
 
-### July 10 2023
+### 31 July 2023
 {: #sb-july3123}
 {: release-note}
 
