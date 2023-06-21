@@ -15,7 +15,7 @@ content-type: release-note
 # Release notes
 {: #sb_release_notes}
 
-Use this release notes to learn about the latest changes to the {{site.data.keyword.security_broker_full_notm}} documentation that are grouped by month.
+Use this release notes to learn about the latest changes to the {{site.data.keyword.security_broker_full_notm}} documentation.
 {: shortdesc}
 
 ## February 2023
@@ -47,6 +47,9 @@ Review the release notes for July 2023.
 ### 31 July 2023
 {: #sb-july3123}
 {: release-note}
+
+### Introducing {{site.data.keyword.security_broker_full_notm}} GA version
+{: #sb_release_version2}
 
 {{site.data.keyword.security_broker_full_notm}} is now generally available. For more information, see [IBM Cloud Data Security Broker](https://www.ibm.com/cloud/data-security-broker).
 
