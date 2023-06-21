@@ -48,7 +48,7 @@ Review the release notes for July 2023.
 {: #sb-july3123}
 {: release-note}
 
-{{site.data.keyword.security_broker_full_notm}} is now generally available. For more information, see [IBM Cloud Data Security Broker](https://www.ibm.com/cloud/data-security-broker)
+{{site.data.keyword.security_broker_full_notm}} is now generally available. For more information, see [IBM Cloud Data Security Broker](https://www.ibm.com/cloud/data-security-broker).
 
 ## Security Enhancements:
 {: release-note-security-enhancements}
