@@ -90,7 +90,11 @@ toc:
   - navgroup:
       id: help
       topics:
-      - tutorials/sb_logging.md
+      - topicgroup:
+              label: Logging and monitoring
+              topics:
+              - troubleshooting/sb_logging.md
+              - troubleshooting/sb_monitoring.md   
       - sb_faqs.md
       - topicgroup:
               label: Troubleshooting
