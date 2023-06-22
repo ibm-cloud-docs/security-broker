@@ -65,16 +65,16 @@ You can configure alerts when the pods are not available in a cluster for the {{
    {: codeblock}
 
    **dsb-web alert condition**:
-  ```sh
-  kube_deployment_status_replicas_available{namespace="<your_dsb_manager_namespace>", deployment="dsb-web"} < 1
-  ```
-  {: codeblock}
+   ```sh
+   kube_deployment_status_replicas_available{namespace="<your_dsb_manager_namespace>", deployment="dsb-web"} < 1
+   ```
+   {: codeblock}
 
-  **dsb-shield alert condition**:
-  ```sh
-  kube_deployment_status_replicas_available{namespace="<your_dsb_manager_namespace>", deployment="dsb-shield-app1"} < 1dsb-nginx: 
-  ```
-  {: codeblock}
+   **dsb-shield alert condition**:
+   ```sh
+   kube_deployment_status_replicas_available{namespace="<your_dsb_manager_namespace>", deployment="dsb-shield-app1"} < 1dsb-nginx: 
+   ```
+   {: codeblock}
 
 4. Under **Notifications**, select an alert tool, which is already configured, in the **Notification Channel** drop-down list.
 5. Specify the alert name, alert severity, and description for the alert under **Settings** for the alert.
