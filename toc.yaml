@@ -95,7 +95,6 @@ toc:
               topics:
               - troubleshooting/sb_logging.md
               - troubleshooting/sb_monitoring.md   
-      - sb_faqs.md
       - topicgroup:
               label: Troubleshooting
               topics:
@@ -104,6 +103,7 @@ toc:
               - troubleshooting/sb_shield.md
               - troubleshooting/sb_keystore.md
               - troubleshooting/sb_workflow.md
-              - troubleshooting/sb_pvc_pending.md              
+              - troubleshooting/sb_pvc_pending.md
+      - sb_faqs.md                      
       - tutorials/sb_limitations.md
             
