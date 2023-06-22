@@ -83,8 +83,19 @@ You can configure alerts when the pods are not available in a cluster for the {{
 ## Adding customized alerts from the Alerts Library
 {: #sb_monitor_alert_library}
 
-In this section, you can find information on how to add pre-defined alerts, which are available in the Alerts Library. One such example is to configure an alert when the Container Status remains in the Waiting status for a long time.
+In this section, you can find information on how to add pre-defined alerts, which are available in the Alerts Library. For example, you can configure an alert when the Container Status remains in the Waiting status for a long time using the template available in the Alerts Library.
 
 ## Configure Alerts to check the Container status:
 {: #sb_monitor_alert_container_status}
+
+1. Navigate to the **IBM Cloud Monitor** dashboard.
+2. In the left navigation menu, select **Alerts** and click **New Alert** to configure an alert.
+3. Select **Browse Alert Library** in the **Select Alert Type** window.
+4. Click **Kubernetes** in the Alerts Library.
+5. Select **[Kubernetes] Container Waiting** alert.
+6. Choose the cluster, namespace, workload where the alert must be configured to monitor the container waiting status and select the notification channel, from which the alerts will be sent.
+7. Click **Enable Alert**.
+
+**Note**: You can try all other alert templates available in the **Alerts Library** according to your requirement.
+{: note}
 
