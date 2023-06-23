@@ -94,7 +94,7 @@ toc:
               label: Logging and monitoring
               topics:
               - troubleshooting/sb_logging.md
-              - troubleshooting/sb_monitoring.md   
+              - troubleshooting/sb_monitoring.md
       - topicgroup:
               label: Troubleshooting
               topics:
