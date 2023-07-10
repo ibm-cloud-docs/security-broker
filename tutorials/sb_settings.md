@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-23"
+lastupdated: "2023-07-10"
 
 keywords: domain name, host name, https certificate, logger, smtp, settings
 
@@ -37,27 +37,7 @@ The warning appears when you have not uploaded an HTTPS certificate. HTTPS certi
 
 Upload an HTTPS certificate by following the instructions in [Adding HTTPS certificate](/docs/security-broker?topic=security-broker-sb_add_https) section.
 
-## SMTP
-{: #sb_smtp}
 
-The SMTP configuration is required when you need to add a new user to the {{site.data.keyword.security_broker_short}} Manager.
-
-Complete the following steps to configure the SMTP credentials for the {{site.data.keyword.security_broker_short}} Manager:
-
-1. In the **Settings** page, click **SMTP +** to configure the mail server credentials for the {{site.data.keyword.security_broker_short}} Manager.
-
-   ![SMTP in Setttings](../images/smtp.svg){: caption="SMTP in Setttings" caption-side="bottom"}
-
-2. Specify the following credentials to authenticate to the SMTP server, and click **Save**.
-    
-   **Host name**: The address where your SMTP server resides
-   **Port**: The port number which is used by your server. Usually, the port number is 587 or 2525.
-   **Username and Password**: The credentials for accessing your SMTP server.
-
-   ![SMTP configuration](../images/settings_smtp.svg){: caption="SMTP configuration" caption-side="bottom"}
-    
-   This mail server is used to send an invite through email, when you are adding a new user to the {{site.data.keyword.security_broker_short}} Manager.
-   {: note}
 
 ## Logger
 {: #sb_logger}

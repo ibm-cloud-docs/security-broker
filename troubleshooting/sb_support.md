@@ -1,9 +1,9 @@
 ---
 copyright:
-  years: 2022, 2022
-lastupdated: "2023-02-08"
+  years: 2022, 2023
+lastupdated: "2023-07-10"
 
-keywords: users, admin, priveleges, profiles, {{site.data.keyword.security_broker_short}} Manager, SMTP
+keywords: users, admin, priveleges, profiles,
 
 subcollection: security-broker
 ---
