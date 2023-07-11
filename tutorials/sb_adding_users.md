@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-07-10"
+lastupdated: "2023-07-11"
 
 keywords: users, admin, priveleges, profiles, {{site.data.keyword.security_broker_short}} Manager, SMTP
 
@@ -28,8 +28,12 @@ Complete the following steps to add a new user to the {{site.data.keyword.securi
 
 1. As a Super Admin, navigate to the **Users** tab in the left navigation menu. Click **Add Users +** in the top right corner. Enter an email address to add the user to the account.
 
-   ![Users](../images/add_user.svg){: caption="Users" caption-side="bottom"}
+   The user that you are trying to invite to the {{site.data.keyword.security_broker_short}} Manager instance must be part of the same cloud account where the {{site.data.keyword.security_broker_short}} Manager is installed.
+   {: note}
 
+   ![Add Users](../images/add_user.svg){: caption="Users" caption-side="bottom"}
+
+   
    
 
 
