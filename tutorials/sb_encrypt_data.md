@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-05-26"
+lastupdated: "2023-07-20"
 
 keywords: database, admin, priveleges, users, features, operations
 
@@ -20,6 +20,10 @@ subcollection: security-broker
 
 ## Procedure
 {: #sb_se_procedure}
+
+To perform encryption in a Postgres database using {{site.data.keyword.security_broker_short}}, watch the video below:
+
+![Postgres Encryption using Data Security Broker](https://video.ibm.com/embed/recorded/132917098)
 
 Complete the following steps to encrypt the data with {{site.data.keyword.security_broker_short}} Manager on
 an IBM Cloud PostgreSQL Database:
