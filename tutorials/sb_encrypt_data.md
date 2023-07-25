@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-07-20"
+lastupdated: "2023-07-25"
 
 keywords: database, admin, priveleges, users, features, operations
 
@@ -23,7 +23,7 @@ subcollection: security-broker
 
 To perform encryption in a Postgres database using {{site.data.keyword.security_broker_short}}, watch the video below:
 
-![Postgres Encryption using Data Security Broker](https://video.ibm.com/embed/recorded/132917098)
+![Postgres Encryption using Data Security Broker](https://video.ibm.com/embed/recorded/132917098){: video output="iframe" data-script="none" id="watsonmediaplayer" width="560" height="315" scrolling="no" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0" style="border: 0 none transparent;"}
 
 Complete the following steps to encrypt the data with {{site.data.keyword.security_broker_short}} Manager on
 an IBM Cloud PostgreSQL Database:
@@ -106,6 +106,7 @@ The following table lists PostgreSQL supported data types for M_CTR mode in {{si
 | BIT                                                                               | BYTEA                   |   |
 | VARBIT - Used in {{site.data.keyword.security_broker_short}} Shield for "bit verification"               | BYTEA                   |   |
 {: caption="Table 2. CTR Supported Data Types caption-side="bottom"}
+
 
 
 
