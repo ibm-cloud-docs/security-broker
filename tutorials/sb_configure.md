@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-06-15"
+lastupdated: "2023-08-01"
 
 keywords: database, admin, priveleges, users, configure, operations
 
@@ -76,9 +76,10 @@ following requirements:
 
    ![Getting Started](../images/getting_started.svg "Getting Started"){: caption="Getting Started" caption-side="center"}
     
-5. Configure the basic System Settings by entering the hostname, domain name, proxy access, and click **Continue**.
+5. Configure the basic System Settings by entering the Init Password, Organization name, Domain name, and Proxy access, and click **Continue**.
 
-   - The domain name is part of the email, followed after the "@" character. For example, if the email specified is **test@example.com**, the domain name must be specified as **example.com**. The domain name that you enter must match in step 1 and step 2.
+   - The Init Password field must contain the same password that you specified for the **secrets.initPass** parameter during the {{site.data.keyword.security_broker_short}} Manager installation.
+   - The domain name is part of the email, followed after the "@" character. For example, if the email specified is **test@example.com**, the domain name must be specified as **example.com**. The domain name that you enter must match in step 1 and step 2 or the domain name in step 2 can be a subset of the domain name specified in the step 1.
    - The proxy access name is the name that is responsible for the connectivity from Proxy to {{site.data.keyword.security_broker_short}} Manager (the IP, or DNS, or the Service Name). For example, **dsb-nginx**.
    {: note}
     
@@ -86,11 +87,4 @@ following requirements:
 
    ![Configure Super Admin User](../images/superadmin.svg){: caption="Configure Super Admin User" caption-side="bottom"}
 
-7. Configure Credential Keystore to establish an encrypted credential store for any system access credential or access key that the {{site.data.keyword.security_broker_short}} Manager or {{site.data.keyword.security_broker_short}} Shield utilize. Enter the **{{site.data.keyword.security_broker_short}}** **Secret Key** in the text field. For the **Password** field, enter a secure password or passphrase to secure the actual keystore. Enter the same string that you specified for the **Password** field in the **Confirm Password** text box. Click **Finish** to complete the {{site.data.keyword.security_broker_short}} Manager configuration.
-
-    ![Configure Credential Keystore](../images/secret_key.svg){: caption="Configure Credential Keystore" caption-side="bottom"}
-
-    The {{site.data.keyword.security_broker_short}} Secret Key must contain at least 10 characters, a mixture of upper and lower case, including at least one numeric character. The Secret Key is used to generate a random key to encrypt the Keystore Config Password.
-    {: note}
-
-8. Once you complete the configuration process for the {{site.data.keyword.security_broker_short}} Manager, the next step is to login to the {{site.data.keyword.security_broker_short}} Manager using the steps mentioned in the [Login to {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_login) section.
+7. Once you complete the configuration process for the {{site.data.keyword.security_broker_short}} Manager, the next step is to login to the {{site.data.keyword.security_broker_short}} Manager using the steps mentioned in the [Login to {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_login) section.
