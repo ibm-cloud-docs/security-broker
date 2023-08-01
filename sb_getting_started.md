@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-06-20"
+lastupdated: "2023-08-01"
 
 keywords: support, getting started, data protection, data threats
 
@@ -69,13 +69,13 @@ Ensure that your environment meets the following minimum system level and resour
 
 The factors that affect the sizing of the {{site.data.keyword.security_broker_short}} deployments consist of the {{site.data.keyword.security_broker_short}} Manager management console and one or more {{site.data.keyword.security_broker_short}} Shield proxies. Each component has its own resource needs depending on the anticipated workloads.
 
-## {{site.data.keyword.security_broker_short}} Manager ##
+## {{site.data.keyword.security_broker_short}} Manager
 {: #sb_sizing_dsbm}
 
 In general, resources allocated to a {{site.data.keyword.security_broker_short}} Manager
 deployment needs to be scaled with the number of managed {{site.data.keyword.security_broker_short}} Shields and the number of concurrent users using the {{site.data.keyword.security_broker_short}} Manager.
 
-## {{site.data.keyword.security_broker_short}} Shield ##
+## {{site.data.keyword.security_broker_short}} Shield
 {: #sb_sizing_dsbs}
 
 The general rule for {{site.data.keyword.security_broker_short}} Shield sizing, to handle peak
@@ -90,7 +90,7 @@ scales with the expected maximum number of concurrent connections.
 its own pod. The {{site.data.keyword.security_broker_short}} Shield pod can be in the same or
 different cluster but must have network connectivity to {{site.data.keyword.security_broker_short}} Manager.
 
-## Minimum system requirements for deploying in {{site.data.keyword.cloud_notm}} Kubernetes cluster (IKS) or {{site.data.keyword.redhat_openshift_full}} Kubernetes (ROKS) cluster: ##
+## Minimum system requirements for deploying in {{site.data.keyword.cloud_notm}} Kubernetes cluster (IKS) or {{site.data.keyword.redhat_openshift_full}} Kubernetes (ROKS) cluster:
 {: #sb_sizing_dsbr}
 
 | Product                            | Container/service | IKS/ROKSVersion             | vCPU | Memory | Disk Space                       |
@@ -99,7 +99,7 @@ different cluster but must have network connectivity to {{site.data.keyword.secu
 | Data Security Broker (DSB) Shield  | DSB-shield        | IKS v 1.17+, ROKS v 4.8.54+ | 2    | 8 GB   | (No persistent volume necessary) |
 {: caption="Table 2. Sizing guidelines" caption-side="bottom"}
 
-## Minimum permissions required to install, set up, and  access {{site.data.keyword.security_broker_short}} ##
+## Minimum permissions required to install, set up, and  access {{site.data.keyword.security_broker_short}}
 {: #sb_getting_assign_permission}
 
 As an {{site.data.keyword.cloud_notm}} user, you need to set the follwoing minimum permissions to install, set up and access {{site.data.keyword.security_broker_short}}. 
