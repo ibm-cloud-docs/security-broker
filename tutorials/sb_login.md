@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-27"
+lastupdated: "2023-06-13"
 
 keywords: logging, debugging, platform, dashboard, observability
 
@@ -53,5 +53,5 @@ Complete the following steps to login to the {{site.data.keyword.security_broker
 
    ![Login to {{site.data.keyword.security_broker_short}} Manager](../images/sb_login.svg){: caption="Login to {{site.data.keyword.security_broker_short}} Manager" caption-side="bottom"}
     
-5. Once you have logged into the {{site.data.keyword.security_broker_short}} Manager, the next step is add a database, connect to a keystore, and enroll an application to proceed with the data encryption. Refer to the [Data Protection Services Overview](/docs/security-broker?topic=security-broker-sb_encrypt_progress) section to proceed with the data protection services.
+5. Once you have logged into the {{site.data.keyword.security_broker_short}} Manager, the next step is add a database, connect to a keystore, and enroll an application to proceed with the data encryption. Refer to the [Data Encryption Services Overview](/docs/security-broker?topic=security-broker-sb_encrypt_progress) section to proceed with the data encryption services.
 

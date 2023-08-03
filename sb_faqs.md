@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-23"
+lastupdated: "2023-06-08"
 
 keywords: FAQ, set up, data protection
 
@@ -120,5 +120,16 @@ Refer to the [Adding users in {{site.data.keyword.security_broker_short}} Manage
 **How do I add users without SMTP accounts?**
 
 You can choose "Get invite link" to create a URL that can be shared through any messaging service. 
+
+**What is the impact of encryption on indexing?**
+
+If the index column is encrypted, in standard encryption mode, sorting on that encrypted column will not work, by design, as the encrypted value has no relationship to the cleartext data.  All operations will work once the data is extracted from the encrypted database as the proxy will decrypt it.
+
+**What is the impact of encryption on search?**
+
+For exact match searches, where a query is looking for a specific value, it will work as long as the user issuing the query is authorized since they will be able to obtain the key to decrypt the value.
+For partial match searches, like wildcard searches where only a part of the ciphertext is to be identified, the search will fail as the query will run on encrypted data that has no relationship to the plaintext. 
+
+These limitations are identical to any application encryption approach where the application makes API calls to encrypt and decrypt the data.  Both of these queries, sorting on encrypted indexes and wildcard searches, will work with the Baffle advanced encryption mode where the decryption happens in a secure way on the server side itself using Postgres extensions.
 
 

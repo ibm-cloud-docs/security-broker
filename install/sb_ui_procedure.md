@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-03-27"
+lastupdated: "2023-06-13"
 
 keywords: install, ROKS, IKS, manifests, HELM
 
@@ -51,7 +51,7 @@ Complete the following steps to install the {{site.data.keyword.security_broker_
 
    ![Shield Sync ID from Application](../images/shield_syncid.svg){: caption="Shield Sync ID from Application" caption-side="bottom"}
 
-10. Provide the Shield Sync ID and Shield name under **Set the Input Variables** section. 
+10. Set the input variables. Provide the Shield Sync ID and Shield name and specify the values for the other required parameters as per the description.
 
    Shield Name is mandatory if you are installing multiple Shields.
    {: note}
@@ -68,4 +68,4 @@ If you get an error message like **Workspace creation failed**, refer to the Log
 ## Next steps
 {: #sb_install_ui_procedure_nextsteps}
 
-Once you have successfully installed {{site.data.keyword.security_broker_short}} Shield, you can refer to the [Data Protection Services](/docs/security-broker?topic=security-broker-sb_encrypt_postgress) section to encrypt data.
+Once you have successfully installed {{site.data.keyword.security_broker_short}} Shield, you can refer to the [Data Encryption Services](/docs/security-broker?topic=security-broker-sb_encrypt_postgress) section to encrypt data.

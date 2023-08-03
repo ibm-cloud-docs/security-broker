@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-13"
+lastupdated: "2023-05-24"
 
 keywords: database, admin, priveleges, users, features, operations
 
@@ -58,6 +58,11 @@ The following are considered equality check operators and are supported:
 - DISTINCT
 
 Indexes can be created on encrypted columns, but the ciphertext will be used to create the index and not the underlying cleartext values.
+
+During Keystore enrollment, {{site.data.keyword.security_broker_short}} Manager will accept a Key Protect alias that refers to a destroyed or disabled Master Key. Destroyed Keys are unusable, and {{site.data.keyword.security_broker_short}} migration will fail in this case. As a workaround, ensure that the Keystore Alias does not refer to a destroyed Master Key.
+
+Upgrades from previous versions of {{site.data.keyword.security_broker_short}} Manager is no longer available. Any credentials that were previously stored in MongoDB, in earlier versions, cannot be
+upgraded to new versions.
 
 ## Unsupported Data Types
 {: #sb_unsupported_data_types}

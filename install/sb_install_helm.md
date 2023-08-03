@@ -8,7 +8,7 @@ keywords: install, ROKS, IKS, manifests, HELM
 subcollection: security-broker
 ---
 
-# Installing {{site.data.keyword.security_broker_short}} using the HELM chart in CLI
+# Not used ----- Installing {{site.data.keyword.security_broker_short}} using the HELM chart in CLI
 {: #sb_install_helm}
 
 To work with {{site.data.keyword.security_broker_short}}, you can use HELM to install the

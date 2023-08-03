@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-05-02"
+lastupdated: "2023-06-19"
 
 keywords: support, backup, restore, disaster
 
@@ -13,7 +13,7 @@ subcollection: security-broker
 # Understanding disaster recovery for IBM Cloud Data Security Broker
 {: #sb_dr}
 
-Components of the {{site.data.keyword.security_broker_short}} data protection services do not
+Components of the {{site.data.keyword.security_broker_short}} data encryption services do not
 require any protected data to be stored or cached to operate. This
 guarantees that the data is not lost if any {{site.data.keyword.security_broker_short}}
 component fails or goes down. In {{site.data.keyword.security_broker_short}} components, only
@@ -61,7 +61,7 @@ To take a backup, follow these steps:
 
 2. To back up the MongoDB collections and {{site.data.keyword.security_broker_short}} Manager configuration files, create the script provided below and execute it. The location that is specified after the **-b** option is where the backup file is kept by the script. Check whether the script is being used to back up a {{site.data.keyword.security_broker_short}} Manager deployment on a {{site.data.keyword.redhat_openshift_notm}} cluster or a Kubernetes cluster, and uncomment the relevant command alias for the specified type of cluster where {{site.data.keyword.security_broker_short}} Manager is installed.
 
-```
+```sh
 #!/bin/bash
 if [ $# -eq 0 ]
  then
@@ -157,9 +157,9 @@ BMbackup
 
 3. The following files are added to the specified backup location after you have finished executing the script:
 
-```
-Release-DSB.\<release\>MONGO.tar.gz
-Release-DSB.\<release\>BM.tar.gz
+```sh
+Release-DSB.<release>MONGO.tar.gz
+Release-DSB.<release>BM.tar.gz
 ```
 {: codeblock}
 
@@ -193,15 +193,15 @@ To restore a {{site.data.keyword.security_broker_short}} deployment, follow the 
 
 2. To create a temporary storage area on the workstation, copy the {{site.data.keyword.security_broker_short}} Manager backup files there. The names of the backup files includes the following:
 
-```
-Release-DSB.\<release\>MONGO.tar.gz
-Release-DSB.\<release\>BM.tar.gz
+```sh
+Release-DSB.<release>MONGO.tar.gz
+Release-DSB.<release>BM.tar.gz
 ```
 {: codeblock}
 
 3. To restore the {{site.data.keyword.security_broker_short}} Manager configuration files and MongoDB collections, create and execute the script provided below. As an input to the script, specify the location of the temporary storage location for backup files.
 
-```
+```sh
 #!/bin/bash
 if [ $# -eq 0 ]
 then
@@ -318,7 +318,9 @@ RestoreBM
 ## Setting Up Configuration backup in {{site.data.keyword.cos_full_notm}}
 {: #sb_dr_COS_backup}
 
-It is recommended to store the database configuration and the backup objects in a {{site.data.keyword.cos_short}} instance. The backup is stored in a separate cloud account with {{site.data.keyword.cos_short}} buckets created.
+- It is recommended to store the database configuration and the backup objects in a {{site.data.keyword.cos_short}} instance. The backup is stored in a separate cloud account with {{site.data.keyword.cos_short}} buckets created.
+- Ensure that the backup {{site.data.keyword.cos_short}} bucket is configured with immutabe settings.
+- Setup an Automation jobs to back up the database, preferrably twice a day and upload it to the {{site.data.keyword.cos_short}} bucket. It is recommeded to setup an automation job to restore the database whenever necessary by picking up the latest changes from the backup {{site.data.keyword.cos_short}} bucket.
 
 
 

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-21"
+lastupdated: "2023-08-01"
 
 keywords: support, getting started, data protection, data threats
 
@@ -10,24 +10,24 @@ subcollection: security-broker
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Getting started with IBM Cloud Data Security Broker
+# Getting started with IBM Cloud Security Compliance Center Data Security Broker
 {: #getting_started}
 
-{{site.data.keyword.security_broker_full_notm}} is available as a Beta version, for evaluation and testing purposes. It is not intended for production usage.
+IBM Cloud Security Compliance Center Data Security Broker is available as a Beta version, for evaluation and testing purposes. It is not intended for production usage.
 {: beta}
 
-Protect your data in the cloud with the {{site.data.keyword.security_broker_full_notm}}, which is a complete data protection solution that secures sensitive data in enterprise databases by integrating
+Protect your data in the cloud with the {{site.data.keyword.security_broker_full_notm}}, which is a complete data encryption solution that secures sensitive data in enterprise databases by integrating
 with key management and databases to provide application-level encryption.
 {: shortdesc}
 
 {{site.data.keyword.security_broker_short}} offers Data Protection Services which consists of two main
 components, namely:
 
-**{{site.data.keyword.security_broker_short}} Manager** is the administrative console for
+**IBM Cloud Security Compliance Center Data Security Broker Manager** is the administrative console for
 the solution that integrates with enterprise key managers and databases
 and manages the {{site.data.keyword.security_broker_short}} solution components.
 
-**{{site.data.keyword.security_broker_short}} Shield** is the SQL / NOSQL proxy that
+**IBM Cloud Security Compliance Center Data Security Broker Shield** is the SQL / NOSQL proxy that
 functions to encrypt and decrypt data at the field or record level.
 
 **{{site.data.keyword.security_broker_short}} Manager** enforces encryption policies and
@@ -39,7 +39,7 @@ configurations by:
 **{{site.data.keyword.security_broker_short}} Shield** is a stateless reverse proxy that intercepts
 and encrypts application data sent to the database and decrypts encrypted data returned by the database.
 
-{{site.data.keyword.security_broker_short}} offers Data Protection Services which provide a range of data protection services such as data encryption, data tokenization, record level encryption, and data masking.
+{{site.data.keyword.security_broker_short}} offers Data Encryption Services which provide a range of data encryption services such as data encryption, data tokenization, record level encryption, and data masking.
 
 {{site.data.keyword.security_broker_short}} supports only PostgreSQL database.
 {: note}
@@ -64,18 +64,18 @@ Ensure that your environment meets the following minimum system level and resour
 | {{site.data.keyword.cloud_notm}} Kubernetes cluster             | Ubuntu 18              | 2                               |
 {: caption="Table 1. Resource level requirements for {{site.data.keyword.security_broker_short}}" caption-side="bottom"}  
 
-## {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield Sizing Guidelines
+## Sizing Guidelines
 {: #sb_sizing}
 
 The factors that affect the sizing of the {{site.data.keyword.security_broker_short}} deployments consist of the {{site.data.keyword.security_broker_short}} Manager management console and one or more {{site.data.keyword.security_broker_short}} Shield proxies. Each component has its own resource needs depending on the anticipated workloads.
 
-## {{site.data.keyword.security_broker_short}} Manager ##
+## {{site.data.keyword.security_broker_short}} Manager
 {: #sb_sizing_dsbm}
 
 In general, resources allocated to a {{site.data.keyword.security_broker_short}} Manager
 deployment needs to be scaled with the number of managed {{site.data.keyword.security_broker_short}} Shields and the number of concurrent users using the {{site.data.keyword.security_broker_short}} Manager.
 
-## {{site.data.keyword.security_broker_short}} Shield ##
+## {{site.data.keyword.security_broker_short}} Shield
 {: #sb_sizing_dsbs}
 
 The general rule for {{site.data.keyword.security_broker_short}} Shield sizing, to handle peak
@@ -90,19 +90,23 @@ scales with the expected maximum number of concurrent connections.
 its own pod. The {{site.data.keyword.security_broker_short}} Shield pod can be in the same or
 different cluster but must have network connectivity to {{site.data.keyword.security_broker_short}} Manager.
 
-## Recommended sizing for Kubernetes or {{site.data.keyword.redhat_openshift_notm}} Deployments for {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield: ##
+## Minimum system requirements for deploying in {{site.data.keyword.cloud_notm}} Kubernetes cluster (IKS) or {{site.data.keyword.redhat_openshift_full}} Kubernetes (ROKS) cluster:
 {: #sb_sizing_dsbr}
 
-4 CPU, 8 GB Memory
+| Product                            | Container/service | IKS/ROKSVersion             | vCPU | Memory | Disk Space                       |
+|------------------------------------|-------------------|-----------------------------|------|--------|----------------------------------|
+| Data Security Broker (DSB) Manager | DSB-manager       | IKS v 1.17+, ROKS v 4.8.54+ | 4    | 8 GB   | 5 GB                             |
+| Data Security Broker (DSB) Shield  | DSB-shield        | IKS v 1.17+, ROKS v 4.8.54+ | 2    | 8 GB   | (No persistent volume necessary) |
+{: caption="Table 2. Sizing guidelines" caption-side="bottom"}
 
-## Setting up minimum permissions required to install, set up, and  access {{site.data.keyword.security_broker_short}} ##
+## Minimum permissions required to install, set up, and  access {{site.data.keyword.security_broker_short}}
 {: #sb_getting_assign_permission}
 
 As an {{site.data.keyword.cloud_notm}} user, you need to set the follwoing minimum permissions to install, set up and access {{site.data.keyword.security_broker_short}}. 
 By using the following steps and the information in the table, assign the required permissions:
 1. Log into your {{site.data.keyword.cloud_notm}} account and click **Manage -> Access (IAM)**.
 2. In the Manage access and users dashboard, click **View all** in the **My user details** section.
-3. In the **Access** tab, click **Assign access +**. From the Table 1, select a service and click **Next**.
+3. In the **Access** tab, click **Assign access +**. From the Table 2, select a service and click **Next**.
 4. In the **Roles and actions** section, select the specified permissions that are required.
 5. Click **Add** and **Assign** to assign the permissions required.
 
@@ -113,7 +117,17 @@ By using the following steps and the information in the table, assign the requir
 | {{site.data.keyword.containershort}}                     | Manager, Editor        |
 | IBM {{site.data.keyword.redhat_openshift_notm}} {{site.data.keyword.containershort}} | Editor                 |
 | {{site.data.keyword.bpshort}}                              | Manager, Administrator | 
-{: caption="Table 2. Permissions required for {{site.data.keyword.security_broker_short}}" caption-side="bottom"}
+{: caption="Table 3. Permissions required for {{site.data.keyword.security_broker_short}}" caption-side="bottom"}
+
+You can find details about platform roles and the actions mapped to each of the role in the table below: 
+
+| Platform Roles | Description                                                                                                                                                        |   |   |   |
+|:--------------:|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|---|---|
+| Administrator  | As an administrator, you can  perform all platform actions based on the resource this role is being  assigned, including assigning access policies to other users. |   |   |   |
+| Editor         | As an editor, you can perform all platform actions except for managing the account and assigning access policies.                                                  |   |   |   |
+| Operator       | As an operator, you can  perform platform actions required to configure and operate service  instances, such as viewing a service's dashboard.                     |   |   |   |
+| Viewer         | As a viewer, you can view service instances, but you can't modify them.                                                                                            |   |   |   |
+{: caption="Table 4. Platform roles and their actions" caption-side="bottom"}
 
 You can find more information about {{site.data.keyword.security_broker_short}} in the [About {{site.data.keyword.security_broker_short}}](/docs/security-broker?topic=security-broker-sb_about) section.
 

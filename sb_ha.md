@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-05-02"
+lastupdated: "2023-06-14"
 
 keywords: support, backup, high availability
 
@@ -13,12 +13,12 @@ subcollection: security-broker
 # Understanding High Availability for IBM Cloud Data Security Broker
 {: #sb_ha}
 
-{{site.data.keyword.security_broker_short}} components can be deployed in an environment with highly available configuration to minimize or eliminate the downtime caused by momentary failures of {{site.data.keyword.security_broker_short}} components or the infrastructure they depend on, ensuring the continuous availability of data protected by {{site.data.keyword.security_broker_short}} Data Protection services. The high volume of data access during peak load periods that can result from deployment in a highly available configuration can also help mitigate service degradations.
+{{site.data.keyword.security_broker_short}} components can be deployed in an environment with highly available configuration to minimize or eliminate the downtime caused by momentary failures of {{site.data.keyword.security_broker_short}} components or the infrastructure they depend on, ensuring the continuous availability of data protected by {{site.data.keyword.security_broker_short}} Data encryption services. The high volume of data access during peak load periods that can result from deployment in a highly available configuration can also help mitigate service degradations.
 
 ## Overview of High Availability Architecture
 {: #sb_ha_overview}
 
-A management server connects to the proxies and manages their configuration and settings, and proxies are placed in the data paths between applications and data stores as part of the {{site.data.keyword.security_broker_short}} Data Protection service. Figure 1 shows the control path, which is made up of the management servers and the connections between the proxies and the management servers.
+A management server connects to the proxies and manages their configuration and settings, and proxies are placed in the data paths between applications and data stores as part of the {{site.data.keyword.security_broker_short}} Data Encryption service. Figure 1 shows the control path, which is made up of the management servers and the connections between the proxies and the management servers.
 
 ![Control path vs data path](images/ha_ctr_data_path.svg "Control path vs data path"){: caption="Figure 1: Control path vs data path" caption-side="center"}
 
@@ -49,7 +49,7 @@ For applications in each region, one or more load balancers must be set up with 
 
 {{site.data.keyword.security_broker_short}} advises using horizontal pod scaling for each cluster to increase service availability within the cluster. {{site.data.keyword.security_broker_short}} Shield's deployment cluster's HorizontalAutoscaler (HPA) feature can be used to configure horizontal scaling. Based on the proper resource utilization, this HPA can be configured. The HPA configuration described in the following YAML file supports scaling for increased cluster availability. {{site.data.keyword.security_broker_short}} recommends boosting the **maxReplica** setting to a value appropriate for the anticipated peak load in order to scale and handle the large peak loads. It is recommended to allocate the same number of CPUs to the database server's CPUs as you would do for the maximum number of replicas.
 
-```
+```sh
 apiVersion: autoscaling/v2beta2
 kind: HorizontalPodAutoscaler
 metadata:
@@ -87,7 +87,7 @@ The metadata kept by the {{site.data.keyword.security_broker_short}} Manager ins
 ## Synchronization Frequency
 {: #sb_ha_sf}
 
-In order to configure data protection policies or audit current policies, service availability requirements determine how frequently the active and standby {{site.data.keyword.security_broker_short}} Managers synchronize. Typically, these are rare occurrences, and a job that automatically synchronizes metadata between the primary and standby must be adequate.
+In order to configure data encryption policies or audit current policies, service availability requirements determine how frequently the active and standby {{site.data.keyword.security_broker_short}} Managers synchronize. Typically, these are rare occurrences, and a job that automatically synchronizes metadata between the primary and standby must be adequate.
 
 The synchronization job between the primary and standby {{site.data.keyword.security_broker_short}} Managers must be run after each configuration change if you do not wish for configuration loss.
 

@@ -8,7 +8,7 @@ keywords: install, ROKS, IKS, manifests, HELM
 subcollection: security-broker
 ---
 
-# Installing {{site.data.keyword.security_broker_short}}
+# Not used ---- Installing {{site.data.keyword.security_broker_short}}
 {: #sb_install_com}
 
 You can install {{site.data.keyword.security_broker_short}} in one of the following ways:

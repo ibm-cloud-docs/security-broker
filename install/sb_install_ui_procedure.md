@@ -1,14 +1,14 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-14"
+lastupdated: "2023-06-13"
 
 keywords: install, ROKS, IKS, manifests, HELM
 
 subcollection: security-broker
 ---
 
-# Install {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield
+# Not used ===== Install {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield
 {: #sb_install_ui_procedure}
 
 ## Overview:
@@ -162,9 +162,9 @@ Complete the following steps to insall the {{site.data.keyword.security_broker_s
 
 **Next steps**:
 
-Once you have successfully installed {{site.data.keyword.security_broker_short}} Shield, you can explore the data protection services in the {{site.data.keyword.security_broker_short}} Manager.
+Once you have successfully installed {{site.data.keyword.security_broker_short}} Shield, you can explore the data encryption services in the {{site.data.keyword.security_broker_short}} Manager.
 
-Refer to the [Data Protection Services](/docs/security-broker?topic=security-broker-sb_encrypt_postgress) section to perform the data protection services offered by {{site.data.keyword.security_broker_short}} Manager.
+Refer to the [Data Encryption Services](/docs/security-broker?topic=security-broker-sb_encrypt_postgress) section to perform the data encryption services offered by {{site.data.keyword.security_broker_short}} Manager.
 
 
 

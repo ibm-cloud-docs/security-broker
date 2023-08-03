@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-13"
+lastupdated: "2023-08-01"
 
 keywords: support, troubleshooting, data protection, data threats
 
@@ -15,7 +15,7 @@ content-type: release-note
 # Release notes
 {: #sb_release_notes}
 
-Use this release notes to learn about the latest changes to the {{site.data.keyword.security_broker_full_notm}} documentation that are grouped by month.
+Use this release notes to learn about the latest changes to the {{site.data.keyword.security_broker_full_notm}} documentation.
 {: shortdesc}
 
 ## February 2023
@@ -37,3 +37,9 @@ Following features are supported in the Beta version:
 
 - Data Encryption and Decryption
 - Data Masking
+
+
+
+
+
+
