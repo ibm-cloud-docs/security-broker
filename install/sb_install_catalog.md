@@ -19,7 +19,7 @@ subcollection: security-broker
 
 Access the {{site.data.keyword.cloud_notm}} catalog to install the {{site.data.keyword.security_broker_short}} Manager. You need to install {{site.data.keyword.security_broker_short}} Manager first and then proceed with {{site.data.keyword.security_broker_short}} Shield installation.
 
-Ensure that the {{site.data.keyword.security_broker_short}} Manager must not be exposed to the internet. Only authorized personnel must have access to the DSB Manager.
+Ensure that the {{site.data.keyword.security_broker_short}} Manager must not be exposed to the public network. Only authorized personnel must have access to the {{site.data.keyword.security_broker_short}} Manager.
 {: note}
 
 ## Pre-requisites:
