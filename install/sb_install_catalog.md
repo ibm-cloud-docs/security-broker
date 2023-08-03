@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-06-15"
+lastupdated: "2023-08-03"
 
 keywords: install, ROKS, IKS, manifests, HELM
 
@@ -18,6 +18,8 @@ subcollection: security-broker
 {: #sb_install_ui_overview}
 
 Access the {{site.data.keyword.cloud_notm}} catalog to install the {{site.data.keyword.security_broker_short}} Manager. You need to install {{site.data.keyword.security_broker_short}} Manager first and then proceed with {{site.data.keyword.security_broker_short}} Shield installation.
+
+{{site.data.keyword.security_broker_short}} Manager is not exposed to the internet and it can only be accessed by authorized personnel.
 
 ## Pre-requisites:
 {: #sb_install_ui_prereq}
