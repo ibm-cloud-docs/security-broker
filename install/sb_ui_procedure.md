@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-06-13"
+lastupdated: "2023-08-04"
 
 keywords: install, ROKS, IKS, manifests, HELM
 
@@ -52,10 +52,7 @@ Complete the following steps to install the {{site.data.keyword.security_broker_
    ![Shield Sync ID from Application](../images/shield_syncid.svg){: caption="Shield Sync ID from Application" caption-side="bottom"}
 
 10. Set the input variables. Provide the Shield Sync ID and Shield name and specify the values for the other required parameters as per the description.
-
-   Shield Name is mandatory if you are installing multiple Shields.
-   {: note}
-
+   
 11. Click **Install** in the **Summary** pane on the right to complete the installation process.
 
 12. You will be navigated to the IBM Schematicss Workspaces to track the installation progress. Once the installation is successful, a message **Workspace creation successfull** is displayed as shown below:
