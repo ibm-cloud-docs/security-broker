@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-08-04"
+lastupdated: "2023-08-07"
 
 keywords: install, ROKS, IKS, manifests, HELM
 
@@ -52,6 +52,17 @@ Complete the following steps to install the {{site.data.keyword.security_broker_
    ![Shield Sync ID from Application](../images/shield_syncid.svg){: caption="Shield Sync ID from Application" caption-side="bottom"}
 
 10. Set the input variables. Provide the Shield Sync ID and Shield name and specify the values for the other required parameters as per the description.
+
+    If you are installing {{site.data.keyword.security_broker_short}} Shield in a different namespace apart from the namespace, where {{site.data.keyword.security_broker_short}} Manager is installed, specify values for the following input variables:
+
+    **dsbShield.configMap.data.BM_IP**: Enter a value in the format: **dsb-nginx.<namespace namme>**.
+    **dsbShield.secret.credstorePass**: Enter the same value that you specified during the {{site.data.keyword.security_broker_short}} Manager installation for the **secrets.credstorePass** input variable.
+    {: note}
+
+    If you are installing {{site.data.keyword.security_broker_short}} Shield in a different cluster apart from the cluster where {{site.data.keyword.security_broker_short}} Manager is installed, specify values for the following input variables:
+
+    **dsbShield.configMap.data.BM_IP**: Replace **dsb-nginx** with the IP address of the {{site.data.keyword.security_broker_short}} Manager.
+    {: note}
    
 11. Click **Install** in the **Summary** pane on the right to complete the installation process.
 
