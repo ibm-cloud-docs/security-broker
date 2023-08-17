@@ -27,6 +27,10 @@ toc:
           - install/sb_install_catalog.md
           - tutorials/sb_configure.md
           - tutorials/sb_login.md
+      - topicgroup:
+          label: Deployment models
+          topics:
+          - sb_deployment_models.md
           - topicgroup:
               label: Setting up Data Security Broker Manager
               topics:

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-08-01"
+lastupdated: "2023-08-17"
 
 keywords: support, getting started, data protection, data threats
 
@@ -11,7 +11,7 @@ subcollection: security-broker
 {{site.data.keyword.attribute-definition-list}}
 
 # Getting started with IBM Cloud Security Compliance Center Data Security Broker
-{: #getting_started}
+{: #sb_getting_started}
 
 IBM Cloud Security Compliance Center Data Security Broker is available as a Beta version, for evaluation and testing purposes. It is not intended for production usage.
 {: beta}
