@@ -107,7 +107,7 @@ If you are planning your deployment on a private ROKS cluster, follow the steps 
   4. Copy the load balancer by executing the command:
 
      ```sh
-     oc get svc dsb-nginx-public -n <your_dsb_deployment_project_or_namespace>
+     oc get svc dsb-nginx-public -n <data_security_broker_manager_deployment_projectname>
      ```
      {: codeblock}          
 
@@ -143,15 +143,17 @@ If you are planning your deployment on a private ROKS cluster, follow the steps 
 3. Execute the command to create and apply the YAML file:
    
    ```sh
-   kubectl apply -f <YAML> -n <your_dsb_deployment_project_or_namespace>
+   kubectl apply -f <YAML> -n <data_security_broker_manager_deployment_nameo_of_the_namespace>
    ```
    {: codeblock} 
+
+   where **data_security_broker_manager_deployment_name_of_the_namespace** is the namespace name that you created or selected during the {{site.data.keyword.security_broker_short}} Manager installation.
  
 4. Wait for the load balancer to get into **Active** state. This process might usually take from five to ten minutes.
 5. Copy the load balancer by executing the command:
 
    ```sh
-   kubectl get svc dsb-nginx-private -n <your_dsb_deployment_project_or_namespace>
+   kubectl get svc dsb-nginx-private -n <data_security_broker_manager_deployment_nameo_of_the_namespace>
    ```
    {: codeblock}
    
@@ -159,4 +161,45 @@ If you are planning your deployment on a private ROKS cluster, follow the steps 
 ## {{site.data.keyword.security_broker_short}} Shield on a private IKS cluster
 {: #private_vpc_iks_dsb_shield}
 
+1. After you install {{site.data.keyword.security_broker_short}} Shield in a private IKS cluster, by default, a public Load Balancer IP is provisioned.
+2. If you require a private Load Balancer, you can use create a YAML file for the load balancer with the format mentioned below.
+
+   ```sh
+   apiVersion: v1
+    kind: Service
+      metadata:
+    annotations:
+      service.kubernetes.io/ibm-load-balancer-cloud-provider-ip-type: "private"
+    labels:
+      app: <dsb-deployment-name>
+      name: dsb-shield-private
+    spec:
+      ports:
+      - port: 8444
+      protocol: TCP
+      targetPort: 8444
+    selector:
+      app: <dsb-deployment-name>
+      type: LoadBalancer
+   ```
+   : codeblock} 
+
+3. Execute the command to create and apply the YAML file:
+   
+   ```sh
+   kubectl apply -f <YAML> -n <data_security_broker_shield_deployment_nameo_of_the_namespace>
+   ```
+   {: codeblock} 
+   
+   where **data_security_broker_shield_deployment_name_of_the_namespace** is the namespace name that you created or selected during the {{site.data.keyword.security_broker_short}} Shield installation.
+ 
+4. Wait for the load balancer to get into **Active** state. This process might usually take from five to ten minutes.
+5. Copy the load balancer by executing the command:
+
+   ```sh
+   kubectl get svc dsb-nginx-private -n <data_security_broker_shield_deployment_nameo_of_the_namespace>
+   ```
+   {: codeblock}
+
+   
 
