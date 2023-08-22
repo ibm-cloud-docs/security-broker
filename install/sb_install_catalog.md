@@ -66,9 +66,7 @@ Complete the following steps to install the **{{site.data.keyword.security_broke
 8.  Configure your workspace by specifying the following details:
 
     a. Specify the **Name** for the workspace. The workspace name must be unique and using the name of the workspace, you can manage, update or uninstall {{site.data.keyword.security_broker_short}} Manager from the [IBM Schematicss Workspace](https://cloud.ibm.com/schematics/workspaces).
-
-    ![Configure Workspace](../images/workspace.svg){: caption="Configure Workspace" caption-side="bottom"}
-
+    
     b. Select the **Resource group**, **Location**, and specify the **Tags** required for configuring the workspace.
 
 9.  Set the input variables, as mentioned below:
