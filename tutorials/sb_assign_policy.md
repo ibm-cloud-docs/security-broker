@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-13"
+lastupdated: "2023-08-22"
 
 keywords: database, admin, priveleges, users, features, operations
 
@@ -24,20 +24,14 @@ A list of Default Data Protection Policies is available in the Data Protection L
 ## To assign or change a Default Data Protection Policy, do the following
 {: #sb_encrypt_steps}
 
-1. In {{site.data.keyword.security_broker_short}} Manager, click the **Application** icon in the left menu bar.
-
-   ![Applications](../images/add_app.svg){: caption="Applications" caption-side="bottom"}
-
+1. In {{site.data.keyword.security_broker_short}} Manager, click the **Application** icon in the left navigation menu bar.
+   
 2. Select an application from the list and click **Encrypt**.
-
-   ![Encrypt Data](../images/encrypt.svg){: caption="Encrypt Data" caption-side="bottom"}
-
+   
 3. In the left navigation menu, navigate to a database and schema and select the table for which you want to assign or change a policy. The table appears on the right.
 
 4. Click the checkbox for a column and then expand the **Data Protection** drop-down list. By default,     CTR Policy is selected.
-
-   ![Data Protection Policies](../images/data_protection.svg){: caption="Data Protection Policies" caption-side="bottom"}
-
+   
 5. Perform one of the following operations:
    - Accept the default policy or select a different default policy.
    - Specify a new default policy and add an encryption or masking mode.
