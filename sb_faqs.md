@@ -149,12 +149,6 @@ The environment, network latency, and network architecture that manage the datab
 
 Refer to the [Adding users in {{site.data.keyword.security_broker_short}} Manager section](/docs/security-broker?topic=security-broker-sb_adding_users).
 
-## How do I add users without SMTP accounts?
-{: #faq-user-smtp}
-{: faq}
-
-You can choose "Get invite link" to create a URL that can be shared through any messaging service. 
-
 ## What is the impact of encryption on indexing?
 {: #faq-index-impact}
 {: faq}

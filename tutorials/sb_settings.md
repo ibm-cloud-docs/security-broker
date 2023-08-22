@@ -3,7 +3,7 @@ copyright:
   years: 2022, 2023
 lastupdated: "2023-08-22"
 
-keywords: domain name, host name, https certificate, logger, smtp, settings
+keywords: domain name, host name, https certificate, logger, settings
 
 subcollection: security-broker
 ---
