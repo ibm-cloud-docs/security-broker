@@ -45,6 +45,7 @@ toc:
       - sb_pricing.md 
   - navgroup: 
       id: howto
+      topics:
       - topicgroup:
           label: Data Encryption Services
           topics:
