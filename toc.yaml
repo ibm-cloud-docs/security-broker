@@ -8,12 +8,10 @@ toc:
     console-page: /catalog/services/security-broker
     product-page: https://cloud.ibm.com/security-broker
     path: security-broker
-    label: IBM Cloud Security and Compliance Center Data Security Broker
+    label: IBM Cloud Security and Compliance Center Data Security Broker      
   entries: 
   - navgroup: 
       id: learn
-      topicgroup:
-      label: Getting Started with IBM Cloud Security and Compliance Center Data Security Broker
       - sb_getting_started.md
       - sb-high_level_archi.md
       - sb-encryption-models.md
@@ -98,7 +96,6 @@ toc:
       - link: 
           label: Blogs
           href: https://www.ibm.com/cloud/blog/announcements/readily-encrypt-de-identify-and-mask-sensitive-data-with-zero-code-changes
-
   - navgroup:
       id: help
       topics:
