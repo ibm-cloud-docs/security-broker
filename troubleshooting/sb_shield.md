@@ -27,7 +27,6 @@ Error messages or warnings displayed during Shield enrollment.
 {: tsSymptoms}
 
 If you get error messages or warnings during the Shield enrollment, check for the below scenarios:
-
 1. Hostname or IP address is not submitted: Copy and paste the Shield host endpoint precisely in the appropriate field, with no extra characters or spaces.
 
 2. Shield host is already in use by {{site.data.keyword.security_broker_short}}: Multiple Shields may be hosted on the same endpoint, but only if the port number is unique. If the same port number is reused, the connection fails.
