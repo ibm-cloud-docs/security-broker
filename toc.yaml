@@ -12,11 +12,11 @@ toc:
   entries: 
   - navgroup: 
       id: learn
+      topics:
       - sb_getting_started.md
       - sb-high_level_archi.md
       - sb-encryption-models.md
-      - sb_deployment_plans.md     
-      topics:
+      - sb_deployment_plans.md
       - topicgroup:
           label: Setting up your environment
           topics:
