@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-13"
+lastupdated: "2023-08-22"
 
 keywords: uninstall, delete, helm, configuration, tls certificate, docker config secret, environment variable, regions, cluster, container, app security, memory encryption, data in use
 
@@ -29,8 +29,6 @@ The user must be aware of the workspace name which is provided during the {{site
 Log into IBM Cloud Schematics workspace and follow the steps below to uninstall the {{site.data.keyword.security_broker_short}} Manager:
 
 1. Search for the workspace name that you provided during the {{site.data.keyword.security_broker_short}} Manager install and click on the workspace to open it.
-
-   ![IBM Schematics Workspace](../images/schematics_workspace.svg){: caption="IBM Schematics Workspace" caption-side="bottom"}
 
 2. Select **Actions** -> **Destroy Resources** to destroy the workloads associated with the {{site.data.keyword.security_broker_short}} Manager.
 

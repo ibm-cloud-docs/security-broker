@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-13"
+lastupdated: "2023-08-22"
 
 keywords: upgrade, delete, helm, configuration, tls certificate, docker config secret, environment variable, regions, cluster, container, app security, memory encryption, data in use
 
@@ -28,11 +28,7 @@ Log into IBM Cloud Schematics workspace and follow the steps below to upgrade th
 
 1.  Search for the workspace name that you provided during the {{site.data.keyword.security_broker_short}} Manager install and click on the workspace to open it.
 
-    ![IBM Schematicss Workspace](../images/schematics_workspace.svg){: caption="IBM Schematicss Workspace" caption-side="bottom"}
-
-2.  Click **Settings** option in the left navigation.
-
-    ![{{site.data.keyword.security_broker_short}} Manager Upgrade](../images/manager_update.svg){: caption="{{site.data.keyword.security_broker_short}} Manager Upgrade" caption-side="bottom"}
+2.  Click **Settings** option in the left navigation.  
 
 3. If the new version is available for the {{site.data.keyword.security_broker_short}} Manager, then the **Update** button is enabled and you can click the **Update** button to proceed with upgrading the {{site.data.keyword.security_broker_short}} Manager.
 
