@@ -17,38 +17,53 @@ subcollection: security-broker
 {: support}
 
 
-
+You get error messages or warnings during the application encryption workflow.
 {: shortdesc}
 
-{: tsSymptoms}
-
-
+Encrypt button is disabled: Shield is initializing, restarting, or stopped.
 {: tsCauses}
 
+The Shields enrolled in an application must all be in a **running** state to enable the Encryption operations.
 {: tsResolve}
 
+Shield connection to the database fails: Database credentials are changed. 
+{: tsCauses}
 
-If you get error messages or warnings during the application workflow, check for the following troubleshooting tips:
+The Database Username or Database Password might have been updated; from the time the connection was created in Manager.
+{: tsResolve}
 
-1. Encrypt button is disabled: Shield is initializing, restarting, or stopped.
+Database grants are insufficient.
+{: tsCauses}
 
-   The Shields enrolled in an application must all be in a **running** state to enable the Encryption operations.
-   {: note}
+The database credentials which the Shield uses to create a session must have a minimum set of permissions.
+{: tsResolve}
 
-2. Shield connection to the database fails: Database credentials are changed. The Database Username or Database Password might have been updated; from the time the connection was created in Manager.
+Shield does not use SSL.
+{: tsCauses}
 
-3. Database grants are insufficient: The database credentials which the Shield uses to create a session must have a minimum set of permissions.
+If the database connection uses SSL, the Shield connection must also use SSL.
+{: tsResolve}
 
-4. Shield does not use SSL: If the database connection uses SSL, the Shield connection must also use SSL.
+Custom Data Protection mode is not visible in the Data Protection dropdown for selection.
+{: tsCauses}
 
-5. Custom Data Protection mode is not visible in the Data Protection dropdown for selection: Custom mode is invalid for the selected datatype. Certain custom encryption modes and masking modes may only be applied on data types.
+Custom mode is invalid for the selected datatype. Certain custom encryption modes and masking modes may only be applied on data types.
+{: tsResolve}
 
-6. Multiple Data Protection modes are selected on one column: Default Data Protection is overridden: By design, default data protection policies may be applied on any column. If a custom or column-specific Encryption Mode or Masking Mode is simultaneously selected for a column, then the default policy is ignored. The custom selection is applied.
+Multiple Data Protection modes are selected on one column. Default Data Protection is overridden.
+{: tsCauses}
 
-7. Option to Deploy Policy & Migrate Data is disabled: Shield is initializing, restarting, or stopped. The Shields enrolled in an application must all be in a **running** state to enable the Encryption operations. Or, if no Shields are enrolled in the application, the migration option is disabled.
+By design, default data protection policies may be applied on any column. If a custom or column-specific Encryption Mode or Masking Mode is simultaneously selected for a column, then the default policy is ignored. The custom selection is applied.
+{: tsResolve}
 
-   If you are experiencing any other issues with the {{site.data.keyword.security_broker_short}},
-   go to the IBM Cloud [Support Center](https://cloud.ibm.com/unifiedsupport/supportcenter) and navigate
-   to creating a case. Use the All products option to search for {{site.data.keyword.security_broker_full_notm}} to continue creating the case or to find more information about getting support.
-   {: note}
+Option to Deploy Policy & Migrate Data is disabled.
+{: tsCauses}
+
+Shield is initializing, restarting, or stopped. The Shields enrolled in an application must all be in a **running** state to enable the Encryption operations. Or, if no Shields are enrolled in the application, the migration option is disabled.
+{: tsResolve}
+
+If you are experiencing any other issues with the {{site.data.keyword.security_broker_short}},
+go to the IBM Cloud [Support Center](https://cloud.ibm.com/unifiedsupport/supportcenter) and navigate
+to creating a case. Use the All products option to search for {{site.data.keyword.security_broker_full_notm}} to continue creating the case or to find more information about getting support.
+{: note}
 
