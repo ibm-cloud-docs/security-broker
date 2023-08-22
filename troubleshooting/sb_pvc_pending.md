@@ -46,6 +46,7 @@ spec:
  volumeMode: Filesystem
 ```
 {: codeblock}
+
 A sample YAML for PVC of {{site.data.keyword.security_broker_short}} MangoDB:
 ```sh
 apiVersion: v1
