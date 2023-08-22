@@ -38,9 +38,7 @@ Ensure that the {{site.data.keyword.security_broker_short}} Manager must not be 
 3. To sort the catalog products using the type, click **Software** in the **Type** option, which is present in the left-hand navigation.
 
 4. The {{site.data.keyword.security_broker_short}} software comprises of two components, which is displayed in the Catalog list as **{{site.data.keyword.security_broker_short}} Manager** and **{{site.data.keyword.security_broker_short}} Shield**.
-
-   ![{{site.data.keyword.security_broker_short}} components in IBM Cloud Catalog list](../images/catalog_items.svg){: caption="Data Security Broker components in IBM Cloud Catalog list" caption-side="bottom"}
-
+ 
 5. You must install the **{{site.data.keyword.security_broker_short}} Manager** first and then get the Shield Sync ID from the application in the **{{site.data.keyword.security_broker_short}} Manager** to install the **{{site.data.keyword.security_broker_short}} Shield**.
 
 ## Install **{{site.data.keyword.security_broker_short}} Manager**
@@ -52,16 +50,12 @@ Complete the following steps to install the **{{site.data.keyword.security_broke
 
 2.  The {{site.data.keyword.security_broker_short}} Manager catalog item opens in a seperate window. In the **Select your deployment target** drop down, select **{{site.data.keyword.containerlong}} (IKS)** or **Red Hat Openshift (ROKS)** to install the {{site.data.keyword.security_broker_short}} Manager in the IKS or ROKS cluster.
 
-    ![{{site.data.keyword.security_broker_short}} Manager](../images/dep_target.svg){: caption="Data Security Broker Manager" caption-side="bottom"}
-
 3.  The delivery method is selected as **HELM chart** by default under the **Select a delivery method** drop down.
 
 4.  Select the version of the software to install, in the **Select Version** drop-down.
 
 5.  From the list of available clusters, select the cluster on which you wish to perform the installation.
-
-    ![List of clusters](../images/clusters.svg){: caption="List of clusters" caption-side="bottom"}
-
+    
 6.  Select an existing namespace to deploy the {{site.data.keyword.security_broker_short}} Manager or click **Add namespace** to add a new namespace. Specify the name for the namespace and click **Add** to create a new namespace within the selected cluster.
 
 7.  If you are installing the {{site.data.keyword.security_broker_short}} Manager in the ROKS cluster, you must run the preinstallation script by clicking on the **Run Script** button after you select the cluster and the project. 

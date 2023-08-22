@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-08-08"
+lastupdated: "2023-08-22"
 
 keywords: install, ROKS, IKS, manifests, HELM
 
@@ -21,17 +21,13 @@ Complete the following steps to install the {{site.data.keyword.security_broker_
 1. Click **{{site.data.keyword.security_broker_short}} Shield** catalog item.
 
 2. In the **Select your deployment target** drop down, select **{{site.data.keyword.containerlong_notm}}** or **Red    Hat Openshift** to install the {{site.data.keyword.security_broker_short}} Shield in the IKS or ROKS cluster.
-
-   ![{{site.data.keyword.security_broker_short}} Shield Catalog Page](../images/dsb_shield.svg){: caption="{{site.data.keyword.security_broker_short}} Shield Catalog Page" caption-side="bottom"}
-
+   
 3. The delivery method is selected as **HELM chart** by default under the **Select a delivery method** drop down.
 
 4. Select the version of the software to install, in the **Select Version** drop-down.
 
 5. From the list of available clusters, select the cluster on which you wish to perform the installation.
-
-   ![List of available clusters](../images/clusters.svg){: caption="List of clusters" caption-side="bottom"}
-
+   
 6. Select an existing namespace to deploy the {{site.data.keyword.security_broker_short}} Shield or click **Add namespace** to add a new namespace. Specify the name for the namespace and click **Add** to create a new namespace within the selected cluster.
 
 7. You must run the preinstallation script by clicking on the **Run Script** button after you select the cluster and the namespace. If you do not run the preinstallation script, you cannot proceed with the installation of the {{site.data.keyword.security_broker_short}} Manager.
