@@ -24,6 +24,31 @@ intercepts and encrypts sensitive data in accordance with the pre-established da
 {{site.data.keyword.security_broker_short}} encryption has some restrictions, like any other approaches to the application-level encryption implementation.
 The various aspects of the application level encryption limitations are explained as follow:
 
+## Performance hit
+{: #sb_perf_hit}
+
+Data encryption consumes more time and resources than data decryption. This overhead is normally negligible. If the proxy (Shield) has an appropriately sized CPU and Memory, there should not be
+any noticeable performance penalties. Most users experience a 10--20% reduction in the overall application performance. This can be mitigated by horizontal scaling. In the event of failure, Shield can be
+horizontally scaled by adding more of them behind a load balancer.
+
+## Key management
+{: #sb_key_mgt}
+
+You must have a place to store your secret key or key file. You can use IBM Key Protect. IBM Key Protect provides full encryption visibility and control, allowing you to see and manage data encryption and the entire key lifecycle from a single location. Alternatively, you can secure the information with a password,
+but this reduces security, depending on the level of your password's strength.
+
+During Keystore enrollment, {{site.data.keyword.security_broker_short}} Manager will accept a Key Protect alias that refers to a destroyed or disabled Master Key. Destroyed Keys are unusable, and {{site.data.keyword.security_broker_short}} migration will fail in this case. As a workaround, ensure that the Keystore Alias does not refer to a destroyed Master Key.
+{: note}
+
+## Accessibility
+{: #sb_accessibility}
+
+If your key file is lost, your data is also lost. So, make a backup of your data and your key.
+
+## Database operations carried out on encrypted versions of the data
+{: #sb_db_operations}
+
+The information is kept in encrypted form in the database and the database engine and, consequently, the database administrator is never permitted to see the information in form of the plaintext.
 - **Performance hit**: Data encryption consumes more time and resources than data decryption. This overhead is normally negligible. If the proxy (Shield) has an appropriately sized CPU and Memory, there should not be any noticeable performance penalties. Most users experience a 10-20% reduction in the overall application performance. This can be mitigated by horizontal scaling. In the event of failure, Shield can be horizontally scaled by adding more of them behind a load balancer.
 - **Key management**: You must have a place to store your secret key or key file. You can use IBM Key Protect. IBM Key Protect provides full encryption visibility and control, allowing you to see and manage data encryption and the entire key lifecycle from a single location. Alternatively, you can secure the information with a password, but this reduces security, depending on the level of your password's strength.
 - **Accessibility**: If your key file is lost, your data is also lost. So, make a backup of your data and your key.
@@ -44,9 +69,7 @@ The following are considered equality check operators and are supported:
 - GROUP BY
 - DISTINCT
 
-Indexes can be created on encrypted columns, but the ciphertext will be used to create the index and not the underlying cleartext values.
-
-During Keystore enrollment, {{site.data.keyword.security_broker_short}} Manager will accept a Key Protect alias that refers to a destroyed or disabled Master Key. Destroyed Keys are unusable, and {{site.data.keyword.security_broker_short}} migration will fail in this case. As a workaround, ensure that the Keystore Alias does not refer to a destroyed Master Key.
+Indexes can be created on encrypted columns, but the ciphertext is used to create the index and not the underlying cleartext values.
 
 Upgrades from previous versions of {{site.data.keyword.security_broker_short}} Manager is no longer available. Any credentials that were previously stored in MongoDB, in earlier versions, cannot be
 upgraded to new versions.
