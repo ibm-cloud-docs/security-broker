@@ -61,12 +61,10 @@ Complete the following steps to install the {{site.data.keyword.security_broker_
        
 11. Click **Install** in the **Summary** pane on the right to complete the installation process.
 
-12. You will be navigated to the IBM Schematicss Workspaces to track the installation progress. Once the installation is successful, a message **Workspace creation successfull** is displayed as shown below:
+12. You will be navigated to the IBM Schematicss Workspaces to track the installation progress. Once the installation is successful, a message **Workspace creation successfull** is displayed.
 
-    ![Installation of {{site.data.keyword.security_broker_short}} Shield](../images/install_success.svg){: caption="Installation of {{site.data.keyword.security_broker_short}} Shield" caption-side="bottom"}
-
-If you get an error message like **Workspace creation failed**, refer to the Logs available in the Terraform output.
-{: note}
+    If you get an error message like **Workspace creation failed**, refer to the Logs available in the Terraform output.
+    {: note}
 
 ## Next steps
 {: #sb_install_ui_procedure_nextsteps}

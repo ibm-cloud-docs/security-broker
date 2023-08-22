@@ -80,10 +80,8 @@ Complete the following steps to install the **{{site.data.keyword.security_broke
 
 10.  Click **Install** in the **Summary** pane on the right to complete the installation process.
 
-11.  You will be navigated to the {{site.data.keyword.bpshort}} Workspace to track the installation progress. Once the installation is successful, a message **Workspace creation successfull** is displayed as shown below:
-
-     ![Installation of {{site.data.keyword.security_broker_short}} Manager](../images/install_success.svg){: caption="Installation of Data Security Broker Manager" caption-side="bottom"}
-   
+11.  You will be navigated to the {{site.data.keyword.bpshort}} Workspace to track the installation progress. Once the installation is successful, a message **Workspace creation successfull** is displayed.
+  
      If you get an error message saying,  **Workspace creation failed**, refer to the Logs available in the Terraform output.
      {: note}
 
