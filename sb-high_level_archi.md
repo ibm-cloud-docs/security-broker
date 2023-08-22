@@ -10,7 +10,7 @@ subcollection: security-broker
 
 {{site.data.keyword.attribute-definition-list}}
 
-## High level architecture
+# High level architecture
 {: #sb-high_level_archi}
 
 {{site.data.keyword.security_broker_short}} delivers an enterprise-level transparent data security platform that secures databases through a "no code" model at the field or file level. 

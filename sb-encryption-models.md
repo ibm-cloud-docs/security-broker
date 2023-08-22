@@ -10,7 +10,7 @@ subcollection: security-broker
 
 {{site.data.keyword.attribute-definition-list}}
 
-## Encryption Models supported by Data Security Broker:
+# Encryption Models supported by Data Security Broker:
 {: #sb-encryption-models}
 
 {{site.data.keyword.security_broker_short}} supports data encryption services that can be configured

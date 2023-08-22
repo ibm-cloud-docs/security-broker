@@ -10,7 +10,7 @@ subcollection: security-broker
 
 {{site.data.keyword.attribute-definition-list}}
 
-## Deployment Plans in {{site.data.keyword.cloud_notm}} {{site.data.keyword.security_broker_short}}:
+# Deployment Plans in {{site.data.keyword.cloud_notm}} {{site.data.keyword.security_broker_short}}:
 {: #sb-deployment-plans}
 
 When you assign and customize default Data Protection Policies with {{site.data.keyword.security_broker_short}} Manager, there are three options that you can choose to
