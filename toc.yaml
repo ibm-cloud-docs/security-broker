@@ -70,6 +70,7 @@ toc:
           - tutorials/sb_db_privileges.md
           - tutorials/sb_update_db.md
           - tutorials/sb_local_keystore.md
+          - tutorials/sb_add_https.md
       - topicgroup:
           label: Key Management Services
           topics:
