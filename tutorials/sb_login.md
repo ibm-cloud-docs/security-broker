@@ -45,9 +45,7 @@ Complete the following steps to log in to the {{site.data.keyword.security_broke
 
 3. Open the {{site.data.keyword.security_broker_short}} Manager console which has already been configured in a browser window. For example, https://150.238.243.117.
 
-4. Copy the OAuth token without any space or additional characters and paste it in the **Enter token** text box as shown below in the Login page and click **Sign In** to log in to the {{site.data.keyword.security_broker_short}} Manager:
-
-   ![Log in to {{site.data.keyword.security_broker_short}} Manager](../images/sb_login.svg){: caption="Log in to {{site.data.keyword.security_broker_short}} Manager" caption-side="bottom"}
+4. Copy the OAuth token without any space or additional characters and paste it in the **Enter token** text box in the Login page and click **Sign In** to log in to the {{site.data.keyword.security_broker_short}} Manager.
     
 5. Once you have logged into the {{site.data.keyword.security_broker_short}} Manager, the next step is add a database, connect to a keystore, and enroll an application to proceed with the data encryption. Refer to the [Data Encryption Services Overview](/docs/security-broker?topic=security-broker-sb_encrypt_progress) section to proceed with the data encryption services.
 
