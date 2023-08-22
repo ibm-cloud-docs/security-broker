@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2022, 2023
-lastupdated: "2023-08-03"
+  years: 2023
+lastupdated: "2023-08-22"
 
 keywords: install, ROKS, IKS, manifests, HELM
 
@@ -39,7 +39,7 @@ Ensure that the {{site.data.keyword.security_broker_short}} Manager must not be 
 
 4. The {{site.data.keyword.security_broker_short}} software comprises of two components, which is displayed in the Catalog list as **{{site.data.keyword.security_broker_short}} Manager** and **{{site.data.keyword.security_broker_short}} Shield**.
 
-   ![{{site.data.keyword.security_broker_short}} components in IBM Cloud Catalog list](../images/catalog_items.svg){: caption="{{site.data.keyword.security_broker_short}} components in IBM Cloud Catalog list" caption-side="bottom"}
+   ![{{site.data.keyword.security_broker_short}} components in IBM Cloud Catalog list](../images/catalog_items.svg){: caption="Data Security Broker components in IBM Cloud Catalog list" caption-side="bottom"}
 
 5. You must install the **{{site.data.keyword.security_broker_short}} Manager** first and then get the Shield Sync ID from the application in the **{{site.data.keyword.security_broker_short}} Manager** to install the **{{site.data.keyword.security_broker_short}} Shield**.
 
@@ -52,7 +52,7 @@ Complete the following steps to install the **{{site.data.keyword.security_broke
 
 2.  The {{site.data.keyword.security_broker_short}} Manager catalog item opens in a seperate window. In the **Select your deployment target** drop down, select **{{site.data.keyword.containerlong}} (IKS)** or **Red Hat Openshift (ROKS)** to install the {{site.data.keyword.security_broker_short}} Manager in the IKS or ROKS cluster.
 
-    ![{{site.data.keyword.security_broker_short}} Manager](../images/dep_target.svg){: caption="{{site.data.keyword.security_broker_short}} Manager" caption-side="bottom"}
+    ![{{site.data.keyword.security_broker_short}} Manager](../images/dep_target.svg){: caption="Data Security Broker Manager" caption-side="bottom"}
 
 3.  The delivery method is selected as **HELM chart** by default under the **Select a delivery method** drop down.
 
@@ -88,7 +88,7 @@ Complete the following steps to install the **{{site.data.keyword.security_broke
 
 11.  You will be navigated to the {{site.data.keyword.bpshort}} Workspace to track the installation progress. Once the installation is successful, a message **Workspace creation successfull** is displayed as shown below:
 
-     ![Installation of {{site.data.keyword.security_broker_short}} Manager](../images/install_success.svg){: caption="Installation of {{site.data.keyword.security_broker_short}} Manager" caption-side="bottom"}
+     ![Installation of {{site.data.keyword.security_broker_short}} Manager](../images/install_success.svg){: caption="Installation of Data Security Broker Manager" caption-side="bottom"}
    
      If you get an error message saying,  **Workspace creation failed**, refer to the Logs available in the Terraform output.
      {: note}
@@ -98,7 +98,7 @@ Complete the following steps to install the **{{site.data.keyword.security_broke
 
 After installing {{site.data.keyword.security_broker_short}} Manager, follow the steps listed below in the flow diagram to configure and setup the {{site.data.keyword.security_broker_short}} Manager:
 
-![Encryption flow in {{site.data.keyword.security_broker_short}}](../images/sb_userflow.svg){: caption="Figure 1. Encyrption flow in {{site.data.keyword.security_broker_short}} Manager" caption-side="bottom"}
+![Encryption flow](../images/sb_userflow.svg){: caption="Figure 1. Encyrption flow" caption-side="bottom"}
 
 
 

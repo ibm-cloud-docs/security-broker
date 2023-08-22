@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-06-13"
+lastupdated: "2023-08-22"
 
 keywords: install, ROKS, IKS, manifests, HELM
 
@@ -11,7 +11,7 @@ subcollection: security-broker
 # Not used ===== Install {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield
 {: #sb_install_ui_procedure}
 
-## Overview:
+## Overview
 {: #sb_install_ui_overview}
 
 You can install the {{site.data.keyword.security_broker_short}} software by using the {{site.data.keyword.cloud}} catalog. Access the {{site.data.keyword.cloud_notm}} catalog to install the {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield.
@@ -19,12 +19,12 @@ You can install the {{site.data.keyword.security_broker_short}} software by usin
 You can install {{site.data.keyword.security_broker_short}} Manager and {{site.data.keyword.security_broker_short}} Shield only in classic clusters.
 {: note}
 
-## Pre-requisites:
+## Pre-requisites
 {: #sb_install_ui_prereq}
 
 -   User must be able to access the {{site.data.keyword.cloud_notm}} Kubernetes cluster (IKS) or {{site.data.keyword.redhat_openshift_full}} Kubernetes (ROKS) cluster.
 
-## Procedure:
+## Procedure
 {: #sb_install_ui_procedure}
 
 1. Log into the IBM Cloud Account (https://cloud.ibm.com) with a valid username and password.
@@ -40,7 +40,7 @@ You can install {{site.data.keyword.security_broker_short}} Manager and {{site.d
 
 5. You must install the **{{site.data.keyword.security_broker_short}} Manager** first and then get the Shield Sync ID from the application in the **{{site.data.keyword.security_broker_short}} Manager** to install the **{{site.data.keyword.security_broker_short}} Shield**.
 
-## Install **{{site.data.keyword.security_broker_short}} Manager**:
+## Install **{{site.data.keyword.security_broker_short}} Manager**
 {: #sb_install_dsbm}
 
 Complete the following steps to install the **{{site.data.keyword.security_broker_short}} Manager** from the {{site.data.keyword.cloud_notm}} Catalog:
@@ -78,20 +78,20 @@ b. Select the **Resource group**, **Location**, and specify the **Tags** require
    If you get an error message saying,  **Workspace creation failed**, refer to the Logs available in the Terraform output.
    {: note}
 
-## Next Steps:
+## Next Steps
 {: #install-catalog-next steps}
 
 After installing {{site.data.keyword.security_broker_short}} Manager, follow the steps listed below to configure and setup the {{site.data.keyword.security_broker_short}} Manager:
 
-## Step1: Configure {{site.data.keyword.security_broker_short}} Manager:
+## Step1: Configure {{site.data.keyword.security_broker_short}} Manager
 {: #install-catalog-configure}
 
 You must configure the {{site.data.keyword.security_broker_short}} Manager console before installing the {{site.data.keyword.security_broker_short}} Shield. See [Configure {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_configure) to complete the configuration of the {{site.data.keyword.security_broker_short}} Manager and access the {{site.data.keyword.security_broker_short}} Manager console.
 
-## Step 2: Login to {{site.data.keyword.security_broker_short}} Manager:
+## Step 2: Log in to {{site.data.keyword.security_broker_short}} Manager:
 {: #install-catalog-login}
 
-Login to the {{site.data.keyword.security_broker_short}} Manager using the steps mentioned in the [Logging into {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_login) section. 
+Log in to the {{site.data.keyword.security_broker_short}} Manager using the steps mentioned in the [Logging into {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_login) section. 
 
 ## Step 3: Add a Database in {{site.data.keyword.security_broker_short}} Manager:
 {: #install-catalog-add_db}
@@ -103,7 +103,7 @@ Refer to the [Add a Database in {{site.data.keyword.security_broker_short}} Mana
 
 Refer to the [Add a Keystore in {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_add_keystore) section to connect to a keystore in the {{site.data.keyword.security_broker_short}} Manager.
 
-## Step 5: Enroll an application in the {{site.data.keyword.security_broker_short}} Manager:
+## Step 5: Enroll an application in the {{site.data.keyword.security_broker_short}} Manager
 {: #install-catalog-enroll}
 
 Refer to the [Enrolling an Application in {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_enroll_app) section to enroll an application in the {{site.data.keyword.security_broker_short}} Manager.
@@ -111,7 +111,7 @@ Refer to the [Enrolling an Application in {{site.data.keyword.security_broker_sh
 Once you have the completed setting up the {{site.data.keyword.security_broker_short}} Manager, the next step is to install the {{site.data.keyword.security_broker_short}} Shield. Copy the **Shield Sync ID** from the {{site.data.keyword.security_broker_short}} Manager application that you have added in [Step 5](/docs/security-broker?topic=security-broker-sb_enroll_app) to use during the {{site.data.keyword.security_broker_short}} Shield installation.
 {: important}
 
-## Install {{site.data.keyword.security_broker_short}} Shield:
+## Install {{site.data.keyword.security_broker_short}} Shield
 {: #sb_install_ui_procedure}
 
 Complete the following steps to insall the {{site.data.keyword.security_broker_short}} Shield from the IBM Cloud Catalog:

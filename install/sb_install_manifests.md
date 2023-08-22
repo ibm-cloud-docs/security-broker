@@ -15,7 +15,7 @@ You can install {{site.data.keyword.security_broker_short}} on an IBM Cloud Kube
 IBM Red Hat OpenShift Kubernetes cluster (ROKS) through the manifests.
 {: shortdesc}
 
-## Pre-requisites:
+## Pre-requisites
 {: #install-sb-pre-requisites}
 
 Ensure that you have met the following conditions, before you begin the
@@ -27,7 +27,7 @@ installation:
     information, see [How to install IBM Cloud
     CLI](https://ibm.github.io/cloud-enterprise-examples/iac/set up-environment/#install-ibm-cloud-cli).
 
--   Login to IBM Cloud using the CLI. For more information, see [How to
+-   Log in to IBM Cloud using the CLI. For more information, see [How to
     log into IBM Cloud using the
     CLI](https://ibm.github.io/cloud-enterprise-examples/iac/set up-environment/#login-to-ibm-cloud).
 
@@ -45,7 +45,7 @@ installation:
     docker images has been loaded to the container registry before
     starting the installation procedure for the Security Broker Manager.
 
-## Install {{site.data.keyword.security_broker_short}} on an IBM Red Hat OpenShift Kubernetes cluster:
+## Install {{site.data.keyword.security_broker_short}} on an IBM Red Hat OpenShift Kubernetes cluster
 {: #install-sb-ROKS}
 
 [Red Hat OpenShift®](https://www.redhat.com/en/technologies/cloud-computing/openshift) on [IBM
@@ -56,7 +56,7 @@ deployed. For more information on Red Hat OpenShift Container platform,
 see [Introduction on Red Hat OpenShift Container
 platform](https://www.redhat.com/en/technologies/cloud-computing/openshift/container-platform).
 
-## Installing {{site.data.keyword.security_broker_short}} Shield in ROKS:
+## Installing {{site.data.keyword.security_broker_short}} Shield in ROKS
 {: #install-sb-ROKS}
 
 Log into OpenShift Container Platform and complete the steps mentioned
@@ -103,7 +103,7 @@ security-broker-web-775dc97fdb-j5mmr 1/1 Running 0 28d
     ```
     {: codeblock}
 
-### Installing {{site.data.keyword.security_broker_short}} Manager in ROKS:
+### Installing {{site.data.keyword.security_broker_short}} Manager in ROKS
 {: #install-sb-manager-ROKS}
 
 Log into OpenShift Container Platform and complete the steps mentioned
@@ -169,7 +169,7 @@ security-broker-web-775dc97fdb-j5mmr 1/1 Running 0 28d
     {: codeblock}
 
 
-## Install {{site.data.keyword.security_broker_short}} on an IBM Cloud Kubernetes cluster:
+## Install {{site.data.keyword.security_broker_short}} on an IBM Cloud Kubernetes cluster
 {: #install-sb-iks}
 
 The Kubernetes command-line tool, **kubectl**, allows you to run
@@ -223,7 +223,7 @@ Security-broker-shield-app1-8dbc7b859-xhlnf 1/1 Running 0 9d
     ```
     {: codeblock}
 
-### Installing Security Broker Manager in IKS:
+### Installing Security Broker Manager in IKS
 {: #install-sb-manager-iks}
 
 Log into **kubectl** and complete the steps mentioned below to install
@@ -293,7 +293,7 @@ security-broker-web-775dc97fdb-j5mmr 1/1 Running 0 28d
     {: codeblock}
 
 
-### Accessing Security Broker Manager:
+### Accessing Security Broker Manager
 {: #access-sb-manager}
 
 To access the {{site.data.keyword.security_broker_short}} Manager, perform the following operation:
