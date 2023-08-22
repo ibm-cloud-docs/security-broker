@@ -19,13 +19,9 @@ subcollection: security-broker
 After you install {{site.data.keyword.security_broker_short}} Manager, sometimes the PVC goes into pending state.
 {: shortdesc}
 
-NAME       STATUS  VOLUME  CAPACITY  ACCESS MODES  STORAGECLASS    AGE
-dsb-manager-pvc  Pending                   ibmc-block-bronze  3m30s
-dsb-mongodb-pvc  Pending                   ibmc-block-bronze  3m29s
-{: tsSymptoms}
-
-
 Create a YAML file with the below format and deploy the YAML file in the Kubernetes cluster, where you have installed the {{site.data.keyword.security_broker_short}} Manager. 
+{: tsResolve}
+
 Example:
 A sample YAML for PVC of {{site.data.keyword.security_broker_short}} Manager:
 ```sh
@@ -66,7 +62,7 @@ spec:
  volumeMode: Filesystem
 ```
 {: codeblock}
-{: tsResolve}
+
 
 
 
