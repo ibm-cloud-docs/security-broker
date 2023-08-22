@@ -37,8 +37,6 @@ The warning appears when you have not uploaded an HTTPS certificate. HTTPS certi
 
 Upload an HTTPS certificate by following the instructions in [Adding HTTPS certificate](/docs/security-broker?topic=security-broker-sb_add_https) section.
 
-
-
 ## Logger
 {: #sb_logger}
 

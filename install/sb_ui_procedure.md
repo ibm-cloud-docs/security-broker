@@ -45,8 +45,6 @@ Complete the following steps to install the {{site.data.keyword.security_broker_
 
 9. Copy the Shield Sync ID from the {{site.data.keyword.security_broker_short}} Manager application.
 
-   ![Shield Sync ID from Application](../images/shield_syncid.svg){: caption="Shield Sync ID from Application" caption-side="bottom"}
-
 10. Set the input variables. Provide the Shield Sync ID and Shield name and specify the values for the other required parameters as per the description.
 
     If you are installing {{site.data.keyword.security_broker_short}} Shield in a different namespace apart from the namespace, where {{site.data.keyword.security_broker_short}} Manager is installed, specify values for the following input variables:
