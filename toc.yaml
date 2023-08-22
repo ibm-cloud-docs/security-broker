@@ -15,17 +15,9 @@ toc:
       topicgroup:
       label: Getting Started with IBM Cloud Security and Compliance Center Data Security Broker
       - sb_getting_started.md
-<<<<<<< Updated upstream
         - sb-high_level_archi.md
         - sb-encryption-models.md
         - sb_deployment_plans.md     
-=======
-      - sb_about.md
-      - topic: sb_release_notes.md
-        navtitle: Release notes
-  - navgroup: 
-      id: howto
->>>>>>> Stashed changes
       topics:
       - topicgroup:
           label: Setting up your environment
@@ -50,7 +42,8 @@ toc:
               label: Deployment models
               topics:
               - sb_deployment_models.md          
-      - sb_release_notes.md  
+      - topic: sb_release_notes.md
+        navtitle: Release notes
       - sb_pricing.md 
   - navgroup: 
       id: howto
