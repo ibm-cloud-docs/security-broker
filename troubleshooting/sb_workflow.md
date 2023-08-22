@@ -1,15 +1,32 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-07-10"
+lastupdated: "2023-08-22"
 
 keywords: users, admin, priveleges, profiles,
 
 subcollection: security-broker
 ---
 
+{{site.data.keyword.attribute-definition-list}}
+{:troubleshoot: data-hd-content-type='troubleshoot'}
+
 # How to resolve the Application workflow issues?
 {: #sb_workflow}
+{: troubleshoot}
+{: support}
+
+
+
+{: shortdesc}
+
+{: tsSymptoms}
+
+
+{: tsCauses}
+
+{: tsResolve}
+
 
 If you get error messages or warnings during the application workflow, check for the following troubleshooting tips:
 
@@ -33,4 +50,5 @@ If you get error messages or warnings during the application workflow, check for
    If you are experiencing any other issues with the {{site.data.keyword.security_broker_short}},
    go to the IBM Cloud [Support Center](https://cloud.ibm.com/unifiedsupport/supportcenter) and navigate
    to creating a case. Use the All products option to search for {{site.data.keyword.security_broker_full_notm}} to continue creating the case or to find more information about getting support.
+   {: note}
 
