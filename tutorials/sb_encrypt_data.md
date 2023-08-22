@@ -30,8 +30,6 @@ an IBM Cloud PostgreSQL Database:
 2. Click on an application and select the drop down which is present in the **Migration Details** field in the right side and click **Encrypt**.
 3. Select the Database and the table where you have the data created and select the **Column** which needs to be encrypted. Choose the **Data Protection** policy, **Encryption mode**, and **masking mode** for the encryption process and click **Review**.
 
-   ![Encryption](../images/encryption_schema.svg){: caption="Standard Encryption" caption-side="bottom"}
-
 4. Choose **Deploy Policy & Migrate Data** under the **Deployment Plan** option. There are three options that you can choose to implement your data encryption policy. For more information on Deployment plans, see [Deployment Plans in {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_deployment_plans). Select the Security Broker Shield service IP address in the **Migration Shield** field and click **Save** to start the encryption process.
 
 5. The status of the application shows **Migrating** when the encryption process starts.
