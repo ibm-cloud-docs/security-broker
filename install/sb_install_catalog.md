@@ -98,7 +98,7 @@ Complete the following steps to install the **{{site.data.keyword.security_broke
 
 After installing {{site.data.keyword.security_broker_short}} Manager, follow the steps listed below in the flow diagram to configure and setup the {{site.data.keyword.security_broker_short}} Manager:
 
-![Encryption flow](../images/sb_userflow.svg){: caption="Figure 1. Encyrption flow" caption-side="bottom"}
+<!--![Encryption flow](../images/sb_userflow.svg){: caption="Figure 1. Encyrption flow" caption-side="bottom"}
 
 
 
