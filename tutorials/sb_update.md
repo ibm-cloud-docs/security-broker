@@ -34,9 +34,8 @@ Log into IBM Cloud Schematics workspace and follow the steps below to upgrade th
 
 4. In the **Update Workspace resources** window, select the version of the {{site.data.keyword.security_broker_short}} Manager, which you wish to upgrade to, and click **Update**.
 
-    ![{{site.data.keyword.security_broker_short}} Manager Version](../images/update_version.svg){: caption="{{site.data.keyword.security_broker_short}} Manager Version" caption-side="bottom"}
-
-**Note**: Once you click **Update**, IBM Cloud Schematics runs the terraform code in the backend to execute the newer version of the {{site.data.keyword.security_broker_short}} Manager from the IBM Cloud Helm Catalog. After the upgrade is complete, the pods are refreshed in the namespace where you have upgraded the {{site.data.keyword.security_broker_short}} Manager.
+Once you click **Update**, IBM Cloud Schematics runs the terraform code in the backend to execute the newer version of the {{site.data.keyword.security_broker_short}} Manager from the IBM Cloud Helm Catalog. After the upgrade is complete, the pods are refreshed in the namespace where you have upgraded the {{site.data.keyword.security_broker_short}} Manager.
+{: note}
 
 5. Follow the same process to proceed with upgrading the {{site.data.keyword.security_broker_short}} Shield. Remember to work with the correct workspace name, which is provided during the {{site.data.keyword.security_broker_short}} Shield install.
 
