@@ -1,6 +1,6 @@
 ---
 copyright:
-  years: 2022, 2023
+  years: 2023
 lastupdated: "2023-08-22"
 
 keywords: about the service, deploy policy, deployment plans, encryption technology, encryption modes, data protection modes
@@ -10,7 +10,7 @@ subcollection: security-broker
 
 {{site.data.keyword.attribute-definition-list}}
 
-## High level Architecture
+## High level architecture
 {: #sb-high_level_archi}
 
 {{site.data.keyword.security_broker_short}} delivers an enterprise-level transparent data security platform that secures databases through a "no code" model at the field or file level. 
@@ -18,7 +18,7 @@ The software supports tokenization, format-preserving encryption (FPE), and role
 
 The encyrption is made simpler, faster, and seamless.
 
-![High level architecture of {{site.data.keyword.security_broker_short}} Manager](images/deploy_architecture.png "High level architecture of {{site.data.keyword.security_broker_short}} Manager"){: caption="High level architecture of {{site.data.keyword.security_broker_short}} Manager" caption-side="center"}
+![High level architecture of {{site.data.keyword.security_broker_short}} Manager](images/deploy_architecture.svg "High level architecture of {{site.data.keyword.security_broker_short}} Manager"){: caption="High level architecture of {{site.data.keyword.security_broker_short}} Manager" caption-side="center"}
 
 The {{site.data.keyword.security_broker_short}} supports data encryption by migrating the data from an existing SQL database into a secure database with the ability to encrypt fields at a column granularity, thereby enabling selective privacy.
 
