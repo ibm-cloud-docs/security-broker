@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-06-13"
+lastupdated: "2023-08-22"
 
 keywords: logging, debugging, platform, dashboard, observability
 
@@ -10,7 +10,7 @@ subcollection: security-broker
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Login to {{site.data.keyword.security_broker_short}} Manager
+# Log in to {{site.data.keyword.security_broker_short}} Manager
 {: #sb_login}
 
 Once you have configured the {{site.data.keyword.security_broker_short}} Manager, the next step

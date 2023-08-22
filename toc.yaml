@@ -8,19 +8,18 @@ toc:
     console-page: /catalog/services/security-broker
     product-page: https://cloud.ibm.com/security-broker
     path: security-broker
-    label: IBM Cloud Security Compliance Center Data Security Broker
+    label: IBM Cloud Security and Compliance Center Data Security Broker
     version:
     release-level:
   entries: 
   - navgroup: 
       id: learn
-      topics:
+      topicgroup:
+      label: Getting Started with IBM Cloud Security and Compliance Center Data Security Broker
       - sb_getting_started.md
-      - sb_about.md
-      - sb_release_notes.md  
-      - sb_pricing.md 
-  - navgroup: 
-      id: howto
+        - sb-high_level_archi.md
+        - sb-encryption-models.md
+        - sb_deployment_plans.md     
       topics:
       - topicgroup:
           label: Installation and Setup
@@ -28,10 +27,6 @@ toc:
           - install/sb_install_catalog.md
           - tutorials/sb_configure.md
           - tutorials/sb_login.md
-      - topicgroup:
-          label: Deployment models
-          topics:
-          - sb_deployment_models.md
           - topicgroup:
               label: Setting up Data Security Broker Manager
               topics:
@@ -39,7 +34,15 @@ toc:
               - tutorials/sb_add_db.md
               - tutorials/sb_add_keystore.md
               - tutorials/sb_enroll_app.md
-          - install/sb_ui_procedure.md   
+          - install/sb_ui_procedure.md
+          - topicgroup:
+              label: Deployment models
+              topics:
+              - sb_deployment_models.md          
+      - sb_release_notes.md  
+      - sb_pricing.md 
+  - navgroup: 
+      id: howto
       - topicgroup:
           label: Data Encryption Services
           topics:

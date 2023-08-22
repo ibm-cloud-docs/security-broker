@@ -1,34 +1,34 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-08-17"
+lastupdated: "2023-08-22"
 
-keywords: support, getting started, data protection, data threats
+keywords: support, getting started, data protection, data threats, Data Security Broker
 
 subcollection: security-broker
 ---
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Getting started with IBM Cloud Security Compliance Center Data Security Broker
+# Getting started with IBM Cloud Security and Compliance Center Data Security Broker
 {: #sb_getting_started}
 
-IBM Cloud Security Compliance Center Data Security Broker is available as a Beta version, for evaluation and testing purposes. It is not intended for production usage.
-{: beta}
+## Overview
+{: #sb_getting_started_overview}
 
 Protect your data in the cloud with the {{site.data.keyword.security_broker_full_notm}}, which is a complete data encryption solution that secures sensitive data in enterprise databases by integrating
 with key management and databases to provide application-level encryption.
 {: shortdesc}
 
-{{site.data.keyword.security_broker_short}} offers Data Protection Services which consists of two main
+{{site.data.keyword.security_broker_short}} is a software that makes data breaches irrelevant by ensuring data remains encrypted, not only when it is stored but also when it is being processed by databases and applications. 
+
+{{site.data.keyword.security_broker_short}} offers Data encryption services which consists of two main
 components, namely:
 
-**IBM Cloud Security Compliance Center Data Security Broker Manager** is the administrative console for
-the solution that integrates with enterprise key managers and databases
-and manages the {{site.data.keyword.security_broker_short}} solution components.
+**IBM Cloud Security and Compliance Center Data Security Broker Manager** is the administrative console for
+the solution that integrates with enterprise key managers and databases and manages the {{site.data.keyword.security_broker_short}} solution components.
 
-**IBM Cloud Security Compliance Center Data Security Broker Shield** is the SQL / NOSQL proxy that
-functions to encrypt and decrypt data at the field or record level.
+**IBM Cloud Security and Compliance Center Data Security Broker Shield** is the SQL proxy that functions to encrypt and decrypt data at the field or record level.
 
 **{{site.data.keyword.security_broker_short}} Manager** enforces encryption policies and
 configurations by:
@@ -36,10 +36,10 @@ configurations by:
 - Communicating with key management solutions, the {{site.data.keyword.security_broker_short}} Shield, and databases.
 - Orchestrating configuration and deployment.
 
-**{{site.data.keyword.security_broker_short}} Shield** is a stateless reverse proxy that intercepts
-and encrypts application data sent to the database and decrypts encrypted data returned by the database.
+**{{site.data.keyword.security_broker_short}} Shield** is a stateless proxy that intercepts
+and encrypts application data sent to the database and decrypts encrypted data.
 
-{{site.data.keyword.security_broker_short}} offers Data Encryption Services which provide a range of data encryption services such as data encryption, data tokenization, record level encryption, and data masking.
+{{site.data.keyword.security_broker_short}} provide a range of data encryption services such as data encryption, data tokenization, record level encryption, and data masking.
 
 {{site.data.keyword.security_broker_short}} supports only PostgreSQL database.
 {: note}
@@ -129,7 +129,7 @@ You can find details about platform roles and the actions mapped to each of the 
 | Viewer         | As a viewer, you can view service instances, but you can't modify them.                                                                                            |   |   |   |
 {: caption="Table 4. Platform roles and their actions" caption-side="bottom"}
 
-You can find more information about {{site.data.keyword.security_broker_short}} in the [About {{site.data.keyword.security_broker_short}}](/docs/security-broker?topic=security-broker-sb_about) section.
+
 
 ## Next Steps
 {: #sb_getting_next_steps}

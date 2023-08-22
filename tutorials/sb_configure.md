@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-08-01"
+lastupdated: "2023-08-22"
 
 keywords: database, admin, priveleges, users, configure, operations
 
@@ -36,7 +36,9 @@ following requirements:
 ## {{site.data.keyword.containerlong}}
 {: #sb_lb_iks}
 
-- If you have installed the {{site.data.keyword.security_broker_short}} Manager in a Kubernetes cluster, click **Kubernetes Dashboard** to navigate to the Kubernetes Dashboard from the cluster.
+- If you have installed the {{site.data.keyword.security_broker_short}} Manager in a public {{site.data.keyword.containerfull_notm}} cluster, follow the below steps:
+
+- Click **Kubernetes Dashboard** from the cluster, where you have installed {{site.data.keyword.security_broker_short}} Manager.
  
 - Select the namespace from the drop-down, on which you have installed the {{site.data.keyword.security_broker_short}} Manager.
 
@@ -47,13 +49,15 @@ following requirements:
 ## {{site.data.keyword.redhat_openshift_full}}
 {: #sb_lb_roks}
 
-- If you have installed the {{site.data.keyword.security_broker_short}} Manager in a {{site.data.keyword.redhat_openshift_notm}} cluster, click **Openshift web console** from the cluster.
+- If you have installed the {{site.data.keyword.security_broker_short}} Manager in a public {{site.data.keyword.redhat_openshift_notm}} cluster, click **Openshift web console** from the cluster.
 
 - Click **Projects** in the left navigation menu and select the project from the drop-down, on which you have installed the {{site.data.keyword.security_broker_short}} Manager.
 
 - Navigate to **Networking -> Routes** to view the list of {{site.data.keyword.security_broker_short}} Manager services running in the project.
 
 - Fetch the **{{site.data.keyword.security_broker_short}} Manager URL** from the **Locations** column for the **dsb-nginx** service.
+
+If you have installed the {{site.data.keyword.security_broker_short}} in a private VPC cluster, follow the instructions in the [Deployment models for {{site.data.keyword.security_broker_short}}](/docs/security-broker?topic=security-broker-sb_deployment_models) section to fetch the {{site.data.keyword.security_broker_short}} Manager URL.
 
 ## To configure {{site.data.keyword.security_broker_short}} Manager, perform the following steps
 {: #sb_configure_overview}
