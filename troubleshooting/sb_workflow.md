@@ -16,7 +16,6 @@ subcollection: security-broker
 {: troubleshoot}
 {: support}
 
-
 You get error messages or warnings during the application encryption workflow.
 {: shortdesc}
 
