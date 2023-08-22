@@ -1,17 +1,34 @@
 ---
 copyright:
-  years: 2022, 2023
-lastupdated: "2023-07-10"
+  years: 2023
+lastupdated: "2023-08-22"
 
 keywords: users, admin, priveleges, profiles,
 
 subcollection: security-broker
+content-type: troubleshoot
 ---
 
-# How to resolve the Database related issues?
+{{site.data.keyword.attribute-definition-list}}
+{:tsSymptoms: .tsSymptoms}
+{:tsCauses: .tsCauses}
+{:tsResolve: .tsResolve}
+{:troubleshoot: data-hd-content-type='troubleshoot'}
+
+
+# How to resolve the database related issues?
 {: #sb_support_database}
+{: troubleshoot}
+{: support}
+
+You face database-specific issues.
+{: shortdesc}
+
+You get errors or warnings during database enrolment.
+{: tsSymptoms}
 
 If you get error messages or warnings during the database enrolment, check for the following troubleshooting tips:
+{: tsResolve}
 
 1. Message: Database credentials are incorrect
 
@@ -27,12 +44,8 @@ If you get error messages or warnings during the database enrolment, check for t
 
 4. Message: Max connections reached on the database
 
-   Some database instances contain a limit on the maximum allowed connections to the server.
+   Some database instances contain a limit on the maximum allowed connections to the server. For example, if the Postgres database is not connecting, check for the following troubleshooting tips:
 
-   - If the Postgres database is not connecting, check for the following troubleshooting tips:
-
-   a. Specify the Postgres Database name.
-
-   b. For PostgreSQL database servers, you must also pass the name of the database itself, which you intend to connect.
-
-   c. The default name is postgres; however, if there is not a database named "postgres" on your server, then the connection fails.
+   - Specify the Postgres Database name.
+   - For PostgreSQL database servers, you must also pass the name of the database itself, which you intend to connect.
+   - The default name is postgres; however, if there is not a database named "postgres" on your server, then the connection fails.

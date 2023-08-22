@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-06-14"
+lastupdated: "2023-08-22"
 
 keywords: support, backup, high availability
 
@@ -40,7 +40,7 @@ Every {{site.data.keyword.security_broker_short}} Shields is typically deployed 
 
 As a result, {{site.data.keyword.security_broker_short}} Shields must be installed in Kubernetes or {{site.data.keyword.redhat_openshift_notm}} clusters across a number of different geographical areas for a deployment that aims to achieve maximum availability. One active {{site.data.keyword.security_broker_short}} Manager can still control every Shield deployed across all of the different regions as shown in Figure 2.
 
-![High availability deployment architecture](images/HA_arch.svg "High availability deployment architecture of {{site.data.keyword.security_broker_short}}"){: caption="Figure 2: High availability deployment architecture of {{site.data.keyword.security_broker_short}}" caption-side="center"}
+![High availability deployment architecture](images/HA_arch.svg "High availability deployment architecture of {{site.data.keyword.security_broker_short}}"){: caption="Figure 2: High availability deployment architecture of {{site.data.keyword.security_broker_short}}" caption-side="bottom"}
 
 For applications in each region, one or more load balancers must be set up with routing rules that direct traffic to the shield connection with the lowest latency.
 

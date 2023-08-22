@@ -14,9 +14,9 @@ subcollection: security-broker
 {: #sb_configure}
 
 Configuring the {{site.data.keyword.security_broker_short}} Manager console is the first step
-to login and implement the data encryption services.
+to log in and implement the data encryption services.
 
-## **Prerequisites**
+## Prerequisites
 {: #sb_configure_prereq}
 
 Before you begin configuring {{site.data.keyword.security_broker_short}} Manager, ensure you meet the
@@ -78,7 +78,7 @@ If you have installed the {{site.data.keyword.security_broker_short}} in a priva
 
 4. The **Getting Started** dialog to proceed with the configuration of the {{site.data.keyword.security_broker_short}} Manager appears as shown below:
 
-   ![Getting Started](../images/getting_started.svg "Getting Started"){: caption="Getting Started" caption-side="center"}
+   ![Getting Started](../images/getting_started.svg "Getting Started"){: caption="Getting Started" caption-side="bottom"}
     
 5. Configure the basic System Settings by entering the Init Password, Organization name, Domain name, and Proxy access, and click **Continue**.
 
@@ -91,4 +91,4 @@ If you have installed the {{site.data.keyword.security_broker_short}} in a priva
 
    ![Configure Super Admin User](../images/superadmin.svg){: caption="Configure Super Admin User" caption-side="bottom"}
 
-7. Once you complete the configuration process for the {{site.data.keyword.security_broker_short}} Manager, the next step is to login to the {{site.data.keyword.security_broker_short}} Manager using the steps mentioned in the [Login to {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_login) section.
+7. Once you complete the configuration process for the {{site.data.keyword.security_broker_short}} Manager, the next step is to log in to the {{site.data.keyword.security_broker_short}} Manager using the steps mentioned in the [Login to {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_login) section.
