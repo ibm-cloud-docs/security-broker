@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-06-23"
+lastupdated: "2023-08-22"
 
 keywords: logging, debugging, platform, dashboard, observability
 
@@ -57,3 +57,4 @@ To configure a logging instance from the **Observability** dashboard in the IBM 
     ![Logs](../images/logs_dsb.svg){: caption="Logs Dashboard in {{site.data.keyword.security_broker_short}}" caption-side="bottom"}
 
     e. You can start debugging the logs, which are displayed with a predefined format. You can also filter logs and modify search settings, then bookmark the result as a view.
+    

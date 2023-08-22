@@ -15,9 +15,9 @@ toc:
       topicgroup:
       label: Getting Started with IBM Cloud Security and Compliance Center Data Security Broker
       - sb_getting_started.md
-        - sb-high_level_archi.md
-        - sb-encryption-models.md
-        - sb_deployment_plans.md     
+      - sb-high_level_archi.md
+      - sb-encryption-models.md
+      - sb_deployment_plans.md     
       topics:
       - topicgroup:
           label: Setting up your environment
