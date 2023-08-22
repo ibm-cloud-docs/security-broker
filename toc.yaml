@@ -22,6 +22,11 @@ toc:
         - sb_deployment_plans.md     
       topics:
       - topicgroup:
+          label: Setting up your environment
+          topics:
+          - sb_setting_up_environment.md
+          - sb_sizing_guidelines.md
+      - topicgroup:
           label: Installation and Setup
           topics:
           - install/sb_install_catalog.md
