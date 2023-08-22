@@ -39,9 +39,7 @@ Complete the following steps to log in to the {{site.data.keyword.security_broke
    ibmcloud iam oauth-tokens
    ```
    {: pre}
-
-   ![OAuth token](../images/oauth_token.svg){: caption="OAuth token" caption-side="bottom"}
-
+   
    The **Admin** users that are added to {{site.data.keyword.security_broker_short}} Manager must use the tokens generated in the same {{site.data.keyword.cloud}} account, where the **Super Admin** user resides. {{site.data.keyword.security_broker_short}} Manager does not support cross account access, considering the security risks involved. 
    {: important}
 
