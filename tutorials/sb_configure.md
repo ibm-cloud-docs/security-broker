@@ -76,10 +76,8 @@ If you have installed the {{site.data.keyword.security_broker_short}} in a priva
 
 3. Click **Advanced**, and click the **Proceed to link** at the bottom of the page.
 
-4. The **Getting Started** dialog to proceed with the configuration of the {{site.data.keyword.security_broker_short}} Manager appears as shown below:
-
-   ![Getting Started](../images/getting_started.svg "Getting Started"){: caption="Getting Started" caption-side="bottom"}
-    
+4. The **Getting Started** dialog to proceed with the configuration of the {{site.data.keyword.security_broker_short}} Manager appears.
+   
 5. Configure the basic System Settings by entering the Init Password, Organization name, Domain name, and Proxy access, and click **Continue**.
 
    - The Init Password field must contain the same password that you specified for the **secrets.initPass** parameter during the {{site.data.keyword.security_broker_short}} Manager installation.

@@ -30,9 +30,7 @@ Complete the following steps to log in to the {{site.data.keyword.security_broke
    When prompted to open the one-time passcode in a browser window, specify **Y** for "Yes". You will be re-directed to the browser window, from where you can copy and paste the one-time passcode. 
 
    Navigate back to the CLI and paste the one-time passcode and select the account in which you wish to log in using your IBM Cloud credentials. 
-
-   ![Log in to IBM Cloud CLI](../images/ibm_cli.svg){: caption="Log in to IBM Cloud CLI" caption-side="bottom"}
-
+   
    Ensure that the IBM Cloud account, which is used during the configuration of the {{site.data.keyword.security_broker_short}} Manager as the Super Admin user, and the IBM Cloud account that you are using to log in using the CLI to generate the OAuth token must be the same. Otherwise, you might get an error which says that the OAuth token is invalid.
    {: note}
     
