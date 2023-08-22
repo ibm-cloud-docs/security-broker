@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-07-10"
+lastupdated: "2023-08-22"
 
 keywords: domain name, host name, https certificate, logger, smtp, settings
 
@@ -45,9 +45,7 @@ Upload an HTTPS certificate by following the instructions in [Adding HTTPS certi
 Complete the following steps to configure the Logger settings for the {{site.data.keyword.security_broker_short}} Manager:
 
 1. In the **Settings** page, click **Logger +** to configure a new logger.
-
-   ![Add Logger](../images/logger.svg){: caption="Figure 3. Add Logger" caption-side="bottom"}
-
+   
 2. Specify a name for the logger according to Java logger naming convention. A dot is used to separate    names, that enforces a hierarchy.
 3. Select a Log Level from the dropdown. These levels define the severity and granularity of the events which is captured by this logger. The options include:
     a. TRACE (Fine-tuned debugging messages)
