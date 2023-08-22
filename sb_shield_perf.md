@@ -10,7 +10,7 @@ subcollection: security-broker
 
 {{site.data.keyword.attribute-definition-list}}
 
-# {{site.data.keyword.security_broker_short}} Shield - Performance
+# {{site.data.keyword.security_broker_short}} Shield Performance
 {: #sb_shield_perf}
 
 {{site.data.keyword.security_broker_short}} Shield is an SQL proxy that is placed between the application and the database. 
