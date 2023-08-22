@@ -53,9 +53,7 @@ Complete the following steps to configure the Logger settings for the {{site.dat
     c. INFO (Informational events)
     d. WARN (Events that might lead to an error)
     e. ERROR (Error messages)
-
-    ![Logger](../images/logger_settings.svg){: caption="Figure 3. Logger" caption-side="bottom"}
-
+    
 4. Click Save to complete the **Logger** configuraion.
 
 
