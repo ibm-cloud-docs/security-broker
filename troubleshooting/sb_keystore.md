@@ -25,16 +25,7 @@ You get errors or warnings during Keystore enrollment.
 User Permissions are insufficient.
 {: tsCauses}
 
-Ensure the user credentials which is connected to the configured Keystore have adequate permissions.
+Check for user permissions.
 {: tsResolve}
 
-
-
-
-
-
-
-
-
-
-
+Also, ensure the user credentials which is connected to the configured Keystore have adequate permissions.
