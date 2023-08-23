@@ -117,7 +117,7 @@ toc:
       topics:
         - getting_help_support.md
         - topic: sb_faqs.md
-        navtitle: FAQs
+          navtitle: FAQs
       - topicgroup:
               label: Troubleshooting
               topics:

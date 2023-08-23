@@ -164,4 +164,65 @@ For partial match searches, like wildcard searches where only a part of the ciph
 
 These limitations are identical to any application encryption approach where the application makes API calls to encrypt and decrypt the data.  Both of these queries, sorting on encrypted indexes and wildcard searches, will work with the Baffle advanced encryption mode where the decryption happens in a secure way on the server side itself using Postgres extensions.
 
+## What are some known issues with respect to Key Management services?
+{: #faq-key_mgt}
+{: faq}
+
+You must have a place to store your secret key or key file. You can use IBM Key Protect. IBM Key Protect provides full encryption visibility and control, allowing you to see and manage data encryption and the entire key lifecycle from a single location. Alternatively, you can secure the information with a password,
+but this reduces security, depending on the level of your password's strength.
+
+During Keystore enrollment, {{site.data.keyword.security_broker_short}} Manager will accept a Key Protect alias that refers to a destroyed or disabled Master Key. Destroyed Keys are unusable, and {{site.data.keyword.security_broker_short}} migration will fail in this case. As a workaround, ensure that the Keystore Alias does not refer to a destroyed Master Key.
+{: note}
+
+## What if there is a performance hit?
+{: #faq-perf_hit}
+{: faq}
+
+Data encryption consumes more time and resources than data decryption. This overhead is normally negligible. If the proxy (Shield) has an appropriately sized CPU and Memory, there should not be
+any noticeable performance penalties. Most users experience a 10--20% reduction in the overall application performance. This can be mitigated by horizontal scaling. In the event of failure, Shield can be
+horizontally scaled by adding more of them behind a load balancer.
+
+## What if I lose my key file?
+{: #faq-key_file}
+{: faq}
+
+If your key file is lost, your data is also lost. So, make a backup of your data and your key.
+
+## What are the limitations with respect to the database operations carried out on encrypted versions of the data?
+{: #faq-db_operations}
+{: faq}
+
+The information is kept in encrypted form in the database and the database engine and, consequently, the database administrator is never permitted to see the information in form of the plaintext.
+
+Many of today's server and network technologies allow for easier configuration and implementation to minimize the impact on utilization. Implementing encryption of data in transit from endpoint to endpoint
+both remotely and internally is mandatory in today's cyber risk environment.
+
+The following are considered equality check operators and are supported:
+
+- =
+- &lt;\>
+- IS NULL
+- IS NOT NULL
+- IN
+- NOT
+- JOIN (all types)
+- GROUP BY
+- DISTINCT
+
+Indexes can be created on encrypted columns, but the ciphertext is used to create the index and not the underlying cleartext values.
+
+## How do I upgrade my {{site.data.keyword.security_broker_short}} Manager?
+{: #faq-upgrade_db_manager}
+{: faq}
+
+Upgrades from previous versions of {{site.data.keyword.security_broker_short}} Manager is no longer available. Any credentials that were previously stored in MongoDB, in earlier versions, cannot be
+upgraded to new versions.
+
+## What are the unsupported data types for encryption?
+{: #faq-unsupported_data_types}
+{: faq}
+The **timestamptz** and **timetz** data types are not supported for the PostgreSQL Database in {{site.data.keyword.security_broker_short}}.
+
+
+
 
