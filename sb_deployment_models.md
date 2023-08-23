@@ -66,7 +66,7 @@ If you are planning your deployment on a private {{site.data.keyword.redhat_open
             app: dsb-nginx
         type: LoadBalancer
         ```
-        {: codeblock}       
+        {: yaml}       
 
       - Execute the command to apply the YAML file:
    
@@ -109,7 +109,7 @@ If you are planning your deployment on a private {{site.data.keyword.redhat_open
       app: <dsb-deployment-name>
     type: LoadBalancer
    ```
-   {: codeblock}
+   {: yaml}
 
    where **dsb-deployment-name** is the name of the {{site.data.keyword.security_broker_short}} Shield deployment in your project. To get your **dsb-deployment-name**, execute the following command from your project, where you have installed {{site.data.keyword.security_broker_short}} Shield.
 
@@ -162,7 +162,7 @@ If you are planning your deployment on a private {{site.data.keyword.redhat_open
       app: dsb-nginx
       type: LoadBalancer
    ```
-   {: codeblock} 
+   {: yaml} 
 
 3. Execute the command to apply the YAML file:
    
@@ -208,7 +208,7 @@ If you are planning your deployment on a private {{site.data.keyword.redhat_open
       app: <dsb-deployment-name>
       type: LoadBalancer
    ```
-   {: codeblock} 
+   {: yaml} 
 
    where **dsb-deployment-name** is the name of the {{site.data.keyword.security_broker_short}} Shield deployment in your namespace. To get your **dsb-deployment-name**, execute the following command from your namespace, where you have installed {{site.data.keyword.security_broker_short}} Shield.
 
