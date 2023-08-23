@@ -221,6 +221,7 @@ upgraded to new versions.
 ## What are the unsupported data types for encryption?
 {: #faq-unsupported_data_types}
 {: faq}
+
 The **timestamptz** and **timetz** data types are not supported for the PostgreSQL Database in {{site.data.keyword.security_broker_short}}.
 
 
