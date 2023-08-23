@@ -14,7 +14,7 @@ toc:
       id: learn
       navtitle: Getting Started
       topics:
-      - sb_getting_started.md
+      - getting_started.md
       - sb-high_level_archi.md
       - sb-encryption-models.md
       - sb_deployment_plans.md               

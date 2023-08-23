@@ -86,9 +86,7 @@ Complete the following steps to install the **{{site.data.keyword.security_broke
 ## Next Steps
 {: #install-catalog-next steps}
 
-After installing {{site.data.keyword.security_broker_short}} Manager, follow the steps listed below in the flow diagram to configure and setup the {{site.data.keyword.security_broker_short}} Manager:
-
-<!--![Encryption flow](../images/sb_userflow.svg){: caption="Figure 1. Encyrption flow" caption-side="bottom"}
+After installing {{site.data.keyword.security_broker_short}} Manager, you can start configuring the After installing {{site.data.keyword.security_broker_short}} Manager by following the steps mentioned in the [Configure {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_configure) section.
 
 
 

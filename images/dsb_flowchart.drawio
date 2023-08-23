@@ -1,0 +1,109 @@
+<mxfile host="Electron" modified="2023-08-23T06:26:07.883Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.8 Chrome/114.0.5735.289 Electron/25.5.0 Safari/537.36" etag="1NiPwXSXLkQIFP40kQLf" version="21.6.8" type="device">
+  <diagram name="Page-1" id="zz3F0B5NpIJetucbLlYE">
+    <mxGraphModel dx="1594" dy="932" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="GdxKyJ2v4EdvuDHW3NSy-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GdxKyJ2v4EdvuDHW3NSy-1" target="GdxKyJ2v4EdvuDHW3NSy-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GdxKyJ2v4EdvuDHW3NSy-1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="80" y="160" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="GdxKyJ2v4EdvuDHW3NSy-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GdxKyJ2v4EdvuDHW3NSy-2" target="GdxKyJ2v4EdvuDHW3NSy-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GdxKyJ2v4EdvuDHW3NSy-2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="323" y="160" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="GdxKyJ2v4EdvuDHW3NSy-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GdxKyJ2v4EdvuDHW3NSy-3" target="GdxKyJ2v4EdvuDHW3NSy-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GdxKyJ2v4EdvuDHW3NSy-3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="567" y="160" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="GdxKyJ2v4EdvuDHW3NSy-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GdxKyJ2v4EdvuDHW3NSy-4" target="GdxKyJ2v4EdvuDHW3NSy-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GdxKyJ2v4EdvuDHW3NSy-4" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="810" y="160" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="GdxKyJ2v4EdvuDHW3NSy-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GdxKyJ2v4EdvuDHW3NSy-5" target="GdxKyJ2v4EdvuDHW3NSy-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GdxKyJ2v4EdvuDHW3NSy-5" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="80" y="360" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="GdxKyJ2v4EdvuDHW3NSy-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GdxKyJ2v4EdvuDHW3NSy-6" target="GdxKyJ2v4EdvuDHW3NSy-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GdxKyJ2v4EdvuDHW3NSy-6" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="323" y="360" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="GdxKyJ2v4EdvuDHW3NSy-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GdxKyJ2v4EdvuDHW3NSy-7" target="GdxKyJ2v4EdvuDHW3NSy-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GdxKyJ2v4EdvuDHW3NSy-7" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="567" y="360" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="GdxKyJ2v4EdvuDHW3NSy-8" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="810" y="360" width="200" height="120" as="geometry" />
+        </mxCell>
+        <object label="text" id="GdxKyJ2v4EdvuDHW3NSy-10">
+          <mxCell parent="0" />
+        </object>
+        <mxCell id="GdxKyJ2v4EdvuDHW3NSy-11" value="Set up your environment" style="text;html=1;strokeColor=none;fillColor=#dae8fc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=IBM Plex Sans;fontSize=14;" vertex="1" parent="GdxKyJ2v4EdvuDHW3NSy-10">
+          <mxGeometry x="90" y="180" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="GdxKyJ2v4EdvuDHW3NSy-12" value="Install DSB Manager" style="text;html=1;strokeColor=none;fillColor=#dae8fc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=IBM Plex Sans;fontSize=14;" vertex="1" parent="GdxKyJ2v4EdvuDHW3NSy-10">
+          <mxGeometry x="333" y="180" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="GdxKyJ2v4EdvuDHW3NSy-13" value="Configure DSB Manager" style="text;html=1;strokeColor=none;fillColor=#dae8fc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=IBM Plex Sans;fontSize=14;" vertex="1" parent="GdxKyJ2v4EdvuDHW3NSy-10">
+          <mxGeometry x="577" y="180" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="GdxKyJ2v4EdvuDHW3NSy-14" value="Log in to DSB Manager" style="text;html=1;strokeColor=none;fillColor=#dae8fc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=IBM Plex Sans;fontSize=14;" vertex="1" parent="GdxKyJ2v4EdvuDHW3NSy-10">
+          <mxGeometry x="820" y="180" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="GdxKyJ2v4EdvuDHW3NSy-15" value="Create a database" style="text;html=1;strokeColor=none;fillColor=#dae8fc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=IBM Plex Sans;fontSize=14;" vertex="1" parent="GdxKyJ2v4EdvuDHW3NSy-10">
+          <mxGeometry x="90" y="380" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="GdxKyJ2v4EdvuDHW3NSy-16" value="Add a key store" style="text;html=1;strokeColor=none;fillColor=#dae8fc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=IBM Plex Sans;fontSize=14;" vertex="1" parent="GdxKyJ2v4EdvuDHW3NSy-10">
+          <mxGeometry x="333" y="380" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="GdxKyJ2v4EdvuDHW3NSy-17" value="Enroll an application" style="text;html=1;strokeColor=none;fillColor=#dae8fc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=IBM Plex Sans;fontSize=14;" vertex="1" parent="GdxKyJ2v4EdvuDHW3NSy-10">
+          <mxGeometry x="577" y="380" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="GdxKyJ2v4EdvuDHW3NSy-18" value="Fetch the Shield sync ID" style="text;html=1;strokeColor=none;fillColor=#dae8fc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=IBM Plex Sans;fontSize=14;" vertex="1" parent="GdxKyJ2v4EdvuDHW3NSy-10">
+          <mxGeometry x="820" y="380" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="GdxKyJ2v4EdvuDHW3NSy-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="GdxKyJ2v4EdvuDHW3NSy-10" source="GdxKyJ2v4EdvuDHW3NSy-20" target="GdxKyJ2v4EdvuDHW3NSy-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GdxKyJ2v4EdvuDHW3NSy-20" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="GdxKyJ2v4EdvuDHW3NSy-10">
+          <mxGeometry x="200" y="560" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="GdxKyJ2v4EdvuDHW3NSy-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="GdxKyJ2v4EdvuDHW3NSy-10" source="GdxKyJ2v4EdvuDHW3NSy-21" target="GdxKyJ2v4EdvuDHW3NSy-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GdxKyJ2v4EdvuDHW3NSy-21" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="GdxKyJ2v4EdvuDHW3NSy-10">
+          <mxGeometry x="443" y="560" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="GdxKyJ2v4EdvuDHW3NSy-22" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="GdxKyJ2v4EdvuDHW3NSy-10">
+          <mxGeometry x="687" y="560" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="GdxKyJ2v4EdvuDHW3NSy-23" value="Install DSB Shield using Shield sync ID" style="text;html=1;strokeColor=none;fillColor=#dae8fc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=IBM Plex Sans;fontSize=14;" vertex="1" parent="GdxKyJ2v4EdvuDHW3NSy-10">
+          <mxGeometry x="210" y="580" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="GdxKyJ2v4EdvuDHW3NSy-24" value="Create data protection policy" style="text;html=1;strokeColor=none;fillColor=#dae8fc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=IBM Plex Sans;fontSize=14;" vertex="1" parent="GdxKyJ2v4EdvuDHW3NSy-10">
+          <mxGeometry x="453" y="580" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="GdxKyJ2v4EdvuDHW3NSy-25" value="Encrypt or decrypt data" style="text;html=1;strokeColor=none;fillColor=#dae8fc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=IBM Plex Sans;fontSize=14;" vertex="1" parent="GdxKyJ2v4EdvuDHW3NSy-10">
+          <mxGeometry x="697" y="580" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="GdxKyJ2v4EdvuDHW3NSy-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="GdxKyJ2v4EdvuDHW3NSy-10" source="GdxKyJ2v4EdvuDHW3NSy-8" target="GdxKyJ2v4EdvuDHW3NSy-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
