@@ -115,6 +115,7 @@ toc:
   - navgroup:
       id: help
       topics:
+        - getting_help_support.md
         - topic: sb_faqs.md
         navtitle: FAQs
       - topicgroup:
