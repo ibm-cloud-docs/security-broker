@@ -11,7 +11,8 @@ toc:
     label: IBM Cloud Security and Compliance Center Data Security Broker
   entries:
   - navgroup:
-      id: learn      
+      id: learn
+      topics:
       - topic: getting-started.md
         navtitle: Getting Started
       - topic: overview.md
