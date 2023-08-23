@@ -1,5 +1,5 @@
-<mxfile host="Electron" modified="2023-08-22T14:33:25.099Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.8 Chrome/114.0.5735.289 Electron/25.5.0 Safari/537.36" etag="J_afRGfU_-XqXwhxdM71" version="21.6.8" type="device" pages="2">
-  <diagram name="Page-1" id="zz3F0B5NpIJetucbLlYE">
+<mxfile host="Electron" modified="2023-08-23T06:29:46.558Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.8 Chrome/114.0.5735.289 Electron/25.5.0 Safari/537.36" etag="y_GTR02Sa_sgbEKKg8jZ" version="21.6.8" type="device">
+  <diagram name="deploy_architecture" id="zz3F0B5NpIJetucbLlYE">
     <mxGraphModel dx="1036" dy="1456" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -63,14 +63,6 @@
         <mxCell id="ePbPhpkOWqmQ1mR1_Z_k-30" value="&lt;font face=&quot;IBM Plex Sans&quot; style=&quot;font-size: 14px;&quot;&gt;Metadata and control functions&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" parent="ePbPhpkOWqmQ1mR1_Z_k-19" vertex="1">
           <mxGeometry x="440" y="-310" width="130" height="30" as="geometry" />
         </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-  <diagram id="Gojvt8U0VFKpdIhylXOH" name="Page-2">
-    <mxGraphModel dx="1036" dy="606" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>
