@@ -116,7 +116,7 @@ toc:
       id: help
       topics:
         - getting_help_support.md
-        - sb_faqs.md          
+        - sb_faqs.md     
       - topicgroup:
           label: Troubleshooting
           topics:
