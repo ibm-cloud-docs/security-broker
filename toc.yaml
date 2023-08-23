@@ -16,7 +16,6 @@ toc:
       - topic: getting-started.md
         navtitle: Getting Started
       - topicgroup:
-          label: About
           topics: 
           - topic: overview.md
             navtitle: How it works
@@ -126,4 +125,4 @@ toc:
             - troubleshooting/sb_keystore.md
             - troubleshooting/sb_workflow.md
             - troubleshooting/sb_pvc_pending.md
-        - tutorials/sb_limitations.md
+        
