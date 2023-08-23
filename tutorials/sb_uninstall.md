@@ -1,14 +1,12 @@
 ---
 copyright:
-  years: 2022, 2023
-lastupdated: "2023-08-22"
+  years: 2023
+lastupdated: "2023-08-23"
 
 keywords: uninstall, delete, helm, configuration, tls certificate, docker config secret, environment variable, regions, cluster, container, app security, memory encryption, data in use
 
 subcollection: security-broker
 ---
-
-{{site.data.keyword.attribute-definition-list}}
 
 {{site.data.keyword.attribute-definition-list}}
 
