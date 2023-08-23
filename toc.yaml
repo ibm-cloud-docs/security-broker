@@ -15,12 +15,10 @@ toc:
       topics:
       - topic: getting-started.md
         navtitle: Getting Started
-      - topicgroup:
-          topics: 
-          - topic: overview.md
-            navtitle: How it works
-          - topic: sb_pricing.md
-            navtitle: Pricing
+      - topic: overview.md
+        navtitle: How it works
+      - topic: sb_pricing.md
+        navtitle: Pricing
       - topic: sb_release_notes.md
         navtitle: Release notes
   - navgroup: 
