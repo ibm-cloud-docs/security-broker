@@ -19,6 +19,7 @@ For the most up-to-date pricing information, you can refer to the provisioning p
 {: important}
 
 ## Plan Type
+{: #sb_pricing_plan_type}
 
 The service offers Hourly Pay-as-you-go pricing plan.
 
@@ -28,12 +29,15 @@ Every {{site.data.keyword.security_broker_short}} Shield instance that you insta
 {: note}
 
 ## When am I charged?
+{: #sb_pricing_when_charged}
 
 You are charged right after the {{site.data.keyword.security_broker_short}} Shield instance is installed in your cluster.
 
 ## How do I stop getting charged for {{site.data.keyword.security_broker_short}}?
+{: #sb_pricing_when_stop_charging}
 
 If you no longer want to be charged for a specific shield instance, uninstall the specific shield instance that you do not want to be charged for, by following the instructions in the [Uninstalling {{site.data.keyword.security_broker_short}} Shield](/docs/security-broker?topic=security-broker-sb_uninstall) section.
+
 
 
 
