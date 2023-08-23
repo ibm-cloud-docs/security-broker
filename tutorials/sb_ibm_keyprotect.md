@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2022, 2023
-lastupdated: "2023-02-13"
+  years: 2023
+lastupdated: "2023-08-23"
 
 keywords: database, admin, priveleges, users, configure, operations, keyprotect
 
@@ -18,7 +18,7 @@ In this section, you can find details on how to configure IBM Key Protect and ad
 ## Overview
 {: #sb_ibm_keyprotect_overview}
 
-The [IBM® Key Protect for IBM Cloud®](https://www.ibm.com/cloud/key-protect) service enables you to
+The [IBM® Key Protect](https://www.ibm.com/cloud/key-protect) service enables you to
 provision and store encrypted keys across your IBM Cloud environment. IBM Key Protect provides full encryption visibility and control, allowing you to see and manage data encryption and the entire key
 lifecycle from a single location.
 
