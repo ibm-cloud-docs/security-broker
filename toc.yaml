@@ -8,10 +8,10 @@ toc:
     console-page: /catalog/services/security-broker
     product-page: https://cloud.ibm.com/security-broker
     path: security-broker
-    label: IBM Cloud Security and Compliance Center Data Security Broker      
-  entries: 
-  - navgroup: 
-      id: learn      
+    label: IBM Cloud Security and Compliance Center Data Security Broker
+  entries:
+  - navgroup:
+      id: learn
       topics:
       - topic: getting-started.md
         navtitle: Getting Started
@@ -21,9 +21,9 @@ toc:
           - topic: overview.md
             navtitle: How it works
           - topic: sb_pricing.md
-            navtitle: Pricing        
+            navtitle: Pricing
       - topic: sb_release_notes.md
-        navtitle: Release notes   
+        navtitle: Release notes
   - navgroup: 
       id: howto
       topics:
@@ -49,13 +49,13 @@ toc:
           - topicgroup:
               label: Deployment models
               topics:
-              - sb_deployment_models.md              
+              - sb_deployment_models.md
       - topicgroup:
           label: Data Encryption Services
           topics:
           - tutorials/sb_encrypt_postgress.md
-          - tutorials/sb_encrypt_data.md  
-          - tutorials/sb_data_migration.md                        
+          - tutorials/sb_encrypt_data.md
+          - tutorials/sb_data_migration.md
           - topicgroup:
               label: Data Masking
               topics:
@@ -64,7 +64,7 @@ toc:
               - tutorials/sb_rbac_policy.md
               - tutorials/sb_user_group.md
               - tutorials/sb_apply_rbac_policy.md
-              - tutorials/sb_apply_mask.md                  
+              - tutorials/sb_apply_mask.md
       - topicgroup:
           label: Configurations in Data Security Broker Manager
           topics:
@@ -87,13 +87,13 @@ toc:
           - topicgroup:
               label: Key rotation using IBM Key Protect and HPCS
               topics: 
-              - tutorials/sb_keyrotate.md           
+              - tutorials/sb_keyrotate.md
       - topicgroup:
           label: Upgrade and Uninstall
           topics:
           - tutorials/sb_update.md
           - tutorials/sb_uninstall.md
-      - sb_shield_perf.md    
+      - sb_shield_perf.md
       - topicgroup: 
           label: High availability and disaster recovery
           topics:
@@ -105,7 +105,7 @@ toc:
           label: Logging and monitoring
           topics:
           - troubleshooting/sb_logging.md
-          - troubleshooting/sb_monitoring.md      
+          - troubleshooting/sb_monitoring.md
       - topicgroup: 
           label: Related links
           topics:
@@ -117,14 +117,13 @@ toc:
       topics:
         - getting_help_support.md
         - sb_faqs.md     
-      - topicgroup:
-          label: Troubleshooting
-          topics:
-          - troubleshooting/sb_support_initialization.md
-          - troubleshooting/sb_support_database.md
-          - troubleshooting/sb_shield.md
-          - troubleshooting/sb_keystore.md
-          - troubleshooting/sb_workflow.md
-          - troubleshooting/sb_pvc_pending.md
-      - tutorials/sb_limitations.md
-            
+        - topicgroup:
+            label: Troubleshooting
+            topics:
+            - troubleshooting/sb_support_initialization.md
+            - troubleshooting/sb_support_database.md
+            - troubleshooting/sb_shield.md
+            - troubleshooting/sb_keystore.md
+            - troubleshooting/sb_workflow.md
+            - troubleshooting/sb_pvc_pending.md
+        - tutorials/sb_limitations.md
