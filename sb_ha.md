@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2022, 2023
-lastupdated: "2023-08-22"
+  years: 2023
+lastupdated: "2023-08-23"
 
 keywords: support, backup, high availability
 
@@ -53,12 +53,12 @@ For applications in each region, one or more load balancers must be set up with 
 apiVersion: autoscaling/v2beta2
 kind: HorizontalPodAutoscaler
 metadata:
-  name: {{site.data.keyword.security_broker_short}}-pg-shield-hpa
+  name: data_security_broker-pg-shield-hpa
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: {{site.data.keyword.security_broker_short}}-pg-shield
+    name: data_security_broker-pg-shield
   minReplicas: 1
   maxReplicas: 2
   metrics:
