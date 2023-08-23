@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2022, 2023
-lastupdated: "2023-02-13"
+  years: 2023
+lastupdated: "2023-08-23"
 
 keywords: database, admin, priveleges, users, configure, operations, keyprotect
 
@@ -20,16 +20,12 @@ In this section, you can find details on how to configure local keystore in {{si
 
 Complete the following steps to add a local keystore in {{site.data.keyword.security_broker_short}} Manager.
 
-1.  In the {{site.data.keyword.security_broker_short}} Manager console, click the key icon in
-    the left navigation bar. The Keystore window appears.** **
+1. In the {{site.data.keyword.security_broker_short}} Manager console, select **Keystores** from the left  navigation and click **Add Keystore +**.
 
-2.  Click **+Keystore**. The Add Keystore dialog appears.
+2. Enter a Keystore Name of up to 30 characters and select **LOCAL** in the **Keystore Type** drop-down menu.
 
-3.  Enter a Keystore Name of up to 30 characters and select **LOCAL** in the Keystore
-    Type drop-down menu.
+3. Enter the {{site.data.keyword.security_broker_short}} Secret Key in the text field. The {{site.data.keyword.security_broker_short}} secret Key must contain at least 10 characters, a mixture of upper and lower case, including at least 1 number.
 
-4.  Enter the {{site.data.keyword.security_broker_short}} Secret Key in the text field. The {{site.data.keyword.security_broker_short}} Secret Key must contain at least 10 characters, a mixture of upper and lower case, including at least 1 number.
-
-5. Click **Add Keystore**.
+4. Click **Add Keystore**.
 
 
