@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2022, 2023
-lastupdated: "2023-08-22"
+  years: 2023
+lastupdated: "2023-08-23"
 
 keywords: support, getting started, data protection, data threats, Data Security Broker
 
@@ -11,7 +11,7 @@ subcollection: security-broker
 {{site.data.keyword.attribute-definition-list}}
 
 # Getting started with IBM Cloud Security and Compliance Center Data Security Broker
-{: #sb_getting_started}
+{: #getting_started}
 
 ## Overview
 {: #sb_getting_started_overview}

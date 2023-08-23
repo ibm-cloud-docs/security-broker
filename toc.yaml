@@ -12,11 +12,18 @@ toc:
   entries: 
   - navgroup: 
       id: learn
+      navtitle: Getting Started
       topics:
       - sb_getting_started.md
       - sb-high_level_archi.md
       - sb-encryption-models.md
-      - sb_deployment_plans.md
+      - sb_deployment_plans.md               
+      - topic: sb_release_notes.md
+        navtitle: Release notes
+      - sb_pricing.md 
+  - navgroup: 
+      id: howto
+      topics:
       - topicgroup:
           label: Setting up your environment
           topics:
@@ -39,13 +46,7 @@ toc:
           - topicgroup:
               label: Deployment models
               topics:
-              - sb_deployment_models.md          
-      - topic: sb_release_notes.md
-        navtitle: Release notes
-      - sb_pricing.md 
-  - navgroup: 
-      id: howto
-      topics:
+              - sb_deployment_models.md 
       - topicgroup:
           label: Data Encryption Services
           topics:
