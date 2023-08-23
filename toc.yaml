@@ -14,16 +14,16 @@ toc:
       id: learn      
       topics:
       - topic: getting-started.md
-        navtitle: Getting started
+        navtitle: Getting Started
       - topicgroup:
           label: About
           topics: 
           - topic: overview.md
             navtitle: How it works
           - topic: sb_pricing.md
-            navtitle: Pricing
+            navtitle: Pricing        
       - topic: sb_release_notes.md
-        navtitle: Release notes
+        navtitle: Release notes   
   - navgroup: 
       id: howto
       topics:
@@ -33,7 +33,7 @@ toc:
           - sb_setting_up_environment.md
           - sb_sizing_guidelines.md
       - topicgroup:
-          label: Installation and setup
+          label: Installation and Setup
           topics:
           - install/sb_install_catalog.md
           - tutorials/sb_configure.md
@@ -49,22 +49,22 @@ toc:
           - topicgroup:
               label: Deployment models
               topics:
-              - sb_deployment_models.md
+              - sb_deployment_models.md              
       - topicgroup:
-          label: Data encryption services
+          label: Data Encryption Services
           topics:
           - tutorials/sb_encrypt_postgress.md
-          - tutorials/sb_encrypt_data.md
-          - tutorials/sb_data_migration.md
+          - tutorials/sb_encrypt_data.md  
+          - tutorials/sb_data_migration.md                        
           - topicgroup:
-              label: Data masking
+              label: Data Masking
               topics:
               - tutorials/sb_masking.md
               - tutorials/sb_configure_rbac.md
               - tutorials/sb_rbac_policy.md
               - tutorials/sb_user_group.md
               - tutorials/sb_apply_rbac_policy.md
-              - tutorials/sb_apply_mask.md
+              - tutorials/sb_apply_mask.md                  
       - topicgroup:
           label: Configurations in Data Security Broker Manager
           topics:
@@ -76,7 +76,7 @@ toc:
           - tutorials/sb_local_keystore.md
           - tutorials/sb_add_https.md
       - topicgroup:
-          label: Key management services
+          label: Key Management Services
           topics:
           - tutorials/sb_configure_keyprotect.md
           - topicgroup:
@@ -87,25 +87,25 @@ toc:
           - topicgroup:
               label: Key rotation using IBM Key Protect and HPCS
               topics: 
-              - tutorials/sb_keyrotate.md
+              - tutorials/sb_keyrotate.md           
       - topicgroup:
-          label: Upgrade and uninstall
+          label: Upgrade and Uninstall
           topics:
           - tutorials/sb_update.md
           - tutorials/sb_uninstall.md
-      - sb_shield_perf.md
+      - sb_shield_perf.md    
       - topicgroup: 
           label: High availability and disaster recovery
           topics:
           - topic: sb_ha.md
             navtitle: Understanding high availability
-          - topic: framework/disaster-recovery.md
-            navtitle: sb_dr.md
+          - topic: sb_dr.md
+            navtitle: Understanding disaster recovery
       - topicgroup:
           label: Logging and monitoring
           topics:
           - troubleshooting/sb_logging.md
-          - troubleshooting/sb_monitoring.md
+          - troubleshooting/sb_monitoring.md      
       - topicgroup: 
           label: Related links
           topics:
@@ -116,14 +116,15 @@ toc:
       id: help
       topics:
         - getting_help_support.md
-        - sb_faqs.md
-        - topicgroup:
-            label: Troubleshooting
-            topics:
-            - troubleshooting/sb_support_initialization.md
-            - troubleshooting/sb_support_database.md
-            - troubleshooting/sb_shield.md
-            - troubleshooting/sb_keystore.md
-            - troubleshooting/sb_workflow.md
-            - troubleshooting/sb_pvc_pending.md
-        - tutorials/sb_limitations.md
+        - sb_faqs.md     
+      - topicgroup:
+          label: Troubleshooting
+          topics:
+          - troubleshooting/sb_support_initialization.md
+          - troubleshooting/sb_support_database.md
+          - troubleshooting/sb_shield.md
+          - troubleshooting/sb_keystore.md
+          - troubleshooting/sb_workflow.md
+          - troubleshooting/sb_pvc_pending.md
+      - tutorials/sb_limitations.md
+            
