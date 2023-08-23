@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2022, 2023
-lastupdated: "2023-08-22"
+  years: 2023
+lastupdated: "2023-08-23"
 
 keywords: users, admin, priveleges, profiles,
 
@@ -41,7 +41,7 @@ spec:
  storageClassName: ibmc-block-bronze
  volumeMode: Filesystem
 ```
-{: codeblock}
+{: yaml}
 
 A sample YAML for PVC of {{site.data.keyword.security_broker_short}} MangoDB:
 ```sh
@@ -61,7 +61,7 @@ spec:
  storageClassName: ibmc-block-bronze
  volumeMode: Filesystem
 ```
-{: codeblock}
+{: yaml}
 
 
 
