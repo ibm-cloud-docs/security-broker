@@ -22,3 +22,5 @@ In general, resources allocated to a {{site.data.keyword.security_broker_short}}
 deployment needs to be scaled with the number of managed {{site.data.keyword.security_broker_short}} Shields and the number of concurrent users using the {{site.data.keyword.security_broker_short}} Manager.
 
 To learn about opening an IBM support case, or about support levels and case severities, see [Contacting support](https://cloud.ibm.com/docs/get-support?topic=get-support-using-avatar).
+
+

@@ -35,3 +35,4 @@ Application performance is minimally impacted allowing for enterprise workflows 
 Now that you have an understanding of the various entities that exist within {{site.data.keyword.security_broker_short}}, and how do they work together, the following diagram details the user flows that you might take when you are working with {{site.data.keyword.security_broker_short}}.
 
 ![Encryption flow](images/dsb_flowchart.svg){: caption="Figure 1. User Workflow" caption-side="bottom"}
+
