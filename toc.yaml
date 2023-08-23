@@ -102,10 +102,10 @@ toc:
           - topic: framework/disaster-recovery.md
             navtitle: sb_dr.md
       - topicgroup:
-              label: Logging and monitoring
-              topics:
-              - troubleshooting/sb_logging.md
-              - troubleshooting/sb_monitoring.md      
+          label: Logging and monitoring
+          topics:
+          - troubleshooting/sb_logging.md
+          - troubleshooting/sb_monitoring.md      
       - topicgroup: 
           label: Related links
           topics:
