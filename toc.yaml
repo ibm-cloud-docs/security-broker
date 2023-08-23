@@ -11,16 +11,19 @@ toc:
     label: IBM Cloud Security and Compliance Center Data Security Broker      
   entries: 
   - navgroup: 
-      id: learn
-      navtitle: Getting Started
+      id: learn      
       topics:
-      - getting_started.md
-      - sb-high_level_archi.md
-      - sb-encryption-models.md
-      - sb_deployment_plans.md               
+      - topic: getting-started.md
+        navtitle: Getting Started
+      - topicgroup:
+          label: About
+          topics: 
+          - topic: overview.md
+            navtitle: How it works
+          - topic: sb_pricing.md
+            navtitle: Pricing        
       - topic: sb_release_notes.md
-        navtitle: Release notes
-      - sb_pricing.md 
+        navtitle: Release notes   
   - navgroup: 
       id: howto
       topics:
@@ -46,7 +49,7 @@ toc:
           - topicgroup:
               label: Deployment models
               topics:
-              - sb_deployment_models.md 
+              - sb_deployment_models.md              
       - topicgroup:
           label: Data Encryption Services
           topics:

@@ -44,9 +44,4 @@ and encrypts application data sent to the database and decrypts encrypted data.
 {{site.data.keyword.security_broker_short}} supports only PostgreSQL database.
 {: note}
 
-## Next Steps
-{: #getting-started-next steps}
 
-Follow the steps listed below in the flow diagram to install, configure and setup the {{site.data.keyword.security_broker_short}}:
-
-![Encryption flow](images/dsb_flowchart.svg){: caption="Figure 1. User Workflow" caption-side="bottom"}
