@@ -11,7 +11,7 @@ subcollection: security-broker
 {{site.data.keyword.attribute-definition-list}}
 
 # Getting started with IBM Cloud Security and Compliance Center Data Security Broker
-{: #getting-started}
+{: #getting_started}
 
 ## Overview
 {: #sb_getting_started_overview}
