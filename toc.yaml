@@ -94,22 +94,29 @@ toc:
           - tutorials/sb_update.md
           - tutorials/sb_uninstall.md
       - sb_shield_perf.md    
-      - sb_ha.md    
-      - sb_dr.md    
-  - navgroup:
-      id: reference
-      links:
-      - link: 
-          label: Blogs
-          href: https://www.ibm.com/cloud/blog/announcements/readily-encrypt-de-identify-and-mask-sensitive-data-with-zero-code-changes
-  - navgroup:
-      id: help
-      topics:
+      - topicgroup: 
+          label: High availability and disaster recovery
+          topics:
+          - topic: sb_ha.md
+            navtitle: Understanding high availability
+          - topic: framework/disaster-recovery.md
+            navtitle: sb_dr.md
       - topicgroup:
               label: Logging and monitoring
               topics:
               - troubleshooting/sb_logging.md
-              - troubleshooting/sb_monitoring.md
+              - troubleshooting/sb_monitoring.md      
+      - topicgroup: 
+          label: Related links
+          topics:
+            - link:
+               label: Readily Encrypt, De-Identify and Mask Sensitive Data with Zero Code Changes
+               href: https://www.ibm.com/cloud/blog/announcements/readily-encrypt-de-identify-and-mask-sensitive-data-with-zero-code-changes
+  - navgroup:
+      id: help
+      topics:
+        - topic: sb_faqs.md
+        navtitle: FAQs
       - topicgroup:
               label: Troubleshooting
               topics:
@@ -119,7 +126,5 @@ toc:
               - troubleshooting/sb_keystore.md
               - troubleshooting/sb_workflow.md
               - troubleshooting/sb_pvc_pending.md
-      - topic: sb_faqs.md
-        navtitle: FAQs
       - tutorials/sb_limitations.md
             
