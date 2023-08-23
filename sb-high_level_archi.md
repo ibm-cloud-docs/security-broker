@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2023
-lastupdated: "2023-08-22"
+lastupdated: "2023-08-23"
 
 keywords: about the service, deploy policy, deployment plans, encryption technology, encryption modes, data protection modes
 
@@ -18,7 +18,7 @@ The software supports tokenization, format-preserving encryption (FPE), and role
 
 The encyrption is made simpler, faster, and seamless.
 
-![High level architecture of {{site.data.keyword.security_broker_short}} Manager](images/HA_arch.svg "High level architecture of {{site.data.keyword.security_broker_short}} Manager"){: caption="High level architecture of {{site.data.keyword.security_broker_short}} Manager" caption-side="center"}
+![High level architecture of {{site.data.keyword.security_broker_short}} Manager](images/deploy_architecture.svg "High level architecture of {{site.data.keyword.security_broker_short}} Manager"){: caption="High level architecture of {{site.data.keyword.security_broker_short}} Manager" caption-side="center"}
 
 The {{site.data.keyword.security_broker_short}} supports data encryption by migrating the data from an existing SQL database into a secure database with the ability to encrypt fields at a column granularity, thereby enabling selective privacy.
 
