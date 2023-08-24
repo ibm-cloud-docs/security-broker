@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2022, 2023
-lastupdated: "2023-08-22"
+  years: 2023
+lastupdated: "2023-08-24"
 
 keywords: DSB Shield, Performance
 
@@ -22,9 +22,10 @@ One way to minimize latency between the application and {{site.data.keyword.secu
 
 In cases where there is a high concurrent workload, a single {{site.data.keyword.security_broker_short}} Shield instance might become a bottleneck. In these situations, {{site.data.keyword.security_broker_short}} recommends deployment of multiple {{site.data.keyword.security_broker_short}} Shields behind a load balancer. Each {{site.data.keyword.security_broker_short}} Shield instance is designed to handle hundreds of concurrent connections, but the actual number of connections that each {{site.data.keyword.security_broker_short}} Shield can reasonably support depends on the resource availability of the machine.
 
-| Goal                                                       | Deployment                                  | Use case                                                                                          |   |   |   |   |   |   |   |
-|------------------------------------------------------------|---------------------------------------------|---------------------------------------------------------------------------------------------------|---|---|---|---|---|---|---|
-| Minimize latency between the application and Baffle Shield | DSB Shield on the application host          | Small number of application servers and Sufficient CPU and memory capacity per application server |   |   |   |   |   |   |   |
-| Prevent Baffle Shield from becoming bottleneck             | Multiple DSB Shields behind a load balancer | High concurrent workload and Resourced machines     
+| Goal                                                       | Deployment                                  | Use case                                                                                          |
+|------------------------------------------------------------|---------------------------------------------|---------------------------------------------------------------------------------------------------|
+| Minimize latency between the application and Baffle Shield | DSB Shield on the application host          | Small number of application servers and Sufficient CPU and memory capacity per application server |
+| Prevent Baffle Shield from becoming bottleneck             | Multiple DSB Shields behind a load balancer | High concurrent workload and Resourced machines                                                   |
+|                                                            |                                             |                                                                                                   |
 {: caption="Table 1. {{site.data.keyword.security_broker_short}} Shield Performance" caption-side="bottom"} 
 
