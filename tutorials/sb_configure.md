@@ -80,6 +80,8 @@ If you have installed the {{site.data.keyword.security_broker_short}} in a priva
    
 5. Configure the basic System Settings by entering the Init Password, Organization name, Domain name, and Proxy access, and click **Continue**.
 
+   ![Getting Started - Step 1](../images/step1_login.svg "Getting Started - Step 1"){: caption="Getting Started" caption-side="center"}
+
    - The Init Password field must contain the same password that you specified for the **secrets.initPass** parameter during the {{site.data.keyword.security_broker_short}} Manager installation.
    - The domain name is part of the email, followed after the "@" character. For example, if the email specified is **test@xyz.example.com**, the domain name must be specified as **example.com**. The domain name that you enter must match in step 1 and step 2 or the domain name in step 2 can be a subset of the domain name specified in the step 1.
    - The proxy access name is the name that is responsible for the connectivity from Proxy to {{site.data.keyword.security_broker_short}} Manager (the IP, or DNS, or the Service Name). For example, specify **dsb-nginx**, if you do not have any Proxy configured.
