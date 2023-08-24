@@ -11,7 +11,7 @@ toc:
     label: IBM Cloud Security and Compliance Center Data Security Broker
   entries:
   - navgroup:
-      id: learn
+      id: learn      
       topics:
       - topic: getting-started.md
         navtitle: Getting Started
@@ -71,7 +71,7 @@ toc:
           topics:
           - tutorials/sb_configure_keyprotect.md
           - topicgroup:
-              label: IBM Key Protect and HPCS
+              label: IBM Key Protect, HPCS, and Local Keystore
               topics: 
               - tutorials/sb_ibm_keyprotect.md
               - tutorials/sb_hpcs.md
