@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2022, 2023
-lastupdated: "2023-08-22"
+  years: 2023
+lastupdated: "2023-08-24"
 
 keywords: logging, debugging, platform, dashboard, observability
 
@@ -21,6 +21,7 @@ Complete the following steps to log in to the {{site.data.keyword.security_broke
 1. Generate an IBM OAuth token. To obtain the OAuth token, log in to your {{site.data.keyword.cloud}} account from the Command Line Interface using the following steps:
 
    a. Open the Command terminal from your system.
+   
    b. Execute the following command to log in to your {{site.data.keyword.cloud_notm}} account:
    ```sh
    ibmcloud login -sso

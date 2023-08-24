@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2022, 2023
-lastupdated: "2023-08-22"
+  years: 2023
+lastupdated: "2023-08-24"
 
 keywords: database, admin, priveleges, users, features, operations
 
@@ -48,8 +48,13 @@ A list of Default Data Protection Policies is available in the Data Protection L
 
 7. Click **REVIEW** at the bottom of the left panel to review your selections.
 
-8. Review your policy and select a **Migration Plan**. The migration plans are listed below:
-   **Save Policy**: Defines a policy for future migration.
-   **Deploy Policy**: Establishes a data schema for an environment that was not processed through {{site.data.keyword.security_broker_short}} migration and the data type conversion but does not migrate the data.
-   **Deploy Policy & Migrate Data**: Defines a policy and migrates the existing data in the data store.
+8. Review your policy and select a **Migration Plan**.
+   The migration plans are listed below:
+
+   - **Save Policy**: Defines a policy for future migration.
+
+   - **Deploy Policy**: Establishes a data schema for an environment that was not processed through {{site.data.keyword.security_broker_short}} migration and the data type conversion but does not migrate the data.
+
+   - **Deploy Policy & Migrate Data**: Defines a policy and migrates the existing data in the data store.
+   
 
