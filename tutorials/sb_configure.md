@@ -82,7 +82,7 @@ If you have installed the {{site.data.keyword.security_broker_short}} in a priva
 
    - The Init Password field must contain the same password that you specified for the **secrets.initPass** parameter during the {{site.data.keyword.security_broker_short}} Manager installation.
    - The domain name is part of the email, followed after the "@" character. For example, if the email specified is **test@xyz.example.com**, the domain name must be specified as **example.com**. The domain name that you enter must match in step 1 and step 2 or the domain name in step 2 can be a subset of the domain name specified in the step 1.
-   - The proxy access name is the name that is responsible for the connectivity from Proxy to {{site.data.keyword.security_broker_short}} Manager (the IP, or DNS, or the Service Name). For example, **dsb-nginx**.
+   - The proxy access name is the name that is responsible for the connectivity from Proxy to {{site.data.keyword.security_broker_short}} Manager (the IP, or DNS, or the Service Name). For example, specify **dsb-nginx**, if you do not have any Proxy configured.
    {: note}
     
 6. Create an Admin Account for the initial {{site.data.keyword.security_broker_short}} Manager administrator by specifying the email address in the **Configure Super Admin User** page. This account is   used to configure the subsequent components such as the keystore, data store connections, and {{site.data.keyword.security_broker_short}} Shields. Click **Continue**.
