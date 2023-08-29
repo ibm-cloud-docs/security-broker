@@ -58,10 +58,7 @@ Complete the following steps to install the **{{site.data.keyword.security_broke
     
 6.  Select an existing namespace to deploy the {{site.data.keyword.security_broker_short}} Manager or click **Add namespace** to add a new namespace. Specify the name for the namespace and click **Add** to create a new namespace within the selected cluster.
 
-7.  If you are installing the {{site.data.keyword.security_broker_short}} Manager in the ROKS cluster, you must run the preinstallation script by clicking on the **Run Script** button after you select the cluster and the project. 
-
-    Once the preinstallation script is executed, you can get the {{site.data.keyword.security_broker_short}} Manager URL from the preinstallation script logs. 
-    {: note}
+7.  You must run the preinstallation script by clicking on the **Run Script** button after you select the cluster and the namespace. If you do not run the preinstallation script, you cannot proceed with the installation of the {{site.data.keyword.security_broker_short}} Manager. 
 
 8.  Configure your workspace by specifying the following details:
 
