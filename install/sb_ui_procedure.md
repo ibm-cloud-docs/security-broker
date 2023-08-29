@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2022, 2023
-lastupdated: "2023-08-22"
+  years: 2023
+lastupdated: "2023-08-29"
 
 keywords: install, ROKS, IKS, manifests, HELM
 
@@ -30,7 +30,7 @@ Complete the following steps to install the {{site.data.keyword.security_broker_
    
 6. Select an existing namespace to deploy the {{site.data.keyword.security_broker_short}} Shield or click **Add namespace** to add a new namespace. Specify the name for the namespace and click **Add** to create a new namespace within the selected cluster.
 
-7. You must run the preinstallation script by clicking on the **Run Script** button after you select the cluster and the namespace. If you do not run the preinstallation script, you cannot proceed with the installation of the {{site.data.keyword.security_broker_short}} Manager.
+7. You must run the preinstallation script by clicking on the **Run Script** button after you select the cluster and the namespace. If you do not run the preinstallation script, you cannot proceed with the installation of the {{site.data.keyword.security_broker_short}} Shield.
 
 8. Configure your workspace by specifying the following details:
 
