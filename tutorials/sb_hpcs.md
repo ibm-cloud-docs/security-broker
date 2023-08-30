@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2022, 2023
-lastupdated: "2023-02-13"
+  years: 2023
+lastupdated: "2023-08-30"
 
 keywords: database, admin, priveleges, users, configure, operations, keyprotect
 
@@ -61,7 +61,7 @@ You can add the IBM Cloud Hyper Protect Crypto Services instance as a keystore i
 5. For App Namespace, enter a string to identify the application.
 6. For IBM Cloud Hyper Protect Crypto Services Alias, get the Alias name of the Key which has been created in the HPCS instance.
 7. For the IAM API Key, use the key you created using Step 2 in Configuring the HPCS section.
-8. For IBM region, specify the region for the IBM Cloud Hyper Protect Crypto Services instance. See [Available IBM region listing](https://docs.baffle.io/v1/docs/configure-ibm-key-protect-and-add-it-as-a-keystore-baffle#available-ibm-region-listing) for more information.
+8. For IBM region, specify the region for the IBM Cloud Hyper Protect Crypto Services instance.
 9. For the IBM Cloud Object Storage URL, specify the IBM endpoint URL for COS, for example: https://s3.us-south.cloud-object-storage.appdomain.cloud
 10. Enter the **cos_hmac_keys** for the Access Key ID and Secret Key.
 11. Click **Add Keystore**.
