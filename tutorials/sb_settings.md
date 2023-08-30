@@ -1,9 +1,9 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-07-10"
+lastupdated: "2023-08-22"
 
-keywords: domain name, host name, https certificate, logger, smtp, settings
+keywords: domain name, host name, https certificate, logger, settings
 
 subcollection: security-broker
 ---
@@ -37,17 +37,13 @@ The warning appears when you have not uploaded an HTTPS certificate. HTTPS certi
 
 Upload an HTTPS certificate by following the instructions in [Adding HTTPS certificate](/docs/security-broker?topic=security-broker-sb_add_https) section.
 
-
-
 ## Logger
 {: #sb_logger}
 
 Complete the following steps to configure the Logger settings for the {{site.data.keyword.security_broker_short}} Manager:
 
 1. In the **Settings** page, click **Logger +** to configure a new logger.
-
-   ![Add Logger](../images/logger.svg){: caption="Figure 3. Add Logger" caption-side="bottom"}
-
+   
 2. Specify a name for the logger according to Java logger naming convention. A dot is used to separate    names, that enforces a hierarchy.
 3. Select a Log Level from the dropdown. These levels define the severity and granularity of the events which is captured by this logger. The options include:
     a. TRACE (Fine-tuned debugging messages)
@@ -55,9 +51,7 @@ Complete the following steps to configure the Logger settings for the {{site.dat
     c. INFO (Informational events)
     d. WARN (Events that might lead to an error)
     e. ERROR (Error messages)
-
-    ![Logger](../images/logger_settings.svg){: caption="Figure 3. Logger" caption-side="bottom"}
-
+    
 4. Click Save to complete the **Logger** configuraion.
 
 

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-06-23"
+lastupdated: "2023-08-22"
 
 keywords: logging, debugging, platform, dashboard, observability
 
@@ -52,8 +52,7 @@ To configure a logging instance from the **Observability** dashboard in the IBM 
 
     c. Click **Logging** and select the log instance which you have created for the {{site.data.keyword.security_broker_short}}.
 
-    d. Click **Open Dashboard** for the log instance that you have created. You can view the detailed log summary in the dashboard as shown below:
-
-    ![Logs](../images/logs_dsb.svg){: caption="Logs Dashboard in {{site.data.keyword.security_broker_short}}" caption-side="bottom"}
-
+    d. Click **Open Dashboard** for the log instance that you have created. You can view the detailed log summary in the dashboard.
+  
     e. You can start debugging the logs, which are displayed with a predefined format. You can also filter logs and modify search settings, then bookmark the result as a view.
+    

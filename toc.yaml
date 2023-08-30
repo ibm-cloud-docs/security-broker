@@ -8,16 +8,19 @@ toc:
     console-page: /catalog/services/security-broker
     product-page: https://cloud.ibm.com/security-broker
     path: security-broker
-    label: IBM Cloud Security Compliance Center Data Security Broker
-    version: 1
-    release-level: beta
-  entries: 
-  - navgroup: 
-      id: learn
+    label: IBM Cloud Security and Compliance Center Data Security Broker
+  entries:
+  - navgroup:
+      id: learn      
       topics:
-      - sb_getting_started.md
-      - sb_about.md
-      - sb_release_notes.md   
+      - topic: getting-started.md
+        navtitle: Getting Started
+      - topic: overview.md
+        navtitle: How it works
+      - topic: sb_pricing.md
+        navtitle: Pricing
+      - topic: sb_release_notes.md
+        navtitle: Release notes
   - navgroup: 
       id: howto
       topics:
@@ -34,13 +37,17 @@ toc:
               - tutorials/sb_add_db.md
               - tutorials/sb_add_keystore.md
               - tutorials/sb_enroll_app.md
-          - install/sb_ui_procedure.md   
+          - install/sb_ui_procedure.md
+          - topicgroup:
+              label: Deployment models
+              topics:
+              - sb_deployment_models.md
       - topicgroup:
           label: Data Encryption Services
           topics:
           - tutorials/sb_encrypt_postgress.md
-          - tutorials/sb_encrypt_data.md  
-          - tutorials/sb_data_migration.md                        
+          - tutorials/sb_encrypt_data.md
+          - tutorials/sb_data_migration.md
           - topicgroup:
               label: Data Masking
               topics:
@@ -49,7 +56,7 @@ toc:
               - tutorials/sb_rbac_policy.md
               - tutorials/sb_user_group.md
               - tutorials/sb_apply_rbac_policy.md
-              - tutorials/sb_apply_mask.md                  
+              - tutorials/sb_apply_mask.md
       - topicgroup:
           label: Configurations in Data Security Broker Manager
           topics:
@@ -57,52 +64,58 @@ toc:
           - tutorials/sb_adding_users.md
           - tutorials/sb_settings.md
           - tutorials/sb_db_privileges.md
-          - tutorials/sb_update_db.md
-          - tutorials/sb_local_keystore.md
+          - tutorials/sb_update_db.md          
+          - tutorials/sb_add_https.md
       - topicgroup:
           label: Key Management Services
           topics:
           - tutorials/sb_configure_keyprotect.md
           - topicgroup:
-              label: IBM Key Protect and HPCS
+              label: IBM Key Protect, HPCS, and Local Keystore
               topics: 
               - tutorials/sb_ibm_keyprotect.md
               - tutorials/sb_hpcs.md
+              - tutorials/sb_local_keystore.md
           - topicgroup:
               label: Key rotation using IBM Key Protect and HPCS
               topics: 
-              - tutorials/sb_keyrotate.md           
+              - tutorials/sb_keyrotate.md
       - topicgroup:
           label: Upgrade and Uninstall
           topics:
           - tutorials/sb_update.md
           - tutorials/sb_uninstall.md
-      - sb_shield_perf.md    
-      - sb_ha.md    
-      - sb_dr.md    
-  - navgroup:
-      id: reference
-      links:
-      - link: 
-          label: Blogs
-          href: https://www.ibm.com/cloud/blog/announcements/readily-encrypt-de-identify-and-mask-sensitive-data-with-zero-code-changes
+      - sb_shield_perf.md
+      - topicgroup: 
+          label: High availability and disaster recovery
+          topics:
+          - topic: sb_ha.md
+            navtitle: Understanding high availability
+          - topic: sb_dr.md
+            navtitle: Understanding disaster recovery
+      - topicgroup:
+          label: Logging and monitoring
+          topics:
+          - troubleshooting/sb_logging.md
+          - troubleshooting/sb_monitoring.md
+      - topicgroup: 
+          label: Related links
+          topics:
+            - link:
+               label: Readily Encrypt, De-Identify and Mask Sensitive Data with Zero Code Changes
+               href: https://www.ibm.com/cloud/blog/announcements/readily-encrypt-de-identify-and-mask-sensitive-data-with-zero-code-changes
   - navgroup:
       id: help
       topics:
-      - topicgroup:
-              label: Logging and monitoring
-              topics:
-              - troubleshooting/sb_logging.md
-              - troubleshooting/sb_monitoring.md
-      - topicgroup:
-              label: Troubleshooting
-              topics:
-              - troubleshooting/sb_support_initialization.md
-              - troubleshooting/sb_support_database.md
-              - troubleshooting/sb_shield.md
-              - troubleshooting/sb_keystore.md
-              - troubleshooting/sb_workflow.md
-              - troubleshooting/sb_pvc_pending.md
-      - sb_faqs.md                  
-      - tutorials/sb_limitations.md
-            
+        - getting_help_support.md
+        - sb_faqs.md     
+        - topicgroup:
+            label: Troubleshooting
+            topics:
+            - troubleshooting/sb_support_initialization.md
+            - troubleshooting/sb_support_database.md
+            - troubleshooting/sb_shield.md
+            - troubleshooting/sb_keystore.md
+            - troubleshooting/sb_workflow.md
+            - troubleshooting/sb_pvc_pending.md
+        

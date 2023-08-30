@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-03-27"
+lastupdated: "2023-08-22"
 
 keywords: database, admin, priveleges, users, features, operations, application
 
@@ -10,7 +10,7 @@ subcollection: security-broker
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Adding HTTPs certificate:
+# Adding HTTPs certificate
 {: #sb_add_https}
 
 To add or update an HTTPS certificate, follow the steps below:
@@ -23,7 +23,7 @@ To add or update an HTTPS certificate, follow the steps below:
    ```
    {: codeblock}   
 
-3. Login to the pod using the command:
+3. Log in to the pod using the command:
 
    ```sh
    kubectl exec -it <pod_name> -- sh

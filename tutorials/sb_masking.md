@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2022, 2023
-lastupdated: "2023-02-14"
+  years: 2023
+lastupdated: "2023-08-30"
 
 keywords: database, admin, priveleges, users, features, operations
 
@@ -69,9 +69,9 @@ To view the details of a masking mode, complete the following steps:
 
 To perform Data Masking , follow the steps below:
 
-1. Refer to the [Configure RBAC Policy](/docs/security-broker?topic=security-broker-sb_confifure_rbac) section configure a Role-Based Access Control (RBAC) policy.
+1. Refer to the [Configure RBAC Policy](/docs/security-broker?topic=security-broker-sb_configure_rbac) section configure a Role-Based Access Control (RBAC) policy.
 
-2. Refer to the [Create RBAC Policy](/docs/security-broker?topic=security-broker-sb_add_rbac_policy) section to create a RBAC policy.
+2. Refer to the [Create RBAC Policy](/docs/security-broker?topic=security-broker-sb_rbac_policy) section to create a RBAC policy.
 
 3. Refer to the [Configure User groups](/docs/security-broker?topic=security-broker-sb_user_group) section to configure or add user groups. 
 

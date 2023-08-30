@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2022, 2023
-lastupdated: "2023-02-13"
+  years: 2023
+lastupdated: "2023-08-30"
 
 keywords: database, admin, priveleges, users, features, operations, application
 
@@ -20,9 +20,7 @@ Follow the steps below to enroll a Keystore that you can use with {{site.data.ke
 1. Login to {{site.data.keyword.security_broker_short}} Manager.
 
 2. Select **Keystores** from the left navigation and click **Add Keystore +**.
-
-   ![Keystores](../images/keystore.svg){: caption="Figure 1. Keystores" caption-side="bottom"}
-
+   
 3. Specify a **Keystore name** and provide a valid **Description**.
 
 4. Select the Keystore Type from the **Keystore Type** dropdown menu. 
@@ -33,7 +31,7 @@ Follow the steps below to enroll a Keystore that you can use with {{site.data.ke
    Keystore parameters are specific to each Keystore type or vendor. 
    {: note}
 
-   For more information on configuring the IBM Key Protect and configuring the IBM Cloud Hyper Protect Crypto Services (HPCS), refer to the [Configure IBM Key Protect and HPCS](/docs/security-broker?topic=security-broker-sb_configure_Keyprotect) section.
+   For more information on configuring the IBM Key Protect and configuring the IBM Cloud Hyper Protect Crypto Services (HPCS), refer to the [Configure IBM Key Protect and HPCS](/docs/security-broker?topic=security-broker-sb_configure_keyprotect) section.
 
 5. Click **Add Keystore** to create a Keystore.
 

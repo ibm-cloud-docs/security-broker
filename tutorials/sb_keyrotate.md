@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-05-26"
+lastupdated: "2023-08-22"
 
 keywords: database, admin, priveleges, users, configure, keyrotate, keyprotect, operations
 
@@ -15,7 +15,7 @@ subcollection: security-broker
 
 In this section, you can find details on how to rotate the Master and Data Encryption Keys for IBM Key Protect or HPCS Keystore in {{site.data.keyword.security_broker_short}} Manager.
 
-1.  Login to {{site.data.keyword.security_broker_short}} Manager.
+1.  Log in to {{site.data.keyword.security_broker_short}} Manager.
 
 2.  Select **Keystores** from the left navigation and click on one of the Keystore.
 

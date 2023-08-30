@@ -1,14 +1,12 @@
 ---
 copyright:
-  years: 2022, 2023
-lastupdated: "2023-02-13"
+  years: 2023
+lastupdated: "2023-08-23"
 
 keywords: uninstall, delete, helm, configuration, tls certificate, docker config secret, environment variable, regions, cluster, container, app security, memory encryption, data in use
 
 subcollection: security-broker
 ---
-
-{{site.data.keyword.attribute-definition-list}}
 
 {{site.data.keyword.attribute-definition-list}}
 
@@ -30,11 +28,7 @@ Log into IBM Cloud Schematics workspace and follow the steps below to uninstall 
 
 1. Search for the workspace name that you provided during the {{site.data.keyword.security_broker_short}} Manager install and click on the workspace to open it.
 
-   ![IBM Schematics Workspace](../images/schematics_workspace.svg){: caption="IBM Schematics Workspace" caption-side="bottom"}
-
-2. Select **Actions** -> **Destroy Resources** to destroy the workloads associated with the {{site.data.keyword.security_broker_short}} Manager.
-
-   ![Uninstall {{site.data.keyword.security_broker_short}} Manager](../images/uninstall_dsb_manager.svg){: caption="Uninstall {{site.data.keyword.security_broker_short}} Manager" caption-side="bottom"}
+2. Select **Actions** -> **Destroy Resources** to destroy the workloads associated with the {{site.data.keyword.security_broker_short}} Manager.   
 
 3. Follow the same process for the {{site.data.keyword.security_broker_short}} Shield to uninstall the workloads associated with the {{site.data.keyword.security_broker_short}} Shield. Remember to work with the correct workspace name, which is provided during the {{site.data.keyword.security_broker_short}} Shield install.
 

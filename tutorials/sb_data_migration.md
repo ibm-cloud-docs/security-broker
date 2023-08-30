@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-06-19"
+lastupdated: "2023-08-22"
 
 keywords: database, admin, priveleges, users, migration, shield, migration properties
 
@@ -13,7 +13,7 @@ subcollection: security-broker
 # Data Migration using {{site.data.keyword.security_broker_short}} Manager
 {: #sb_data_migration}
 
-## Overview:
+## Overview
 {: #sb_data_migration_overview}
 
 {{site.data.keyword.security_broker_short}} provides a data migration utility that assists with the offline encryption (and optionally, decryption) of existing data stored in supported databases. The utility accomplishes this by querying cleartext from the database and inserting the same data back into the database through {{site.data.keyword.security_broker_short}} Shield to perform encryption.
@@ -23,7 +23,7 @@ You can add or select specific {{site.data.keyword.security_broker_short}} Shiel
 This option is only available when you select **Deploy Policy & Migrate Data** as the Data Protection Policy.
 {: note}
 
-1.  Login to {{site.data.keyword.security_broker_short}} Manager.
+1.  Log in to {{site.data.keyword.security_broker_short}} Manager.
 
 2.  Select an application and click **Encrypt** to open the Encryption Schema Builder window.
 

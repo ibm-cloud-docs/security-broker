@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2022, 2023
-lastupdated: "2023-07-25"
+  years: 2023
+lastupdated: "2023-08-30"
 
 keywords: database, admin, priveleges, users, features, operations
 
@@ -21,9 +21,7 @@ subcollection: security-broker
 ## Procedure
 {: #sb_se_procedure}
 
-To perform encryption in a Postgres database using {{site.data.keyword.security_broker_short}}, watch the video below:
 
-![Postgres Encryption using Data Security Broker](https://video.ibm.com/embed/recorded/132917098){: video output="iframe" data-script="none" id="watsonmediaplayer" width="560" height="315" scrolling="no" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0" style="border: 0 none transparent;"}
 
 Complete the following steps to encrypt the data with {{site.data.keyword.security_broker_short}} Manager on
 an IBM Cloud PostgreSQL Database:
@@ -31,10 +29,8 @@ an IBM Cloud PostgreSQL Database:
 1. Login to {{site.data.keyword.security_broker_short}} Manager.
 2. Click on an application and select the drop down which is present in the **Migration Details** field in the right side and click **Encrypt**.
 3. Select the Database and the table where you have the data created and select the **Column** which needs to be encrypted. Choose the **Data Protection** policy, **Encryption mode**, and **masking mode** for the encryption process and click **Review**.
-
-   ![Encryption](../images/encryption_schema.svg){: caption="Standard Encryption" caption-side="bottom"}
-
-4. Choose **Deploy Policy & Migrate Data** under the **Deployment Plan** option. There are three options that you can choose to implement your data encryption policy. For more information on Deployment plans, see [Deployment Plans in {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_about#sb-deployment-plans). Select the Security Broker Shield service IP address in the **Migration Shield** field and click **Save** to start the encryption process.
+   ![Data Encryption](../images/encryption.svg "Data Encryption"){: caption="Data Encryption" caption-side="center"}
+4. Choose **Deploy Policy & Migrate Data** under the **Deployment Plan** option. There are three options that you can choose to implement your data encryption policy. For more information on Deployment plans, see [Deployment Plans in {{site.data.keyword.security_broker_short}} Manager](/docs/security-broker?topic=security-broker-sb_encrypt_postgress#sb-deployment-plans). Select the Security Broker Shield service IP address in the **Migration Shield** field and click **Save** to start the encryption process.
 
 5. The status of the application shows **Migrating** when the encryption process starts.
 

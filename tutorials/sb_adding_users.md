@@ -1,9 +1,9 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-07-11"
+lastupdated: "2023-08-22"
 
-keywords: users, admin, priveleges, profiles, {{site.data.keyword.security_broker_short}} Manager, SMTP
+keywords: users, admin, priveleges, profiles, {{site.data.keyword.security_broker_short}} Manager
 
 subcollection: security-broker
 ---
@@ -31,10 +31,4 @@ Complete the following steps to add a new user to the {{site.data.keyword.securi
    The user that you are trying to invite to the {{site.data.keyword.security_broker_short}} Manager instance must be part of the same cloud account where the {{site.data.keyword.security_broker_short}} Manager is installed.
    {: note}
 
-   ![Add Users](../images/add_user.svg){: caption="Users" caption-side="bottom"}
-
    
-   
-
-
-

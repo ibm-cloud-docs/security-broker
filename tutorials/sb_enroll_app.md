@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2023
-lastupdated: "2023-02-23"
+lastupdated: "2023-08-22"
 
 keywords: database, admin, priveleges, users, features, operations, application
 
@@ -19,7 +19,7 @@ A {{site.data.keyword.security_broker_short}} Shield is limited to be enrolled w
 
 To enroll an application in Security Broker Manager, complete the following steps:
 
-1. Login to {{site.data.keyword.security_broker_short}} Manager.
+1. Log in to {{site.data.keyword.security_broker_short}} Manager.
 2. Click the **Applications** icon in the left navigation panel.
 
 3. Click **Enroll Application +** in the upper right corner of the window. The **Enroll Application** dialog appears.
@@ -32,9 +32,7 @@ To enroll an application in Security Broker Manager, complete the following step
    - Select a **Data Store** for encryption.
    - Select the **Keystore** to be used as a source for data encryption keys.  
    - Specify an **Encryption Method** as Column Level or Row Level. 
-
-   ![Enroll Application](../images/enroll_app.svg){: caption="Enroll Application" caption-side="bottom"}
-
+ 
 6. Click **Enroll Application**. After the application is enrolled, it is displayed under the Applications in the {{site.data.keyword.security_broker_short}} Manager.
 
    The Shield Sync ID is used when you install {{site.data.keyword.security_broker_short}} Shield. Ensure that you have the Shield Sync ID handy during the {{site.data.keyword.security_broker_short}} Shield installation.
