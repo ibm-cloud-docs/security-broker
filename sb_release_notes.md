@@ -18,26 +18,13 @@ content-type: release-note
 Use this release notes to learn about the latest changes to the {{site.data.keyword.security_broker_full_notm}} documentation.
 {: shortdesc}
 
-## 30 August 2023
-{: #sb_aug2023}
-{: release-note}
 
-{{site.data.keyword.security_broker_full_notm}} 1.70.1650 version is now generally available
-:   Fixes to some of the Common Vulnerabilities and Exposures (CVEs) are provided in this version along with the bug fixes.
-
-Security enhancements
-:   The following security enhancements were incorporated:
-      - Added support for second-level domain name configuration for {{site.data.keyword.security_broker_short}} Manager user accounts. As part of this enhancement, {{site.data.keyword.security_broker_short}} users with an email on a sub-domain of the primary domain name can now enroll successfully.
-      - Additional security enhancement has been enforced wherein, if you try to log in with an invalid OAuth token for more than 5 times, the {{site.data.keyword.security_broker_short}} Manager login gets locked and you must attempt to log in again after 30 minutes.
-
-Pricing plans
-:   Pricing plans have been added to {{site.data.keyword.security_broker_short}}. For more information, see [Pricing plans for {{site.data.keyword.security_broker_short}}](/docs/security-broker?topic=security-broker-sb_pricing).
 
 ## 13 February 2023
 {: #sb-feb1323}
 {: release-note}
 
-Introducing {{site.data.keyword.security_broker_full_notm}} version 1.70.855
+Introducing {{site.data.keyword.security_broker_full_notm}} Beta version 1.70.855
 :   {{site.data.keyword.security_broker_full_notm}} is a complete data protection solution that secures sensitive data in enterprise databases by integrating with key management and databases to provide application-level encryption. The following features are supported in the Beta version:
     - Data encryption and decryption
     - Data masking
