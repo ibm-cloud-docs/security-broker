@@ -9,7 +9,6 @@ toc:
     product-page: https://cloud.ibm.com/security-broker
     path: security-broker
     label: IBM Cloud Security and Compliance Center Data Security Broker
-    release-level: beta
   entries:
   - navgroup:
       id: learn      
@@ -17,7 +16,9 @@ toc:
       - topic: getting-started.md
         navtitle: Getting Started
       - topic: overview.md
-        navtitle: How it works      
+        navtitle: How it works
+      - topic: sb_pricing.md
+        navtitle: Pricing       
       - topic: sb_release_notes.md
         navtitle: Release notes
   - navgroup: 
